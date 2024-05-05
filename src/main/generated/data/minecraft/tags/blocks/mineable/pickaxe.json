@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "nemos-mossy-blocks:mossy_stone",
     "nemos-mossy-blocks:mossy_stone_stairs",

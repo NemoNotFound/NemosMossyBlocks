@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": "nemos-mossy-blocks:mossy_bamboo_mosaic"
+            "items": [
+              "nemos-mossy-blocks:mossy_bamboo_mosaic"
+            ]
           }
         ]
       },

@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": "nemos-mossy-blocks:mossy_crimson_stem"
+            "items": [
+              "nemos-mossy-blocks:mossy_crimson_stem"
+            ]
           }
         ]
       },

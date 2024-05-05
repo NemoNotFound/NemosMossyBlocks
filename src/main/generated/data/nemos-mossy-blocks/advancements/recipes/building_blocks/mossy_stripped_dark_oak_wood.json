@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": "nemos-mossy-blocks:mossy_stripped_dark_oak_log"
+            "items": [
+              "nemos-mossy-blocks:mossy_stripped_dark_oak_log"
+            ]
           }
         ]
       },

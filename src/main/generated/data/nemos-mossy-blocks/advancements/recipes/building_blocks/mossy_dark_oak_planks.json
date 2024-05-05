@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#nemos-mossy-blocks:mossy_dark_oak_wood"
+            "tag": "nemos-mossy-blocks:mossy_dark_oak_wood"
           }
         ]
       },
