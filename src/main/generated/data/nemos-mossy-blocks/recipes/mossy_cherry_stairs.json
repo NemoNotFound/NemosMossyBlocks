@@ -15,5 +15,6 @@
   "result": {
     "count": 4,
     "item": "nemos-mossy-blocks:mossy_cherry_stairs"
-  }
+  },
+  "show_notification": true
 }

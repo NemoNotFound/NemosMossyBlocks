@@ -20,13 +20,14 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_mossy_planks"
+      "has_mossy_planks",
+      "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
       "nemos-mossy-blocks:mossy_crimson_stairs"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

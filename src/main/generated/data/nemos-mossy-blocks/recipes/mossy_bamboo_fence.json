@@ -14,5 +14,6 @@
   "result": {
     "count": 6,
     "item": "nemos-mossy-blocks:mossy_bamboo_fence"
-  }
+  },
+  "show_notification": true
 }

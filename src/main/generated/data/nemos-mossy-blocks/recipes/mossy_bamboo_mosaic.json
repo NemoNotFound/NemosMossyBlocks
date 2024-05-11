@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "nemos-mossy-blocks:mossy_bamboo_mosaic"
-  }
+  },
+  "show_notification": true
 }

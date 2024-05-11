@@ -12,5 +12,6 @@
   ],
   "result": {
     "item": "nemos-mossy-blocks:mossy_crimson_pressure_plate"
-  }
+  },
+  "show_notification": true
 }

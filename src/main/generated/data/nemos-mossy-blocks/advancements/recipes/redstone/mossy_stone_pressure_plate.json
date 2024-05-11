@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_mossy_stone"
+      "has_mossy_stone",
+      "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
       "nemos-mossy-blocks:mossy_stone_pressure_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

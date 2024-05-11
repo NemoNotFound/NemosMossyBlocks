@@ -13,5 +13,6 @@
   "result": {
     "count": 6,
     "item": "nemos-mossy-blocks:mossy_birch_slab"
-  }
+  },
+  "show_notification": true
 }

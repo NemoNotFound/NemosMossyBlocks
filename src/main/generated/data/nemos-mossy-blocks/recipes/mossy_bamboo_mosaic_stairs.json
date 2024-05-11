@@ -14,5 +14,6 @@
   "result": {
     "count": 4,
     "item": "nemos-mossy-blocks:mossy_bamboo_mosaic_stairs"
-  }
+  },
+  "show_notification": true
 }

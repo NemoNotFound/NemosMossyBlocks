@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "nemos-mossy-blocks:mossy_dark_oak_fence_gate"
-  }
+  },
+  "show_notification": true
 }

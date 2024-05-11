@@ -14,5 +14,6 @@
   "result": {
     "count": 3,
     "item": "nemos-mossy-blocks:mossy_warped_hyphae"
-  }
+  },
+  "show_notification": true
 }

@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_mossy_bamboo_mosaic"
+      "has_mossy_bamboo_mosaic",
+      "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
       "nemos-mossy-blocks:mossy_bamboo_mosaic_stairs"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }
