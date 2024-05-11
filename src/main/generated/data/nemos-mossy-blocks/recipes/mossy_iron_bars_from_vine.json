@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_iron_bars",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_bars"
+    },
+    {
+      "item": "minecraft:vine"
+    }
+  ],
+  "result": {
+    "item": "nemos-mossy-blocks:mossy_iron_bars"
+  }
+}
