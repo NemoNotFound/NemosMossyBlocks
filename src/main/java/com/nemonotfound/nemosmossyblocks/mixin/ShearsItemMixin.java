@@ -5,7 +5,6 @@ import com.nemonotfound.nemosmossyblocks.item.ModItems;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
@@ -47,16 +46,15 @@ public class ShearsItemMixin {
             }
             world.setBlockState(blockPos, optional.get(), Block.NOTIFY_ALL_AND_REDRAW);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, blockPos, GameEvent.Emitter.of(playerEntity, optional.get()));
-            ItemScatterer.spawn(world, blockPos.offset(playerEntity.getFacing().getOpposite()),
+            ItemScatterer.spawn(world, blockPos.offset(playerEntity.getHorizontalFacing().getOpposite()),
                     DefaultedList.ofSize(1, new ItemStack(ModItems.MOSS_BALL)));
 
             if (playerEntity != null) {
-                itemStack.damage(1, playerEntity, LivingEntity.getSlotForHand(context.getHand()));
+                itemStack.damage(1, playerEntity, player -> player.sendToolBreakStatus(context.getHand()));
             }
 
             callbackInfoReturnable.setReturnValue(ActionResult.success(world.isClient));
         }
-
     }
 
     @Unique
