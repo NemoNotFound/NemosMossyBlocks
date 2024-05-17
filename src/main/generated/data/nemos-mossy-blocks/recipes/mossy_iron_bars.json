@@ -13,7 +13,6 @@
   ],
   "result": {
     "count": 6,
-    "item": "nemos-mossy-blocks:mossy_iron_bars"
-  },
-  "show_notification": true
+    "id": "nemos-mossy-blocks:mossy_iron_bars"
+  }
 }

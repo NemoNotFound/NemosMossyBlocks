@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:moss_block"
-            ]
+            "items": "minecraft:moss_block"
           }
         ]
       },
@@ -22,14 +20,13 @@
   },
   "requirements": [
     [
-      "has_moss_block",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_moss_block"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:mossy_iron_bars_from_moss_block"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

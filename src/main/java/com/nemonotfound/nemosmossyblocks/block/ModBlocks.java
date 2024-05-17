@@ -526,9 +526,11 @@ public class ModBlocks {
     public static final Block MOSSY_IRON_BARS = registerBlock("mossy_iron_bars",
             new PaneBlock(AbstractBlock.Settings.copy(IRON_BARS)), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
+    public static final Block MOSSY_IRON_BARS = registerBlock("mossy_iron_bars",
+            new PaneBlock(IRON_BARS.getSettings()), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
 
     public static void registerBlocks() {
-        log.info("Register blocks");
+        log.debug("Register blocks");
     }
 
     @SafeVarargs
