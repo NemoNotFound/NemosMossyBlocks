@@ -8,7 +8,7 @@ import net.minecraft.client.particle.Particle;
 import net.minecraft.client.particle.ParticleFactory;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.item.ItemStack;
-import net.minecraft.particle.SimpleParticleType;
+import net.minecraft.particle.DefaultParticleType;
 
 @Environment(value= EnvType.CLIENT)
 public class ModCrackParticle extends CrackParticle {
@@ -19,10 +19,10 @@ public class ModCrackParticle extends CrackParticle {
 
     @Environment(value=EnvType.CLIENT)
     public static class MossBallFactory
-            implements ParticleFactory<SimpleParticleType> {
+            implements ParticleFactory<DefaultParticleType> {
 
         @Override
-        public Particle createParticle(SimpleParticleType simpleParticleType, ClientWorld clientWorld,
+        public Particle createParticle(DefaultParticleType simpleParticleType, ClientWorld clientWorld,
                                        double d, double e, double f, double g, double h, double i) {
             return new ModCrackParticle(clientWorld, d, e, f, new ItemStack(ModItems.MOSS_BALL));
         }
