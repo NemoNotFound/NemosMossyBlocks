@@ -44,7 +44,7 @@ public class ShearsItemMixin {
             if (playerEntity instanceof ServerPlayerEntity) {
                 Criteria.ITEM_USED_ON_BLOCK.trigger((ServerPlayerEntity)playerEntity, blockPos, itemStack);
             }
-            world.setBlockState(blockPos, optional.get(), Block.NOTIFY_ALL_AND_REDRAW);
+            world.setBlockState(blockPos, optional.get());
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, blockPos, GameEvent.Emitter.of(playerEntity, optional.get()));
             ItemScatterer.spawn(world, blockPos.offset(playerEntity.getHorizontalFacing().getOpposite()),
                     DefaultedList.ofSize(1, new ItemStack(ModItems.MOSS_BALL)));

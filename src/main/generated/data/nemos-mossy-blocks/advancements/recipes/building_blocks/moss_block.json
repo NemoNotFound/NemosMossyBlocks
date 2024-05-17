@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_moss_ball"
+      "has_moss_ball",
+      "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:moss_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

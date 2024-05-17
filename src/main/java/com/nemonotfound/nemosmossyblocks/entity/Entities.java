@@ -18,7 +18,7 @@ public class Entities {
                     .setDimensions(0.25f, 0.25f)
                     .maxTrackingRange(4)
                     .trackingTickInterval(10)
-                    .build());
+                    .build("moss_ball"));
 
     public static void registerEntities() {
         log.debug("Register entities");
