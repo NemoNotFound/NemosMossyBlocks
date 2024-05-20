@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "nemos-mossy-blocks:mossy_bamboo_block",
-    "nemos-mossy-blocks:mossy_stripped_bamboo_block"
+    "nemos-mossy-blocks:mossy_bamboo_block"
   ]
 }

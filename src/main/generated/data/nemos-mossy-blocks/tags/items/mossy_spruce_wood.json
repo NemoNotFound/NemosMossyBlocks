@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "nemos-mossy-blocks:mossy_spruce_log",
-    "nemos-mossy-blocks:mossy_stripped_spruce_log",
-    "nemos-mossy-blocks:mossy_spruce_wood",
-    "nemos-mossy-blocks:mossy_stripped_spruce_wood"
+    "nemos-mossy-blocks:mossy_spruce_wood"
   ]
 }
