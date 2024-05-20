@@ -19,7 +19,6 @@ public class NemosMossyBlocks implements ModInitializer {
 		log.info("Thank you for using Nemo's Mossy Blocks!");
 		ModBlocks.registerBlocks();
 		ModItemGroups.registerItemGroups();
-		ModItemGroups.registerItemsToItemGroups();
 		ModItems.registerItems();
 		Entities.registerEntities();
 	}

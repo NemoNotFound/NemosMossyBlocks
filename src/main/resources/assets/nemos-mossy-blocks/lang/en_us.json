@@ -178,5 +178,7 @@
 
   "block.nemos-mossy-blocks.mossy_iron_bars": "Mossy Iron Bars",
 
-  "item.nemos-mossy-blocks.moss_ball": "Moss Ball"
+  "item.nemos-mossy-blocks.moss_ball": "Moss Ball",
+
+  "itemGroup.nemos-mossy-blocks.nemos-mossy-blocks-group": "Nemo's Mossy Blocks"
 }

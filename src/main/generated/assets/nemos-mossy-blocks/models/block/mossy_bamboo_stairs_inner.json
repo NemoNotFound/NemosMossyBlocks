@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "nemos-mossy-blocks:block/mossy_bamboo_planks",
-    "side": "nemos-mossy-blocks:block/mossy_bamboo_planks",
-    "top": "nemos-mossy-blocks:block/mossy_bamboo_planks"
-  }
-}
