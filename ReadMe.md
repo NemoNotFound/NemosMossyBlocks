@@ -11,8 +11,8 @@ You can also shear mossy blocks now!
 
 I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do. <br>
 Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/NemosMossyBlocks/discussions/) :)
-<br>
-For more information and the recipes check the [wiki](https://www.nemonotfound.com/minecraft-mods/nemos-mossy-blocks/wiki).
+<br><br>
+For more information check the [wiki](https://www.nemonotfound.com/minecraft-mods/nemos-mossy-blocks/wiki).
 
 [![ko-fi donation](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nemonotfound)
 <br>
