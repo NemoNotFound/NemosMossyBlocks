@@ -1,7 +1,7 @@
-# Changelog v1.4.2
+# Changelog v1.4.3
 
 ## Fixes
-- Mossy Iron Bars could be crafted by normal iron ingots
+- Mossy Fences do not connect to other fences
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>
