@@ -126,5 +126,18 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOSSY_STONE_PRESSURE_PLATE)
                 .add(ModBlocks.MOSSY_STONE_BUTTON)
                 .add(ModBlocks.MOSSY_IRON_BARS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.MOSSY_ACACIA_FENCE)
+                .add(ModBlocks.MOSSY_BAMBOO_FENCE)
+                .add(ModBlocks.MOSSY_BIRCH_FENCE)
+                .add(ModBlocks.MOSSY_CHERRY_FENCE)
+                .add(ModBlocks.MOSSY_CRIMSON_FENCE)
+                .add(ModBlocks.MOSSY_DARK_OAK_FENCE)
+                .add(ModBlocks.MOSSY_JUNGLE_FENCE)
+                .add(ModBlocks.MOSSY_MANGROVE_FENCE)
+                .add(ModBlocks.MOSSY_OAK_FENCE)
+                .add(ModBlocks.MOSSY_SPRUCE_FENCE)
+                .add(ModBlocks.MOSSY_WARPED_FENCE);
     }
 }
