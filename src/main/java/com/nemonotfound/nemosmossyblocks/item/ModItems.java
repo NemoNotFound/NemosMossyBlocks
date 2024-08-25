@@ -24,6 +24,15 @@ public class ModItems {
     public static final Item MOSSY_OAK_FENCE_GATE = registerBlockItem("mossy_oak_fence_gate", ModBlocks.MOSSY_OAK_FENCE_GATE);
     public static final Item MOSSY_OAK_PRESSURE_PLATE = registerBlockItem("mossy_oak_pressure_plate", ModBlocks.MOSSY_OAK_PRESSURE_PLATE);
     public static final Item MOSSY_OAK_BUTTON = registerBlockItem("mossy_oak_button", ModBlocks.MOSSY_OAK_BUTTON);
+    public static final Item MOSSY_SPRUCE_LOG = registerBlockItem("mossy_spruce_log", ModBlocks.MOSSY_SPRUCE_LOG);
+    public static final Item MOSSY_SPRUCE_WOOD = registerBlockItem("mossy_spruce_wood", ModBlocks.MOSSY_SPRUCE_WOOD);
+    public static final Item MOSSY_SPRUCE_PLANKS = registerBlockItem("mossy_spruce_planks", ModBlocks.MOSSY_SPRUCE_PLANKS);
+    public static final Item MOSSY_SPRUCE_STAIRS = registerBlockItem("mossy_spruce_stairs", ModBlocks.MOSSY_SPRUCE_STAIRS);
+    public static final Item MOSSY_SPRUCE_SLAB = registerBlockItem("mossy_spruce_slab", ModBlocks.MOSSY_SPRUCE_SLAB);
+    public static final Item MOSSY_SPRUCE_FENCE = registerBlockItem("mossy_spruce_fence", ModBlocks.MOSSY_SPRUCE_FENCE);
+    public static final Item MOSSY_SPRUCE_FENCE_GATE = registerBlockItem("mossy_spruce_fence_gate", ModBlocks.MOSSY_SPRUCE_FENCE_GATE);
+    public static final Item MOSSY_SPRUCE_PRESSURE_PLATE = registerBlockItem("mossy_spruce_pressure_plate", ModBlocks.MOSSY_SPRUCE_PRESSURE_PLATE);
+    public static final Item MOSSY_SPRUCE_BUTTON = registerBlockItem("mossy_spruce_button", ModBlocks.MOSSY_SPRUCE_BUTTON);
     public static final Item MOSSY_CHISELED_STONE_BRICKS = registerBlockItem("mossy_chiseled_stone_bricks",
             ModBlocks.MOSSY_CHISELED_STONE_BRICKS);
     public static final Item INFESTED_MOSSY_CHISELED_STONE_BRICKS = registerBlockItem("infested_mossy_chiseled_stone_bricks",

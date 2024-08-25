@@ -256,31 +256,17 @@ public class ModBlocks {
                             .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block MOSSY_OAK_BUTTON = registerBlock("mossy_oak_button", Blocks.createWoodenButtonBlock(BlockSetType.OAK));
-    public static final Block MOSSY_SPRUCE_LOG = registerBlock("mossy_spruce_log",
-            Blocks.createLogBlock(MapColor.SPRUCE_BROWN, MapColor.BROWN), ItemGroups.BUILDING_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_SPRUCE_WOOD = registerBlock("mossy_spruce_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_SPRUCE_PLANKS = registerBlock("mossy_spruce_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN)
-                    .instrument(NoteBlockInstrument.BASS).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
-            ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_SPRUCE_STAIRS = registerBlock("mossy_spruce_stairs",
-            Blocks.createStairsBlock(MOSSY_SPRUCE_PLANKS), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_SPRUCE_SLAB = registerBlock("mossy_spruce_slab",
-            new SlabBlock(MOSSY_SPRUCE_PLANKS.getSettings()), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_SPRUCE_FENCE = registerBlock("mossy_spruce_fence",
-            new FenceBlock(AbstractBlock.Settings.copy(SPRUCE_FENCE)),
-            ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_SPRUCE_FENCE_GATE = registerBlock("mossy_spruce_fence_gate",
-            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.copy(SPRUCE_FENCE_GATE)),
-            ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
+    public static final Block MOSSY_SPRUCE_LOG = registerBlock("mossy_spruce_log", Blocks.createLogBlock(MapColor.SPRUCE_BROWN, MapColor.BROWN));
+    public static final Block MOSSY_SPRUCE_WOOD = registerBlock("mossy_spruce_wood", new PillarBlock(AbstractBlock.Settings.copy(SPRUCE_WOOD)));
+    public static final Block MOSSY_SPRUCE_PLANKS = registerBlock("mossy_spruce_planks", new Block(AbstractBlock.Settings.copy(SPRUCE_PLANKS)));
+    public static final Block MOSSY_SPRUCE_STAIRS = registerBlock("mossy_spruce_stairs", Blocks.createStairsBlock(MOSSY_SPRUCE_PLANKS));
+    public static final Block MOSSY_SPRUCE_SLAB = registerBlock("mossy_spruce_slab", new SlabBlock(MOSSY_SPRUCE_PLANKS.getSettings()));
+    public static final Block MOSSY_SPRUCE_FENCE = registerBlock("mossy_spruce_fence", new FenceBlock(AbstractBlock.Settings.copy(SPRUCE_FENCE)));
+    public static final Block MOSSY_SPRUCE_FENCE_GATE = registerBlock("mossy_spruce_fence_gate", new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.copy(SPRUCE_FENCE_GATE)));
     public static final Block MOSSY_SPRUCE_PRESSURE_PLATE = registerBlock("mossy_spruce_pressure_plate",
             new PressurePlateBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().mapColor(SPRUCE_PLANKS
                             .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
-                    .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
+                    .burnable().pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block MOSSY_SPRUCE_BUTTON = registerBlock("mossy_spruce_button",
             Blocks.createWoodenButtonBlock(BlockSetType.SPRUCE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_STEM = registerBlock("mossy_warped_stem",

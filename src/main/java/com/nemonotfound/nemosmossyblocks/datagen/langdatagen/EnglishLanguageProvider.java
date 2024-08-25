@@ -32,6 +32,15 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.MOSSY_OAK_FENCE_GATE, "Mossy Oak Fence Gate");
         translationBuilder.add(ModItems.MOSSY_OAK_PRESSURE_PLATE, "Mossy Oak Pressure Plate");
         translationBuilder.add(ModItems.MOSSY_OAK_BUTTON, "Mossy Oak Button");
+        translationBuilder.add(ModItems.MOSSY_SPRUCE_LOG, "Mossy Spruce Log");
+        translationBuilder.add(ModItems.MOSSY_SPRUCE_WOOD, "Mossy Spruce Wood");
+        translationBuilder.add(ModItems.MOSSY_SPRUCE_PLANKS, "Mossy Spruce Planks");
+        translationBuilder.add(ModItems.MOSSY_SPRUCE_STAIRS, "Mossy Spruce Stairs");
+        translationBuilder.add(ModItems.MOSSY_SPRUCE_SLAB, "Mossy Spruce Slab");
+        translationBuilder.add(ModItems.MOSSY_SPRUCE_FENCE, "Mossy Spruce Fence");
+        translationBuilder.add(ModItems.MOSSY_SPRUCE_FENCE_GATE, "Mossy Spruce Fence Gate");
+        translationBuilder.add(ModItems.MOSSY_SPRUCE_PRESSURE_PLATE, "Mossy Spruce Pressure Plate");
+        translationBuilder.add(ModItems.MOSSY_SPRUCE_BUTTON, "Mossy Spruce Button");
 
         try {
             Optional<Path> optionalPath = dataOutput.getModContainer().findPath("en_us.json");
