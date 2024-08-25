@@ -183,5 +183,11 @@ public class BlockUtils {
             .put(Blocks.MOSSY_STONE_BRICK_SLAB, Blocks.STONE_BRICK_SLAB)
             .put(Blocks.MOSSY_STONE_BRICK_WALL, Blocks.STONE_BRICK_WALL)
             .put(Blocks.INFESTED_MOSSY_STONE_BRICKS, Blocks.INFESTED_STONE_BRICKS)
+            .put(ModBlocks.INFESTED_MOSSY_CHISELED_STONE_BRICKS, Blocks.INFESTED_CHISELED_STONE_BRICKS)
+            .put(ModBlocks.MOSSY_CHISELED_STONE_BRICKS, Blocks.CHISELED_STONE_BRICKS)
+            .put(ModBlocks.MOSSY_BRICKS, Blocks.BRICKS)
+            .put(ModBlocks.MOSSY_BRICK_SLAB, Blocks.BRICK_SLAB)
+            .put(ModBlocks.MOSSY_BRICK_STAIRS, Blocks.BRICK_STAIRS)
+            .put(ModBlocks.MOSSY_BRICK_WALL, Blocks.BRICK_WALL)
             .build();
 }

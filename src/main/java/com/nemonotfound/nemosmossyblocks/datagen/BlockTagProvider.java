@@ -125,7 +125,13 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOSSY_STONE_SLAB)
                 .add(ModBlocks.MOSSY_STONE_PRESSURE_PLATE)
                 .add(ModBlocks.MOSSY_STONE_BUTTON)
-                .add(ModBlocks.MOSSY_IRON_BARS);
+                .add(ModBlocks.MOSSY_IRON_BARS)
+                .add(ModBlocks.MOSSY_CHISELED_STONE_BRICKS)
+                .add(ModBlocks.INFESTED_MOSSY_CHISELED_STONE_BRICKS)
+                .add(ModBlocks.MOSSY_BRICKS)
+                .add(ModBlocks.MOSSY_BRICK_SLAB)
+                .add(ModBlocks.MOSSY_BRICK_STAIRS)
+                .add(ModBlocks.MOSSY_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.MOSSY_ACACIA_FENCE)
@@ -139,5 +145,8 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOSSY_OAK_FENCE)
                 .add(ModBlocks.MOSSY_SPRUCE_FENCE)
                 .add(ModBlocks.MOSSY_WARPED_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.MOSSY_BRICK_WALL);
     }
 }

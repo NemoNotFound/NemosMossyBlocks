@@ -147,6 +147,14 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.MOSSY_WARPED_STEM).stem(ModBlocks.MOSSY_WARPED_STEM).wood(ModBlocks.MOSSY_WARPED_HYPHAE);
 
         registerIronBars(blockStateModelGenerator);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOSSY_CHISELED_STONE_BRICKS);
+        blockStateModelGenerator.registerParented(ModBlocks.MOSSY_CHISELED_STONE_BRICKS, ModBlocks.INFESTED_MOSSY_CHISELED_STONE_BRICKS);
+
+        BlockTexturePool mossyBricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOSSY_BRICKS);
+        mossyBricksTexturePool.stairs(ModBlocks.MOSSY_BRICK_STAIRS);
+        mossyBricksTexturePool.slab(ModBlocks.MOSSY_BRICK_SLAB);
+        mossyBricksTexturePool.wall(ModBlocks.MOSSY_BRICK_WALL);
     }
 
     @Override

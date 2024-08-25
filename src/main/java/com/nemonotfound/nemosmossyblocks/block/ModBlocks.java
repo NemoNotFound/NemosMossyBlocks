@@ -242,33 +242,20 @@ public class ModBlocks {
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_BUTTON = registerBlock("mossy_mangrove_button",
             Blocks.createWoodenButtonBlock(BlockSetType.MANGROVE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_OAK_LOG = registerBlock("mossy_oak_log",
-            Blocks.createLogBlock(MapColor.OAK_TAN, MapColor.SPRUCE_BROWN), ItemGroups.BUILDING_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_OAK_WOOD = registerBlock("mossy_oak_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_OAK_PLANKS = registerBlock("mossy_oak_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
-            ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_OAK_STAIRS = registerBlock("mossy_oak_stairs",
-            Blocks.createStairsBlock(MOSSY_OAK_PLANKS), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_OAK_SLAB = registerBlock("mossy_oak_slab",
-            new SlabBlock(MOSSY_OAK_PLANKS.getSettings()), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
+    public static final Block MOSSY_OAK_LOG = registerBlock("mossy_oak_log", Blocks.createLogBlock(MapColor.OAK_TAN, MapColor.SPRUCE_BROWN));
+    public static final Block MOSSY_OAK_WOOD = registerBlock("mossy_oak_wood", new PillarBlock(AbstractBlock.Settings.copy(OAK_WOOD)));
+    public static final Block MOSSY_OAK_PLANKS = registerBlock("mossy_oak_planks", new Block(AbstractBlock.Settings.copy(OAK_PLANKS)));
+    public static final Block MOSSY_OAK_STAIRS = registerBlock("mossy_oak_stairs", Blocks.createStairsBlock(MOSSY_OAK_PLANKS));
+    public static final Block MOSSY_OAK_SLAB = registerBlock("mossy_oak_slab", new SlabBlock(MOSSY_OAK_PLANKS.getSettings()));
     public static final Block MOSSY_OAK_FENCE = registerBlock("mossy_oak_fence",
-            new FenceBlock(AbstractBlock.Settings.copy(OAK_FENCE)),
-            ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
+            new FenceBlock(AbstractBlock.Settings.copy(OAK_FENCE)));
     public static final Block MOSSY_OAK_FENCE_GATE = registerBlock("mossy_oak_fence_gate",
-            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(OAK_FENCE_GATE)),
-            ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(OAK_FENCE_GATE)));
     public static final Block MOSSY_OAK_PRESSURE_PLATE = registerBlock("mossy_oak_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create().mapColor(OAK_PLANKS
                             .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
-                    .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_OAK_BUTTON = registerBlock("mossy_oak_button",
-            Blocks.createWoodenButtonBlock(BlockSetType.OAK), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
+                    .burnable().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block MOSSY_OAK_BUTTON = registerBlock("mossy_oak_button", Blocks.createWoodenButtonBlock(BlockSetType.OAK));
     public static final Block MOSSY_SPRUCE_LOG = registerBlock("mossy_spruce_log",
             Blocks.createLogBlock(MapColor.SPRUCE_BROWN, MapColor.BROWN), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -440,6 +427,18 @@ public class ModBlocks {
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_IRON_BARS = registerBlock("mossy_iron_bars",
             new PaneBlock(IRON_BARS.getSettings()), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
+    public static final Block MOSSY_CHISELED_STONE_BRICKS = registerBlock("mossy_chiseled_stone_bricks",
+            new Block(AbstractBlock.Settings.copy(CHISELED_STONE_BRICKS)));
+    public static final Block INFESTED_MOSSY_CHISELED_STONE_BRICKS = registerBlock("infested_mossy_chiseled_stone_bricks",
+            new InfestedBlock(MOSSY_CHISELED_STONE_BRICKS, AbstractBlock.Settings.copy(INFESTED_CHISELED_STONE_BRICKS)));
+    public static final Block MOSSY_BRICKS = registerBlock("mossy_bricks",
+            new Block(AbstractBlock.Settings.copy(BRICKS)));
+    public static final Block MOSSY_BRICK_SLAB = registerBlock("mossy_brick_slab",
+            new SlabBlock(MOSSY_BRICKS.getSettings()));
+    public static final Block MOSSY_BRICK_STAIRS = registerBlock("mossy_brick_stairs",
+            Blocks.createStairsBlock(MOSSY_BRICKS));
+    public static final Block MOSSY_BRICK_WALL = registerBlock("mossy_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copyShallow(MOSSY_BRICKS).solid()));
 
     public static void registerBlocks() {
         log.debug("Register blocks");
@@ -459,5 +458,9 @@ public class ModBlocks {
         }
 
         return registeredBlock;
+    }
+
+    private static Block registerBlock(String path, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, path), block);
     }
 }

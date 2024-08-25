@@ -5,6 +5,12 @@
     "nemos-mossy-blocks:mossy_stone_slab",
     "nemos-mossy-blocks:mossy_stone_pressure_plate",
     "nemos-mossy-blocks:mossy_stone_button",
-    "nemos-mossy-blocks:mossy_iron_bars"
+    "nemos-mossy-blocks:mossy_iron_bars",
+    "nemos-mossy-blocks:mossy_chiseled_stone_bricks",
+    "nemos-mossy-blocks:infested_mossy_chiseled_stone_bricks",
+    "nemos-mossy-blocks:mossy_bricks",
+    "nemos-mossy-blocks:mossy_brick_slab",
+    "nemos-mossy-blocks:mossy_brick_stairs",
+    "nemos-mossy-blocks:mossy_brick_wall"
   ]
 }

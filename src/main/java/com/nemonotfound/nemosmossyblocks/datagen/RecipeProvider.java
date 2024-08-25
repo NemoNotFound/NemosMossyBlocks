@@ -71,6 +71,11 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.WHITE_STAINED_GLASS, ModBlocks.MOSSY_WHITE_STAINED_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.IRON_BARS, ModBlocks.MOSSY_IRON_BARS, "mossy_iron_bars");
+        createMossyBlockRecipe(exporter, Blocks.CHISELED_STONE_BRICKS, ModBlocks.MOSSY_CHISELED_STONE_BRICKS, "mossy_chiseled_stone_bricks");
+        createMossyBlockRecipe(exporter, Blocks.BRICKS, ModBlocks.MOSSY_BRICKS, "mossy_bricks");
+        createMossyBlockRecipe(exporter, Blocks.BRICK_SLAB, ModBlocks.MOSSY_BRICK_SLAB, "mossy_brick_slab");
+        createMossyBlockRecipe(exporter, Blocks.BRICK_STAIRS, ModBlocks.MOSSY_BRICK_STAIRS, "mossy_brick_stairs");
+        createMossyBlockRecipe(exporter, Blocks.BRICK_WALL, ModBlocks.MOSSY_BRICK_WALL, "mossy_brick_wall");
 
         createPlanksRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_ACACIA_WOOD);
         createPlanksRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_BAMBOO_BLOCKS);
@@ -240,6 +245,14 @@ public class RecipeProvider extends FabricRecipeProvider {
                 Blocks.MOSSY_STONE_BRICK_STAIRS, ModBlocks.MOSSY_STONE);
         VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
                 Blocks.MOSSY_STONE_BRICK_WALL, ModBlocks.MOSSY_STONE);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_CHISELED_STONE_BRICKS, ModBlocks.MOSSY_STONE);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_BRICK_SLAB, ModBlocks.MOSSY_BRICKS);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_BRICK_STAIRS, ModBlocks.MOSSY_BRICKS);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_BRICK_WALL, ModBlocks.MOSSY_BRICKS);
 
         createGlassPaneRecipe(exporter, ModBlocks.MOSSY_GLASS, ModBlocks.MOSSY_GLASS_PANE);
         createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BLACK_STAINED_GLASS, ModBlocks.MOSSY_BLACK_STAINED_GLASS_PANE,
