@@ -33,6 +33,15 @@ public class ModItems {
     public static final Item MOSSY_SPRUCE_FENCE_GATE = registerBlockItem("mossy_spruce_fence_gate", ModBlocks.MOSSY_SPRUCE_FENCE_GATE);
     public static final Item MOSSY_SPRUCE_PRESSURE_PLATE = registerBlockItem("mossy_spruce_pressure_plate", ModBlocks.MOSSY_SPRUCE_PRESSURE_PLATE);
     public static final Item MOSSY_SPRUCE_BUTTON = registerBlockItem("mossy_spruce_button", ModBlocks.MOSSY_SPRUCE_BUTTON);
+    public static final Item MOSSY_BIRCH_LOG = registerBlockItem("mossy_birch_log", ModBlocks.MOSSY_BIRCH_LOG);
+    public static final Item MOSSY_BIRCH_WOOD = registerBlockItem("mossy_birch_wood", ModBlocks.MOSSY_BIRCH_WOOD);
+    public static final Item MOSSY_BIRCH_PLANKS = registerBlockItem("mossy_birch_planks", ModBlocks.MOSSY_BIRCH_PLANKS);
+    public static final Item MOSSY_BIRCH_STAIRS = registerBlockItem("mossy_birch_stairs", ModBlocks.MOSSY_BIRCH_STAIRS);
+    public static final Item MOSSY_BIRCH_SLAB = registerBlockItem("mossy_birch_slab", ModBlocks.MOSSY_BIRCH_SLAB);
+    public static final Item MOSSY_BIRCH_FENCE = registerBlockItem("mossy_birch_fence", ModBlocks.MOSSY_BIRCH_FENCE);
+    public static final Item MOSSY_BIRCH_FENCE_GATE = registerBlockItem("mossy_birch_fence_gate", ModBlocks.MOSSY_BIRCH_FENCE_GATE);
+    public static final Item MOSSY_BIRCH_PRESSURE_PLATE = registerBlockItem("mossy_birch_pressure_plate", ModBlocks.MOSSY_BIRCH_PRESSURE_PLATE);
+    public static final Item MOSSY_BIRCH_BUTTON = registerBlockItem("mossy_birch_button", ModBlocks.MOSSY_BIRCH_BUTTON);
     public static final Item MOSSY_CHISELED_STONE_BRICKS = registerBlockItem("mossy_chiseled_stone_bricks",
             ModBlocks.MOSSY_CHISELED_STONE_BRICKS);
     public static final Item INFESTED_MOSSY_CHISELED_STONE_BRICKS = registerBlockItem("infested_mossy_chiseled_stone_bricks",
@@ -47,7 +56,7 @@ public class ModItems {
             ModBlocks.MOSSY_BRICK_WALL);
 
     public static void registerItems() {
-        log.debug("Register items");
+        log.debug("Registering items");
     }
 
     private static Item registerItem(String path, Item item) {

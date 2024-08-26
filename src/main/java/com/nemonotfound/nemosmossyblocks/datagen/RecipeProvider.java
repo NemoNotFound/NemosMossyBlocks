@@ -73,9 +73,6 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.IRON_BARS, ModBlocks.MOSSY_IRON_BARS, "mossy_iron_bars");
         createMossyBlockRecipe(exporter, Blocks.CHISELED_STONE_BRICKS, ModBlocks.MOSSY_CHISELED_STONE_BRICKS, "mossy_chiseled_stone_bricks");
         createMossyBlockRecipe(exporter, Blocks.BRICKS, ModBlocks.MOSSY_BRICKS, "mossy_bricks");
-        createMossyBlockRecipe(exporter, Blocks.BRICK_SLAB, ModBlocks.MOSSY_BRICK_SLAB, "mossy_brick_slab");
-        createMossyBlockRecipe(exporter, Blocks.BRICK_STAIRS, ModBlocks.MOSSY_BRICK_STAIRS, "mossy_brick_stairs");
-        createMossyBlockRecipe(exporter, Blocks.BRICK_WALL, ModBlocks.MOSSY_BRICK_WALL, "mossy_brick_wall");
 
         createPlanksRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_ACACIA_WOOD);
         createPlanksRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_BAMBOO_BLOCKS);

@@ -80,33 +80,18 @@ public class ModBlocks {
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BAMBOO_BUTTON = registerBlock("mossy_bamboo_button",
             Blocks.createWoodenButtonBlock(BlockSetType.BAMBOO), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BIRCH_LOG = registerBlock("mossy_birch_log",
-            Blocks.createLogBlock(MapColor.PALE_YELLOW, MapColor.OFF_WHITE), ItemGroups.BUILDING_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BIRCH_WOOD = registerBlock("mossy_birch_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BIRCH_PLANKS = registerBlock("mossy_birch_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
-            ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BIRCH_STAIRS = registerBlock("mossy_birch_stairs",
-            Blocks.createStairsBlock(MOSSY_BIRCH_PLANKS), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BIRCH_SLAB = registerBlock("mossy_birch_slab",
-            new SlabBlock(MOSSY_BIRCH_PLANKS.getSettings()), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BIRCH_FENCE = registerBlock("mossy_birch_fence",
-            new FenceBlock(AbstractBlock.Settings.copy(BIRCH_FENCE)),
-            ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BIRCH_FENCE_GATE = registerBlock("mossy_birch_fence_gate",
-            new FenceGateBlock(WoodType.BIRCH, AbstractBlock.Settings.copy(BIRCH_FENCE_GATE)),
-            ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
+    public static final Block MOSSY_BIRCH_LOG = registerBlock("mossy_birch_log", Blocks.createLogBlock(MapColor.PALE_YELLOW, MapColor.OFF_WHITE));
+    public static final Block MOSSY_BIRCH_WOOD = registerBlock("mossy_birch_wood", new PillarBlock(AbstractBlock.Settings.copy(BIRCH_WOOD)));
+    public static final Block MOSSY_BIRCH_PLANKS = registerBlock("mossy_birch_planks", new Block(AbstractBlock.Settings.copy(BIRCH_PLANKS)));
+    public static final Block MOSSY_BIRCH_STAIRS = registerBlock("mossy_birch_stairs", Blocks.createStairsBlock(MOSSY_BIRCH_PLANKS));
+    public static final Block MOSSY_BIRCH_SLAB = registerBlock("mossy_birch_slab", new SlabBlock(MOSSY_BIRCH_PLANKS.getSettings()));
+    public static final Block MOSSY_BIRCH_FENCE = registerBlock("mossy_birch_fence", new FenceBlock(AbstractBlock.Settings.copy(BIRCH_FENCE)));
+    public static final Block MOSSY_BIRCH_FENCE_GATE = registerBlock("mossy_birch_fence_gate", new FenceGateBlock(WoodType.BIRCH, AbstractBlock.Settings.copy(BIRCH_FENCE_GATE)));
     public static final Block MOSSY_BIRCH_PRESSURE_PLATE = registerBlock("mossy_birch_pressure_plate",
             new PressurePlateBlock(BlockSetType.BIRCH, AbstractBlock.Settings.create().mapColor(BIRCH_PLANKS
                             .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
-                    .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BIRCH_BUTTON = registerBlock("mossy_birch_button",
-            Blocks.createWoodenButtonBlock(BlockSetType.BIRCH), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
+                    .burnable().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block MOSSY_BIRCH_BUTTON = registerBlock("mossy_birch_button", Blocks.createWoodenButtonBlock(BlockSetType.BIRCH));
     public static final Block MOSSY_CHERRY_LOG = registerBlock("mossy_cherry_log",
             Blocks.createLogBlock(MapColor.TERRACOTTA_WHITE, MapColor.TERRACOTTA_GRAY, BlockSoundGroup.CHERRY_WOOD), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -427,7 +412,7 @@ public class ModBlocks {
             new WallBlock(AbstractBlock.Settings.copyShallow(MOSSY_BRICKS).solid()));
 
     public static void registerBlocks() {
-        log.debug("Register blocks");
+        log.debug("Registering blocks");
     }
 
     @SafeVarargs

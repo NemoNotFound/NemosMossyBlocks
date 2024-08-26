@@ -21,7 +21,7 @@ public class Entities {
                     .build());
 
     public static void registerEntities() {
-        log.debug("Register entities");
+        log.debug("Registering entities");
     }
 
 }
