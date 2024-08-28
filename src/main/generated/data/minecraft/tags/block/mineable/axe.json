@@ -111,6 +111,17 @@
     "nemos-mossy-blocks:mossy_bamboo_door",
     "nemos-mossy-blocks:mossy_jungle_door",
     "nemos-mossy-blocks:mossy_crimson_door",
-    "nemos-mossy-blocks:mossy_warped_door"
+    "nemos-mossy-blocks:mossy_warped_door",
+    "nemos-mossy-blocks:mossy_oak_trapdoor",
+    "nemos-mossy-blocks:mossy_spruce_trapdoor",
+    "nemos-mossy-blocks:mossy_birch_trapdoor",
+    "nemos-mossy-blocks:mossy_acacia_trapdoor",
+    "nemos-mossy-blocks:mossy_dark_oak_trapdoor",
+    "nemos-mossy-blocks:mossy_mangrove_trapdoor",
+    "nemos-mossy-blocks:mossy_cherry_trapdoor",
+    "nemos-mossy-blocks:mossy_bamboo_trapdoor",
+    "nemos-mossy-blocks:mossy_jungle_trapdoor",
+    "nemos-mossy-blocks:mossy_crimson_trapdoor",
+    "nemos-mossy-blocks:mossy_warped_trapdoor"
   ]
 }

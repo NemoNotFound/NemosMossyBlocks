@@ -128,7 +128,18 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOSSY_BAMBOO_DOOR)
                 .add(ModBlocks.MOSSY_JUNGLE_DOOR)
                 .add(ModBlocks.MOSSY_CRIMSON_DOOR)
-                .add(ModBlocks.MOSSY_WARPED_DOOR);
+                .add(ModBlocks.MOSSY_WARPED_DOOR)
+                .add(ModBlocks.MOSSY_OAK_TRAPDOOR)
+                .add(ModBlocks.MOSSY_SPRUCE_TRAPDOOR)
+                .add(ModBlocks.MOSSY_BIRCH_TRAPDOOR)
+                .add(ModBlocks.MOSSY_ACACIA_TRAPDOOR)
+                .add(ModBlocks.MOSSY_DARK_OAK_TRAPDOOR)
+                .add(ModBlocks.MOSSY_MANGROVE_TRAPDOOR)
+                .add(ModBlocks.MOSSY_CHERRY_TRAPDOOR)
+                .add(ModBlocks.MOSSY_BAMBOO_TRAPDOOR)
+                .add(ModBlocks.MOSSY_JUNGLE_TRAPDOOR)
+                .add(ModBlocks.MOSSY_CRIMSON_TRAPDOOR)
+                .add(ModBlocks.MOSSY_WARPED_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.MOSSY_STONE)

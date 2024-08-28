@@ -23,6 +23,7 @@ public class ModItems {
     public static final Item MOSSY_OAK_FENCE = registerBlockItem("mossy_oak_fence", ModBlocks.MOSSY_OAK_FENCE);
     public static final Item MOSSY_OAK_FENCE_GATE = registerBlockItem("mossy_oak_fence_gate", ModBlocks.MOSSY_OAK_FENCE_GATE);
     public static final Item MOSSY_OAK_DOOR = registerBlockItem("mossy_oak_door", ModBlocks.MOSSY_OAK_DOOR);
+    public static final Item MOSSY_OAK_TRAPDOOR = registerBlockItem("mossy_oak_trapdoor", ModBlocks.MOSSY_OAK_TRAPDOOR);
     public static final Item MOSSY_OAK_PRESSURE_PLATE = registerBlockItem("mossy_oak_pressure_plate", ModBlocks.MOSSY_OAK_PRESSURE_PLATE);
     public static final Item MOSSY_OAK_BUTTON = registerBlockItem("mossy_oak_button", ModBlocks.MOSSY_OAK_BUTTON);
     public static final Item MOSSY_SPRUCE_LOG = registerBlockItem("mossy_spruce_log", ModBlocks.MOSSY_SPRUCE_LOG);
@@ -33,6 +34,7 @@ public class ModItems {
     public static final Item MOSSY_SPRUCE_FENCE = registerBlockItem("mossy_spruce_fence", ModBlocks.MOSSY_SPRUCE_FENCE);
     public static final Item MOSSY_SPRUCE_FENCE_GATE = registerBlockItem("mossy_spruce_fence_gate", ModBlocks.MOSSY_SPRUCE_FENCE_GATE);
     public static final Item MOSSY_SPRUCE_DOOR = registerBlockItem("mossy_spruce_door", ModBlocks.MOSSY_SPRUCE_DOOR);
+    public static final Item MOSSY_SPRUCE_TRAPDOOR = registerBlockItem("mossy_spruce_trapdoor", ModBlocks.MOSSY_SPRUCE_TRAPDOOR);
     public static final Item MOSSY_SPRUCE_PRESSURE_PLATE = registerBlockItem("mossy_spruce_pressure_plate", ModBlocks.MOSSY_SPRUCE_PRESSURE_PLATE);
     public static final Item MOSSY_SPRUCE_BUTTON = registerBlockItem("mossy_spruce_button", ModBlocks.MOSSY_SPRUCE_BUTTON);
     public static final Item MOSSY_BIRCH_LOG = registerBlockItem("mossy_birch_log", ModBlocks.MOSSY_BIRCH_LOG);
@@ -43,6 +45,7 @@ public class ModItems {
     public static final Item MOSSY_BIRCH_FENCE = registerBlockItem("mossy_birch_fence", ModBlocks.MOSSY_BIRCH_FENCE);
     public static final Item MOSSY_BIRCH_FENCE_GATE = registerBlockItem("mossy_birch_fence_gate", ModBlocks.MOSSY_BIRCH_FENCE_GATE);
     public static final Item MOSSY_BIRCH_DOOR = registerBlockItem("mossy_birch_door", ModBlocks.MOSSY_BIRCH_DOOR);
+    public static final Item MOSSY_BIRCH_TRAPDOOR = registerBlockItem("mossy_birch_trapdoor", ModBlocks.MOSSY_BIRCH_TRAPDOOR);
     public static final Item MOSSY_BIRCH_PRESSURE_PLATE = registerBlockItem("mossy_birch_pressure_plate", ModBlocks.MOSSY_BIRCH_PRESSURE_PLATE);
     public static final Item MOSSY_BIRCH_BUTTON = registerBlockItem("mossy_birch_button", ModBlocks.MOSSY_BIRCH_BUTTON);
     public static final Item MOSSY_JUNGLE_LOG = registerBlockItem("mossy_jungle_log", ModBlocks.MOSSY_JUNGLE_LOG);
@@ -53,6 +56,7 @@ public class ModItems {
     public static final Item MOSSY_JUNGLE_FENCE = registerBlockItem("mossy_jungle_fence", ModBlocks.MOSSY_JUNGLE_FENCE);
     public static final Item MOSSY_JUNGLE_FENCE_GATE = registerBlockItem("mossy_jungle_fence_gate", ModBlocks.MOSSY_JUNGLE_FENCE_GATE);
     public static final Item MOSSY_JUNGLE_DOOR = registerBlockItem("mossy_jungle_door", ModBlocks.MOSSY_JUNGLE_DOOR);
+    public static final Item MOSSY_JUNGLE_TRAPDOOR = registerBlockItem("mossy_jungle_trapdoor", ModBlocks.MOSSY_JUNGLE_TRAPDOOR);
     public static final Item MOSSY_JUNGLE_PRESSURE_PLATE = registerBlockItem("mossy_jungle_pressure_plate", ModBlocks.MOSSY_JUNGLE_PRESSURE_PLATE);
     public static final Item MOSSY_JUNGLE_BUTTON = registerBlockItem("mossy_jungle_button", ModBlocks.MOSSY_JUNGLE_BUTTON);
     public static final Item MOSSY_ACACIA_LOG = registerBlockItem("mossy_acacia_log", ModBlocks.MOSSY_ACACIA_LOG);
@@ -63,6 +67,7 @@ public class ModItems {
     public static final Item MOSSY_ACACIA_FENCE = registerBlockItem("mossy_acacia_fence", ModBlocks.MOSSY_ACACIA_FENCE);
     public static final Item MOSSY_ACACIA_FENCE_GATE = registerBlockItem("mossy_acacia_fence_gate", ModBlocks.MOSSY_ACACIA_FENCE_GATE);
     public static final Item MOSSY_ACACIA_DOOR = registerBlockItem("mossy_acacia_door", ModBlocks.MOSSY_ACACIA_DOOR);
+    public static final Item MOSSY_ACACIA_TRAPDOOR = registerBlockItem("mossy_acacia_trapdoor", ModBlocks.MOSSY_ACACIA_TRAPDOOR);
     public static final Item MOSSY_ACACIA_PRESSURE_PLATE = registerBlockItem("mossy_acacia_pressure_plate", ModBlocks.MOSSY_ACACIA_PRESSURE_PLATE);
     public static final Item MOSSY_ACACIA_BUTTON = registerBlockItem("mossy_acacia_button", ModBlocks.MOSSY_ACACIA_BUTTON);
     public static final Item MOSSY_DARK_OAK_LOG = registerBlockItem("mossy_dark_oak_log", ModBlocks.MOSSY_DARK_OAK_LOG);
@@ -73,6 +78,7 @@ public class ModItems {
     public static final Item MOSSY_DARK_OAK_FENCE = registerBlockItem("mossy_dark_oak_fence", ModBlocks.MOSSY_DARK_OAK_FENCE);
     public static final Item MOSSY_DARK_OAK_FENCE_GATE = registerBlockItem("mossy_dark_oak_fence_gate", ModBlocks.MOSSY_DARK_OAK_FENCE_GATE);
     public static final Item MOSSY_DARK_OAK_DOOR = registerBlockItem("mossy_dark_oak_door", ModBlocks.MOSSY_DARK_OAK_DOOR);
+    public static final Item MOSSY_DARK_OAK_TRAPDOOR = registerBlockItem("mossy_dark_oak_trapdoor", ModBlocks.MOSSY_DARK_OAK_TRAPDOOR);
     public static final Item MOSSY_DARK_OAK_PRESSURE_PLATE = registerBlockItem("mossy_dark_oak_pressure_plate", ModBlocks.MOSSY_DARK_OAK_PRESSURE_PLATE);
     public static final Item MOSSY_DARK_OAK_BUTTON = registerBlockItem("mossy_dark_oak_button", ModBlocks.MOSSY_DARK_OAK_BUTTON);
     public static final Item MOSSY_MANGROVE_LOG = registerBlockItem("mossy_mangrove_log", ModBlocks.MOSSY_MANGROVE_LOG);
@@ -83,6 +89,7 @@ public class ModItems {
     public static final Item MOSSY_MANGROVE_FENCE = registerBlockItem("mossy_mangrove_fence", ModBlocks.MOSSY_MANGROVE_FENCE);
     public static final Item MOSSY_MANGROVE_FENCE_GATE = registerBlockItem("mossy_mangrove_fence_gate", ModBlocks.MOSSY_MANGROVE_FENCE_GATE);
     public static final Item MOSSY_MANGROVE_DOOR = registerBlockItem("mossy_mangrove_door", ModBlocks.MOSSY_MANGROVE_DOOR);
+    public static final Item MOSSY_MANGROVE_TRAPDOOR = registerBlockItem("mossy_mangrove_trapdoor", ModBlocks.MOSSY_MANGROVE_TRAPDOOR);
     public static final Item MOSSY_MANGROVE_PRESSURE_PLATE = registerBlockItem("mossy_mangrove_pressure_plate", ModBlocks.MOSSY_MANGROVE_PRESSURE_PLATE);
     public static final Item MOSSY_MANGROVE_BUTTON = registerBlockItem("mossy_mangrove_button", ModBlocks.MOSSY_MANGROVE_BUTTON);
     public static final Item MOSSY_CHERRY_LOG = registerBlockItem("mossy_cherry_log", ModBlocks.MOSSY_CHERRY_LOG);
@@ -93,6 +100,7 @@ public class ModItems {
     public static final Item MOSSY_CHERRY_FENCE = registerBlockItem("mossy_cherry_fence", ModBlocks.MOSSY_CHERRY_FENCE);
     public static final Item MOSSY_CHERRY_FENCE_GATE = registerBlockItem("mossy_cherry_fence_gate", ModBlocks.MOSSY_CHERRY_FENCE_GATE);
     public static final Item MOSSY_CHERRY_DOOR = registerBlockItem("mossy_cherry_door", ModBlocks.MOSSY_CHERRY_DOOR);
+    public static final Item MOSSY_CHERRY_TRAPDOOR = registerBlockItem("mossy_cherry_trapdoor", ModBlocks.MOSSY_CHERRY_TRAPDOOR);
     public static final Item MOSSY_CHERRY_PRESSURE_PLATE = registerBlockItem("mossy_cherry_pressure_plate", ModBlocks.MOSSY_CHERRY_PRESSURE_PLATE);
     public static final Item MOSSY_CHERRY_BUTTON = registerBlockItem("mossy_cherry_button", ModBlocks.MOSSY_CHERRY_BUTTON);
     public static final Item MOSSY_BAMBOO_BLOCK = registerBlockItem("mossy_bamboo_block", ModBlocks.MOSSY_BAMBOO_BLOCK);
@@ -105,6 +113,7 @@ public class ModItems {
     public static final Item MOSSY_BAMBOO_FENCE = registerBlockItem("mossy_bamboo_fence", ModBlocks.MOSSY_BAMBOO_FENCE);
     public static final Item MOSSY_BAMBOO_FENCE_GATE = registerBlockItem("mossy_bamboo_fence_gate", ModBlocks.MOSSY_BAMBOO_FENCE_GATE);
     public static final Item MOSSY_BAMBOO_DOOR = registerBlockItem("mossy_bamboo_door", ModBlocks.MOSSY_BAMBOO_DOOR);
+    public static final Item MOSSY_BAMBOO_TRAPDOOR = registerBlockItem("mossy_bamboo_trapdoor", ModBlocks.MOSSY_BAMBOO_TRAPDOOR);
     public static final Item MOSSY_BAMBOO_PRESSURE_PLATE = registerBlockItem("mossy_bamboo_pressure_plate", ModBlocks.MOSSY_BAMBOO_PRESSURE_PLATE);
     public static final Item MOSSY_BAMBOO_BUTTON = registerBlockItem("mossy_bamboo_button", ModBlocks.MOSSY_BAMBOO_BUTTON);
     public static final Item MOSSY_CRIMSON_STEM = registerBlockItem("mossy_crimson_stem", ModBlocks.MOSSY_CRIMSON_STEM);
@@ -115,6 +124,7 @@ public class ModItems {
     public static final Item MOSSY_CRIMSON_FENCE = registerBlockItem("mossy_crimson_fence", ModBlocks.MOSSY_CRIMSON_FENCE);
     public static final Item MOSSY_CRIMSON_FENCE_GATE = registerBlockItem("mossy_crimson_fence_gate", ModBlocks.MOSSY_CRIMSON_FENCE_GATE);
     public static final Item MOSSY_CRIMSON_DOOR = registerBlockItem("mossy_crimson_door", ModBlocks.MOSSY_CRIMSON_DOOR);
+    public static final Item MOSSY_CRIMSON_TRAPDOOR = registerBlockItem("mossy_crimson_trapdoor", ModBlocks.MOSSY_CRIMSON_TRAPDOOR);
     public static final Item MOSSY_CRIMSON_PRESSURE_PLATE = registerBlockItem("mossy_crimson_pressure_plate", ModBlocks.MOSSY_CRIMSON_PRESSURE_PLATE);
     public static final Item MOSSY_CRIMSON_BUTTON = registerBlockItem("mossy_crimson_button", ModBlocks.MOSSY_CRIMSON_BUTTON);
     public static final Item MOSSY_WARPED_STEM = registerBlockItem("mossy_warped_stem", ModBlocks.MOSSY_WARPED_STEM);
@@ -125,6 +135,7 @@ public class ModItems {
     public static final Item MOSSY_WARPED_FENCE = registerBlockItem("mossy_warped_fence", ModBlocks.MOSSY_WARPED_FENCE);
     public static final Item MOSSY_WARPED_FENCE_GATE = registerBlockItem("mossy_warped_fence_gate", ModBlocks.MOSSY_WARPED_FENCE_GATE);
     public static final Item MOSSY_WARPED_DOOR = registerBlockItem("mossy_warped_door", ModBlocks.MOSSY_WARPED_DOOR);
+    public static final Item MOSSY_WARPED_TRAPDOOR = registerBlockItem("mossy_warped_trapdoor", ModBlocks.MOSSY_WARPED_TRAPDOOR);
     public static final Item MOSSY_WARPED_PRESSURE_PLATE = registerBlockItem("mossy_warped_pressure_plate", ModBlocks.MOSSY_WARPED_PRESSURE_PLATE);
     public static final Item MOSSY_WARPED_BUTTON = registerBlockItem("mossy_warped_button", ModBlocks.MOSSY_WARPED_BUTTON);
     public static final Item MOSSY_STONE = registerBlockItem("mossy_stone", ModBlocks.MOSSY_STONE);
@@ -140,6 +151,7 @@ public class ModItems {
     public static final Item MOSSY_BRICK_WALL = registerBlockItem("mossy_brick_wall", ModBlocks.MOSSY_BRICK_WALL);
     public static final Item MOSSY_IRON_BARS =registerBlockItem("mossy_iron_bars", ModBlocks.MOSSY_IRON_BARS);
     public static final Item MOSSY_IRON_DOOR = registerBlockItem("mossy_iron_door", ModBlocks.MOSSY_IRON_DOOR);
+    public static final Item MOSSY_IRON_TRAPDOOR = registerBlockItem("mossy_iron_trapdoor", ModBlocks.MOSSY_IRON_TRAPDOOR);
 
     public static void registerItems() {
         log.debug("Registering items");

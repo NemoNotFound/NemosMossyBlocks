@@ -178,5 +178,17 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.MOSSY_WARPED_DOOR, this.doorDrops(ModBlocks.MOSSY_WARPED_DOOR));
         this.addDrop(ModBlocks.MOSSY_CRIMSON_DOOR, this.doorDrops(ModBlocks.MOSSY_CRIMSON_DOOR));
         this.addDrop(ModBlocks.MOSSY_IRON_DOOR, this.doorDrops(ModBlocks.MOSSY_IRON_DOOR));
+        this.addDrop(ModBlocks.MOSSY_OAK_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_SPRUCE_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_BIRCH_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_JUNGLE_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_DARK_OAK_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_ACACIA_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_MANGROVE_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_CHERRY_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_BAMBOO_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_WARPED_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_CRIMSON_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_IRON_TRAPDOOR);
     }
 }

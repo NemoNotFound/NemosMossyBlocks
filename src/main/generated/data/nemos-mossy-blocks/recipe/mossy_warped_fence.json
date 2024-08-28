@@ -4,15 +4,18 @@
   "group": "mossy_wooden_fence",
   "key": {
     "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
       "item": "nemos-mossy-blocks:mossy_warped_planks"
     }
   },
   "pattern": [
-    "###",
-    "###"
+    "W#W",
+    "W#W"
   ],
   "result": {
-    "count": 6,
+    "count": 3,
     "id": "nemos-mossy-blocks:mossy_warped_fence"
   }
 }

@@ -5,6 +5,10 @@
 - Added Infested Mossy Chiseled Stone Bricks
 - Added Mossy Bricks, Brick Slab, Stairs and Wall
 - Added Mossy Doors
+- Added Mossy Trapdoors
+
+## Fixes
+- Fixed wrong fence recipes
 
 ## Changes
 - Reordered creative inventory item groups

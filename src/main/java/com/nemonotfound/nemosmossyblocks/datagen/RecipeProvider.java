@@ -72,6 +72,7 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.IRON_BARS, ModBlocks.MOSSY_IRON_BARS, "mossy_iron_bars");
         createMossyBlockRecipe(exporter, Blocks.IRON_DOOR, ModBlocks.MOSSY_IRON_DOOR, "mossy_iron_door");
+        createMossyBlockRecipe(exporter, Blocks.IRON_TRAPDOOR, ModBlocks.MOSSY_IRON_TRAPDOOR, "mossy_iron_trapdoor");
         createMossyBlockRecipe(exporter, Blocks.CHISELED_STONE_BRICKS, ModBlocks.MOSSY_CHISELED_STONE_BRICKS, "mossy_chiseled_stone_bricks");
         createMossyBlockRecipe(exporter, Blocks.BRICKS, ModBlocks.MOSSY_BRICKS, "mossy_bricks");
 
@@ -238,6 +239,18 @@ public class RecipeProvider extends FabricRecipeProvider {
         offerDoorRecipe(exporter, ModBlocks.MOSSY_ACACIA_DOOR, ModBlocks.MOSSY_ACACIA_PLANKS);
         offerDoorRecipe(exporter, ModBlocks.MOSSY_CRIMSON_DOOR, ModBlocks.MOSSY_CRIMSON_PLANKS);
         offerDoorRecipe(exporter, ModBlocks.MOSSY_WARPED_DOOR, ModBlocks.MOSSY_WARPED_PLANKS);
+
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_TRAPDOOR);
+        createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_TRAPDOOR);
     }
 
     private void offerDoorRecipe(RecipeExporter exporter, Block output, Block input) {
@@ -267,6 +280,12 @@ public class RecipeProvider extends FabricRecipeProvider {
 
     private void createWoodenStairsRecipe(RecipeExporter exporter, Block input, Block result) {
         VanillaRecipeProvider.createStairsRecipe(result, Ingredient.ofItems(input)).group("mossy_wooden_stairs")
+                .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
+                .offerTo(exporter);
+    }
+
+    private void createWoodenTrapdoorRecipe(RecipeExporter exporter, Block input, Block result) {
+        VanillaRecipeProvider.createTrapdoorRecipe(result, Ingredient.ofItems(input)).group("mossy_wooden_stairs")
                 .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
@@ -304,7 +323,7 @@ public class RecipeProvider extends FabricRecipeProvider {
     }
 
     private void createFenceRecipe(RecipeExporter exporter, Block input, Block result) {
-        VanillaRecipeProvider.getWallRecipe(RecipeCategory.DECORATIONS, result, Ingredient.ofItems(input))
+        VanillaRecipeProvider.createFenceRecipe(result, Ingredient.ofItems(input))
                 .group("mossy_wooden_fence")
                 .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
