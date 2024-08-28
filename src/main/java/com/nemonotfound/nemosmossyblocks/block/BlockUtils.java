@@ -189,5 +189,6 @@ public class BlockUtils {
             .put(ModBlocks.MOSSY_BRICK_SLAB, Blocks.BRICK_SLAB)
             .put(ModBlocks.MOSSY_BRICK_STAIRS, Blocks.BRICK_STAIRS)
             .put(ModBlocks.MOSSY_BRICK_WALL, Blocks.BRICK_WALL)
+            .put(ModBlocks.MOSSY_OAK_DOOR, Blocks.OAK_DOOR)
             .build();
 }

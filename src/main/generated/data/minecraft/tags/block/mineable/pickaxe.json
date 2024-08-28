@@ -11,6 +11,7 @@
     "nemos-mossy-blocks:mossy_bricks",
     "nemos-mossy-blocks:mossy_brick_slab",
     "nemos-mossy-blocks:mossy_brick_stairs",
-    "nemos-mossy-blocks:mossy_brick_wall"
+    "nemos-mossy-blocks:mossy_brick_wall",
+    "nemos-mossy-blocks:mossy_iron_door"
   ]
 }

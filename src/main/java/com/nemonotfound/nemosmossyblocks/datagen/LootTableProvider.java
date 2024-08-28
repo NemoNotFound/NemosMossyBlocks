@@ -166,5 +166,17 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.MOSSY_BRICK_SLAB);
         this.addDrop(ModBlocks.MOSSY_BRICK_STAIRS);
         this.addDrop(ModBlocks.MOSSY_BRICK_WALL);
+        this.addDrop(ModBlocks.MOSSY_OAK_DOOR, this.doorDrops(ModBlocks.MOSSY_OAK_DOOR));
+        this.addDrop(ModBlocks.MOSSY_SPRUCE_DOOR, this.doorDrops(ModBlocks.MOSSY_SPRUCE_DOOR));
+        this.addDrop(ModBlocks.MOSSY_BIRCH_DOOR, this.doorDrops(ModBlocks.MOSSY_BIRCH_DOOR));
+        this.addDrop(ModBlocks.MOSSY_JUNGLE_DOOR, this.doorDrops(ModBlocks.MOSSY_JUNGLE_DOOR));
+        this.addDrop(ModBlocks.MOSSY_DARK_OAK_DOOR, this.doorDrops(ModBlocks.MOSSY_DARK_OAK_DOOR));
+        this.addDrop(ModBlocks.MOSSY_ACACIA_DOOR, this.doorDrops(ModBlocks.MOSSY_ACACIA_DOOR));
+        this.addDrop(ModBlocks.MOSSY_MANGROVE_DOOR, this.doorDrops(ModBlocks.MOSSY_MANGROVE_DOOR));
+        this.addDrop(ModBlocks.MOSSY_CHERRY_DOOR, this.doorDrops(ModBlocks.MOSSY_CHERRY_DOOR));
+        this.addDrop(ModBlocks.MOSSY_BAMBOO_DOOR, this.doorDrops(ModBlocks.MOSSY_BAMBOO_DOOR));
+        this.addDrop(ModBlocks.MOSSY_WARPED_DOOR, this.doorDrops(ModBlocks.MOSSY_WARPED_DOOR));
+        this.addDrop(ModBlocks.MOSSY_CRIMSON_DOOR, this.doorDrops(ModBlocks.MOSSY_CRIMSON_DOOR));
+        this.addDrop(ModBlocks.MOSSY_IRON_DOOR, this.doorDrops(ModBlocks.MOSSY_IRON_DOOR));
     }
 }

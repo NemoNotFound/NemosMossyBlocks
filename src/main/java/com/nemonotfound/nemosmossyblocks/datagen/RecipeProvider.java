@@ -71,6 +71,7 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.WHITE_STAINED_GLASS, ModBlocks.MOSSY_WHITE_STAINED_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.IRON_BARS, ModBlocks.MOSSY_IRON_BARS, "mossy_iron_bars");
+        createMossyBlockRecipe(exporter, Blocks.IRON_DOOR, ModBlocks.MOSSY_IRON_DOOR, "mossy_iron_door");
         createMossyBlockRecipe(exporter, Blocks.CHISELED_STONE_BRICKS, ModBlocks.MOSSY_CHISELED_STONE_BRICKS, "mossy_chiseled_stone_bricks");
         createMossyBlockRecipe(exporter, Blocks.BRICKS, ModBlocks.MOSSY_BRICKS, "mossy_bricks");
 
@@ -87,148 +88,82 @@ public class RecipeProvider extends FabricRecipeProvider {
         createPlanksRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_WARPED_WOOD);
 
         createStairsRecipe(exporter, ModBlocks.MOSSY_STONE, ModBlocks.MOSSY_STONE_STAIRS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
-        createStairsRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_STAIRS, "has_mossy_planks",
-                "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_STAIRS);
+        createWoodenStairsRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_STAIRS);
         createStairsRecipe(exporter, ModBlocks.MOSSY_BAMBOO_MOSAIC, ModBlocks.MOSSY_BAMBOO_MOSAIC_STAIRS);
 
         createSlabRecipe(exporter, ModBlocks.MOSSY_STONE, ModBlocks.MOSSY_STONE_SLAB);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
-        createSlabRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_SLAB, "has_mossy_planks",
-                "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_SLAB);
+        createWoodenSlabRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_SLAB);
         createSlabRecipe(exporter, ModBlocks.MOSSY_BAMBOO_MOSAIC, ModBlocks.MOSSY_BAMBOO_MOSAIC_SLAB);
 
         createPressurePlateRecipe(exporter, ModBlocks.MOSSY_STONE, ModBlocks.MOSSY_STONE_PRESSURE_PLATE);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
-        createPressurePlateRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_PRESSURE_PLATE, "has_mossy_planks",
-                "mossy_wooden_pressure_plate", ModItemTags.MOSSY_PLANKS);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_PRESSURE_PLATE);
+        createWoodenPressurePlateRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_PRESSURE_PLATE);
 
-        createWallRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_FENCE, "has_mossy_planks",
-                "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_FENCE);
+        createFenceRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_FENCE);
 
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
-        createFenceGateRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_FENCE_GATE, "has_mossy_planks",
-                "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_FENCE_GATE);
+        createFenceGateRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_FENCE_GATE);
 
         createButtonRecipe(exporter, ModBlocks.MOSSY_STONE, ModBlocks.MOSSY_STONE_BUTTON);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
-        createButtonRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_BUTTON, "has_mossy_planks",
-                "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.MOSSY_DARK_OAK_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.MOSSY_JUNGLE_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, ModBlocks.MOSSY_MANGROVE_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_BUTTON);
+        createWoodenButtonRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_BUTTON);
 
         VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModBlocks.MOSSY_STONE_SLAB, ModBlocks.MOSSY_STONE, 2);
@@ -251,39 +186,23 @@ public class RecipeProvider extends FabricRecipeProvider {
         VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModBlocks.MOSSY_BRICK_WALL, ModBlocks.MOSSY_BRICKS);
 
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_GLASS, ModBlocks.MOSSY_GLASS_PANE);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BLACK_STAINED_GLASS, ModBlocks.MOSSY_BLACK_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BLUE_STAINED_GLASS, ModBlocks.MOSSY_BLUE_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BROWN_STAINED_GLASS, ModBlocks.MOSSY_BROWN_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_CYAN_STAINED_GLASS, ModBlocks.MOSSY_CYAN_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_GRAY_STAINED_GLASS, ModBlocks.MOSSY_GRAY_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_GREEN_STAINED_GLASS, ModBlocks.MOSSY_GREEN_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_LIME_STAINED_GLASS, ModBlocks.MOSSY_LIME_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_MAGENTA_STAINED_GLASS, ModBlocks.MOSSY_MAGENTA_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_ORANGE_STAINED_GLASS, ModBlocks.MOSSY_ORANGE_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_PINK_STAINED_GLASS, ModBlocks.MOSSY_PINK_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_PURPLE_STAINED_GLASS, ModBlocks.MOSSY_PURPLE_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_RED_STAINED_GLASS, ModBlocks.MOSSY_RED_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_WHITE_STAINED_GLASS, ModBlocks.MOSSY_WHITE_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
-        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS_PANE,
-                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BLACK_STAINED_GLASS, ModBlocks.MOSSY_BLACK_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BLUE_STAINED_GLASS, ModBlocks.MOSSY_BLUE_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BROWN_STAINED_GLASS, ModBlocks.MOSSY_BROWN_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_CYAN_STAINED_GLASS, ModBlocks.MOSSY_CYAN_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_GRAY_STAINED_GLASS, ModBlocks.MOSSY_GRAY_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_GREEN_STAINED_GLASS, ModBlocks.MOSSY_GREEN_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_LIME_STAINED_GLASS, ModBlocks.MOSSY_LIME_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_MAGENTA_STAINED_GLASS, ModBlocks.MOSSY_MAGENTA_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_ORANGE_STAINED_GLASS, ModBlocks.MOSSY_ORANGE_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_PINK_STAINED_GLASS, ModBlocks.MOSSY_PINK_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_PURPLE_STAINED_GLASS, ModBlocks.MOSSY_PURPLE_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_RED_STAINED_GLASS, ModBlocks.MOSSY_RED_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_WHITE_STAINED_GLASS, ModBlocks.MOSSY_WHITE_STAINED_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS_PANE);
 
         VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_ACACIA_WOOD, ModBlocks.MOSSY_ACACIA_LOG);
         VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_BIRCH_WOOD, ModBlocks.MOSSY_BIRCH_LOG);
@@ -303,6 +222,27 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .create(RecipeCategory.MISC, ModItems.MOSS_BALL, 4).input(Blocks.MOSS_BLOCK)
                 .criterion(RecipeProvider.hasItem(Blocks.MOSS_BLOCK),
                         RecipeProvider.conditionsFromItem(Blocks.MOSS_BLOCK))
+                .offerTo(exporter);
+
+        createStairsRecipe(exporter, ModBlocks.MOSSY_BRICKS, ModBlocks.MOSSY_BRICK_STAIRS);
+        createSlabRecipe(exporter, ModBlocks.MOSSY_BRICKS, ModBlocks.MOSSY_BRICK_SLAB);
+
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_OAK_DOOR, ModBlocks.MOSSY_OAK_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_SPRUCE_DOOR, ModBlocks.MOSSY_SPRUCE_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_BIRCH_DOOR, ModBlocks.MOSSY_BIRCH_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_CHERRY_DOOR, ModBlocks.MOSSY_CHERRY_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_JUNGLE_DOOR, ModBlocks.MOSSY_JUNGLE_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_BAMBOO_DOOR, ModBlocks.MOSSY_BAMBOO_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_MANGROVE_DOOR, ModBlocks.MOSSY_MANGROVE_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_DOOR, ModBlocks.MOSSY_DARK_OAK_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_ACACIA_DOOR, ModBlocks.MOSSY_ACACIA_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_CRIMSON_DOOR, ModBlocks.MOSSY_CRIMSON_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.MOSSY_WARPED_DOOR, ModBlocks.MOSSY_WARPED_PLANKS);
+    }
+
+    private void offerDoorRecipe(RecipeExporter exporter, Block output, Block input) {
+        VanillaRecipeProvider.createDoorRecipe(output, Ingredient.ofItems(input))
+                .criterion("has_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
@@ -325,9 +265,9 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private void createStairsRecipe(RecipeExporter exporter, Block input, Block result, String criterion, String group, TagKey<Item> tag) {
-        VanillaRecipeProvider.createStairsRecipe(result, Ingredient.ofItems(input)).group(group)
-                .criterion(criterion, VanillaRecipeProvider.conditionsFromTag(tag))
+    private void createWoodenStairsRecipe(RecipeExporter exporter, Block input, Block result) {
+        VanillaRecipeProvider.createStairsRecipe(result, Ingredient.ofItems(input)).group("mossy_wooden_stairs")
+                .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
@@ -337,10 +277,10 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private void createSlabRecipe(RecipeExporter exporter, Block input, Block result, String criterion, String group, TagKey<Item> tag) {
+    private void createWoodenSlabRecipe(RecipeExporter exporter, Block input, Block result) {
         VanillaRecipeProvider.createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, result, Ingredient.ofItems(input.asItem()))
-                .group(group)
-                .criterion(criterion, VanillaRecipeProvider.conditionsFromTag(tag))
+                .group("mossy_wooden_slab")
+                .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
@@ -350,10 +290,10 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private void createPressurePlateRecipe(RecipeExporter exporter, Block input, Block result, String criterion, String group, TagKey<Item> tag) {
+    private void createWoodenPressurePlateRecipe(RecipeExporter exporter, Block input, Block result) {
         VanillaRecipeProvider.createPressurePlateRecipe(RecipeCategory.REDSTONE, result, Ingredient.ofItems(input))
-                .group(group)
-                .criterion(criterion, VanillaRecipeProvider.conditionsFromTag(tag))
+                .group("mossy_wooden_pressure_plate")
+                .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
@@ -363,32 +303,25 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private void createWallRecipe(RecipeExporter exporter, Block input, Block result, String criterion, String group, TagKey<Item> tag) {
+    private void createFenceRecipe(RecipeExporter exporter, Block input, Block result) {
         VanillaRecipeProvider.getWallRecipe(RecipeCategory.DECORATIONS, result, Ingredient.ofItems(input))
-                .group(group)
-                .criterion(criterion, VanillaRecipeProvider.conditionsFromTag(tag))
+                .group("mossy_wooden_fence")
+                .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
-    private void createWallRecipe(RecipeExporter exporter, Item input, Block result, String group) {
-        VanillaRecipeProvider.getWallRecipe(RecipeCategory.DECORATIONS, result, Ingredient.ofItems(input))
-                .group(group)
-                .criterion(VanillaRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input))
-                .offerTo(exporter);
-    }
-
-    private void createFenceGateRecipe(RecipeExporter exporter, Block input, Block result, String criterion, String group, TagKey<Item> tag) {
+    private void createFenceGateRecipe(RecipeExporter exporter, Block input, Block result) {
         VanillaRecipeProvider.createFenceGateRecipe(result, Ingredient.ofItems(input))
-                .group(group)
-                .criterion(criterion, VanillaRecipeProvider.conditionsFromTag(tag))
+                .group("mossy_wooden_fence_gate")
+                .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
-    private void createButtonRecipe(RecipeExporter exporter, Block input, Block result, String criterion, String group, TagKey<Item> tag) {
+    private void createWoodenButtonRecipe(RecipeExporter exporter, Block input, Block result) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, result)
                 .input(input)
-                .group(group)
-                .criterion(criterion, VanillaRecipeProvider.conditionsFromTag(tag))
+                .group("mossy_wooden_button")
+                .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter, VanillaRecipeProvider.convertBetween(result, input));
     }
 
@@ -399,22 +332,22 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, VanillaRecipeProvider.convertBetween(result, input));
     }
 
+    private void createGlassPaneRecipe(RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_GLASS_PANE, 16)
+                .input('#', ModBlocks.MOSSY_GLASS)
+                .pattern("###")
+                .pattern("###")
+                .criterion(VanillaRecipeProvider.hasItem(ModBlocks.MOSSY_GLASS), VanillaRecipeProvider.conditionsFromItem(ModBlocks.MOSSY_GLASS))
+                .offerTo(exporter);
+    }
+
     private void createGlassPaneRecipe(RecipeExporter exporter, Block input, Block result) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, result, 16)
                 .input('#', input)
                 .pattern("###")
                 .pattern("###")
-                .criterion(VanillaRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input))
-                .offerTo(exporter);
-    }
-
-    private void createGlassPaneRecipe(RecipeExporter exporter, Block input, Block result, String criterion, String group, TagKey<Item> tag) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, result, 16)
-                .input('#', input)
-                .pattern("###")
-                .pattern("###")
-                .criterion(criterion, VanillaRecipeProvider.conditionsFromTag(tag))
-                .group(group)
+                .criterion("has_mossy_stained_glass", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_STAINED_GLASS))
+                .group("mossy_stained_glass")
                 .offerTo(exporter);
     }
 }

@@ -48,6 +48,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_OAK_SLAB);
                     entries.add(ModItems.MOSSY_OAK_FENCE);
                     entries.add(ModItems.MOSSY_OAK_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_OAK_DOOR);
                     entries.add(ModItems.MOSSY_OAK_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_OAK_BUTTON);
                     entries.add(ModItems.MOSSY_SPRUCE_LOG);
@@ -57,6 +58,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_SPRUCE_SLAB);
                     entries.add(ModItems.MOSSY_SPRUCE_FENCE);
                     entries.add(ModItems.MOSSY_SPRUCE_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_SPRUCE_DOOR);
                     entries.add(ModItems.MOSSY_SPRUCE_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_SPRUCE_BUTTON);
                     entries.add(ModItems.MOSSY_BIRCH_LOG);
@@ -66,6 +68,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_BIRCH_SLAB);
                     entries.add(ModItems.MOSSY_BIRCH_FENCE);
                     entries.add(ModItems.MOSSY_BIRCH_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_BIRCH_DOOR);
                     entries.add(ModItems.MOSSY_BIRCH_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_BIRCH_BUTTON);
                     entries.add(ModItems.MOSSY_JUNGLE_LOG);
@@ -75,6 +78,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_JUNGLE_SLAB);
                     entries.add(ModItems.MOSSY_JUNGLE_FENCE);
                     entries.add(ModItems.MOSSY_JUNGLE_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_JUNGLE_DOOR);
                     entries.add(ModItems.MOSSY_JUNGLE_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_JUNGLE_BUTTON);
                     entries.add(ModItems.MOSSY_ACACIA_LOG);
@@ -84,6 +88,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_ACACIA_SLAB);
                     entries.add(ModItems.MOSSY_ACACIA_FENCE);
                     entries.add(ModItems.MOSSY_ACACIA_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_ACACIA_DOOR);
                     entries.add(ModItems.MOSSY_ACACIA_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_ACACIA_BUTTON);
                     entries.add(ModItems.MOSSY_DARK_OAK_LOG);
@@ -93,6 +98,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_DARK_OAK_SLAB);
                     entries.add(ModItems.MOSSY_DARK_OAK_FENCE);
                     entries.add(ModItems.MOSSY_DARK_OAK_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_DARK_OAK_DOOR);
                     entries.add(ModItems.MOSSY_DARK_OAK_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_DARK_OAK_BUTTON);
                     entries.add(ModItems.MOSSY_MANGROVE_LOG);
@@ -102,6 +108,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_MANGROVE_SLAB);
                     entries.add(ModItems.MOSSY_MANGROVE_FENCE);
                     entries.add(ModItems.MOSSY_MANGROVE_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_MANGROVE_DOOR);
                     entries.add(ModItems.MOSSY_MANGROVE_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_MANGROVE_BUTTON);
                     entries.add(ModItems.MOSSY_CHERRY_LOG);
@@ -112,6 +119,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_CHERRY_FENCE);
                     entries.add(ModItems.MOSSY_CHERRY_FENCE_GATE);
                     entries.add(ModItems.MOSSY_CHERRY_PRESSURE_PLATE);
+                    entries.add(ModItems.MOSSY_CHERRY_DOOR);
                     entries.add(ModItems.MOSSY_CHERRY_BUTTON);
                     entries.add(ModItems.MOSSY_BAMBOO_BLOCK);
                     entries.add(ModItems.MOSSY_BAMBOO_PLANKS);
@@ -122,6 +130,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_BAMBOO_MOSAIC_SLAB);
                     entries.add(ModItems.MOSSY_BAMBOO_FENCE);
                     entries.add(ModItems.MOSSY_BAMBOO_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_BAMBOO_DOOR);
                     entries.add(ModItems.MOSSY_BAMBOO_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_BAMBOO_BUTTON);
                     entries.add(ModItems.MOSSY_CRIMSON_STEM);
@@ -131,6 +140,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_CRIMSON_SLAB);
                     entries.add(ModItems.MOSSY_CRIMSON_FENCE);
                     entries.add(ModItems.MOSSY_CRIMSON_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_CRIMSON_DOOR);
                     entries.add(ModItems.MOSSY_CRIMSON_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_CRIMSON_BUTTON);
                     entries.add(ModItems.MOSSY_WARPED_STEM);
@@ -140,6 +150,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_WARPED_SLAB);
                     entries.add(ModItems.MOSSY_WARPED_FENCE);
                     entries.add(ModItems.MOSSY_WARPED_FENCE_GATE);
+                    entries.add(ModItems.MOSSY_WARPED_DOOR);
                     entries.add(ModItems.MOSSY_WARPED_PRESSURE_PLATE);
                     entries.add(ModItems.MOSSY_WARPED_BUTTON);
                     entries.add(ModItems.MOSSY_STONE);
@@ -154,6 +165,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_BRICK_SLAB);
                     entries.add(ModItems.MOSSY_BRICK_WALL);
                     entries.add(ModItems.MOSSY_IRON_BARS);
+                    entries.add(ModItems.MOSSY_IRON_DOOR);
                 })
                 .build();
 
@@ -179,6 +191,7 @@ public class ModItemGroups {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.addAfter(Items.OAK_BUTTON, ModItems.MOSSY_OAK_BUTTON);
             entries.addAfter(Items.OAK_BUTTON, ModItems.MOSSY_OAK_PRESSURE_PLATE);
+            entries.addAfter(Items.OAK_BUTTON, ModItems.MOSSY_OAK_DOOR);
             entries.addAfter(Items.OAK_BUTTON, ModItems.MOSSY_OAK_FENCE_GATE);
             entries.addAfter(Items.OAK_BUTTON, ModItems.MOSSY_OAK_FENCE);
             entries.addAfter(Items.OAK_BUTTON, ModItems.MOSSY_OAK_SLAB);
@@ -188,6 +201,7 @@ public class ModItemGroups {
             entries.addAfter(Items.OAK_BUTTON, ModItems.MOSSY_OAK_LOG);
             entries.addAfter(Items.SPRUCE_BUTTON, ModItems.MOSSY_SPRUCE_BUTTON);
             entries.addAfter(Items.SPRUCE_BUTTON, ModItems.MOSSY_SPRUCE_PRESSURE_PLATE);
+            entries.addAfter(Items.SPRUCE_BUTTON, ModItems.MOSSY_SPRUCE_DOOR);
             entries.addAfter(Items.SPRUCE_BUTTON, ModItems.MOSSY_SPRUCE_FENCE_GATE);
             entries.addAfter(Items.SPRUCE_BUTTON, ModItems.MOSSY_SPRUCE_FENCE);
             entries.addAfter(Items.SPRUCE_BUTTON, ModItems.MOSSY_SPRUCE_SLAB);
@@ -197,6 +211,7 @@ public class ModItemGroups {
             entries.addAfter(Items.SPRUCE_BUTTON, ModItems.MOSSY_SPRUCE_LOG);
             entries.addAfter(Items.BIRCH_BUTTON, ModItems.MOSSY_BIRCH_BUTTON);
             entries.addAfter(Items.BIRCH_BUTTON, ModItems.MOSSY_BIRCH_PRESSURE_PLATE);
+            entries.addAfter(Items.BIRCH_BUTTON, ModItems.MOSSY_BIRCH_DOOR);
             entries.addAfter(Items.BIRCH_BUTTON, ModItems.MOSSY_BIRCH_FENCE_GATE);
             entries.addAfter(Items.BIRCH_BUTTON, ModItems.MOSSY_BIRCH_FENCE);
             entries.addAfter(Items.BIRCH_BUTTON, ModItems.MOSSY_BIRCH_SLAB);
@@ -206,6 +221,7 @@ public class ModItemGroups {
             entries.addAfter(Items.BIRCH_BUTTON, ModItems.MOSSY_BIRCH_LOG);
             entries.addAfter(Items.JUNGLE_BUTTON, ModItems.MOSSY_JUNGLE_BUTTON);
             entries.addAfter(Items.JUNGLE_BUTTON, ModItems.MOSSY_JUNGLE_PRESSURE_PLATE);
+            entries.addAfter(Items.JUNGLE_BUTTON, ModItems.MOSSY_JUNGLE_DOOR);
             entries.addAfter(Items.JUNGLE_BUTTON, ModItems.MOSSY_JUNGLE_FENCE_GATE);
             entries.addAfter(Items.JUNGLE_BUTTON, ModItems.MOSSY_JUNGLE_FENCE);
             entries.addAfter(Items.JUNGLE_BUTTON, ModItems.MOSSY_JUNGLE_SLAB);
@@ -215,6 +231,7 @@ public class ModItemGroups {
             entries.addAfter(Items.JUNGLE_BUTTON, ModItems.MOSSY_JUNGLE_LOG);
             entries.addAfter(Items.ACACIA_BUTTON, ModItems.MOSSY_ACACIA_BUTTON);
             entries.addAfter(Items.ACACIA_BUTTON, ModItems.MOSSY_ACACIA_PRESSURE_PLATE);
+            entries.addAfter(Items.ACACIA_BUTTON, ModItems.MOSSY_ACACIA_DOOR);
             entries.addAfter(Items.ACACIA_BUTTON, ModItems.MOSSY_ACACIA_FENCE_GATE);
             entries.addAfter(Items.ACACIA_BUTTON, ModItems.MOSSY_ACACIA_FENCE);
             entries.addAfter(Items.ACACIA_BUTTON, ModItems.MOSSY_ACACIA_SLAB);
@@ -224,6 +241,7 @@ public class ModItemGroups {
             entries.addAfter(Items.ACACIA_BUTTON, ModItems.MOSSY_ACACIA_LOG);
             entries.addAfter(Items.DARK_OAK_BUTTON, ModItems.MOSSY_DARK_OAK_BUTTON);
             entries.addAfter(Items.DARK_OAK_BUTTON, ModItems.MOSSY_DARK_OAK_PRESSURE_PLATE);
+            entries.addAfter(Items.DARK_OAK_BUTTON, ModItems.MOSSY_DARK_OAK_DOOR);
             entries.addAfter(Items.DARK_OAK_BUTTON, ModItems.MOSSY_DARK_OAK_FENCE_GATE);
             entries.addAfter(Items.DARK_OAK_BUTTON, ModItems.MOSSY_DARK_OAK_FENCE);
             entries.addAfter(Items.DARK_OAK_BUTTON, ModItems.MOSSY_DARK_OAK_SLAB);
@@ -233,6 +251,7 @@ public class ModItemGroups {
             entries.addAfter(Items.DARK_OAK_BUTTON, ModItems.MOSSY_DARK_OAK_LOG);
             entries.addAfter(Items.MANGROVE_BUTTON, ModItems.MOSSY_MANGROVE_BUTTON);
             entries.addAfter(Items.MANGROVE_BUTTON, ModItems.MOSSY_MANGROVE_PRESSURE_PLATE);
+            entries.addAfter(Items.MANGROVE_BUTTON, ModItems.MOSSY_MANGROVE_DOOR);
             entries.addAfter(Items.MANGROVE_BUTTON, ModItems.MOSSY_MANGROVE_FENCE_GATE);
             entries.addAfter(Items.MANGROVE_BUTTON, ModItems.MOSSY_MANGROVE_FENCE);
             entries.addAfter(Items.MANGROVE_BUTTON, ModItems.MOSSY_MANGROVE_SLAB);
@@ -242,6 +261,7 @@ public class ModItemGroups {
             entries.addAfter(Items.MANGROVE_BUTTON, ModItems.MOSSY_MANGROVE_LOG);
             entries.addAfter(Items.CHERRY_BUTTON, ModItems.MOSSY_CHERRY_BUTTON);
             entries.addAfter(Items.CHERRY_BUTTON, ModItems.MOSSY_CHERRY_PRESSURE_PLATE);
+            entries.addAfter(Items.CHERRY_BUTTON, ModItems.MOSSY_CHERRY_DOOR);
             entries.addAfter(Items.CHERRY_BUTTON, ModItems.MOSSY_CHERRY_FENCE_GATE);
             entries.addAfter(Items.CHERRY_BUTTON, ModItems.MOSSY_CHERRY_FENCE);
             entries.addAfter(Items.CHERRY_BUTTON, ModItems.MOSSY_CHERRY_SLAB);
@@ -251,6 +271,7 @@ public class ModItemGroups {
             entries.addAfter(Items.CHERRY_BUTTON, ModItems.MOSSY_CHERRY_LOG);
             entries.addAfter(Items.BAMBOO_BUTTON, ModItems.MOSSY_BAMBOO_BUTTON);
             entries.addAfter(Items.BAMBOO_BUTTON, ModItems.MOSSY_BAMBOO_PRESSURE_PLATE);
+            entries.addAfter(Items.BAMBOO_BUTTON, ModItems.MOSSY_BAMBOO_DOOR);
             entries.addAfter(Items.BAMBOO_BUTTON, ModItems.MOSSY_BAMBOO_FENCE_GATE);
             entries.addAfter(Items.BAMBOO_BUTTON, ModItems.MOSSY_BAMBOO_FENCE);
             entries.addAfter(Items.BAMBOO_BUTTON, ModItems.MOSSY_BAMBOO_MOSAIC_SLAB);
@@ -262,6 +283,7 @@ public class ModItemGroups {
             entries.addAfter(Items.BAMBOO_BUTTON, ModItems.MOSSY_BAMBOO_BLOCK);
             entries.addAfter(Items.CRIMSON_BUTTON, ModItems.MOSSY_CRIMSON_BUTTON);
             entries.addAfter(Items.CRIMSON_BUTTON, ModItems.MOSSY_CRIMSON_PRESSURE_PLATE);
+            entries.addAfter(Items.CRIMSON_BUTTON, ModItems.MOSSY_CRIMSON_DOOR);
             entries.addAfter(Items.CRIMSON_BUTTON, ModItems.MOSSY_CRIMSON_FENCE_GATE);
             entries.addAfter(Items.CRIMSON_BUTTON, ModItems.MOSSY_CRIMSON_FENCE);
             entries.addAfter(Items.CRIMSON_BUTTON, ModItems.MOSSY_CRIMSON_SLAB);
@@ -271,6 +293,7 @@ public class ModItemGroups {
             entries.addAfter(Items.CRIMSON_BUTTON, ModItems.MOSSY_CRIMSON_STEM);
             entries.addAfter(Items.WARPED_BUTTON, ModItems.MOSSY_WARPED_BUTTON);
             entries.addAfter(Items.WARPED_BUTTON, ModItems.MOSSY_WARPED_PRESSURE_PLATE);
+            entries.addAfter(Items.WARPED_BUTTON, ModItems.MOSSY_WARPED_DOOR);
             entries.addAfter(Items.WARPED_BUTTON, ModItems.MOSSY_WARPED_FENCE_GATE);
             entries.addAfter(Items.WARPED_BUTTON, ModItems.MOSSY_WARPED_FENCE);
             entries.addAfter(Items.WARPED_BUTTON, ModItems.MOSSY_WARPED_SLAB);
@@ -289,6 +312,7 @@ public class ModItemGroups {
             entries.addAfter(Items.BRICK_WALL, ModItems.MOSSY_BRICK_STAIRS);
             entries.addAfter(Items.BRICK_WALL, ModItems.MOSSY_BRICKS);
             entries.addAfter(Items.IRON_BARS, ModItems.MOSSY_IRON_BARS);
+            entries.addAfter(Items.IRON_DOOR, ModItems.MOSSY_IRON_DOOR);
         });
     }
 

@@ -100,6 +100,17 @@
     "nemos-mossy-blocks:mossy_mangrove_wood",
     "nemos-mossy-blocks:mossy_oak_wood",
     "nemos-mossy-blocks:mossy_spruce_wood",
-    "nemos-mossy-blocks:mossy_warped_hyphae"
+    "nemos-mossy-blocks:mossy_warped_hyphae",
+    "nemos-mossy-blocks:mossy_oak_door",
+    "nemos-mossy-blocks:mossy_spruce_door",
+    "nemos-mossy-blocks:mossy_birch_door",
+    "nemos-mossy-blocks:mossy_acacia_door",
+    "nemos-mossy-blocks:mossy_dark_oak_door",
+    "nemos-mossy-blocks:mossy_mangrove_door",
+    "nemos-mossy-blocks:mossy_cherry_door",
+    "nemos-mossy-blocks:mossy_bamboo_door",
+    "nemos-mossy-blocks:mossy_jungle_door",
+    "nemos-mossy-blocks:mossy_crimson_door",
+    "nemos-mossy-blocks:mossy_warped_door"
   ]
 }

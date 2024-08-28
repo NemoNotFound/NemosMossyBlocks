@@ -28,8 +28,8 @@ public class ModBlocks {
     public static final Block MOSSY_ACACIA_STAIRS = registerBlock("mossy_acacia_stairs", Blocks.createStairsBlock(MOSSY_ACACIA_PLANKS));
     public static final Block MOSSY_ACACIA_SLAB = registerBlock("mossy_acacia_slab", new SlabBlock(MOSSY_ACACIA_PLANKS.getSettings()));
     public static final Block MOSSY_ACACIA_FENCE = registerBlock("mossy_acacia_fence", new FenceBlock(AbstractBlock.Settings.copy(ACACIA_FENCE)));
-    public static final Block MOSSY_ACACIA_FENCE_GATE = registerBlock("mossy_acacia_fence_gate",
-            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.copy(ACACIA_FENCE_GATE)));
+    public static final Block MOSSY_ACACIA_FENCE_GATE = registerBlock("mossy_acacia_fence_gate", new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.copy(ACACIA_FENCE_GATE)));
+    public static final Block MOSSY_ACACIA_DOOR = registerBlock("mossy_acacia_door", new DoorBlock(BlockSetType.ACACIA, AbstractBlock.Settings.copy(ACACIA_DOOR)));
     public static final Block MOSSY_ACACIA_PRESSURE_PLATE = registerBlock("mossy_acacia_pressure_plate",
             new PressurePlateBlock(BlockSetType.ACACIA, AbstractBlock.Settings.copy(ACACIA_PRESSURE_PLATE)));
     public static final Block MOSSY_ACACIA_BUTTON = registerBlock("mossy_acacia_button", Blocks.createWoodenButtonBlock(BlockSetType.ACACIA));
@@ -42,6 +42,7 @@ public class ModBlocks {
     public static final Block MOSSY_BAMBOO_MOSAIC_SLAB = registerBlock("mossy_bamboo_mosaic_slab", new SlabBlock(MOSSY_BAMBOO_MOSAIC.getSettings()));
     public static final Block MOSSY_BAMBOO_FENCE = registerBlock("mossy_bamboo_fence", new FenceBlock(AbstractBlock.Settings.copy(BAMBOO_FENCE)));
     public static final Block MOSSY_BAMBOO_FENCE_GATE = registerBlock("mossy_bamboo_fence_gate", new FenceGateBlock(WoodType.BAMBOO, AbstractBlock.Settings.copy(BAMBOO_FENCE_GATE)));
+    public static final Block MOSSY_BAMBOO_DOOR = registerBlock("mossy_bamboo_door", new DoorBlock(BlockSetType.BAMBOO, AbstractBlock.Settings.copy(BAMBOO_DOOR)));
     public static final Block MOSSY_BAMBOO_PRESSURE_PLATE = registerBlock("mossy_bamboo_pressure_plate",
             new PressurePlateBlock(BlockSetType.BAMBOO, AbstractBlock.Settings.copy(BAMBOO_PRESSURE_PLATE)));
     public static final Block MOSSY_BAMBOO_BUTTON = registerBlock("mossy_bamboo_button", Blocks.createWoodenButtonBlock(BlockSetType.BAMBOO));
@@ -52,6 +53,7 @@ public class ModBlocks {
     public static final Block MOSSY_BIRCH_SLAB = registerBlock("mossy_birch_slab", new SlabBlock(MOSSY_BIRCH_PLANKS.getSettings()));
     public static final Block MOSSY_BIRCH_FENCE = registerBlock("mossy_birch_fence", new FenceBlock(AbstractBlock.Settings.copy(BIRCH_FENCE)));
     public static final Block MOSSY_BIRCH_FENCE_GATE = registerBlock("mossy_birch_fence_gate", new FenceGateBlock(WoodType.BIRCH, AbstractBlock.Settings.copy(BIRCH_FENCE_GATE)));
+    public static final Block MOSSY_BIRCH_DOOR = registerBlock("mossy_birch_door", new DoorBlock(BlockSetType.BIRCH, AbstractBlock.Settings.copy(BIRCH_DOOR)));
     public static final Block MOSSY_BIRCH_PRESSURE_PLATE = registerBlock("mossy_birch_pressure_plate",
             new PressurePlateBlock(BlockSetType.BIRCH, AbstractBlock.Settings.copy(BIRCH_PRESSURE_PLATE)));
     public static final Block MOSSY_BIRCH_BUTTON = registerBlock("mossy_birch_button", Blocks.createWoodenButtonBlock(BlockSetType.BIRCH));
@@ -62,6 +64,7 @@ public class ModBlocks {
     public static final Block MOSSY_CHERRY_SLAB = registerBlock("mossy_cherry_slab", new SlabBlock(MOSSY_CHERRY_PLANKS.getSettings()));
     public static final Block MOSSY_CHERRY_FENCE = registerBlock("mossy_cherry_fence", new FenceBlock(AbstractBlock.Settings.copy(CHERRY_FENCE)));
     public static final Block MOSSY_CHERRY_FENCE_GATE = registerBlock("mossy_cherry_fence_gate", new FenceGateBlock(WoodType.CHERRY, AbstractBlock.Settings.copy(CHERRY_FENCE_GATE)));
+    public static final Block MOSSY_CHERRY_DOOR = registerBlock("mossy_cherry_door", new DoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.copy(CHERRY_DOOR)));
     public static final Block MOSSY_CHERRY_PRESSURE_PLATE = registerBlock("mossy_cherry_pressure_plate",
             new PressurePlateBlock(BlockSetType.CHERRY, AbstractBlock.Settings.copy(CHERRY_PRESSURE_PLATE)));
     public static final Block MOSSY_CHERRY_BUTTON = registerBlock("mossy_cherry_button", Blocks.createWoodenButtonBlock(BlockSetType.CHERRY));
@@ -72,6 +75,7 @@ public class ModBlocks {
     public static final Block MOSSY_CRIMSON_SLAB = registerBlock("mossy_crimson_slab", new SlabBlock(MOSSY_CRIMSON_PLANKS.getSettings()));
     public static final Block MOSSY_CRIMSON_FENCE = registerBlock("mossy_crimson_fence", new FenceBlock(AbstractBlock.Settings.copy(CRIMSON_FENCE)));
     public static final Block MOSSY_CRIMSON_FENCE_GATE = registerBlock("mossy_crimson_fence_gate", new FenceGateBlock(WoodType.CRIMSON, AbstractBlock.Settings.copy(CRIMSON_FENCE_GATE)));
+    public static final Block MOSSY_CRIMSON_DOOR = registerBlock("mossy_crimson_door", new DoorBlock(BlockSetType.CRIMSON, AbstractBlock.Settings.copy(CRIMSON_DOOR)));
     public static final Block MOSSY_CRIMSON_PRESSURE_PLATE = registerBlock("mossy_crimson_pressure_plate",
             new PressurePlateBlock(BlockSetType.CRIMSON, AbstractBlock.Settings.copy(CRIMSON_PRESSURE_PLATE)));
     public static final Block MOSSY_CRIMSON_BUTTON = registerBlock("mossy_crimson_button", Blocks.createWoodenButtonBlock(BlockSetType.CRIMSON));
@@ -81,8 +85,8 @@ public class ModBlocks {
     public static final Block MOSSY_DARK_OAK_STAIRS = registerBlock("mossy_dark_oak_stairs", Blocks.createStairsBlock(MOSSY_DARK_OAK_PLANKS));
     public static final Block MOSSY_DARK_OAK_SLAB = registerBlock("mossy_dark_oak_slab", new SlabBlock(MOSSY_DARK_OAK_PLANKS.getSettings()));
     public static final Block MOSSY_DARK_OAK_FENCE = registerBlock("mossy_dark_oak_fence", new FenceBlock(AbstractBlock.Settings.copy(DARK_OAK_FENCE)));
-    public static final Block MOSSY_DARK_OAK_FENCE_GATE = registerBlock("mossy_dark_oak_fence_gate",
-            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.copy(DARK_OAK_FENCE_GATE)));
+    public static final Block MOSSY_DARK_OAK_FENCE_GATE = registerBlock("mossy_dark_oak_fence_gate", new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.copy(DARK_OAK_FENCE_GATE)));
+    public static final Block MOSSY_DARK_OAK_DOOR = registerBlock("mossy_dark_oak_door", new DoorBlock(BlockSetType.DARK_OAK, AbstractBlock.Settings.copy(DARK_OAK_DOOR)));
     public static final Block MOSSY_DARK_OAK_PRESSURE_PLATE = registerBlock("mossy_dark_oak_pressure_plate",
             new PressurePlateBlock(BlockSetType.DARK_OAK, AbstractBlock.Settings.copy(DARK_OAK_PRESSURE_PLATE)));
     public static final Block MOSSY_DARK_OAK_BUTTON = registerBlock("mossy_dark_oak_button", Blocks.createWoodenButtonBlock(BlockSetType.DARK_OAK));
@@ -92,8 +96,8 @@ public class ModBlocks {
     public static final Block MOSSY_JUNGLE_STAIRS = registerBlock("mossy_jungle_stairs", Blocks.createStairsBlock(MOSSY_JUNGLE_PLANKS));
     public static final Block MOSSY_JUNGLE_SLAB = registerBlock("mossy_jungle_slab", new SlabBlock(MOSSY_JUNGLE_PLANKS.getSettings()));
     public static final Block MOSSY_JUNGLE_FENCE = registerBlock("mossy_jungle_fence", new FenceBlock(AbstractBlock.Settings.copy(JUNGLE_FENCE)));
-    public static final Block MOSSY_JUNGLE_FENCE_GATE = registerBlock("mossy_jungle_fence_gate",
-            new FenceGateBlock(WoodType.JUNGLE, AbstractBlock.Settings.copy(JUNGLE_FENCE_GATE)));
+    public static final Block MOSSY_JUNGLE_FENCE_GATE = registerBlock("mossy_jungle_fence_gate", new FenceGateBlock(WoodType.JUNGLE, AbstractBlock.Settings.copy(JUNGLE_FENCE_GATE)));
+    public static final Block MOSSY_JUNGLE_DOOR = registerBlock("mossy_jungle_door", new DoorBlock(BlockSetType.JUNGLE, AbstractBlock.Settings.copy(JUNGLE_DOOR)));
     public static final Block MOSSY_JUNGLE_PRESSURE_PLATE = registerBlock("mossy_jungle_pressure_plate",
             new PressurePlateBlock(BlockSetType.JUNGLE, AbstractBlock.Settings.copy(JUNGLE_PRESSURE_PLATE)));
     public static final Block MOSSY_JUNGLE_BUTTON = registerBlock("mossy_jungle_button",
@@ -104,8 +108,8 @@ public class ModBlocks {
     public static final Block MOSSY_MANGROVE_STAIRS = registerBlock("mossy_mangrove_stairs", Blocks.createStairsBlock(MOSSY_MANGROVE_PLANKS));
     public static final Block MOSSY_MANGROVE_SLAB = registerBlock("mossy_mangrove_slab", new SlabBlock(MOSSY_MANGROVE_PLANKS.getSettings()));
     public static final Block MOSSY_MANGROVE_FENCE = registerBlock("mossy_mangrove_fence", new FenceBlock(AbstractBlock.Settings.copy(MANGROVE_FENCE)));
-    public static final Block MOSSY_MANGROVE_FENCE_GATE = registerBlock("mossy_mangrove_fence_gate",
-            new FenceGateBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(MANGROVE_FENCE_GATE)));
+    public static final Block MOSSY_MANGROVE_FENCE_GATE = registerBlock("mossy_mangrove_fence_gate", new FenceGateBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(MANGROVE_FENCE_GATE)));
+    public static final Block MOSSY_MANGROVE_DOOR = registerBlock("mossy_mangrove_door", new DoorBlock(BlockSetType.MANGROVE, AbstractBlock.Settings.copy(MANGROVE_DOOR)));
     public static final Block MOSSY_MANGROVE_PRESSURE_PLATE = registerBlock("mossy_mangrove_pressure_plate",
             new PressurePlateBlock(BlockSetType.MANGROVE, AbstractBlock.Settings.copy(MANGROVE_PRESSURE_PLATE)));
     public static final Block MOSSY_MANGROVE_BUTTON = registerBlock("mossy_mangrove_button", Blocks.createWoodenButtonBlock(BlockSetType.MANGROVE));
@@ -121,6 +125,7 @@ public class ModBlocks {
     public static final Block MOSSY_OAK_PRESSURE_PLATE = registerBlock("mossy_oak_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(OAK_PRESSURE_PLATE)));
     public static final Block MOSSY_OAK_BUTTON = registerBlock("mossy_oak_button", Blocks.createWoodenButtonBlock(BlockSetType.OAK));
+    public static final Block MOSSY_OAK_DOOR = registerBlock("mossy_oak_door", new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(OAK_DOOR)));
     public static final Block MOSSY_SPRUCE_LOG = registerBlock("mossy_spruce_log", Blocks.createLogBlock(MapColor.SPRUCE_BROWN, MapColor.BROWN));
     public static final Block MOSSY_SPRUCE_WOOD = registerBlock("mossy_spruce_wood", new PillarBlock(AbstractBlock.Settings.copy(SPRUCE_WOOD)));
     public static final Block MOSSY_SPRUCE_PLANKS = registerBlock("mossy_spruce_planks", new Block(AbstractBlock.Settings.copy(SPRUCE_PLANKS)));
@@ -128,6 +133,7 @@ public class ModBlocks {
     public static final Block MOSSY_SPRUCE_SLAB = registerBlock("mossy_spruce_slab", new SlabBlock(MOSSY_SPRUCE_PLANKS.getSettings()));
     public static final Block MOSSY_SPRUCE_FENCE = registerBlock("mossy_spruce_fence", new FenceBlock(AbstractBlock.Settings.copy(SPRUCE_FENCE)));
     public static final Block MOSSY_SPRUCE_FENCE_GATE = registerBlock("mossy_spruce_fence_gate", new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.copy(SPRUCE_FENCE_GATE)));
+    public static final Block MOSSY_SPRUCE_DOOR = registerBlock("mossy_spruce_door", new DoorBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.copy(SPRUCE_DOOR)));
     public static final Block MOSSY_SPRUCE_PRESSURE_PLATE = registerBlock("mossy_spruce_pressure_plate",
             new PressurePlateBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.copy(SPRUCE_PRESSURE_PLATE)));
     public static final Block MOSSY_SPRUCE_BUTTON = registerBlock("mossy_spruce_button", Blocks.createWoodenButtonBlock(BlockSetType.SPRUCE));
@@ -138,6 +144,7 @@ public class ModBlocks {
     public static final Block MOSSY_WARPED_SLAB = registerBlock("mossy_warped_slab", new SlabBlock(MOSSY_WARPED_PLANKS.getSettings()));
     public static final Block MOSSY_WARPED_FENCE = registerBlock("mossy_warped_fence", new FenceBlock(AbstractBlock.Settings.copy(WARPED_FENCE)));
     public static final Block MOSSY_WARPED_FENCE_GATE = registerBlock("mossy_warped_fence_gate", new FenceGateBlock(WoodType.WARPED, AbstractBlock.Settings.copy(WARPED_FENCE_GATE)));
+    public static final Block MOSSY_WARPED_DOOR = registerBlock("mossy_warped_door", new DoorBlock(BlockSetType.WARPED, AbstractBlock.Settings.copy(WARPED_DOOR)));
     public static final Block MOSSY_WARPED_PRESSURE_PLATE = registerBlock("mossy_warped_pressure_plate",
             new PressurePlateBlock(BlockSetType.WARPED, AbstractBlock.Settings.copy(WARPED_PRESSURE_PLATE)));
     public static final Block MOSSY_WARPED_BUTTON = registerBlock("mossy_warped_button", Blocks.createWoodenButtonBlock(BlockSetType.WARPED));
@@ -250,6 +257,7 @@ public class ModBlocks {
             new StainedGlassPaneBlock(DyeColor.YELLOW, YELLOW_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_IRON_BARS = registerBlock("mossy_iron_bars", new PaneBlock(IRON_BARS.getSettings()));
+    public static final Block MOSSY_IRON_DOOR = registerBlock("mossy_iron_door", new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(IRON_DOOR)));
     public static final Block MOSSY_CHISELED_STONE_BRICKS = registerBlock("mossy_chiseled_stone_bricks",
             new Block(AbstractBlock.Settings.copy(CHISELED_STONE_BRICKS)));
     public static final Block INFESTED_MOSSY_CHISELED_STONE_BRICKS = registerBlock("infested_mossy_chiseled_stone_bricks",
