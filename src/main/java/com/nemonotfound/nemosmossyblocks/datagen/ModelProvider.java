@@ -147,6 +147,40 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.MOSSY_WARPED_STEM).stem(ModBlocks.MOSSY_WARPED_STEM).wood(ModBlocks.MOSSY_WARPED_HYPHAE);
 
         registerIronBars(blockStateModelGenerator);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOSSY_CHISELED_STONE_BRICKS);
+        blockStateModelGenerator.registerParented(ModBlocks.MOSSY_CHISELED_STONE_BRICKS, ModBlocks.INFESTED_MOSSY_CHISELED_STONE_BRICKS);
+
+        BlockTexturePool mossyBricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOSSY_BRICKS);
+        mossyBricksTexturePool.stairs(ModBlocks.MOSSY_BRICK_STAIRS);
+        mossyBricksTexturePool.slab(ModBlocks.MOSSY_BRICK_SLAB);
+        mossyBricksTexturePool.wall(ModBlocks.MOSSY_BRICK_WALL);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_OAK_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_SPRUCE_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_BIRCH_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_JUNGLE_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_ACACIA_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_DARK_OAK_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_MANGROVE_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_CHERRY_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_BAMBOO_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_CRIMSON_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_WARPED_DOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.MOSSY_IRON_DOOR);
+
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_OAK_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_SPRUCE_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_BIRCH_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_JUNGLE_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_ACACIA_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_DARK_OAK_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_MANGROVE_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_CHERRY_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_BAMBOO_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_CRIMSON_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_WARPED_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MOSSY_IRON_TRAPDOOR);
     }
 
     @Override

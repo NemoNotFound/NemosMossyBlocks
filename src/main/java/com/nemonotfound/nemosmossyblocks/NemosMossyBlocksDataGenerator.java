@@ -1,6 +1,7 @@
 package com.nemonotfound.nemosmossyblocks;
 
 import com.nemonotfound.nemosmossyblocks.datagen.*;
+import com.nemonotfound.nemosmossyblocks.datagen.langdatagen.EnglishLanguageProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -15,5 +16,6 @@ public class NemosMossyBlocksDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(BlockTagProvider::new);
 		pack.addProvider(RecipeProvider::new);
 		pack.addProvider(ItemTagProvider::new);
+		pack.addProvider(EnglishLanguageProvider::new);
 	}
 }

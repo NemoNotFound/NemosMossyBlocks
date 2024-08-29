@@ -4,7 +4,6 @@ import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.item.Items;
 import net.minecraft.loot.entry.ItemEntry;
 
@@ -16,7 +15,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        this.addDrop(ModBlocks.MOSSY_STONE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.MOSSY_STONE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.MOSSY_COBBLESTONE))));
         this.addDrop(ModBlocks.MOSSY_STONE_STAIRS);
         this.addDrop(ModBlocks.MOSSY_STONE_SLAB);
@@ -159,5 +158,34 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.MOSSY_BAMBOO_MOSAIC_STAIRS);
         this.addDrop(ModBlocks.MOSSY_BAMBOO_MOSAIC_SLAB);
         this.addDrop(ModBlocks.MOSSY_IRON_BARS);
+        this.addDrop(ModBlocks.MOSSY_CHISELED_STONE_BRICKS);
+        this.addDrop(ModBlocks.MOSSY_BRICKS);
+        this.addDrop(ModBlocks.MOSSY_BRICK_SLAB);
+        this.addDrop(ModBlocks.MOSSY_BRICK_STAIRS);
+        this.addDrop(ModBlocks.MOSSY_BRICK_WALL);
+        this.addDrop(ModBlocks.MOSSY_OAK_DOOR, this.doorDrops(ModBlocks.MOSSY_OAK_DOOR));
+        this.addDrop(ModBlocks.MOSSY_SPRUCE_DOOR, this.doorDrops(ModBlocks.MOSSY_SPRUCE_DOOR));
+        this.addDrop(ModBlocks.MOSSY_BIRCH_DOOR, this.doorDrops(ModBlocks.MOSSY_BIRCH_DOOR));
+        this.addDrop(ModBlocks.MOSSY_JUNGLE_DOOR, this.doorDrops(ModBlocks.MOSSY_JUNGLE_DOOR));
+        this.addDrop(ModBlocks.MOSSY_DARK_OAK_DOOR, this.doorDrops(ModBlocks.MOSSY_DARK_OAK_DOOR));
+        this.addDrop(ModBlocks.MOSSY_ACACIA_DOOR, this.doorDrops(ModBlocks.MOSSY_ACACIA_DOOR));
+        this.addDrop(ModBlocks.MOSSY_MANGROVE_DOOR, this.doorDrops(ModBlocks.MOSSY_MANGROVE_DOOR));
+        this.addDrop(ModBlocks.MOSSY_CHERRY_DOOR, this.doorDrops(ModBlocks.MOSSY_CHERRY_DOOR));
+        this.addDrop(ModBlocks.MOSSY_BAMBOO_DOOR, this.doorDrops(ModBlocks.MOSSY_BAMBOO_DOOR));
+        this.addDrop(ModBlocks.MOSSY_WARPED_DOOR, this.doorDrops(ModBlocks.MOSSY_WARPED_DOOR));
+        this.addDrop(ModBlocks.MOSSY_CRIMSON_DOOR, this.doorDrops(ModBlocks.MOSSY_CRIMSON_DOOR));
+        this.addDrop(ModBlocks.MOSSY_IRON_DOOR, this.doorDrops(ModBlocks.MOSSY_IRON_DOOR));
+        this.addDrop(ModBlocks.MOSSY_OAK_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_SPRUCE_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_BIRCH_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_JUNGLE_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_DARK_OAK_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_ACACIA_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_MANGROVE_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_CHERRY_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_BAMBOO_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_WARPED_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_CRIMSON_TRAPDOOR);
+        this.addDrop(ModBlocks.MOSSY_IRON_TRAPDOOR);
     }
 }
