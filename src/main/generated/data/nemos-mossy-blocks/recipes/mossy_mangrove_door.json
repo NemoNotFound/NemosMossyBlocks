@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "nemos-mossy-blocks:mossy_mangrove_planks"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "item": "nemos-mossy-blocks:mossy_mangrove_door"
+  },
+  "show_notification": true
+}

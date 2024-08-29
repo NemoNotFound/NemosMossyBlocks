@@ -7,7 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.VanillaRecipeProvider;
@@ -19,15 +19,16 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Consumer;
 
 public class RecipeProvider extends FabricRecipeProvider {
 
     public RecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(output, registriesFuture);
+        super(output);
     }
 
     @Override
-    public void generate(RecipeExporter exporter) {
+    public void generate(Consumer<RecipeJsonProvider> exporter) {
         createMossyBlockRecipe(exporter, Blocks.STONE, ModBlocks.MOSSY_STONE, "mossy_stone");
         createMossyBlockRecipe(exporter, Blocks.ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_PLANKS, "mossy_planks");
         createMossyBlockRecipe(exporter, Blocks.BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_PLANKS, "mossy_planks");
@@ -253,13 +254,13 @@ public class RecipeProvider extends FabricRecipeProvider {
         createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_TRAPDOOR);
     }
 
-    private void offerDoorRecipe(RecipeExporter exporter, Block output, Block input) {
+    private void offerDoorRecipe(Consumer<RecipeJsonProvider> exporter, Block output, Block input) {
         VanillaRecipeProvider.createDoorRecipe(output, Ingredient.ofItems(input))
                 .criterion("has_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
-    private void createMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {
+    private void createMossyBlockRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result, String group) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, result)
                 .input(input).input(Blocks.VINE).group(group)
                 .criterion(VanillaRecipeProvider.hasItem(Blocks.VINE), VanillaRecipeProvider.conditionsFromItem(Blocks.VINE))
@@ -270,7 +271,7 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, VanillaRecipeProvider.convertBetween(result, Blocks.MOSS_BLOCK));
     }
 
-    public static void createPlanksRecipe(RecipeExporter exporter, ItemConvertible output, String criterion, String group, TagKey<Item> input) {
+    public static void createPlanksRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, String criterion, String group, TagKey<Item> input) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
                 .input(input)
                 .group(group)
@@ -278,65 +279,65 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private void createWoodenStairsRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createWoodenStairsRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         VanillaRecipeProvider.createStairsRecipe(result, Ingredient.ofItems(input)).group("mossy_wooden_stairs")
                 .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
-    private void createWoodenTrapdoorRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createWoodenTrapdoorRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         VanillaRecipeProvider.createTrapdoorRecipe(result, Ingredient.ofItems(input)).group("mossy_wooden_stairs")
                 .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
-    private void createStairsRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createStairsRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         VanillaRecipeProvider.createStairsRecipe(result, Ingredient.ofItems(input))
                 .criterion(VanillaRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input))
                 .offerTo(exporter);
     }
 
-    private void createWoodenSlabRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createWoodenSlabRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         VanillaRecipeProvider.createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, result, Ingredient.ofItems(input.asItem()))
                 .group("mossy_wooden_slab")
                 .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
-    private void createSlabRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createSlabRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         VanillaRecipeProvider.createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, result, Ingredient.ofItems(input.asItem()))
                 .criterion(VanillaRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input))
                 .offerTo(exporter);
     }
 
-    private void createWoodenPressurePlateRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createWoodenPressurePlateRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         VanillaRecipeProvider.createPressurePlateRecipe(RecipeCategory.REDSTONE, result, Ingredient.ofItems(input))
                 .group("mossy_wooden_pressure_plate")
                 .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
-    private void createPressurePlateRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createPressurePlateRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         VanillaRecipeProvider.createPressurePlateRecipe(RecipeCategory.REDSTONE, result, Ingredient.ofItems(input))
                 .criterion(VanillaRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input))
                 .offerTo(exporter);
     }
 
-    private void createFenceRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createFenceRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         VanillaRecipeProvider.createFenceRecipe(result, Ingredient.ofItems(input))
                 .group("mossy_wooden_fence")
                 .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
-    private void createFenceGateRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createFenceGateRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         VanillaRecipeProvider.createFenceGateRecipe(result, Ingredient.ofItems(input))
                 .group("mossy_wooden_fence_gate")
                 .criterion("has_mossy_planks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.MOSSY_PLANKS))
                 .offerTo(exporter);
     }
 
-    private void createWoodenButtonRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createWoodenButtonRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, result)
                 .input(input)
                 .group("mossy_wooden_button")
@@ -344,14 +345,14 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, VanillaRecipeProvider.convertBetween(result, input));
     }
 
-    private void createButtonRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createButtonRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, result)
                 .input(input)
                 .criterion(VanillaRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input.asItem()))
                 .offerTo(exporter, VanillaRecipeProvider.convertBetween(result, input));
     }
 
-    private void createGlassPaneRecipe(RecipeExporter exporter) {
+    private void createGlassPaneRecipe(Consumer<RecipeJsonProvider> exporter) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.MOSSY_GLASS_PANE, 16)
                 .input('#', ModBlocks.MOSSY_GLASS)
                 .pattern("###")
@@ -360,7 +361,7 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private void createGlassPaneRecipe(RecipeExporter exporter, Block input, Block result) {
+    private void createGlassPaneRecipe(Consumer<RecipeJsonProvider> exporter, Block input, Block result) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, result, 16)
                 .input('#', input)
                 .pattern("###")

@@ -9,12 +9,12 @@ import java.util.concurrent.CompletableFuture;
 
 public class EnglishLanguageProvider extends FabricLanguageProvider {
 
-    public EnglishLanguageProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
-        super(dataOutput, registryLookup);
+    public EnglishLanguageProvider(FabricDataOutput dataOutput) {
+        super(dataOutput);
     }
 
     @Override
-    public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
+    public void generateTranslations(TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.MOSS_BALL, "Moss Ball");
         translationBuilder.add(ModItems.MOSSY_CHISELED_STONE_BRICKS, "Mossy Chiseled Stone Bricks");
         translationBuilder.add(ModItems.INFESTED_MOSSY_CHISELED_STONE_BRICKS, "Infested Mossy Chiseled Stone Bricks");

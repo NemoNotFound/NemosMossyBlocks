@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "mossy_wooden_stairs",
+  "key": {
+    "#": {
+      "item": "nemos-mossy-blocks:mossy_jungle_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "nemos-mossy-blocks:mossy_jungle_trapdoor"
+  },
+  "show_notification": true
+}
