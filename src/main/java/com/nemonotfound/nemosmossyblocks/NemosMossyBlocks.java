@@ -20,7 +20,6 @@ public class NemosMossyBlocks implements ModInitializer {
 		ModBlocks.registerBlocks();
 		ModItems.registerItems();
 		ModItemGroups.registerItemGroups();
-		ModItemGroups.registerItemsToItemGroups();
 		Entities.registerEntities();
 	}
 }

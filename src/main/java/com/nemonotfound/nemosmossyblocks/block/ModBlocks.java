@@ -1,20 +1,11 @@
 package com.nemonotfound.nemosmossyblocks.block;
 
-import com.nemonotfound.nemosmossyblocks.item.ModItemGroups;
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.MOD_ID;
 import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.log;
@@ -163,142 +154,54 @@ public class ModBlocks {
     public static final Block MOSSY_STONE_PRESSURE_PLATE = registerBlock("mossy_stone_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(STONE_PRESSURE_PLATE)));
     public static final Block MOSSY_STONE_BUTTON = registerBlock("mossy_stone_button", Blocks.createStoneButtonBlock());
-    public static final Block MOSSY_GLASS = registerBlock("mossy_glass",
-            new Block(GLASS.getSettings()), ItemGroups.COLORED_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BLACK_STAINED_GLASS = registerBlock("mossy_black_stained_glass",
-            new StainedGlassBlock(DyeColor.BLACK, BLACK_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BLUE_STAINED_GLASS = registerBlock("mossy_blue_stained_glass",
-            new StainedGlassBlock(DyeColor.BLUE, BLUE_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BROWN_STAINED_GLASS = registerBlock("mossy_brown_stained_glass",
-            new StainedGlassBlock(DyeColor.BROWN, BROWN_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_CYAN_STAINED_GLASS = registerBlock("mossy_cyan_stained_glass",
-            new StainedGlassBlock(DyeColor.CYAN, CYAN_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_GRAY_STAINED_GLASS = registerBlock("mossy_gray_stained_glass",
-            new StainedGlassBlock(DyeColor.GRAY, GRAY_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_GREEN_STAINED_GLASS = registerBlock("mossy_green_stained_glass",
-            new StainedGlassBlock(DyeColor.GREEN, GREEN_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_LIGHT_BLUE_STAINED_GLASS = registerBlock("mossy_light_blue_stained_glass",
-            new StainedGlassBlock(DyeColor.LIGHT_BLUE, LIGHT_BLUE_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_LIGHT_GRAY_STAINED_GLASS = registerBlock("mossy_light_gray_stained_glass",
-            new StainedGlassBlock(DyeColor.LIGHT_GRAY, LIGHT_GRAY_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_LIME_STAINED_GLASS = registerBlock("mossy_lime_stained_glass",
-            new StainedGlassBlock(DyeColor.LIME, LIME_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_MAGENTA_STAINED_GLASS = registerBlock("mossy_magenta_stained_glass",
-            new StainedGlassBlock(DyeColor.MAGENTA, MAGENTA_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_ORANGE_STAINED_GLASS = registerBlock("mossy_orange_stained_glass",
-            new StainedGlassBlock(DyeColor.ORANGE, ORANGE_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_PINK_STAINED_GLASS = registerBlock("mossy_pink_stained_glass",
-            new StainedGlassBlock(DyeColor.PINK, PINK_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_PURPLE_STAINED_GLASS = registerBlock("mossy_purple_stained_glass",
-            new StainedGlassBlock(DyeColor.PURPLE, PURPLE_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_RED_STAINED_GLASS = registerBlock("mossy_red_stained_glass",
-            new StainedGlassBlock(DyeColor.RED, RED_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_TINTED_GLASS = registerBlock("mossy_tinted_glass",
-            new TintedGlassBlock(TINTED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_WHITE_STAINED_GLASS = registerBlock("mossy_white_stained_glass",
-            new StainedGlassBlock(DyeColor.WHITE, WHITE_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_YELLOW_STAINED_GLASS = registerBlock("mossy_yellow_stained_glass",
-            new StainedGlassBlock(DyeColor.YELLOW, YELLOW_STAINED_GLASS.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_GLASS_PANE = registerBlock("mossy_glass_pane",
-            new PaneBlock(GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BLACK_STAINED_GLASS_PANE = registerBlock("mossy_black_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.BLACK, BLACK_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BLUE_STAINED_GLASS_PANE = registerBlock("mossy_blue_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.BLUE, BLUE_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_BROWN_STAINED_GLASS_PANE = registerBlock("mossy_brown_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.BROWN, BROWN_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_CYAN_STAINED_GLASS_PANE = registerBlock("mossy_cyan_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.CYAN, CYAN_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_GRAY_STAINED_GLASS_PANE = registerBlock("mossy_gray_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.GRAY, GRAY_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_GREEN_STAINED_GLASS_PANE = registerBlock("mossy_green_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.GREEN, GREEN_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE = registerBlock("mossy_light_blue_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.LIGHT_BLUE, LIGHT_BLUE_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE = registerBlock("mossy_light_gray_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.LIGHT_GRAY, LIGHT_GRAY_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_LIME_STAINED_GLASS_PANE = registerBlock("mossy_lime_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.LIME, LIME_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_MAGENTA_STAINED_GLASS_PANE = registerBlock("mossy_magenta_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.MAGENTA, MAGENTA_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_ORANGE_STAINED_GLASS_PANE = registerBlock("mossy_orange_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.ORANGE, ORANGE_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_PINK_STAINED_GLASS_PANE = registerBlock("mossy_pink_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.PINK, PINK_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_PURPLE_STAINED_GLASS_PANE = registerBlock("mossy_purple_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.PURPLE, PURPLE_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_RED_STAINED_GLASS_PANE = registerBlock("mossy_red_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.RED, RED_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_WHITE_STAINED_GLASS_PANE = registerBlock("mossy_white_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.WHITE, WHITE_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
-    public static final Block MOSSY_YELLOW_STAINED_GLASS_PANE = registerBlock("mossy_yellow_stained_glass_pane",
-            new StainedGlassPaneBlock(DyeColor.YELLOW, YELLOW_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
-            ModItemGroups.NEMOS_MOSSY_BLOCKS);
+    public static final Block MOSSY_GLASS = registerBlock("mossy_glass", new Block(GLASS.getSettings()));
+    public static final Block MOSSY_BLACK_STAINED_GLASS = registerBlock("mossy_black_stained_glass", new StainedGlassBlock(DyeColor.BLACK, BLACK_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_BLUE_STAINED_GLASS = registerBlock("mossy_blue_stained_glass", new StainedGlassBlock(DyeColor.BLUE, BLUE_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_BROWN_STAINED_GLASS = registerBlock("mossy_brown_stained_glass", new StainedGlassBlock(DyeColor.BROWN, BROWN_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_CYAN_STAINED_GLASS = registerBlock("mossy_cyan_stained_glass", new StainedGlassBlock(DyeColor.CYAN, CYAN_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_GRAY_STAINED_GLASS = registerBlock("mossy_gray_stained_glass", new StainedGlassBlock(DyeColor.GRAY, GRAY_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_GREEN_STAINED_GLASS = registerBlock("mossy_green_stained_glass", new StainedGlassBlock(DyeColor.GREEN, GREEN_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_LIGHT_BLUE_STAINED_GLASS = registerBlock("mossy_light_blue_stained_glass", new StainedGlassBlock(DyeColor.LIGHT_BLUE, LIGHT_BLUE_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_LIGHT_GRAY_STAINED_GLASS = registerBlock("mossy_light_gray_stained_glass", new StainedGlassBlock(DyeColor.LIGHT_GRAY, LIGHT_GRAY_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_LIME_STAINED_GLASS = registerBlock("mossy_lime_stained_glass", new StainedGlassBlock(DyeColor.LIME, LIME_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_MAGENTA_STAINED_GLASS = registerBlock("mossy_magenta_stained_glass", new StainedGlassBlock(DyeColor.MAGENTA, MAGENTA_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_ORANGE_STAINED_GLASS = registerBlock("mossy_orange_stained_glass", new StainedGlassBlock(DyeColor.ORANGE, ORANGE_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_PINK_STAINED_GLASS = registerBlock("mossy_pink_stained_glass", new StainedGlassBlock(DyeColor.PINK, PINK_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_PURPLE_STAINED_GLASS = registerBlock("mossy_purple_stained_glass", new StainedGlassBlock(DyeColor.PURPLE, PURPLE_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_RED_STAINED_GLASS = registerBlock("mossy_red_stained_glass", new StainedGlassBlock(DyeColor.RED, RED_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_TINTED_GLASS = registerBlock("mossy_tinted_glass", new TintedGlassBlock(TINTED_GLASS.getSettings()));
+    public static final Block MOSSY_WHITE_STAINED_GLASS = registerBlock("mossy_white_stained_glass", new StainedGlassBlock(DyeColor.WHITE, WHITE_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_YELLOW_STAINED_GLASS = registerBlock("mossy_yellow_stained_glass", new StainedGlassBlock(DyeColor.YELLOW, YELLOW_STAINED_GLASS.getSettings()));
+    public static final Block MOSSY_GLASS_PANE = registerBlock("mossy_glass_pane", new PaneBlock(GLASS_PANE.getSettings()));
+    public static final Block MOSSY_BLACK_STAINED_GLASS_PANE = registerBlock("mossy_black_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.BLACK, BLACK_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_BLUE_STAINED_GLASS_PANE = registerBlock("mossy_blue_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.BLUE, BLUE_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_BROWN_STAINED_GLASS_PANE = registerBlock("mossy_brown_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.BROWN, BROWN_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_CYAN_STAINED_GLASS_PANE = registerBlock("mossy_cyan_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.CYAN, CYAN_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_GRAY_STAINED_GLASS_PANE = registerBlock("mossy_gray_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.GRAY, GRAY_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_GREEN_STAINED_GLASS_PANE = registerBlock("mossy_green_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.GREEN, GREEN_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE = registerBlock("mossy_light_blue_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.LIGHT_BLUE, LIGHT_BLUE_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE = registerBlock("mossy_light_gray_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.LIGHT_GRAY, LIGHT_GRAY_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_LIME_STAINED_GLASS_PANE = registerBlock("mossy_lime_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.LIME, LIME_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_MAGENTA_STAINED_GLASS_PANE = registerBlock("mossy_magenta_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.MAGENTA, MAGENTA_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_ORANGE_STAINED_GLASS_PANE = registerBlock("mossy_orange_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.ORANGE, ORANGE_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_PINK_STAINED_GLASS_PANE = registerBlock("mossy_pink_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.PINK, PINK_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_PURPLE_STAINED_GLASS_PANE = registerBlock("mossy_purple_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.PURPLE, PURPLE_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_RED_STAINED_GLASS_PANE = registerBlock("mossy_red_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.RED, RED_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_WHITE_STAINED_GLASS_PANE = registerBlock("mossy_white_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.WHITE, WHITE_STAINED_GLASS_PANE.getSettings()));
+    public static final Block MOSSY_YELLOW_STAINED_GLASS_PANE = registerBlock("mossy_yellow_stained_glass_pane", new StainedGlassPaneBlock(DyeColor.YELLOW, YELLOW_STAINED_GLASS_PANE.getSettings()));
     public static final Block MOSSY_IRON_BARS = registerBlock("mossy_iron_bars", new PaneBlock(IRON_BARS.getSettings()));
     public static final Block MOSSY_IRON_DOOR = registerBlock("mossy_iron_door", new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(IRON_DOOR)));
     public static final Block MOSSY_IRON_TRAPDOOR = registerBlock("mossy_iron_trapdoor", new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(IRON_TRAPDOOR)));
-    public static final Block MOSSY_CHISELED_STONE_BRICKS = registerBlock("mossy_chiseled_stone_bricks",
-            new Block(AbstractBlock.Settings.copy(CHISELED_STONE_BRICKS)));
+    public static final Block MOSSY_CHISELED_STONE_BRICKS = registerBlock("mossy_chiseled_stone_bricks", new Block(AbstractBlock.Settings.copy(CHISELED_STONE_BRICKS)));
     public static final Block INFESTED_MOSSY_CHISELED_STONE_BRICKS = registerBlock("infested_mossy_chiseled_stone_bricks",
             new InfestedBlock(MOSSY_CHISELED_STONE_BRICKS, AbstractBlock.Settings.copy(INFESTED_CHISELED_STONE_BRICKS)));
-    public static final Block MOSSY_BRICKS = registerBlock("mossy_bricks",
-            new Block(AbstractBlock.Settings.copy(BRICKS)));
-    public static final Block MOSSY_BRICK_SLAB = registerBlock("mossy_brick_slab",
-            new SlabBlock(MOSSY_BRICKS.getSettings()));
-    public static final Block MOSSY_BRICK_STAIRS = registerBlock("mossy_brick_stairs",
-            Blocks.createStairsBlock(MOSSY_BRICKS));
-    public static final Block MOSSY_BRICK_WALL = registerBlock("mossy_brick_wall",
-            new WallBlock(AbstractBlock.Settings.copyShallow(MOSSY_BRICKS).solid()));
+    public static final Block MOSSY_BRICKS = registerBlock("mossy_bricks", new Block(AbstractBlock.Settings.copy(BRICKS)));
+    public static final Block MOSSY_BRICK_SLAB = registerBlock("mossy_brick_slab", new SlabBlock(MOSSY_BRICKS.getSettings()));
+    public static final Block MOSSY_BRICK_STAIRS = registerBlock("mossy_brick_stairs", Blocks.createStairsBlock(MOSSY_BRICKS));
+    public static final Block MOSSY_BRICK_WALL = registerBlock("mossy_brick_wall", new WallBlock(AbstractBlock.Settings.copyShallow(MOSSY_BRICKS).solid()));
 
     public static void registerBlocks() {
         log.debug("Registering blocks");
-    }
-
-    @SafeVarargs
-    private static Block registerBlock(String path, Block block, RegistryKey<ItemGroup>... itemGroups) {
-        Block registeredBlock = Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, path), block);
-        BlockItem blockItem = new BlockItem(registeredBlock, new Item.Settings());
-        Registry.register(Registries.ITEM, Identifier.of(MOD_ID, path), blockItem);
-
-        for (RegistryKey<ItemGroup> itemGroup : itemGroups) {
-            List<BlockItem> currentBlockItems = new ArrayList<>(ModItemGroups.itemGroupToBlocksMap
-                    .getOrDefault(itemGroup, List.of()));
-            currentBlockItems.add(blockItem);
-            ModItemGroups.itemGroupToBlocksMap.put(itemGroup, currentBlockItems);
-        }
-
-        return registeredBlock;
     }
 
     private static Block registerBlock(String path, Block block) {

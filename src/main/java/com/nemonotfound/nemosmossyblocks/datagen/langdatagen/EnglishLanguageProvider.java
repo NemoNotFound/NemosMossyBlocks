@@ -5,8 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
 
-import java.nio.file.Path;
-import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
 public class EnglishLanguageProvider extends FabricLanguageProvider {
@@ -152,18 +150,43 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.MOSSY_STONE_SLAB, "Mossy Stone Slab");
         translationBuilder.add(ModItems.MOSSY_STONE_PRESSURE_PLATE, "Mossy Stone Pressure Plate");
         translationBuilder.add(ModItems.MOSSY_STONE_BUTTON, "Mossy Stone Button");
+        translationBuilder.add(ModItems.MOSSY_GLASS, "Mossy Glass");
+        translationBuilder.add(ModItems.MOSSY_TINTED_GLASS, "Mossy Tinted Glass");
+        translationBuilder.add(ModItems.MOSSY_WHITE_STAINED_GLASS, "Mossy White Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_LIGHT_GRAY_STAINED_GLASS, "Mossy Light Gray Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_GRAY_STAINED_GLASS, "Mossy Gray Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_BLACK_STAINED_GLASS, "Mossy Black Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_BROWN_STAINED_GLASS, "Mossy Brown Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_RED_STAINED_GLASS, "Mossy Red Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_ORANGE_STAINED_GLASS, "Mossy Orange Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_YELLOW_STAINED_GLASS, "Mossy Yellow Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_LIME_STAINED_GLASS, "Mossy Lime Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_GREEN_STAINED_GLASS, "Mossy Green Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_CYAN_STAINED_GLASS, "Mossy Cyan Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_LIGHT_BLUE_STAINED_GLASS, "Mossy Light Blue Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_BLUE_STAINED_GLASS, "Mossy Blue Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_PURPLE_STAINED_GLASS, "Mossy Purple Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_MAGENTA_STAINED_GLASS, "Mossy Magenta Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_PINK_STAINED_GLASS, "Mossy Pink Stained Glass");
+        translationBuilder.add(ModItems.MOSSY_GLASS_PANE, "Mossy Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_WHITE_STAINED_GLASS_PANE, "Mossy White Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE, "Mossy Light Gray Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_GRAY_STAINED_GLASS_PANE, "Mossy Gray Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_BLACK_STAINED_GLASS_PANE, "Mossy Black Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_BROWN_STAINED_GLASS_PANE, "Mossy Brown Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_RED_STAINED_GLASS_PANE, "Mossy Red Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_ORANGE_STAINED_GLASS_PANE, "Mossy Orange Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_YELLOW_STAINED_GLASS_PANE, "Mossy Yellow Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_LIME_STAINED_GLASS_PANE, "Mossy Lime Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_GREEN_STAINED_GLASS_PANE, "Mossy Green Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_CYAN_STAINED_GLASS_PANE, "Mossy Cyan Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE, "Mossy Light Blue Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_BLUE_STAINED_GLASS_PANE, "Mossy Blue Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_PURPLE_STAINED_GLASS_PANE, "Mossy Purple Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_MAGENTA_STAINED_GLASS_PANE, "Mossy Magenta Stained Glass Pane");
+        translationBuilder.add(ModItems.MOSSY_PINK_STAINED_GLASS_PANE, "Mossy Pink Stained Glass Pane");
         translationBuilder.add(ModItems.MOSSY_IRON_BARS, "Mossy Iron Bars");
         translationBuilder.add(ModItems.MOSSY_IRON_DOOR, "Mossy Iron Door");
         translationBuilder.add(ModItems.MOSSY_IRON_TRAPDOOR, "Mossy Iron Trapdoor");
-
-        try {
-            Optional<Path> optionalPath = dataOutput.getModContainer().findPath("en_us.json");
-
-            if (optionalPath.isPresent()) {
-                translationBuilder.add(optionalPath.get());
-            }
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to add existing language file!", e);
-        }
     }
 }

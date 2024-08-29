@@ -4,17 +4,14 @@ import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
-import net.minecraft.item.*;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.MOD_ID;
 import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.log;
@@ -22,14 +19,13 @@ import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.log;
 public class ModItemGroups {
 
     public static String NEMOS_CARPENTRY_GROUP_ID = "nemos-mossy-blocks-group";
-    public static final RegistryKey<ItemGroup> NEMOS_MOSSY_BLOCKS = getItemGroup(NEMOS_CARPENTRY_GROUP_ID);
-    public static final Map<RegistryKey<ItemGroup>, List<BlockItem>> itemGroupToBlocksMap = new HashMap<>();
 
     public static void registerItemGroups() {
         log.info("Registering item groups");
 
         registerNemosMossyBlocksItemGroup("Nemo's Mossy Blocks", NEMOS_CARPENTRY_GROUP_ID, ModBlocks.MOSSY_STONE);
         modifyBuildingBlocksItemGroup();
+        modifyColoredBlocksItemGroup();
         modifyFunctionalBlocksItemGroup();
         modifyCombatItemGroup();
         modifyIngredientsItemGroup();
@@ -178,25 +174,45 @@ public class ModItemGroups {
                     entries.add(ModItems.MOSSY_IRON_BARS);
                     entries.add(ModItems.MOSSY_IRON_DOOR);
                     entries.add(ModItems.MOSSY_IRON_TRAPDOOR);
+                    entries.add(ModItems.MOSSY_GLASS);
+                    entries.add(ModItems.MOSSY_TINTED_GLASS);
+                    entries.add(ModItems.MOSSY_WHITE_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_LIGHT_GRAY_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_GRAY_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_BLACK_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_BROWN_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_RED_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_ORANGE_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_YELLOW_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_LIME_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_GREEN_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_CYAN_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_LIGHT_BLUE_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_BLUE_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_PURPLE_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_MAGENTA_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_PINK_STAINED_GLASS);
+                    entries.add(ModItems.MOSSY_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_WHITE_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_GRAY_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_BLACK_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_BROWN_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_RED_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_ORANGE_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_YELLOW_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_LIME_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_GREEN_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_CYAN_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_BLUE_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_PURPLE_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_MAGENTA_STAINED_GLASS_PANE);
+                    entries.add(ModItems.MOSSY_PINK_STAINED_GLASS_PANE);
                 })
                 .build();
 
         Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, path), ITEM_GROUP);
-    }
-
-    private static RegistryKey<ItemGroup> getItemGroup(String path) {
-        return RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(MOD_ID, path));
-    }
-
-    public static void registerItemsToItemGroups() {
-        for (Map.Entry<RegistryKey<ItemGroup>, List<BlockItem>> entry : itemGroupToBlocksMap.entrySet()) {
-            ItemGroupEvents.modifyEntriesEvent(entry.getKey())
-                    .register(content -> {
-                        for (BlockItem blockItem : entry.getValue()) {
-                            content.add(blockItem);
-                        }
-                    });
-        }
     }
 
     private static void modifyBuildingBlocksItemGroup() {
@@ -337,6 +353,46 @@ public class ModItemGroups {
             entries.addAfter(Items.IRON_TRAPDOOR, ModItems.MOSSY_IRON_TRAPDOOR);
             entries.addAfter(Items.IRON_TRAPDOOR, ModItems.MOSSY_IRON_DOOR);
             entries.addAfter(Items.IRON_TRAPDOOR, ModItems.MOSSY_IRON_BARS);
+        });
+    }
+
+    private static void modifyColoredBlocksItemGroup() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(entries -> {
+            entries.addAfter(Items.GLASS, ModItems.MOSSY_GLASS);
+            entries.addAfter(Items.TINTED_GLASS, ModItems.MOSSY_TINTED_GLASS);
+            entries.addAfter(Items.WHITE_STAINED_GLASS, ModItems.MOSSY_WHITE_STAINED_GLASS);
+            entries.addAfter(Items.LIGHT_GRAY_STAINED_GLASS, ModItems.MOSSY_LIGHT_GRAY_STAINED_GLASS);
+            entries.addAfter(Items.GRAY_STAINED_GLASS, ModItems.MOSSY_GRAY_STAINED_GLASS);
+            entries.addAfter(Items.BLACK_STAINED_GLASS, ModItems.MOSSY_BLACK_STAINED_GLASS);
+            entries.addAfter(Items.BROWN_STAINED_GLASS, ModItems.MOSSY_BROWN_STAINED_GLASS);
+            entries.addAfter(Items.RED_STAINED_GLASS, ModItems.MOSSY_RED_STAINED_GLASS);
+            entries.addAfter(Items.ORANGE_STAINED_GLASS, ModItems.MOSSY_ORANGE_STAINED_GLASS);
+            entries.addAfter(Items.YELLOW_STAINED_GLASS, ModItems.MOSSY_YELLOW_STAINED_GLASS);
+            entries.addAfter(Items.LIME_STAINED_GLASS, ModItems.MOSSY_LIME_STAINED_GLASS);
+            entries.addAfter(Items.GREEN_STAINED_GLASS, ModItems.MOSSY_GREEN_STAINED_GLASS);
+            entries.addAfter(Items.CYAN_STAINED_GLASS, ModItems.MOSSY_CYAN_STAINED_GLASS);
+            entries.addAfter(Items.LIGHT_BLUE_STAINED_GLASS, ModItems.MOSSY_LIGHT_BLUE_STAINED_GLASS);
+            entries.addAfter(Items.BLUE_STAINED_GLASS, ModItems.MOSSY_BLUE_STAINED_GLASS);
+            entries.addAfter(Items.PURPLE_STAINED_GLASS, ModItems.MOSSY_PURPLE_STAINED_GLASS);
+            entries.addAfter(Items.MAGENTA_STAINED_GLASS, ModItems.MOSSY_MAGENTA_STAINED_GLASS);
+            entries.addAfter(Items.PINK_STAINED_GLASS, ModItems.MOSSY_PINK_STAINED_GLASS);
+            entries.addAfter(Items.GLASS_PANE, ModItems.MOSSY_GLASS_PANE);
+            entries.addAfter(Items.WHITE_STAINED_GLASS_PANE, ModItems.MOSSY_WHITE_STAINED_GLASS_PANE);
+            entries.addAfter(Items.LIGHT_GRAY_STAINED_GLASS_PANE, ModItems.MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE);
+            entries.addAfter(Items.GRAY_STAINED_GLASS_PANE, ModItems.MOSSY_GRAY_STAINED_GLASS_PANE);
+            entries.addAfter(Items.BLACK_STAINED_GLASS_PANE, ModItems.MOSSY_BLACK_STAINED_GLASS_PANE);
+            entries.addAfter(Items.BROWN_STAINED_GLASS_PANE, ModItems.MOSSY_BROWN_STAINED_GLASS_PANE);
+            entries.addAfter(Items.RED_STAINED_GLASS_PANE, ModItems.MOSSY_RED_STAINED_GLASS_PANE);
+            entries.addAfter(Items.ORANGE_STAINED_GLASS_PANE, ModItems.MOSSY_ORANGE_STAINED_GLASS_PANE);
+            entries.addAfter(Items.YELLOW_STAINED_GLASS_PANE, ModItems.MOSSY_YELLOW_STAINED_GLASS_PANE);
+            entries.addAfter(Items.LIME_STAINED_GLASS_PANE, ModItems.MOSSY_LIME_STAINED_GLASS_PANE);
+            entries.addAfter(Items.GREEN_STAINED_GLASS_PANE, ModItems.MOSSY_GREEN_STAINED_GLASS_PANE);
+            entries.addAfter(Items.CYAN_STAINED_GLASS_PANE, ModItems.MOSSY_CYAN_STAINED_GLASS_PANE);
+            entries.addAfter(Items.LIGHT_BLUE_STAINED_GLASS_PANE, ModItems.MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE);
+            entries.addAfter(Items.BLUE_STAINED_GLASS_PANE, ModItems.MOSSY_BLUE_STAINED_GLASS_PANE);
+            entries.addAfter(Items.PURPLE_STAINED_GLASS_PANE, ModItems.MOSSY_PURPLE_STAINED_GLASS_PANE);
+            entries.addAfter(Items.MAGENTA_STAINED_GLASS_PANE, ModItems.MOSSY_MAGENTA_STAINED_GLASS_PANE);
+            entries.addAfter(Items.PINK_STAINED_GLASS_PANE, ModItems.MOSSY_PINK_STAINED_GLASS_PANE);
         });
     }
 
