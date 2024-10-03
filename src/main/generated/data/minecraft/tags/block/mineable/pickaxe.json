@@ -12,6 +12,27 @@
     "nemos-mossy-blocks:mossy_brick_slab",
     "nemos-mossy-blocks:mossy_brick_stairs",
     "nemos-mossy-blocks:mossy_brick_wall",
-    "nemos-mossy-blocks:mossy_iron_door"
+    "nemos-mossy-blocks:mossy_iron_door",
+    "nemos-mossy-blocks:mossy_deepslate",
+    "nemos-mossy-blocks:mossy_cobbled_deepslate",
+    "nemos-mossy-blocks:mossy_cobbled_deepslate_stairs",
+    "nemos-mossy-blocks:mossy_cobbled_deepslate_slab",
+    "nemos-mossy-blocks:mossy_cobbled_deepslate_wall",
+    "nemos-mossy-blocks:mossy_deepslate_bricks",
+    "nemos-mossy-blocks:mossy_deepslate_brick_stairs",
+    "nemos-mossy-blocks:mossy_deepslate_brick_slab",
+    "nemos-mossy-blocks:mossy_deepslate_brick_wall",
+    "nemos-mossy-blocks:mossy_deepslate_tiles",
+    "nemos-mossy-blocks:mossy_deepslate_tile_stairs",
+    "nemos-mossy-blocks:mossy_deepslate_tile_slab",
+    "nemos-mossy-blocks:mossy_deepslate_tile_wall",
+    "nemos-mossy-blocks:mossy_tuff",
+    "nemos-mossy-blocks:mossy_tuff_stairs",
+    "nemos-mossy-blocks:mossy_tuff_slab",
+    "nemos-mossy-blocks:mossy_tuff_wall",
+    "nemos-mossy-blocks:mossy_tuff_bricks",
+    "nemos-mossy-blocks:mossy_tuff_brick_stairs",
+    "nemos-mossy-blocks:mossy_tuff_brick_slab",
+    "nemos-mossy-blocks:mossy_tuff_brick_wall"
   ]
 }

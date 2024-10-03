@@ -188,5 +188,26 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.MOSSY_IRON_BARS, "Mossy Iron Bars");
         translationBuilder.add(ModItems.MOSSY_IRON_DOOR, "Mossy Iron Door");
         translationBuilder.add(ModItems.MOSSY_IRON_TRAPDOOR, "Mossy Iron Trapdoor");
+        translationBuilder.add(ModItems.MOSSY_DEEPSLATE, "Mossy Deeplsate");
+        translationBuilder.add(ModItems.MOSSY_COBBLED_DEEPSLATE, "Mossy Cobbled Deeplsate");
+        translationBuilder.add(ModItems.MOSSY_COBBLED_DEEPSLATE_SLAB, "Mossy Cobbled Deeplsate Slab");
+        translationBuilder.add(ModItems.MOSSY_COBBLED_DEEPSLATE_STAIRS, "Mossy Cobbled Deeplsate Stairs");
+        translationBuilder.add(ModItems.MOSSY_COBBLED_DEEPSLATE_WALL, "Mossy Cobbled Deeplsate Wall");
+        translationBuilder.add(ModItems.MOSSY_DEEPSLATE_BRICKS, "Mossy Deeplsate Bricks");
+        translationBuilder.add(ModItems.MOSSY_DEEPSLATE_BRICK_SLAB, "Mossy Deeplsate Brick Slab");
+        translationBuilder.add(ModItems.MOSSY_DEEPSLATE_BRICK_STAIRS, "Mossy Deeplsate Brick Stairs");
+        translationBuilder.add(ModItems.MOSSY_DEEPSLATE_BRICK_WALL, "Mossy Deeplsate Brick Wall");
+        translationBuilder.add(ModItems.MOSSY_DEEPSLATE_TILES, "Mossy Deeplsate Tiles");
+        translationBuilder.add(ModItems.MOSSY_DEEPSLATE_TILE_SLAB, "Mossy Deeplsate Tile Slab");
+        translationBuilder.add(ModItems.MOSSY_DEEPSLATE_TILE_STAIRS, "Mossy Deeplsate Tile Stairs");
+        translationBuilder.add(ModItems.MOSSY_DEEPSLATE_TILE_WALL, "Mossy Deeplsate Tile Wall");
+        translationBuilder.add(ModItems.MOSSY_TUFF, "Mossy Tuff");
+        translationBuilder.add(ModItems.MOSSY_TUFF_SLAB, "Mossy Tuff Slab");
+        translationBuilder.add(ModItems.MOSSY_TUFF_STAIRS, "Mossy Tuff Stairs");
+        translationBuilder.add(ModItems.MOSSY_TUFF_WALL, "Mossy Tuff Wall");
+        translationBuilder.add(ModItems.MOSSY_TUFF_BRICKS, "Mossy Tuff Bricks");
+        translationBuilder.add(ModItems.MOSSY_TUFF_BRICK_SLAB, "Mossy Tuff Brick Slab");
+        translationBuilder.add(ModItems.MOSSY_TUFF_BRICK_STAIRS, "Mossy Tuff Brick Stairs");
+        translationBuilder.add(ModItems.MOSSY_TUFF_BRICK_WALL, "Mossy Tuff Brick Wall");
     }
 }

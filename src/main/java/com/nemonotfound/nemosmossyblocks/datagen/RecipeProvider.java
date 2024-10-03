@@ -75,6 +75,12 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.IRON_TRAPDOOR, ModBlocks.MOSSY_IRON_TRAPDOOR, "mossy_iron_trapdoor");
         createMossyBlockRecipe(exporter, Blocks.CHISELED_STONE_BRICKS, ModBlocks.MOSSY_CHISELED_STONE_BRICKS, "mossy_chiseled_stone_bricks");
         createMossyBlockRecipe(exporter, Blocks.BRICKS, ModBlocks.MOSSY_BRICKS, "mossy_bricks");
+        createMossyBlockRecipe(exporter, Blocks.DEEPSLATE, ModBlocks.MOSSY_DEEPSLATE, "mossy_deepslate");
+        createMossyBlockRecipe(exporter, Blocks.COBBLED_DEEPSLATE, ModBlocks.MOSSY_COBBLED_DEEPSLATE, "mossy_cobbled_deepslate");
+        createMossyBlockRecipe(exporter, Blocks.DEEPSLATE_BRICKS, ModBlocks.MOSSY_DEEPSLATE_BRICKS, "mossy_deepslate_bricks");
+        createMossyBlockRecipe(exporter, Blocks.DEEPSLATE_TILES, ModBlocks.MOSSY_DEEPSLATE_TILES, "mossy_deepslate_tiles");
+        createMossyBlockRecipe(exporter, Blocks.TUFF, ModBlocks.MOSSY_TUFF, "mossy_tuff");
+        createMossyBlockRecipe(exporter, Blocks.TUFF_BRICKS, ModBlocks.MOSSY_TUFF_BRICKS, "mossy_tuff_bricks");
 
         createPlanksRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_ACACIA_WOOD);
         createPlanksRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_BAMBOO_BLOCKS);
@@ -186,6 +192,36 @@ public class RecipeProvider extends FabricRecipeProvider {
                 ModBlocks.MOSSY_BRICK_STAIRS, ModBlocks.MOSSY_BRICKS);
         VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModBlocks.MOSSY_BRICK_WALL, ModBlocks.MOSSY_BRICKS);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB, ModBlocks.MOSSY_COBBLED_DEEPSLATE);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS, ModBlocks.MOSSY_COBBLED_DEEPSLATE);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_COBBLED_DEEPSLATE_WALL, ModBlocks.MOSSY_COBBLED_DEEPSLATE);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_DEEPSLATE_BRICK_SLAB, ModBlocks.MOSSY_DEEPSLATE_BRICKS);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS, ModBlocks.MOSSY_DEEPSLATE_BRICKS);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_DEEPSLATE_BRICK_WALL, ModBlocks.MOSSY_DEEPSLATE_BRICKS);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB, ModBlocks.MOSSY_DEEPSLATE_TILES);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS, ModBlocks.MOSSY_DEEPSLATE_TILES);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_DEEPSLATE_TILE_WALL, ModBlocks.MOSSY_DEEPSLATE_TILES);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_TUFF_SLAB, ModBlocks.MOSSY_TUFF);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_TUFF_STAIRS, ModBlocks.MOSSY_TUFF);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_TUFF_WALL, ModBlocks.MOSSY_TUFF);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_TUFF_BRICK_SLAB, ModBlocks.MOSSY_TUFF_BRICKS);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_TUFF_BRICK_STAIRS, ModBlocks.MOSSY_TUFF_BRICKS);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_TUFF_BRICK_WALL, ModBlocks.MOSSY_TUFF_BRICKS);
 
         createGlassPaneRecipe(exporter);
         createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BLACK_STAINED_GLASS, ModBlocks.MOSSY_BLACK_STAINED_GLASS_PANE);
@@ -227,6 +263,7 @@ public class RecipeProvider extends FabricRecipeProvider {
 
         createStairsRecipe(exporter, ModBlocks.MOSSY_BRICKS, ModBlocks.MOSSY_BRICK_STAIRS);
         createSlabRecipe(exporter, ModBlocks.MOSSY_BRICKS, ModBlocks.MOSSY_BRICK_SLAB);
+        VanillaRecipeProvider.offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_BRICK_WALL, ModBlocks.MOSSY_BRICKS);
 
         offerDoorRecipe(exporter, ModBlocks.MOSSY_OAK_DOOR, ModBlocks.MOSSY_OAK_PLANKS);
         offerDoorRecipe(exporter, ModBlocks.MOSSY_SPRUCE_DOOR, ModBlocks.MOSSY_SPRUCE_PLANKS);
@@ -251,6 +288,26 @@ public class RecipeProvider extends FabricRecipeProvider {
         createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.MOSSY_OAK_TRAPDOOR);
         createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_TRAPDOOR);
         createWoodenTrapdoorRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_TRAPDOOR);
+
+        createStairsRecipe(exporter, ModBlocks.MOSSY_COBBLED_DEEPSLATE, ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS);
+        createSlabRecipe(exporter, ModBlocks.MOSSY_COBBLED_DEEPSLATE, ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB);
+        VanillaRecipeProvider.offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_COBBLED_DEEPSLATE_WALL, ModBlocks.MOSSY_COBBLED_DEEPSLATE);
+
+        createStairsRecipe(exporter, ModBlocks.MOSSY_DEEPSLATE_BRICKS, ModBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS);
+        createSlabRecipe(exporter, ModBlocks.MOSSY_DEEPSLATE_BRICKS, ModBlocks.MOSSY_DEEPSLATE_BRICK_SLAB);
+        VanillaRecipeProvider.offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_DEEPSLATE_BRICK_WALL, ModBlocks.MOSSY_DEEPSLATE_BRICKS);
+
+        createStairsRecipe(exporter, ModBlocks.MOSSY_DEEPSLATE_TILES, ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS);
+        createSlabRecipe(exporter, ModBlocks.MOSSY_DEEPSLATE_TILES, ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB);
+        VanillaRecipeProvider.offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_DEEPSLATE_TILE_WALL, ModBlocks.MOSSY_DEEPSLATE_TILES);
+
+        createStairsRecipe(exporter, ModBlocks.MOSSY_TUFF, ModBlocks.MOSSY_TUFF_STAIRS);
+        createSlabRecipe(exporter, ModBlocks.MOSSY_TUFF, ModBlocks.MOSSY_TUFF_SLAB);
+        VanillaRecipeProvider.offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_TUFF_WALL, ModBlocks.MOSSY_TUFF);
+
+        createStairsRecipe(exporter, ModBlocks.MOSSY_TUFF_BRICKS, ModBlocks.MOSSY_TUFF_BRICK_STAIRS);
+        createSlabRecipe(exporter, ModBlocks.MOSSY_TUFF_BRICKS, ModBlocks.MOSSY_TUFF_BRICK_SLAB);
+        VanillaRecipeProvider.offerWallRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_TUFF_BRICK_WALL, ModBlocks.MOSSY_TUFF_BRICKS);
     }
 
     private void offerDoorRecipe(RecipeExporter exporter, Block output, Block input) {

@@ -1,17 +1,14 @@
-# Changelog v1.5 
+# Changelog v1.6
 
 ## Additions
-- Added Mossy Chiseled Stone Bricks
-- Added Infested Mossy Chiseled Stone Bricks
-- Added Mossy Bricks, Brick Slab, Stairs and Wall
-- Added Mossy Doors
-- Added Mossy Trapdoors
+- Added Mossy Cobbled Deepslate
+- Added Mossy Deepslate Bricks
+- Added Mossy Deepslate Tiles
+- Added Mossy Tuff
+- Added Mossy Tuff Bricks
 
 ## Fixes
-- Fixed wrong fence recipes
-
-## Changes
-- Reordered creative inventory item groups
+- Wall recipe missing for Mossy Brick Wall
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>
