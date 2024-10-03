@@ -3,7 +3,6 @@ package com.nemonotfound.nemosmossyblocks.block;
 import net.minecraft.block.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 
@@ -199,6 +198,20 @@ public class ModBlocks {
     public static final Block MOSSY_BRICK_SLAB = registerBlock("mossy_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_BRICKS)));
     public static final Block MOSSY_BRICK_STAIRS = registerBlock("mossy_brick_stairs", new StairsBlock(MOSSY_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_BRICKS)));
     public static final Block MOSSY_BRICK_WALL = registerBlock("mossy_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_BRICKS).solid()));
+    public static final Block MOSSY_DEEPSLATE = registerBlock("mossy_deepslate", new PillarBlock(AbstractBlock.Settings.copy(DEEPSLATE)));
+    public static final Block MOSSY_COBBLED_DEEPSLATE = registerBlock("mossy_cobbled_deepslate", new Block(AbstractBlock.Settings.copy(COBBLED_DEEPSLATE)));
+    public static final Block MOSSY_COBBLED_DEEPSLATE_STAIRS = registerBlock("mossy_cobbled_deepslate_stairs", new StairsBlock(MOSSY_COBBLED_DEEPSLATE.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_COBBLED_DEEPSLATE)));
+    public static final Block MOSSY_COBBLED_DEEPSLATE_SLAB = registerBlock("mossy_cobbled_deepslate_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_DEEPSLATE)));
+    public static final Block MOSSY_COBBLED_DEEPSLATE_WALL = registerBlock("mossy_cobbled_deepslate_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_COBBLED_DEEPSLATE)));
+    public static final Block MOSSY_DEEPSLATE_BRICKS = registerBlock("mossy_deepslate_bricks", new Block(AbstractBlock.Settings.copy(DEEPSLATE_BRICKS)));
+    public static final Block MOSSY_DEEPSLATE_BRICK_STAIRS = registerBlock("mossy_deepslate_brick_stairs", new StairsBlock(MOSSY_DEEPSLATE_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_BRICKS)));
+    public static final Block MOSSY_DEEPSLATE_BRICK_SLAB = registerBlock("mossy_deepslate_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_BRICKS)));
+    public static final Block MOSSY_DEEPSLATE_BRICK_WALL = registerBlock("mossy_deepslate_brick_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_BRICKS)));
+    public static final Block MOSSY_DEEPSLATE_TILES = registerBlock("mossy_deepslate_tiles", new Block(AbstractBlock.Settings.copy(DEEPSLATE_TILES)));
+    public static final Block MOSSY_DEEPSLATE_TILE_STAIRS = registerBlock("mossy_deepslate_tile_stairs", new StairsBlock(MOSSY_DEEPSLATE_TILES.getDefaultState(), AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_TILES)));
+    public static final Block MOSSY_DEEPSLATE_TILE_SLAB = registerBlock("mossy_deepslate_tile_slab", new SlabBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_TILES)));
+    public static final Block MOSSY_DEEPSLATE_TILE_WALL = registerBlock("mossy_deepslate_tile_wall", new WallBlock(AbstractBlock.Settings.copy(MOSSY_DEEPSLATE_TILES)));
+    public static final Block MOSSY_TUFF = registerBlock("mossy_tuff", new Block(AbstractBlock.Settings.copy(TUFF)));
 
     public static void registerBlocks() {
         log.debug("Registering blocks");

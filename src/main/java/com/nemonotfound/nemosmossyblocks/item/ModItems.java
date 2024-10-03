@@ -187,6 +187,20 @@ public class ModItems {
     public static final Item MOSSY_IRON_BARS =registerBlockItem("mossy_iron_bars", ModBlocks.MOSSY_IRON_BARS);
     public static final Item MOSSY_IRON_DOOR = registerBlockItem("mossy_iron_door", ModBlocks.MOSSY_IRON_DOOR);
     public static final Item MOSSY_IRON_TRAPDOOR = registerBlockItem("mossy_iron_trapdoor", ModBlocks.MOSSY_IRON_TRAPDOOR);
+    public static final Item MOSSY_DEEPSLATE = registerBlockItem("mossy_deepslate", ModBlocks.MOSSY_DEEPSLATE);
+    public static final Item MOSSY_COBBLED_DEEPSLATE = registerBlockItem("mossy_cobbled_deepslate", ModBlocks.MOSSY_COBBLED_DEEPSLATE);
+    public static final Item MOSSY_COBBLED_DEEPSLATE_STAIRS = registerBlockItem("mossy_cobbled_deepslate_stairs", ModBlocks.MOSSY_COBBLED_DEEPSLATE_STAIRS);
+    public static final Item MOSSY_COBBLED_DEEPSLATE_SLAB = registerBlockItem("mossy_cobbled_deepslate_slab", ModBlocks.MOSSY_COBBLED_DEEPSLATE_SLAB);
+    public static final Item MOSSY_COBBLED_DEEPSLATE_WALL = registerBlockItem("mossy_cobbled_deepslate_wall", ModBlocks.MOSSY_COBBLED_DEEPSLATE_WALL);
+    public static final Item MOSSY_DEEPSLATE_BRICKS = registerBlockItem("mossy_deepslate_bricks", ModBlocks.MOSSY_DEEPSLATE_BRICKS);
+    public static final Item MOSSY_DEEPSLATE_BRICK_STAIRS = registerBlockItem("mossy_deepslate_brick_stairs", ModBlocks.MOSSY_DEEPSLATE_BRICK_STAIRS);
+    public static final Item MOSSY_DEEPSLATE_BRICK_SLAB = registerBlockItem("mossy_deepslate_brick_slab", ModBlocks.MOSSY_DEEPSLATE_BRICK_SLAB);
+    public static final Item MOSSY_DEEPSLATE_BRICK_WALL = registerBlockItem("mossy_deepslate_brick_wall", ModBlocks.MOSSY_DEEPSLATE_BRICK_WALL);
+    public static final Item MOSSY_DEEPSLATE_TILES = registerBlockItem("mossy_deepslate_tiles", ModBlocks.MOSSY_DEEPSLATE_TILES);
+    public static final Item MOSSY_DEEPSLATE_TILE_STAIRS = registerBlockItem("mossy_deepslate_tile_stairs", ModBlocks.MOSSY_DEEPSLATE_TILE_STAIRS);
+    public static final Item MOSSY_DEEPSLATE_TILE_SLAB = registerBlockItem("mossy_deepslate_tile_slab", ModBlocks.MOSSY_DEEPSLATE_TILE_SLAB);
+    public static final Item MOSSY_DEEPSLATE_TILE_WALL = registerBlockItem("mossy_deepslate_tile_wall", ModBlocks.MOSSY_DEEPSLATE_TILE_WALL);
+    public static final Item MOSSY_TUFF = registerBlockItem("mossy_tuff", ModBlocks.MOSSY_TUFF);
 
     public static void registerItems() {
         log.debug("Registering items");

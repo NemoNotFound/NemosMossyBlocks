@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "nemos-mossy-blocks:mossy_brick_wall"
+    "nemos-mossy-blocks:mossy_brick_wall",
+    "nemos-mossy-blocks:mossy_cobbled_deepslate_wall",
+    "nemos-mossy-blocks:mossy_deepslate_brick_wall",
+    "nemos-mossy-blocks:mossy_deepslate_tile_wall"
   ]
 }
