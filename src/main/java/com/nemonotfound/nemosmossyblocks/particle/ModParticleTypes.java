@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 
 import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.MOD_ID;
 
-public class Particles {
+public class ModParticleTypes {
 
     public static final SimpleParticleType ITEM_MOSS_BALL = registerSimpleParticle("item_moss_ball", false);
 

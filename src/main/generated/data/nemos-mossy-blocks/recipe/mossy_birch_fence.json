@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "mossy_wooden_fence",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "W": {
-      "item": "nemos-mossy-blocks:mossy_birch_planks"
-    }
+    "#": "minecraft:stick",
+    "W": "nemos-mossy-blocks:mossy_birch_planks"
   },
   "pattern": [
     "W#W",

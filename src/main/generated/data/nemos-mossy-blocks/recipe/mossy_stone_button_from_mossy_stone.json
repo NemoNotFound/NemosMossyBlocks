@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "nemos-mossy-blocks:mossy_stone"
-    }
+    "nemos-mossy-blocks:mossy_stone"
   ],
   "result": {
     "count": 1,

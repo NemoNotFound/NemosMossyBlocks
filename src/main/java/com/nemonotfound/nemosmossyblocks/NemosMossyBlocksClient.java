@@ -1,9 +1,9 @@
 package com.nemonotfound.nemosmossyblocks;
 
 import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
-import com.nemonotfound.nemosmossyblocks.entity.Entities;
+import com.nemonotfound.nemosmossyblocks.entity.ModEntityTypes;
 import com.nemonotfound.nemosmossyblocks.particle.ModCrackParticle;
-import com.nemonotfound.nemosmossyblocks.particle.Particles;
+import com.nemonotfound.nemosmossyblocks.particle.ModParticleTypes;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -54,9 +54,9 @@ public class NemosMossyBlocksClient implements ClientModInitializer {
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_IRON_BARS, RenderLayer.getCutoutMipped());
 
-		EntityRendererRegistry.register(Entities.MOSS_BALL, FlyingItemEntityRenderer::new);
+		EntityRendererRegistry.register(ModEntityTypes.MOSS_BALL, FlyingItemEntityRenderer::new);
 
-		ParticleFactoryRegistry.getInstance().register(Particles.ITEM_MOSS_BALL, new ModCrackParticle.MossBallFactory());
+		ParticleFactoryRegistry.getInstance().register(ModParticleTypes.ITEM_MOSS_BALL, new ModCrackParticle.MossBallFactory());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_OAK_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_JUNGLE_DOOR, RenderLayer.getCutout());

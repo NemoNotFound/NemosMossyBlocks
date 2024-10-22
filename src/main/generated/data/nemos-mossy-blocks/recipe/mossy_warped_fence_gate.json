@@ -3,12 +3,8 @@
   "category": "redstone",
   "group": "mossy_wooden_fence_gate",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "W": {
-      "item": "nemos-mossy-blocks:mossy_warped_planks"
-    }
+    "#": "minecraft:stick",
+    "W": "nemos-mossy-blocks:mossy_warped_planks"
   },
   "pattern": [
     "#W#",

@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_glass",
   "ingredients": [
-    {
-      "item": "minecraft:glass"
-    },
-    {
-      "item": "minecraft:moss_block"
-    }
+    "minecraft:glass",
+    "minecraft:moss_block"
   ],
   "result": {
     "count": 1,

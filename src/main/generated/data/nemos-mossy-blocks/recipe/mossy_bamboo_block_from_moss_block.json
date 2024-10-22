@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_log",
   "ingredients": [
-    {
-      "item": "minecraft:bamboo_block"
-    },
-    {
-      "item": "minecraft:moss_block"
-    }
+    "minecraft:bamboo_block",
+    "minecraft:moss_block"
   ],
   "result": {
     "count": 1,

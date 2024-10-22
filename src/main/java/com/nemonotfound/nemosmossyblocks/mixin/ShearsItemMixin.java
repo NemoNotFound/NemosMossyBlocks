@@ -54,7 +54,7 @@ public class ShearsItemMixin {
                 itemStack.damage(1, playerEntity, LivingEntity.getSlotForHand(context.getHand()));
             }
 
-            callbackInfoReturnable.setReturnValue(ActionResult.success(world.isClient));
+            callbackInfoReturnable.setReturnValue(ActionResult.SUCCESS);
         }
 
     }

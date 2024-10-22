@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_glass",
   "ingredients": [
-    {
-      "item": "minecraft:gray_stained_glass"
-    },
-    {
-      "item": "minecraft:moss_block"
-    }
+    "minecraft:gray_stained_glass",
+    "minecraft:moss_block"
   ],
   "result": {
     "count": 1,

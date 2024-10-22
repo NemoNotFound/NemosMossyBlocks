@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_iron_door",
   "ingredients": [
-    {
-      "item": "minecraft:iron_door"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "minecraft:iron_door",
+    "minecraft:vine"
   ],
   "result": {
     "count": 1,

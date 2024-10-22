@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_deepslate",
   "ingredients": [
-    {
-      "item": "minecraft:deepslate"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "minecraft:deepslate",
+    "minecraft:vine"
   ],
   "result": {
     "count": 1,

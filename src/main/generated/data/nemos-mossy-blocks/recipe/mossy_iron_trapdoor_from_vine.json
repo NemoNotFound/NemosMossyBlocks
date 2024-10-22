@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_iron_trapdoor",
   "ingredients": [
-    {
-      "item": "minecraft:iron_trapdoor"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "minecraft:iron_trapdoor",
+    "minecraft:vine"
   ],
   "result": {
     "count": 1,

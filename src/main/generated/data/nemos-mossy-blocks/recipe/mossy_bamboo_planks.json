@@ -3,9 +3,7 @@
   "category": "building",
   "group": "mossy_planks",
   "ingredients": [
-    {
-      "tag": "nemos-mossy-blocks:mossy_bamboo_blocks"
-    }
+    "#nemos-mossy-blocks:mossy_bamboo_blocks"
   ],
   "result": {
     "count": 4,

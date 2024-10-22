@@ -3,9 +3,7 @@
   "category": "building",
   "group": "bark",
   "key": {
-    "#": {
-      "item": "nemos-mossy-blocks:mossy_dark_oak_log"
-    }
+    "#": "nemos-mossy-blocks:mossy_dark_oak_log"
   },
   "pattern": [
     "##",

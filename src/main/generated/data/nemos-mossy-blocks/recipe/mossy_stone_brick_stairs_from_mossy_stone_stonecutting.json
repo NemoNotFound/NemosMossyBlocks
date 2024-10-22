@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "nemos-mossy-blocks:mossy_stone"
-  },
+  "ingredient": "nemos-mossy-blocks:mossy_stone",
   "result": {
     "count": 1,
     "id": "minecraft:mossy_stone_brick_stairs"

@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_log",
   "ingredients": [
-    {
-      "item": "minecraft:mangrove_log"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "minecraft:mangrove_log",
+    "minecraft:vine"
   ],
   "result": {
     "count": 1,

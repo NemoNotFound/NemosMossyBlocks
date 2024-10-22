@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_glass",
   "ingredients": [
-    {
-      "item": "minecraft:lime_stained_glass"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "minecraft:lime_stained_glass",
+    "minecraft:vine"
   ],
   "result": {
     "count": 1,

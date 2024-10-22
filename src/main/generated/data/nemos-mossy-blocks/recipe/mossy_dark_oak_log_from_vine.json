@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_log",
   "ingredients": [
-    {
-      "item": "minecraft:dark_oak_log"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "minecraft:dark_oak_log",
+    "minecraft:vine"
   ],
   "result": {
     "count": 1,

@@ -3,12 +3,8 @@
   "category": "building",
   "group": "mossy_log",
   "ingredients": [
-    {
-      "item": "minecraft:crimson_stem"
-    },
-    {
-      "item": "minecraft:vine"
-    }
+    "minecraft:crimson_stem",
+    "minecraft:vine"
   ],
   "result": {
     "count": 1,

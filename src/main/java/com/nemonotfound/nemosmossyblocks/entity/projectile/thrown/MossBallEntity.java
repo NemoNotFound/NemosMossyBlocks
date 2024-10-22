@@ -1,8 +1,8 @@
 package com.nemonotfound.nemosmossyblocks.entity.projectile.thrown;
 
-import com.nemonotfound.nemosmossyblocks.entity.Entities;
+import com.nemonotfound.nemosmossyblocks.entity.ModEntityTypes;
 import com.nemonotfound.nemosmossyblocks.item.ModItems;
-import com.nemonotfound.nemosmossyblocks.particle.Particles;
+import com.nemonotfound.nemosmossyblocks.particle.ModParticleTypes;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityStatuses;
 import net.minecraft.entity.EntityType;
@@ -24,12 +24,12 @@ public class MossBallEntity extends ThrownItemEntity {
         super(entityType, world);
     }
 
-    public MossBallEntity(World world, LivingEntity owner) {
-        super(Entities.MOSS_BALL, owner, world);
+    public MossBallEntity(World world, LivingEntity owner, ItemStack stack) {
+        super(ModEntityTypes.MOSS_BALL, owner, world, stack);
     }
 
-    public MossBallEntity(World world, double x, double y, double z) {
-        super(Entities.MOSS_BALL, x, y, z, world);
+    public MossBallEntity(World world, double x, double y, double z, ItemStack stack) {
+        super(ModEntityTypes.MOSS_BALL, x, y, z, world, stack);
     }
 
     @Override
@@ -39,8 +39,9 @@ public class MossBallEntity extends ThrownItemEntity {
 
     private ParticleEffect getParticleParameters() {
         ItemStack itemStack = this.getStack();
-        return itemStack.isEmpty() || itemStack.isOf(this.getDefaultItem()) ? Particles.ITEM_MOSS_BALL :
-                new ItemStackParticleEffect(ParticleTypes.ITEM, itemStack);
+        return !itemStack.isEmpty() && !itemStack.isOf(this.getDefaultItem())
+                ? new ItemStackParticleEffect(ParticleTypes.ITEM, itemStack)
+                : ModParticleTypes.ITEM_MOSS_BALL;
     }
 
     @Override
@@ -58,8 +59,7 @@ public class MossBallEntity extends ThrownItemEntity {
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
-        int i = entity instanceof BlazeEntity ? 3 : 0;
-        entity.damage(this.getDamageSources().thrown(this, this.getOwner()), i);
+        entity.serverDamage(this.getDamageSources().thrown(this, this.getOwner()), 0);
     }
 
     @Override

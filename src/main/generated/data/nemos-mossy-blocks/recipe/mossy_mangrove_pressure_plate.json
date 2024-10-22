@@ -3,9 +3,7 @@
   "category": "redstone",
   "group": "mossy_wooden_pressure_plate",
   "key": {
-    "#": {
-      "item": "nemos-mossy-blocks:mossy_mangrove_planks"
-    }
+    "#": "nemos-mossy-blocks:mossy_mangrove_planks"
   },
   "pattern": [
     "##"

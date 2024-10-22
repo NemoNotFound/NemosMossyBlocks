@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "mossy_stained_glass",
   "key": {
-    "#": {
-      "item": "nemos-mossy-blocks:mossy_pink_stained_glass"
-    }
+    "#": "nemos-mossy-blocks:mossy_pink_stained_glass"
   },
   "pattern": [
     "###",
