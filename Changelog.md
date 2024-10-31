@@ -1,14 +1,7 @@
-# Changelog v1.6
-
-## Additions
-- Added Mossy Cobbled Deepslate
-- Added Mossy Deepslate Bricks
-- Added Mossy Deepslate Tiles
-- Added Mossy Tuff
-- Added Mossy Tuff Bricks
+# Changelog v1.6.0.1
 
 ## Fixes
-- Wall recipe missing for Mossy Brick Wall
+- Required java version doesn't match actual used java version
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>
