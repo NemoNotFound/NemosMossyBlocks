@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "nemos-mossy-blocks:block/pale_mossy_birch_planks"
+  }
+}

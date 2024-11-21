@@ -5,6 +5,14 @@
     "nemos-mossy-blocks:mossy_deepslate_brick_wall",
     "nemos-mossy-blocks:mossy_deepslate_tile_wall",
     "nemos-mossy-blocks:mossy_tuff_wall",
-    "nemos-mossy-blocks:mossy_tuff_brick_wall"
+    "nemos-mossy-blocks:mossy_tuff_brick_wall",
+    "nemos-mossy-blocks:pale_mossy_cobblestone_wall",
+    "nemos-mossy-blocks:pale_mossy_stone_brick_wall",
+    "nemos-mossy-blocks:pale_mossy_brick_wall",
+    "nemos-mossy-blocks:pale_mossy_cobbled_deepslate_wall",
+    "nemos-mossy-blocks:pale_mossy_deepslate_brick_wall",
+    "nemos-mossy-blocks:pale_mossy_deepslate_tile_wall",
+    "nemos-mossy-blocks:pale_mossy_tuff_wall",
+    "nemos-mossy-blocks:pale_mossy_tuff_brick_wall"
   ]
 }

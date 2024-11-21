@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "nemos-mossy-blocks:block/pale_mossy_tuff"
+  }
+}

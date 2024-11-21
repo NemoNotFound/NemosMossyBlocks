@@ -2,6 +2,7 @@ package com.nemonotfound.nemosmossyblocks.mixin;
 
 import com.nemonotfound.nemosmossyblocks.block.BlockUtils;
 import com.nemonotfound.nemosmossyblocks.item.ModItems;
+import com.nemonotfound.nemosmossyblocks.tag.ModBlockTags;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -38,17 +39,21 @@ public class ShearsItemMixin {
         PlayerEntity playerEntity = context.getPlayer();
         BlockPos blockPos = context.getBlockPos();
         World world = context.getWorld();
-        Optional<BlockState> optional = this.tryShear(world, blockPos, playerEntity, world.getBlockState(blockPos));
+        BlockState blockState = world.getBlockState(blockPos);
+        Optional<BlockState> optionalShearedBlockState = this.tryShear(world, blockPos, playerEntity, blockState);
 
-        if (optional.isPresent()) {
+        if (optionalShearedBlockState.isPresent()) {
             ItemStack itemStack = context.getStack();
+            BlockState shearedBlockState = optionalShearedBlockState.get();
+
             if (playerEntity instanceof ServerPlayerEntity) {
                 Criteria.ITEM_USED_ON_BLOCK.trigger((ServerPlayerEntity)playerEntity, blockPos, itemStack);
             }
-            world.setBlockState(blockPos, optional.get(), Block.NOTIFY_ALL_AND_REDRAW);
-            world.emitGameEvent(GameEvent.BLOCK_CHANGE, blockPos, GameEvent.Emitter.of(playerEntity, optional.get()));
+
+            world.setBlockState(blockPos, shearedBlockState, Block.NOTIFY_ALL_AND_REDRAW);
+            world.emitGameEvent(GameEvent.BLOCK_CHANGE, blockPos, GameEvent.Emitter.of(playerEntity, shearedBlockState));
             ItemScatterer.spawn(world, blockPos.offset(playerEntity.getFacing().getOpposite()),
-                    DefaultedList.ofSize(1, new ItemStack(ModItems.MOSS_BALL)));
+                    DefaultedList.ofSize(1, getItemStackToDrop(blockState)));
 
             if (playerEntity != null) {
                 itemStack.damage(1, playerEntity, LivingEntity.getSlotForHand(context.getHand()));
@@ -60,12 +65,21 @@ public class ShearsItemMixin {
     }
 
     @Unique
-    private Optional<BlockState> tryShear(World world, BlockPos pos, @Nullable PlayerEntity player, BlockState state) {
-        Optional<BlockState> optional = this.getShearedState(state);
+    private ItemStack getItemStackToDrop(BlockState blockState) {
+        if (blockState.isIn(ModBlockTags.PALE_MOSSY_BLOCKS)) {
+            return new ItemStack(ModItems.PALE_MOSS_BALL);
+        }
 
-        if (optional.isPresent()) {
+        return new ItemStack(ModItems.MOSS_BALL);
+    }
+
+    @Unique
+    private Optional<BlockState> tryShear(World world, BlockPos pos, @Nullable PlayerEntity player, BlockState state) {
+        Optional<BlockState> optionalShearedBlockState = this.getShearedState(state);
+
+        if (optionalShearedBlockState.isPresent()) {
             world.playSound(player, pos, SoundEvents.ENTITY_SHEEP_SHEAR, SoundCategory.BLOCKS, 1.0f, 1.0f);
-            return optional;
+            return optionalShearedBlockState;
         }
 
         return Optional.empty();

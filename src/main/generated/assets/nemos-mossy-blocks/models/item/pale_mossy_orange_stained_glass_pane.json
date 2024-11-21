@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "nemos-mossy-blocks:block/pale_mossy_orange_stained_glass"
+  }
+}

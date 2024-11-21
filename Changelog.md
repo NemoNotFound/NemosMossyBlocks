@@ -1,15 +1,10 @@
-# Changelog v1.6
+# Changelog v1.7
 
 ## Additions
-- Added Mossy Cobbled Deepslate
-- Added Mossy Deepslate Bricks
-- Added Mossy Deepslate Tiles
-- Added Mossy Tuff
-- Added Mossy Tuff Bricks
+- Added pale moss variants
+- Added mossy pale oak wood variants
 
-## Fixes
-- Wall recipe missing for Mossy Brick Wall
-
-### Downloads
-[CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>
-[Modrinth](https://modrinth.com/mod/nemos-mossy-blocks)
+## Changes
+- Removed mossy blocks from vanilla creative mode tabs
+- Slightly adapted order of Nemo's Mossy Blocks creative mode tab
+- Grouped wooden mossy doors
