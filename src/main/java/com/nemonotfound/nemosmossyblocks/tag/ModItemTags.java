@@ -17,6 +17,7 @@ public class ModItemTags {
     public static final TagKey<Item> MOSSY_CHERRY_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "mossy_cherry_wood"));
     public static final TagKey<Item> MOSSY_CRIMSON_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "mossy_crimson_wood"));
     public static final TagKey<Item> MOSSY_DARK_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "mossy_dark_oak_wood"));
+    public static final TagKey<Item> MOSSY_PALE_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "mossy_pale_oak_wood"));
     public static final TagKey<Item> MOSSY_JUNGLE_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "mossy_jungle_wood"));
     public static final TagKey<Item> MOSSY_MANGROVE_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "mossy_mangrove_wood"));
     public static final TagKey<Item> MOSSY_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "mossy_oak_wood"));
@@ -30,6 +31,7 @@ public class ModItemTags {
     public static final TagKey<Item> PALE_MOSSY_CHERRY_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_cherry_wood"));
     public static final TagKey<Item> PALE_MOSSY_CRIMSON_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_crimson_wood"));
     public static final TagKey<Item> PALE_MOSSY_DARK_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_dark_oak_wood"));
+    public static final TagKey<Item> PALE_MOSSY_PALE_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_pale_oak_wood"));
     public static final TagKey<Item> PALE_MOSSY_JUNGLE_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_jungle_wood"));
     public static final TagKey<Item> PALE_MOSSY_MANGROVE_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_mangrove_wood"));
     public static final TagKey<Item> PALE_MOSSY_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_oak_wood"));

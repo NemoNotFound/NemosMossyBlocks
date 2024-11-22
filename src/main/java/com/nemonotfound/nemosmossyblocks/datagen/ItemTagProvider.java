@@ -25,6 +25,7 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.MOSSY_CHERRY_PLANKS.asItem())
                 .add(ModBlocks.MOSSY_CRIMSON_PLANKS.asItem())
                 .add(ModBlocks.MOSSY_DARK_OAK_PLANKS.asItem())
+                .add(ModBlocks.MOSSY_PALE_OAK_PLANKS.asItem())
                 .add(ModBlocks.MOSSY_JUNGLE_PLANKS.asItem())
                 .add(ModBlocks.MOSSY_MANGROVE_PLANKS.asItem())
                 .add(ModBlocks.MOSSY_OAK_PLANKS.asItem())
@@ -66,6 +67,9 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(MOSSY_DARK_OAK_WOOD)
                 .add(ModBlocks.MOSSY_DARK_OAK_LOG.asItem())
                 .add(ModBlocks.MOSSY_DARK_OAK_WOOD.asItem());
+        getOrCreateTagBuilder(MOSSY_PALE_OAK_WOOD)
+                .add(ModBlocks.MOSSY_PALE_OAK_LOG.asItem())
+                .add(ModBlocks.MOSSY_PALE_OAK_WOOD.asItem());
         getOrCreateTagBuilder(MOSSY_JUNGLE_WOOD)
                 .add(ModBlocks.MOSSY_JUNGLE_LOG.asItem())
                 .add(ModBlocks.MOSSY_JUNGLE_WOOD.asItem());
@@ -89,6 +93,7 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.PALE_MOSSY_CHERRY_PLANKS.asItem())
                 .add(ModBlocks.PALE_MOSSY_CRIMSON_PLANKS.asItem())
                 .add(ModBlocks.PALE_MOSSY_DARK_OAK_PLANKS.asItem())
+                .add(ModBlocks.PALE_MOSSY_PALE_OAK_PLANKS.asItem())
                 .add(ModBlocks.PALE_MOSSY_JUNGLE_PLANKS.asItem())
                 .add(ModBlocks.PALE_MOSSY_MANGROVE_PLANKS.asItem())
                 .add(ModBlocks.PALE_MOSSY_OAK_PLANKS.asItem())
@@ -130,6 +135,9 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(PALE_MOSSY_DARK_OAK_WOOD)
                 .add(ModBlocks.PALE_MOSSY_DARK_OAK_LOG.asItem())
                 .add(ModBlocks.PALE_MOSSY_DARK_OAK_WOOD.asItem());
+        getOrCreateTagBuilder(PALE_MOSSY_PALE_OAK_WOOD)
+                .add(ModBlocks.PALE_MOSSY_PALE_OAK_LOG.asItem())
+                .add(ModBlocks.PALE_MOSSY_PALE_OAK_WOOD.asItem());
         getOrCreateTagBuilder(PALE_MOSSY_JUNGLE_WOOD)
                 .add(ModBlocks.PALE_MOSSY_JUNGLE_LOG.asItem())
                 .add(ModBlocks.PALE_MOSSY_JUNGLE_WOOD.asItem());

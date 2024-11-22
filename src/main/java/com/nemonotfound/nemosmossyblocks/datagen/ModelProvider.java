@@ -72,6 +72,14 @@ public class ModelProvider extends FabricModelProvider {
         mossyDarkOakPlanksTexturePool.fence(MOSSY_DARK_OAK_FENCE);
         mossyDarkOakPlanksTexturePool.fenceGate(MOSSY_DARK_OAK_FENCE_GATE);
 
+        BlockStateModelGenerator.BlockTexturePool mossyPaleOakPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(MOSSY_PALE_OAK_PLANKS);
+        mossyPaleOakPlanksTexturePool.stairs(MOSSY_PALE_OAK_STAIRS);
+        mossyPaleOakPlanksTexturePool.slab(MOSSY_PALE_OAK_SLAB);
+        mossyPaleOakPlanksTexturePool.pressurePlate(MOSSY_PALE_OAK_PRESSURE_PLATE);
+        mossyPaleOakPlanksTexturePool.button(MOSSY_PALE_OAK_BUTTON);
+        mossyPaleOakPlanksTexturePool.fence(MOSSY_PALE_OAK_FENCE);
+        mossyPaleOakPlanksTexturePool.fenceGate(MOSSY_PALE_OAK_FENCE_GATE);
+
         BlockStateModelGenerator.BlockTexturePool mossyJunglePlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(MOSSY_JUNGLE_PLANKS);
         mossyJunglePlanksTexturePool.stairs(MOSSY_JUNGLE_STAIRS);
         mossyJunglePlanksTexturePool.slab(MOSSY_JUNGLE_SLAB);
@@ -141,6 +149,7 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(MOSSY_CHERRY_LOG).log(MOSSY_CHERRY_LOG).wood(MOSSY_CHERRY_WOOD);
         blockStateModelGenerator.registerLog(MOSSY_CRIMSON_STEM).log(MOSSY_CRIMSON_STEM).wood(MOSSY_CRIMSON_HYPHAE);
         blockStateModelGenerator.registerLog(MOSSY_DARK_OAK_LOG).log(MOSSY_DARK_OAK_LOG).wood(MOSSY_DARK_OAK_WOOD);
+        blockStateModelGenerator.registerLog(MOSSY_PALE_OAK_LOG).log(MOSSY_PALE_OAK_LOG).wood(MOSSY_PALE_OAK_WOOD);
         blockStateModelGenerator.registerLog(MOSSY_JUNGLE_LOG).log(MOSSY_JUNGLE_LOG).wood(MOSSY_JUNGLE_WOOD);
         blockStateModelGenerator.registerLog(MOSSY_MANGROVE_LOG).log(MOSSY_MANGROVE_LOG).wood(MOSSY_MANGROVE_WOOD);
         blockStateModelGenerator.registerLog(MOSSY_OAK_LOG).log(MOSSY_OAK_LOG).wood(MOSSY_OAK_WOOD);
@@ -163,6 +172,7 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(MOSSY_JUNGLE_DOOR);
         blockStateModelGenerator.registerDoor(MOSSY_ACACIA_DOOR);
         blockStateModelGenerator.registerDoor(MOSSY_DARK_OAK_DOOR);
+        blockStateModelGenerator.registerDoor(MOSSY_PALE_OAK_DOOR);
         blockStateModelGenerator.registerDoor(MOSSY_MANGROVE_DOOR);
         blockStateModelGenerator.registerDoor(MOSSY_CHERRY_DOOR);
         blockStateModelGenerator.registerDoor(MOSSY_BAMBOO_DOOR);
@@ -176,6 +186,7 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(MOSSY_JUNGLE_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(MOSSY_ACACIA_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(MOSSY_DARK_OAK_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(MOSSY_PALE_OAK_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(MOSSY_MANGROVE_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(MOSSY_CHERRY_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(MOSSY_BAMBOO_TRAPDOOR);
@@ -274,6 +285,14 @@ public class ModelProvider extends FabricModelProvider {
         paleMossyDarkOakPlanksTexturePool.fence(PALE_MOSSY_DARK_OAK_FENCE);
         paleMossyDarkOakPlanksTexturePool.fenceGate(PALE_MOSSY_DARK_OAK_FENCE_GATE);
 
+        BlockStateModelGenerator.BlockTexturePool paleMossyPaleOakPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(PALE_MOSSY_PALE_OAK_PLANKS);
+        paleMossyPaleOakPlanksTexturePool.stairs(PALE_MOSSY_PALE_OAK_STAIRS);
+        paleMossyPaleOakPlanksTexturePool.slab(PALE_MOSSY_PALE_OAK_SLAB);
+        paleMossyPaleOakPlanksTexturePool.pressurePlate(PALE_MOSSY_PALE_OAK_PRESSURE_PLATE);
+        paleMossyPaleOakPlanksTexturePool.button(PALE_MOSSY_PALE_OAK_BUTTON);
+        paleMossyPaleOakPlanksTexturePool.fence(PALE_MOSSY_PALE_OAK_FENCE);
+        paleMossyPaleOakPlanksTexturePool.fenceGate(PALE_MOSSY_PALE_OAK_FENCE_GATE);
+
         BlockStateModelGenerator.BlockTexturePool paleMossyJunglePlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(PALE_MOSSY_JUNGLE_PLANKS);
         paleMossyJunglePlanksTexturePool.stairs(PALE_MOSSY_JUNGLE_STAIRS);
         paleMossyJunglePlanksTexturePool.slab(PALE_MOSSY_JUNGLE_SLAB);
@@ -343,6 +362,7 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(PALE_MOSSY_CHERRY_LOG).log(PALE_MOSSY_CHERRY_LOG).wood(PALE_MOSSY_CHERRY_WOOD);
         blockStateModelGenerator.registerLog(PALE_MOSSY_CRIMSON_STEM).log(PALE_MOSSY_CRIMSON_STEM).wood(PALE_MOSSY_CRIMSON_HYPHAE);
         blockStateModelGenerator.registerLog(PALE_MOSSY_DARK_OAK_LOG).log(PALE_MOSSY_DARK_OAK_LOG).wood(PALE_MOSSY_DARK_OAK_WOOD);
+        blockStateModelGenerator.registerLog(PALE_MOSSY_PALE_OAK_LOG).log(PALE_MOSSY_PALE_OAK_LOG).wood(PALE_MOSSY_PALE_OAK_WOOD);
         blockStateModelGenerator.registerLog(PALE_MOSSY_JUNGLE_LOG).log(PALE_MOSSY_JUNGLE_LOG).wood(PALE_MOSSY_JUNGLE_WOOD);
         blockStateModelGenerator.registerLog(PALE_MOSSY_MANGROVE_LOG).log(PALE_MOSSY_MANGROVE_LOG).wood(PALE_MOSSY_MANGROVE_WOOD);
         blockStateModelGenerator.registerLog(PALE_MOSSY_OAK_LOG).log(PALE_MOSSY_OAK_LOG).wood(PALE_MOSSY_OAK_WOOD);
@@ -364,6 +384,7 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(PALE_MOSSY_JUNGLE_DOOR);
         blockStateModelGenerator.registerDoor(PALE_MOSSY_ACACIA_DOOR);
         blockStateModelGenerator.registerDoor(PALE_MOSSY_DARK_OAK_DOOR);
+        blockStateModelGenerator.registerDoor(PALE_MOSSY_PALE_OAK_DOOR);
         blockStateModelGenerator.registerDoor(PALE_MOSSY_MANGROVE_DOOR);
         blockStateModelGenerator.registerDoor(PALE_MOSSY_CHERRY_DOOR);
         blockStateModelGenerator.registerDoor(PALE_MOSSY_BAMBOO_DOOR);
@@ -377,6 +398,7 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(PALE_MOSSY_JUNGLE_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(PALE_MOSSY_ACACIA_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(PALE_MOSSY_DARK_OAK_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(PALE_MOSSY_PALE_OAK_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(PALE_MOSSY_MANGROVE_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(PALE_MOSSY_CHERRY_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(PALE_MOSSY_BAMBOO_TRAPDOOR);

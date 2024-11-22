@@ -68,6 +68,13 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(MOSSY_DARK_OAK_BUTTON);
         this.addDrop(MOSSY_DARK_OAK_FENCE);
         this.addDrop(MOSSY_DARK_OAK_FENCE_GATE);
+        this.addDrop(MOSSY_PALE_OAK_PLANKS);
+        this.addDrop(MOSSY_PALE_OAK_STAIRS);
+        this.addDrop(MOSSY_PALE_OAK_SLAB);
+        this.addDrop(MOSSY_PALE_OAK_PRESSURE_PLATE);
+        this.addDrop(MOSSY_PALE_OAK_BUTTON);
+        this.addDrop(MOSSY_PALE_OAK_FENCE);
+        this.addDrop(MOSSY_PALE_OAK_FENCE_GATE);
         this.addDrop(MOSSY_JUNGLE_PLANKS);
         this.addDrop(MOSSY_JUNGLE_STAIRS);
         this.addDrop(MOSSY_JUNGLE_SLAB);
@@ -144,6 +151,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(MOSSY_CHERRY_LOG);
         this.addDrop(MOSSY_CRIMSON_STEM);
         this.addDrop(MOSSY_DARK_OAK_LOG);
+        this.addDrop(MOSSY_PALE_OAK_LOG);
         this.addDrop(MOSSY_JUNGLE_LOG);
         this.addDrop(MOSSY_MANGROVE_LOG);
         this.addDrop(MOSSY_OAK_LOG);
@@ -154,6 +162,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(MOSSY_CHERRY_WOOD);
         this.addDrop(MOSSY_CRIMSON_HYPHAE);
         this.addDrop(MOSSY_DARK_OAK_WOOD);
+        this.addDrop(MOSSY_PALE_OAK_WOOD);
         this.addDrop(MOSSY_JUNGLE_WOOD);
         this.addDrop(MOSSY_MANGROVE_WOOD);
         this.addDrop(MOSSY_OAK_WOOD);
@@ -173,6 +182,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(MOSSY_BIRCH_DOOR, this.doorDrops(MOSSY_BIRCH_DOOR));
         this.addDrop(MOSSY_JUNGLE_DOOR, this.doorDrops(MOSSY_JUNGLE_DOOR));
         this.addDrop(MOSSY_DARK_OAK_DOOR, this.doorDrops(MOSSY_DARK_OAK_DOOR));
+        this.addDrop(MOSSY_PALE_OAK_DOOR, this.doorDrops(MOSSY_PALE_OAK_DOOR));
         this.addDrop(MOSSY_ACACIA_DOOR, this.doorDrops(MOSSY_ACACIA_DOOR));
         this.addDrop(MOSSY_MANGROVE_DOOR, this.doorDrops(MOSSY_MANGROVE_DOOR));
         this.addDrop(MOSSY_CHERRY_DOOR, this.doorDrops(MOSSY_CHERRY_DOOR));
@@ -185,6 +195,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(MOSSY_BIRCH_TRAPDOOR);
         this.addDrop(MOSSY_JUNGLE_TRAPDOOR);
         this.addDrop(MOSSY_DARK_OAK_TRAPDOOR);
+        this.addDrop(MOSSY_PALE_OAK_TRAPDOOR);
         this.addDrop(MOSSY_ACACIA_TRAPDOOR);
         this.addDrop(MOSSY_MANGROVE_TRAPDOOR);
         this.addDrop(MOSSY_CHERRY_TRAPDOOR);
@@ -270,6 +281,13 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(PALE_MOSSY_DARK_OAK_BUTTON);
         this.addDrop(PALE_MOSSY_DARK_OAK_FENCE);
         this.addDrop(PALE_MOSSY_DARK_OAK_FENCE_GATE);
+        this.addDrop(PALE_MOSSY_PALE_OAK_PLANKS);
+        this.addDrop(PALE_MOSSY_PALE_OAK_STAIRS);
+        this.addDrop(PALE_MOSSY_PALE_OAK_SLAB);
+        this.addDrop(PALE_MOSSY_PALE_OAK_PRESSURE_PLATE);
+        this.addDrop(PALE_MOSSY_PALE_OAK_BUTTON);
+        this.addDrop(PALE_MOSSY_PALE_OAK_FENCE);
+        this.addDrop(PALE_MOSSY_PALE_OAK_FENCE_GATE);
         this.addDrop(PALE_MOSSY_JUNGLE_PLANKS);
         this.addDrop(PALE_MOSSY_JUNGLE_STAIRS);
         this.addDrop(PALE_MOSSY_JUNGLE_SLAB);
@@ -346,6 +364,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(PALE_MOSSY_CHERRY_LOG);
         this.addDrop(PALE_MOSSY_CRIMSON_STEM);
         this.addDrop(PALE_MOSSY_DARK_OAK_LOG);
+        this.addDrop(PALE_MOSSY_PALE_OAK_LOG);
         this.addDrop(PALE_MOSSY_JUNGLE_LOG);
         this.addDrop(PALE_MOSSY_MANGROVE_LOG);
         this.addDrop(PALE_MOSSY_OAK_LOG);
@@ -356,6 +375,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(PALE_MOSSY_CHERRY_WOOD);
         this.addDrop(PALE_MOSSY_CRIMSON_HYPHAE);
         this.addDrop(PALE_MOSSY_DARK_OAK_WOOD);
+        this.addDrop(PALE_MOSSY_PALE_OAK_WOOD);
         this.addDrop(PALE_MOSSY_JUNGLE_WOOD);
         this.addDrop(PALE_MOSSY_MANGROVE_WOOD);
         this.addDrop(PALE_MOSSY_OAK_WOOD);
@@ -375,6 +395,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(PALE_MOSSY_BIRCH_DOOR, this.doorDrops(PALE_MOSSY_BIRCH_DOOR));
         this.addDrop(PALE_MOSSY_JUNGLE_DOOR, this.doorDrops(PALE_MOSSY_JUNGLE_DOOR));
         this.addDrop(PALE_MOSSY_DARK_OAK_DOOR, this.doorDrops(PALE_MOSSY_DARK_OAK_DOOR));
+        this.addDrop(PALE_MOSSY_PALE_OAK_DOOR, this.doorDrops(PALE_MOSSY_PALE_OAK_DOOR));
         this.addDrop(PALE_MOSSY_ACACIA_DOOR, this.doorDrops(PALE_MOSSY_ACACIA_DOOR));
         this.addDrop(PALE_MOSSY_MANGROVE_DOOR, this.doorDrops(PALE_MOSSY_MANGROVE_DOOR));
         this.addDrop(PALE_MOSSY_CHERRY_DOOR, this.doorDrops(PALE_MOSSY_CHERRY_DOOR));
@@ -387,6 +408,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(PALE_MOSSY_BIRCH_TRAPDOOR);
         this.addDrop(PALE_MOSSY_JUNGLE_TRAPDOOR);
         this.addDrop(PALE_MOSSY_DARK_OAK_TRAPDOOR);
+        this.addDrop(PALE_MOSSY_PALE_OAK_TRAPDOOR);
         this.addDrop(PALE_MOSSY_ACACIA_TRAPDOOR);
         this.addDrop(PALE_MOSSY_MANGROVE_TRAPDOOR);
         this.addDrop(PALE_MOSSY_CHERRY_TRAPDOOR);
