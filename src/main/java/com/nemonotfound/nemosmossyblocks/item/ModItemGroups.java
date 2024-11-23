@@ -307,7 +307,6 @@ public class ModItemGroups {
                     entries.add(ModItems.PALE_MOSSY_STONE_PRESSURE_PLATE);
                     entries.add(ModItems.PALE_MOSSY_STONE_BUTTON);
                     entries.add(ModItems.MOSSY_CHISELED_STONE_BRICKS);
-                    entries.add(ModItems.PALE_MOSSY_CHISELED_STONE_BRICKS);
                     entries.add(ModItems.PALE_MOSSY_COBBLESTONE);
                     entries.add(ModItems.PALE_MOSSY_COBBLESTONE_STAIRS);
                     entries.add(ModItems.PALE_MOSSY_COBBLESTONE_SLAB);
@@ -316,6 +315,7 @@ public class ModItemGroups {
                     entries.add(ModItems.PALE_MOSSY_STONE_BRICK_STAIRS);
                     entries.add(ModItems.PALE_MOSSY_STONE_BRICK_SLAB);
                     entries.add(ModItems.PALE_MOSSY_STONE_BRICK_WALL);
+                    entries.add(ModItems.PALE_MOSSY_CHISELED_STONE_BRICKS);
                     entries.add(ModItems.MOSSY_DEEPSLATE);
                     entries.add(ModItems.PALE_MOSSY_DEEPSLATE);
                     entries.add(ModItems.MOSSY_COBBLED_DEEPSLATE);
