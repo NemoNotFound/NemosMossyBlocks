@@ -232,7 +232,7 @@ public class BlockUtils {
             .put(MOSSY_JUNGLE_DOOR, Blocks.JUNGLE_DOOR)
             .put(MOSSY_ACACIA_DOOR, Blocks.ACACIA_DOOR)
             .put(MOSSY_DARK_OAK_DOOR, Blocks.DARK_OAK_DOOR)
-            .put(MOSSY_DARK_OAK_DOOR, Blocks.DARK_OAK_DOOR)
+            .put(MOSSY_PALE_OAK_DOOR, Blocks.PALE_OAK_DOOR)
             .put(MOSSY_MANGROVE_DOOR, Blocks.MANGROVE_DOOR)
             .put(MOSSY_CHERRY_DOOR, Blocks.CHERRY_DOOR)
             .put(MOSSY_BAMBOO_DOOR, Blocks.BAMBOO_DOOR)
