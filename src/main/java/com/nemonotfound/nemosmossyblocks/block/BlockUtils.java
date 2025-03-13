@@ -6,7 +6,7 @@ import net.minecraft.block.Blocks;
 
 import java.util.Map;
 
-import static com.nemonotfound.nemosmossyblocks.block.ModBlocks.*;
+import static com.nemonotfound.nemosmossyblocks.block.Blocks.*;
 
 public class BlockUtils {
 

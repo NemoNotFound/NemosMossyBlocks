@@ -1,6 +1,6 @@
 package com.nemonotfound.nemosmossyblocks.item;
 
-import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.block.Blocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
@@ -20,7 +20,7 @@ public class ModItemGroups {
     public static void registerItemGroups() {
         log.info("Registering item groups");
 
-        registerNemosMossyBlocksItemGroup("Nemo's Mossy Blocks", NEMOS_CARPENTRY_GROUP_ID, ModBlocks.PALE_MOSSY_COBBLESTONE);
+        registerNemosMossyBlocksItemGroup("Nemo's Mossy Blocks", NEMOS_CARPENTRY_GROUP_ID, Blocks.PALE_MOSSY_COBBLESTONE);
     }
 
     public static void registerNemosMossyBlocksItemGroup(String displayName, String path, Block iconBlock) {

@@ -7,7 +7,7 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-import static com.nemonotfound.nemosmossyblocks.block.ModBlocks.*;
+import static com.nemonotfound.nemosmossyblocks.block.Blocks.*;
 import static com.nemonotfound.nemosmossyblocks.registry.tag.BlockTags.*;
 import static net.minecraft.block.Blocks.CRIMSON_NYLIUM;
 import static net.minecraft.block.Blocks.NETHERRACK;

@@ -1,8 +1,7 @@
 package com.nemonotfound.nemosmossyblocks.mixin;
 
-import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.block.Blocks;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.PaneBlock;
 import net.minecraft.util.math.Direction;
 import org.spongepowered.asm.mixin.Mixin;
@@ -37,7 +36,7 @@ public class PaneBlockMixin {
 
     @Unique
     private boolean shouldBeInvisible(BlockState state, BlockState stateFrom) {
-     return (state.isOf(ModBlocks.MOSSY_IRON_BARS) && stateFrom.isOf(Blocks.IRON_BARS)) ||
-             (state.isOf(Blocks.IRON_BARS) && stateFrom.isOf(ModBlocks.MOSSY_IRON_BARS));
+     return (state.isOf(Blocks.MOSSY_IRON_BARS) && stateFrom.isOf(net.minecraft.block.Blocks.IRON_BARS)) ||
+             (state.isOf(net.minecraft.block.Blocks.IRON_BARS) && stateFrom.isOf(Blocks.MOSSY_IRON_BARS));
     }
 }

@@ -1,6 +1,6 @@
 package com.nemonotfound.nemosmossyblocks;
 
-import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.block.Blocks;
 import com.nemonotfound.nemosmossyblocks.entity.ModEntityTypes;
 import com.nemonotfound.nemosmossyblocks.item.ModItemGroups;
 import com.nemonotfound.nemosmossyblocks.item.ModItems;
@@ -17,7 +17,7 @@ public class NemosMossyBlocks implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		log.info("Thank you for using Nemo's Mossy Blocks!");
-		ModBlocks.registerBlocks();
+		Blocks.registerBlocks();
 		ModItems.registerItems();
 		ModItemGroups.registerItemGroups();
 		ModEntityTypes.registerEntities();

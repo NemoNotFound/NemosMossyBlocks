@@ -10,7 +10,7 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-import static com.nemonotfound.nemosmossyblocks.block.ModBlocks.*;
+import static com.nemonotfound.nemosmossyblocks.block.Blocks.*;
 
 public class BlockLootTableProvider extends FabricBlockLootTableProvider {
 

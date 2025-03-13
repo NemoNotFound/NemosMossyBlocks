@@ -15,8 +15,8 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 
 import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.MOD_ID;
-import static com.nemonotfound.nemosmossyblocks.block.ModBlocks.CRIMSON_MOSS_BLOCK;
-import static com.nemonotfound.nemosmossyblocks.block.ModBlocks.CRIMSON_MOSS_CARPET;
+import static com.nemonotfound.nemosmossyblocks.block.Blocks.CRIMSON_MOSS_BLOCK;
+import static com.nemonotfound.nemosmossyblocks.block.Blocks.CRIMSON_MOSS_CARPET;
 import static com.nemonotfound.nemosmossyblocks.registry.tag.BlockTags.CRIMSON_MOSS_REPLACEABLE;
 import static net.minecraft.block.Blocks.CRIMSON_FUNGUS;
 import static net.minecraft.block.Blocks.CRIMSON_ROOTS;

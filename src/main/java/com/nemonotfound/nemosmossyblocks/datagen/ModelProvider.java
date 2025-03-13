@@ -8,7 +8,7 @@ import net.minecraft.client.data.*;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 
-import static com.nemonotfound.nemosmossyblocks.block.ModBlocks.*;
+import static com.nemonotfound.nemosmossyblocks.block.Blocks.*;
 
 public class ModelProvider extends FabricModelProvider {
 

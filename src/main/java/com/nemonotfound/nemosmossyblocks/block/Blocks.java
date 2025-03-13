@@ -15,7 +15,7 @@ import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.log;
 import static com.nemonotfound.nemosmossyblocks.world.gen.feature.VegetationConfiguredFeatures.CRIMSON_MOSS_PATCH_BONEMEAL;
 import static net.minecraft.block.Blocks.*;
 
-public class ModBlocks {
+public class Blocks {
 
     public static final Block MOSSY_ACACIA_LOG = register("mossy_acacia_log", PillarBlock::new, createLogSettings(MapColor.ORANGE, MapColor.STONE_GRAY, BlockSoundGroup.WOOD));
     public static final Block MOSSY_ACACIA_WOOD = register("mossy_acacia_wood", PillarBlock::new, AbstractBlock.Settings.copy(ACACIA_WOOD));
@@ -131,7 +131,7 @@ public class ModBlocks {
     public static final Block PALE_MOSSY_CHERRY_TRAPDOOR = register("pale_mossy_cherry_trapdoor", settings -> new TrapdoorBlock(BlockSetType.CHERRY, settings), AbstractBlock.Settings.copy(CHERRY_TRAPDOOR));
     public static final Block PALE_MOSSY_CHERRY_PRESSURE_PLATE = register("pale_mossy_cherry_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.CHERRY, settings), AbstractBlock.Settings.copy(CHERRY_PRESSURE_PLATE));
     public static final Block PALE_MOSSY_CHERRY_BUTTON = register("pale_mossy_cherry_button", settings -> new ButtonBlock(BlockSetType.CHERRY, 30, settings), createButtonSettings());
-    public static final Block MOSSY_CRIMSON_STEM = register("mossy_crimson_stem", PillarBlock::new, Blocks.createNetherStemSettings(MapColor.DULL_PINK));
+    public static final Block MOSSY_CRIMSON_STEM = register("mossy_crimson_stem", PillarBlock::new, createNetherStemSettings(MapColor.DULL_PINK));
     public static final Block MOSSY_CRIMSON_HYPHAE = register("mossy_crimson_hyphae", PillarBlock::new, AbstractBlock.Settings.copy(CRIMSON_HYPHAE));
     public static final Block MOSSY_CRIMSON_PLANKS = register("mossy_crimson_planks", Block::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS));
     public static final Block MOSSY_CRIMSON_STAIRS = registerStairsBlock("mossy_crimson_stairs", MOSSY_CRIMSON_PLANKS);
@@ -142,7 +142,7 @@ public class ModBlocks {
     public static final Block MOSSY_CRIMSON_TRAPDOOR = register("mossy_crimson_trapdoor", settings -> new TrapdoorBlock(BlockSetType.CRIMSON, settings), AbstractBlock.Settings.copy(CRIMSON_TRAPDOOR));
     public static final Block MOSSY_CRIMSON_PRESSURE_PLATE = register("mossy_crimson_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.CRIMSON, settings), AbstractBlock.Settings.copy(CRIMSON_PRESSURE_PLATE));
     public static final Block MOSSY_CRIMSON_BUTTON = register("mossy_crimson_button", settings -> new ButtonBlock(BlockSetType.CRIMSON, 30, settings), createButtonSettings());
-    public static final Block PALE_MOSSY_CRIMSON_STEM = register("pale_mossy_crimson_stem", PillarBlock::new, Blocks.createNetherStemSettings(MapColor.DULL_PINK));
+    public static final Block PALE_MOSSY_CRIMSON_STEM = register("pale_mossy_crimson_stem", PillarBlock::new, createNetherStemSettings(MapColor.DULL_PINK));
     public static final Block PALE_MOSSY_CRIMSON_HYPHAE = register("pale_mossy_crimson_hyphae", PillarBlock::new, AbstractBlock.Settings.copy(CRIMSON_HYPHAE));
     public static final Block PALE_MOSSY_CRIMSON_PLANKS = register("pale_mossy_crimson_planks", Block::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS));
     public static final Block PALE_MOSSY_CRIMSON_STAIRS = registerStairsBlock("pale_mossy_crimson_stairs", PALE_MOSSY_CRIMSON_PLANKS);
@@ -263,7 +263,7 @@ public class ModBlocks {
     public static final Block PALE_MOSSY_SPRUCE_TRAPDOOR = register("pale_mossy_spruce_trapdoor", settings -> new TrapdoorBlock(BlockSetType.SPRUCE, settings), AbstractBlock.Settings.copy(SPRUCE_TRAPDOOR));
     public static final Block PALE_MOSSY_SPRUCE_PRESSURE_PLATE = register("pale_mossy_spruce_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.SPRUCE, settings), AbstractBlock.Settings.copy(SPRUCE_PRESSURE_PLATE));
     public static final Block PALE_MOSSY_SPRUCE_BUTTON = register("pale_mossy_spruce_button", settings -> new ButtonBlock(BlockSetType.SPRUCE, 30, settings), createButtonSettings());
-    public static final Block MOSSY_WARPED_STEM = register("mossy_warped_stem", PillarBlock::new, Blocks.createNetherStemSettings(MapColor.DARK_AQUA));
+    public static final Block MOSSY_WARPED_STEM = register("mossy_warped_stem", PillarBlock::new, createNetherStemSettings(MapColor.DARK_AQUA));
     public static final Block MOSSY_WARPED_HYPHAE = register("mossy_warped_hyphae", PillarBlock::new, AbstractBlock.Settings.copy(WARPED_HYPHAE));
     public static final Block MOSSY_WARPED_PLANKS = register("mossy_warped_planks", Block::new, AbstractBlock.Settings.copy(WARPED_PLANKS));
     public static final Block MOSSY_WARPED_STAIRS = registerStairsBlock("mossy_warped_stairs", MOSSY_WARPED_PLANKS);
@@ -274,7 +274,7 @@ public class ModBlocks {
     public static final Block MOSSY_WARPED_TRAPDOOR = register("mossy_warped_trapdoor", settings -> new TrapdoorBlock(BlockSetType.WARPED, settings), AbstractBlock.Settings.copy(WARPED_TRAPDOOR));
     public static final Block MOSSY_WARPED_PRESSURE_PLATE = register("mossy_warped_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.WARPED, settings), AbstractBlock.Settings.copy(WARPED_PRESSURE_PLATE));
     public static final Block MOSSY_WARPED_BUTTON = register("mossy_warped_button", settings -> new ButtonBlock(BlockSetType.WARPED, 30, settings), createButtonSettings());
-    public static final Block PALE_MOSSY_WARPED_STEM = register("pale_mossy_warped_stem", PillarBlock::new, Blocks.createNetherStemSettings(MapColor.DARK_AQUA));
+    public static final Block PALE_MOSSY_WARPED_STEM = register("pale_mossy_warped_stem", PillarBlock::new, createNetherStemSettings(MapColor.DARK_AQUA));
     public static final Block PALE_MOSSY_WARPED_HYPHAE = register("pale_mossy_warped_hyphae", PillarBlock::new, AbstractBlock.Settings.copy(WARPED_HYPHAE));
     public static final Block PALE_MOSSY_WARPED_PLANKS = register("pale_mossy_warped_planks", Block::new, AbstractBlock.Settings.copy(WARPED_PLANKS));
     public static final Block PALE_MOSSY_WARPED_STAIRS = registerStairsBlock("pale_mossy_warped_stairs", PALE_MOSSY_WARPED_PLANKS);
@@ -458,7 +458,7 @@ public class ModBlocks {
     }
 
     private static Block register(String path, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
-        return Blocks.register(keyOf(path), factory, settings);
+        return net.minecraft.block.Blocks.register(keyOf(path), factory, settings);
     }
 
     private static RegistryKey<Block> keyOf(String path) {
