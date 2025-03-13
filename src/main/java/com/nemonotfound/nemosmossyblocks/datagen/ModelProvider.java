@@ -1,6 +1,6 @@
 package com.nemonotfound.nemosmossyblocks.datagen;
 
-import com.nemonotfound.nemosmossyblocks.item.ModItems;
+import com.nemonotfound.nemosmossyblocks.item.Items;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Block;
@@ -438,8 +438,8 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.MOSS_BALL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.PALE_MOSS_BALL, Models.GENERATED);
+        itemModelGenerator.register(Items.MOSS_BALL, Models.GENERATED);
+        itemModelGenerator.register(Items.PALE_MOSS_BALL, Models.GENERATED);
     }
     
     private void registerDeepslate(BlockStateModelGenerator blockStateModelGenerator, Block block) {

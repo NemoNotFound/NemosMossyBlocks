@@ -1,10 +1,9 @@
 package com.nemonotfound.nemosmossyblocks.datagen;
 
-import com.nemonotfound.nemosmossyblocks.item.ModItems;
+import com.nemonotfound.nemosmossyblocks.item.Items;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.item.Items;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -21,7 +20,7 @@ public class BlockLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         this.addDrop(MOSSY_STONE, (Block block) -> this.dropsWithSilkTouch(block,
-                this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.MOSSY_COBBLESTONE))));
+                this.addSurvivesExplosionCondition(block, ItemEntry.builder(net.minecraft.item.Items.MOSSY_COBBLESTONE))));
         this.addDrop(MOSSY_STONE_STAIRS);
         this.addDrop(MOSSY_STONE_SLAB);
         this.addDrop(MOSSY_STONE_PRESSURE_PLATE);
@@ -226,7 +225,7 @@ public class BlockLootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(MOSSY_TUFF_BRICK_WALL);
 
         this.addDrop(PALE_MOSSY_STONE, (Block block) -> this.dropsWithSilkTouch(block,
-                this.addSurvivesExplosionCondition(block, ItemEntry.builder(ModItems.PALE_MOSSY_COBBLESTONE))));
+                this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.PALE_MOSSY_COBBLESTONE))));
         this.addDrop(PALE_MOSSY_STONE_STAIRS);
         this.addDrop(PALE_MOSSY_STONE_SLAB);
         this.addDrop(PALE_MOSSY_STONE_PRESSURE_PLATE);

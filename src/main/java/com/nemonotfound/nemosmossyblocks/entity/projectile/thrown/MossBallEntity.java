@@ -1,13 +1,12 @@
 package com.nemonotfound.nemosmossyblocks.entity.projectile.thrown;
 
 import com.nemonotfound.nemosmossyblocks.entity.ModEntityTypes;
-import com.nemonotfound.nemosmossyblocks.item.ModItems;
+import com.nemonotfound.nemosmossyblocks.item.Items;
 import com.nemonotfound.nemosmossyblocks.particle.ModParticleTypes;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityStatuses;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.BlazeEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -34,7 +33,7 @@ public class MossBallEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return ModItems.MOSS_BALL;
+        return Items.MOSS_BALL;
     }
 
     private ParticleEffect getParticleParameters() {

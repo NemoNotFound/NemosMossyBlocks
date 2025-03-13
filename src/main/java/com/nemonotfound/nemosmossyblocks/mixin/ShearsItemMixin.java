@@ -1,7 +1,7 @@
 package com.nemonotfound.nemosmossyblocks.mixin;
 
 import com.nemonotfound.nemosmossyblocks.block.BlockUtils;
-import com.nemonotfound.nemosmossyblocks.item.ModItems;
+import com.nemonotfound.nemosmossyblocks.item.Items;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -68,10 +68,10 @@ public class ShearsItemMixin {
     @Unique
     private ItemStack getItemStackToDrop(BlockState blockState) {
         if (blockState.isIn(PALE_MOSSY_BLOCKS)) {
-            return new ItemStack(ModItems.PALE_MOSS_BALL);
+            return new ItemStack(Items.PALE_MOSS_BALL);
         }
 
-        return new ItemStack(ModItems.MOSS_BALL);
+        return new ItemStack(Items.MOSS_BALL);
     }
 
     @Unique

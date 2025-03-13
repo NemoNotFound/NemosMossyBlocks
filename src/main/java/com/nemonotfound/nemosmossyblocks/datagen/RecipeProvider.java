@@ -1,7 +1,7 @@
 package com.nemonotfound.nemosmossyblocks.datagen;
 
 import com.nemonotfound.nemosmossyblocks.block.Blocks;
-import com.nemonotfound.nemosmossyblocks.item.ModItems;
+import com.nemonotfound.nemosmossyblocks.item.Items;
 import com.nemonotfound.nemosmossyblocks.registry.tag.ItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -240,8 +240,8 @@ public class RecipeProvider extends FabricRecipeProvider {
 
                 this.offerMosaicRecipe(RecipeCategory.DECORATIONS, Blocks.MOSSY_BAMBOO_MOSAIC, Blocks.MOSSY_BAMBOO_MOSAIC_SLAB);
 
-                this.offer2x2CompactingRecipe(RecipeCategory.BUILDING_BLOCKS, MOSS_BLOCK, ModItems.MOSS_BALL);
-                this.createShapeless(RecipeCategory.MISC, ModItems.MOSS_BALL, 4)
+                this.offer2x2CompactingRecipe(RecipeCategory.BUILDING_BLOCKS, MOSS_BLOCK, Items.MOSS_BALL);
+                this.createShapeless(RecipeCategory.MISC, Items.MOSS_BALL, 4)
                         .input(MOSS_BLOCK)
                         .criterion(hasItem(MOSS_BLOCK), conditionsFromItem(MOSS_BLOCK))
                         .offerTo(exporter);
@@ -518,8 +518,8 @@ public class RecipeProvider extends FabricRecipeProvider {
 
                 this.offerMosaicRecipe(RecipeCategory.DECORATIONS, Blocks.PALE_MOSSY_BAMBOO_MOSAIC, Blocks.PALE_MOSSY_BAMBOO_MOSAIC_SLAB);
 
-                this.offer2x2CompactingRecipe(RecipeCategory.BUILDING_BLOCKS, PALE_MOSS_BLOCK, ModItems.PALE_MOSS_BALL);
-                this.createShapeless(RecipeCategory.MISC, ModItems.PALE_MOSS_BALL, 4)
+                this.offer2x2CompactingRecipe(RecipeCategory.BUILDING_BLOCKS, PALE_MOSS_BLOCK, Items.PALE_MOSS_BALL);
+                this.createShapeless(RecipeCategory.MISC, Items.PALE_MOSS_BALL, 4)
                         .input(PALE_MOSS_BLOCK)
                         .criterion(hasItem(PALE_MOSS_BLOCK), conditionsFromItem(PALE_MOSS_BLOCK))
                         .offerTo(exporter);
