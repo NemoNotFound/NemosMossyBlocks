@@ -1,4 +1,4 @@
-package com.nemonotfound.nemosmossyblocks.tag;
+package com.nemonotfound.nemosmossyblocks.registry.tag;
 
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
@@ -7,7 +7,7 @@ import net.minecraft.util.Identifier;
 
 import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.MOD_ID;
 
-public class ModItemTags {
+public class ItemTags {
 
     public static final TagKey<Item> MOSSY_PLANKS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "mossy_planks"));
     public static final TagKey<Item> MOSSY_STAINED_GLASS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "mossy_stained_glass"));

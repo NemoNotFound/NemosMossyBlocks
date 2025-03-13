@@ -1,15 +1,17 @@
 package com.nemonotfound.nemosmossyblocks.datagen;
 
-import com.nemonotfound.nemosmossyblocks.tag.ModBlockTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.BlockTags;
 
 import java.util.concurrent.CompletableFuture;
 
 import static com.nemonotfound.nemosmossyblocks.block.ModBlocks.*;
+import static com.nemonotfound.nemosmossyblocks.registry.tag.BlockTags.*;
+import static net.minecraft.block.Blocks.CRIMSON_NYLIUM;
+import static net.minecraft.block.Blocks.NETHERRACK;
+import static net.minecraft.registry.tag.BlockTags.*;
 
 public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
@@ -19,7 +21,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+        getOrCreateTagBuilder(AXE_MINEABLE)
                 .add(MOSSY_ACACIA_PLANKS)
                 .add(MOSSY_ACACIA_STAIRS)
                 .add(MOSSY_ACACIA_SLAB)
@@ -289,7 +291,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PALE_MOSSY_CRIMSON_TRAPDOOR)
                 .add(PALE_MOSSY_WARPED_TRAPDOOR);
 
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+        getOrCreateTagBuilder(PICKAXE_MINEABLE)
                 .add(MOSSY_STONE)
                 .add(MOSSY_STONE_STAIRS)
                 .add(MOSSY_STONE_SLAB)
@@ -366,7 +368,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PALE_MOSSY_TUFF_BRICK_SLAB)
                 .add(PALE_MOSSY_TUFF_BRICK_WALL);
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+        getOrCreateTagBuilder(WOODEN_FENCES)
                 .add(MOSSY_ACACIA_FENCE)
                 .add(MOSSY_BAMBOO_FENCE)
                 .add(MOSSY_BIRCH_FENCE)
@@ -392,7 +394,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PALE_MOSSY_SPRUCE_FENCE)
                 .add(PALE_MOSSY_WARPED_FENCE);
 
-        getOrCreateTagBuilder(BlockTags.WALLS)
+        getOrCreateTagBuilder(WALLS)
                 .add(MOSSY_BRICK_WALL)
                 .add(MOSSY_COBBLED_DEEPSLATE_WALL)
                 .add(MOSSY_DEEPSLATE_BRICK_WALL)
@@ -408,7 +410,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PALE_MOSSY_TUFF_WALL)
                 .add(PALE_MOSSY_TUFF_BRICK_WALL);
 
-        getOrCreateTagBuilder(ModBlockTags.MOSSY_BLOCKS)
+        getOrCreateTagBuilder(MOSSY_BLOCKS)
                 .add(MOSSY_STONE)
                 .add(MOSSY_STONE_STAIRS)
                 .add(MOSSY_STONE_SLAB)
@@ -623,7 +625,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(MOSSY_TUFF_BRICK_SLAB)
                 .add(MOSSY_TUFF_BRICK_WALL);
         
-        getOrCreateTagBuilder(ModBlockTags.PALE_MOSSY_BLOCKS)
+        getOrCreateTagBuilder(PALE_MOSSY_BLOCKS)
                 .add(PALE_MOSSY_STONE)
                 .add(PALE_MOSSY_STONE_STAIRS)
                 .add(PALE_MOSSY_STONE_SLAB)
@@ -843,5 +845,13 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PALE_MOSSY_TUFF_BRICK_STAIRS)
                 .add(PALE_MOSSY_TUFF_BRICK_SLAB)
                 .add(PALE_MOSSY_TUFF_BRICK_WALL);
+
+        getOrCreateTagBuilder(CRIMSON_MOSS_REPLACEABLE)
+                .add(NETHERRACK)
+                .add(CRIMSON_NYLIUM);
+
+        getOrCreateTagBuilder(HOE_MINEABLE)
+                .add(CRIMSON_MOSS_BLOCK)
+                .add(CRIMSON_MOSS_CARPET);
     }
 }

@@ -431,6 +431,8 @@ public class ModItems {
     public static final Item PALE_MOSSY_TUFF_BRICK_STAIRS = Items.register(ModBlocks.PALE_MOSSY_TUFF_BRICK_STAIRS);
     public static final Item PALE_MOSSY_TUFF_BRICK_SLAB = Items.register(ModBlocks.PALE_MOSSY_TUFF_BRICK_SLAB);
     public static final Item PALE_MOSSY_TUFF_BRICK_WALL = Items.register(ModBlocks.PALE_MOSSY_TUFF_BRICK_WALL);
+    public static final Item CRIMSON_MOSS_BLOCK = Items.register(ModBlocks.CRIMSON_MOSS_BLOCK);
+    public static final Item CRIMSON_MOSS_CARPET = Items.register(ModBlocks.CRIMSON_MOSS_CARPET);
 
     public static void registerItems() {
         log.debug("Registering items");

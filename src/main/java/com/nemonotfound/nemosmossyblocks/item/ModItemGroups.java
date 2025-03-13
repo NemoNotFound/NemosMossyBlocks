@@ -442,6 +442,8 @@ public class ModItemGroups {
                     entries.add(ModItems.PALE_MOSSY_MAGENTA_STAINED_GLASS_PANE);
                     entries.add(ModItems.MOSSY_PINK_STAINED_GLASS_PANE);
                     entries.add(ModItems.PALE_MOSSY_PINK_STAINED_GLASS_PANE);
+                    entries.add(ModItems.CRIMSON_MOSS_BLOCK);
+                    entries.add(ModItems.CRIMSON_MOSS_CARPET);
                     entries.add(ModItems.INFESTED_MOSSY_CHISELED_STONE_BRICKS);
                     entries.add(ModItems.MOSS_BALL);
                     entries.add(ModItems.PALE_MOSS_BALL);

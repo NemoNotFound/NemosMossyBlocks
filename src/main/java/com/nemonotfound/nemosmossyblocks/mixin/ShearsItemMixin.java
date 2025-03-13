@@ -2,7 +2,6 @@ package com.nemonotfound.nemosmossyblocks.mixin;
 
 import com.nemonotfound.nemosmossyblocks.block.BlockUtils;
 import com.nemonotfound.nemosmossyblocks.item.ModItems;
-import com.nemonotfound.nemosmossyblocks.tag.ModBlockTags;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -30,6 +29,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.Collection;
 import java.util.Optional;
+
+import static com.nemonotfound.nemosmossyblocks.registry.tag.BlockTags.PALE_MOSSY_BLOCKS;
 
 @Mixin(ShearsItem.class)
 public class ShearsItemMixin {
@@ -66,7 +67,7 @@ public class ShearsItemMixin {
 
     @Unique
     private ItemStack getItemStackToDrop(BlockState blockState) {
-        if (blockState.isIn(ModBlockTags.PALE_MOSSY_BLOCKS)) {
+        if (blockState.isIn(PALE_MOSSY_BLOCKS)) {
             return new ItemStack(ModItems.PALE_MOSS_BALL);
         }
 

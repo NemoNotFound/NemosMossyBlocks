@@ -432,6 +432,8 @@ public class ModelProvider extends FabricModelProvider {
         paleMossyTuffBricksTexturePool.stairs(PALE_MOSSY_TUFF_BRICK_STAIRS);
         paleMossyTuffBricksTexturePool.slab(PALE_MOSSY_TUFF_BRICK_SLAB);
         paleMossyTuffBricksTexturePool.wall(PALE_MOSSY_TUFF_BRICK_WALL);
+
+        blockStateModelGenerator.registerWoolAndCarpet(CRIMSON_MOSS_BLOCK, CRIMSON_MOSS_CARPET);
     }
 
     @Override

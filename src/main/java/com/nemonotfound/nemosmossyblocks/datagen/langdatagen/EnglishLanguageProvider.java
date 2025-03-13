@@ -7,6 +7,9 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
+import static com.nemonotfound.nemosmossyblocks.item.ModItems.CRIMSON_MOSS_BLOCK;
+import static com.nemonotfound.nemosmossyblocks.item.ModItems.CRIMSON_MOSS_CARPET;
+
 public class EnglishLanguageProvider extends FabricLanguageProvider {
 
     public EnglishLanguageProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
@@ -433,5 +436,8 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.PALE_MOSSY_TUFF_BRICK_SLAB, "Pale-Mossy Tuff Brick Slab");
         translationBuilder.add(ModItems.PALE_MOSSY_TUFF_BRICK_STAIRS, "Pale-Mossy Tuff Brick Stairs");
         translationBuilder.add(ModItems.PALE_MOSSY_TUFF_BRICK_WALL, "Pale-Mossy Tuff Brick Wall");
+
+        translationBuilder.add(CRIMSON_MOSS_BLOCK, "Crimson Moss Block");
+        translationBuilder.add(CRIMSON_MOSS_CARPET, "Crimson Moss Carpet");
     }
 }

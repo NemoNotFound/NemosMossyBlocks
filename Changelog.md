@@ -1,4 +1,5 @@
-# Changelog v1.7.1
+# Changelog v1.8
 
-## Fixes
-- Shearing mossy blocks causes game crash
+## Additions
+- Added crimson moss
+- Added crimson-mossy blocks

@@ -7,7 +7,7 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-import static com.nemonotfound.nemosmossyblocks.tag.ModItemTags.*;
+import static com.nemonotfound.nemosmossyblocks.registry.tag.ItemTags.*;
 
 public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
 

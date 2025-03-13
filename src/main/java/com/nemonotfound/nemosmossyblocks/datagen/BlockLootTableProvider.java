@@ -12,9 +12,9 @@ import java.util.concurrent.CompletableFuture;
 
 import static com.nemonotfound.nemosmossyblocks.block.ModBlocks.*;
 
-public class LootTableProvider extends FabricBlockLootTableProvider {
+public class BlockLootTableProvider extends FabricBlockLootTableProvider {
 
-    public LootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+    public BlockLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
 
@@ -437,5 +437,8 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(PALE_MOSSY_TUFF_BRICK_STAIRS);
         this.addDrop(PALE_MOSSY_TUFF_BRICK_SLAB);
         this.addDrop(PALE_MOSSY_TUFF_BRICK_WALL);
+
+        this.addDrop(CRIMSON_MOSS_BLOCK);
+        this.addDrop(CRIMSON_MOSS_CARPET);
     }
 }

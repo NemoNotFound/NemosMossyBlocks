@@ -1,6 +1,7 @@
 package com.nemonotfound.nemosmossyblocks.block;
 
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
@@ -11,6 +12,7 @@ import java.util.function.Function;
 
 import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.MOD_ID;
 import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.log;
+import static com.nemonotfound.nemosmossyblocks.world.gen.feature.VegetationConfiguredFeatures.CRIMSON_MOSS_PATCH_BONEMEAL;
 import static net.minecraft.block.Blocks.*;
 
 public class ModBlocks {
@@ -430,6 +432,22 @@ public class ModBlocks {
     public static final Block PALE_MOSSY_TUFF_BRICK_STAIRS = registerStairsBlock("pale_mossy_tuff_brick_stairs", PALE_MOSSY_TUFF_BRICKS);
     public static final Block PALE_MOSSY_TUFF_BRICK_SLAB = register("pale_mossy_tuff_brick_slab", SlabBlock::new, AbstractBlock.Settings.copy(PALE_MOSSY_TUFF_BRICKS));
     public static final Block PALE_MOSSY_TUFF_BRICK_WALL = register("pale_mossy_tuff_brick_wall", WallBlock::new, AbstractBlock.Settings.copy(PALE_MOSSY_TUFF_BRICKS));
+    public static final Block CRIMSON_MOSS_BLOCK = register(
+            "crimson_moss_block",
+            (settings) -> new MossBlock(CRIMSON_MOSS_PATCH_BONEMEAL, settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.RED)
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block CRIMSON_MOSS_CARPET = register(
+            "crimson_moss_carpet",
+            CarpetBlock::new,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.RED)
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_CARPET)
+                    .pistonBehavior(PistonBehavior.DESTROY));
 
     public static void registerBlocks() {
         log.debug("Registering blocks");
