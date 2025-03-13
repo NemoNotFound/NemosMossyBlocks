@@ -17,6 +17,8 @@ import net.minecraft.registry.tag.TagKey;
 
 import java.util.concurrent.CompletableFuture;
 
+import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.CRIMSON_MOSS_BLOCK;
+import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.CRIMSON_MOSS_CARPET;
 import static net.minecraft.block.Blocks.*;
 
 public class RecipeProvider extends FabricRecipeProvider {
@@ -576,6 +578,8 @@ public class RecipeProvider extends FabricRecipeProvider {
                 createStairsRecipe(exporter, Blocks.PALE_MOSSY_TUFF_BRICKS, Blocks.PALE_MOSSY_TUFF_BRICK_STAIRS);
                 createSlabRecipe(exporter, Blocks.PALE_MOSSY_TUFF_BRICKS, Blocks.PALE_MOSSY_TUFF_BRICK_SLAB);
                 this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.PALE_MOSSY_TUFF_BRICK_WALL, Blocks.PALE_MOSSY_TUFF_BRICKS);
+
+                this.offerCarpetRecipe(CRIMSON_MOSS_CARPET, CRIMSON_MOSS_BLOCK);
             }
 
             private void createMossyDoorRecipe(RecipeExporter exporter, Block output, Block input) {
