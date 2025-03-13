@@ -9,8 +9,7 @@ import java.util.concurrent.CompletableFuture;
 
 import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.*;
 import static com.nemonotfound.nemos.mossy.blocks.registry.tag.BlockTags.*;
-import static net.minecraft.block.Blocks.CRIMSON_NYLIUM;
-import static net.minecraft.block.Blocks.NETHERRACK;
+import static net.minecraft.block.Blocks.*;
 import static net.minecraft.registry.tag.BlockTags.*;
 
 public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -853,5 +852,16 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(HOE_MINEABLE)
                 .add(CRIMSON_MOSS_BLOCK)
                 .add(CRIMSON_MOSS_CARPET);
+
+        getOrCreateTagBuilder(FUNGUS_PLANTABLE_ON)
+                .forceAddTag(NYLIUM)
+                .add(MYCELIUM)
+                .add(SOUL_SOIL)
+                .add(CRIMSON_MOSS_BLOCK);
+
+        getOrCreateTagBuilder(ROOTS_PLANTABLE_ON)
+                .forceAddTag(NYLIUM)
+                .add(SOUL_SOIL)
+                .add(CRIMSON_MOSS_BLOCK);
     }
 }
