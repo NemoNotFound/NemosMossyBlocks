@@ -5,7 +5,6 @@ import com.nemonotfound.nemos.mossy.blocks.entity.ModEntityTypes;
 import com.nemonotfound.nemos.mossy.blocks.item.ItemGroups;
 import com.nemonotfound.nemos.mossy.blocks.item.Items;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

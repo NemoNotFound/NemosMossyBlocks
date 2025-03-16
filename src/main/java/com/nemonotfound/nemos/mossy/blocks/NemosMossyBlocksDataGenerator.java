@@ -3,6 +3,7 @@ package com.nemonotfound.nemos.mossy.blocks;
 import com.nemonotfound.nemos.mossy.blocks.datagen.*;
 import com.nemonotfound.nemos.mossy.blocks.datagen.langdatagen.EnglishLanguageProvider;
 import com.nemonotfound.nemos.mossy.blocks.world.gen.feature.VegetationConfiguredFeatures;
+import com.nemonotfound.nemos.mossy.blocks.world.gen.feature.VegetationPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
@@ -26,5 +27,6 @@ public class NemosMossyBlocksDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, VegetationConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, VegetationPlacedFeatures::bootstrap);
 	}
 }
