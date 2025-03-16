@@ -849,19 +849,27 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(NETHERRACK)
                 .add(CRIMSON_NYLIUM);
 
+        getOrCreateTagBuilder(WARPED_MOSS_REPLACEABLE)
+                .add(NETHERRACK)
+                .add(WARPED_NYLIUM);
+
         getOrCreateTagBuilder(HOE_MINEABLE)
                 .add(CRIMSON_MOSS_BLOCK)
-                .add(CRIMSON_MOSS_CARPET);
+                .add(CRIMSON_MOSS_CARPET)
+                .add(WARPED_MOSS_BLOCK)
+                .add(WARPED_MOSS_CARPET);
 
         getOrCreateTagBuilder(FUNGUS_PLANTABLE_ON)
                 .forceAddTag(NYLIUM)
                 .add(MYCELIUM)
                 .add(SOUL_SOIL)
-                .add(CRIMSON_MOSS_BLOCK);
+                .add(CRIMSON_MOSS_BLOCK)
+                .add(WARPED_MOSS_BLOCK);
 
         getOrCreateTagBuilder(ROOTS_PLANTABLE_ON)
                 .forceAddTag(NYLIUM)
                 .add(SOUL_SOIL)
-                .add(CRIMSON_MOSS_BLOCK);
+                .add(CRIMSON_MOSS_BLOCK)
+                .add(WARPED_MOSS_BLOCK);
     }
 }

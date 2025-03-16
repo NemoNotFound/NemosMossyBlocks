@@ -13,6 +13,7 @@ import java.util.function.Function;
 import static com.nemonotfound.nemos.mossy.blocks.NemosMossyBlocks.MOD_ID;
 import static com.nemonotfound.nemos.mossy.blocks.NemosMossyBlocks.log;
 import static com.nemonotfound.nemos.mossy.blocks.world.gen.feature.VegetationConfiguredFeatures.CRIMSON_MOSS_PATCH_BONEMEAL;
+import static com.nemonotfound.nemos.mossy.blocks.world.gen.feature.VegetationConfiguredFeatures.WARPED_MOSS_PATCH_BONEMEAL;
 import static net.minecraft.block.Blocks.*;
 
 public class Blocks {
@@ -445,6 +446,22 @@ public class Blocks {
             CarpetBlock::new,
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.RED)
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_CARPET)
+                    .pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block WARPED_MOSS_BLOCK = register(
+            "warped_moss_block",
+            (settings) -> new MossBlock(WARPED_MOSS_PATCH_BONEMEAL, settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.BLUE)
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block WARPED_MOSS_CARPET = register(
+            "warped_moss_carpet",
+            CarpetBlock::new,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.BLUE)
                     .strength(0.1F)
                     .sounds(BlockSoundGroup.MOSS_CARPET)
                     .pistonBehavior(PistonBehavior.DESTROY));

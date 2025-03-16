@@ -439,5 +439,7 @@ public class BlockLootTableProvider extends FabricBlockLootTableProvider {
 
         this.addDrop(CRIMSON_MOSS_BLOCK);
         this.addDrop(CRIMSON_MOSS_CARPET);
+        this.addDrop(WARPED_MOSS_BLOCK);
+        this.addDrop(WARPED_MOSS_CARPET);
     }
 }

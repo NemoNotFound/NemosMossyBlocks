@@ -15,17 +15,19 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 
 import static com.nemonotfound.nemos.mossy.blocks.NemosMossyBlocks.MOD_ID;
-import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.CRIMSON_MOSS_BLOCK;
-import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.CRIMSON_MOSS_CARPET;
+import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.*;
 import static com.nemonotfound.nemos.mossy.blocks.registry.tag.BlockTags.CRIMSON_MOSS_REPLACEABLE;
-import static net.minecraft.block.Blocks.CRIMSON_FUNGUS;
-import static net.minecraft.block.Blocks.CRIMSON_ROOTS;
+import static com.nemonotfound.nemos.mossy.blocks.registry.tag.BlockTags.WARPED_MOSS_REPLACEABLE;
+import static net.minecraft.block.Blocks.*;
 
 public class VegetationConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_MOSS_VEGETATION = of("crimson_moss_vegetation");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_MOSS_PATCH = of("crimson_moss_patch");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_MOSS_PATCH_BONEMEAL = of("crimson_moss_patch_bonemeal");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_MOSS_VEGETATION = of("warped_moss_vegetation");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_MOSS_PATCH = of("warped_moss_patch");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WARPED_MOSS_PATCH_BONEMEAL = of("warped_moss_patch_bonemeal");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable) {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = featureRegisterable.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -70,6 +72,56 @@ public class VegetationConfiguredFeatures {
                         CRIMSON_MOSS_REPLACEABLE,
                         BlockStateProvider.of(CRIMSON_MOSS_BLOCK),
                         PlacedFeatures.createEntry(registryEntryLookup.getOrThrow(CRIMSON_MOSS_VEGETATION)),
+                        VerticalSurfaceType.FLOOR,
+                        ConstantIntProvider.create(1),
+                        0.0F,
+                        5,
+                        0.6F,
+                        UniformIntProvider.create(1, 2),
+                        0.75F
+                )
+        );
+
+        ConfiguredFeatures.register(
+                featureRegisterable,
+                WARPED_MOSS_VEGETATION,
+                Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(
+                        new WeightedBlockStateProvider(
+                                DataPool.<BlockState>builder()
+                                        .add(WARPED_MOSS_CARPET.getDefaultState(), 25)
+                                        .add(WARPED_ROOTS.getDefaultState(), 25)
+                                        .add(WARPED_FUNGUS.getDefaultState(), 10)
+                        )
+                )
+        );
+
+        ConfiguredFeatures.register(
+                featureRegisterable,
+                WARPED_MOSS_PATCH,
+                Feature.VEGETATION_PATCH,
+                new VegetationPatchFeatureConfig(
+                        WARPED_MOSS_REPLACEABLE,
+                        BlockStateProvider.of(WARPED_MOSS_BLOCK),
+                        PlacedFeatures.createEntry(registryEntryLookup.getOrThrow(WARPED_MOSS_VEGETATION)),
+                        VerticalSurfaceType.FLOOR,
+                        ConstantIntProvider.create(1),
+                        0.0F,
+                        5,
+                        0.3F,
+                        UniformIntProvider.create(2, 4),
+                        0.75F
+                )
+        );
+
+        ConfiguredFeatures.register(
+                featureRegisterable,
+                WARPED_MOSS_PATCH_BONEMEAL,
+                Feature.VEGETATION_PATCH,
+                new VegetationPatchFeatureConfig(
+                        WARPED_MOSS_REPLACEABLE,
+                        BlockStateProvider.of(WARPED_MOSS_BLOCK),
+                        PlacedFeatures.createEntry(registryEntryLookup.getOrThrow(WARPED_MOSS_VEGETATION)),
                         VerticalSurfaceType.FLOOR,
                         ConstantIntProvider.create(1),
                         0.0F,

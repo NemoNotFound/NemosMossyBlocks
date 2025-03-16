@@ -16,6 +16,8 @@ public class Items {
 
     public static final Item MOSS_BALL = register("moss_ball", MossBallItem::new, new Item.Settings().maxCount(16));
     public static final Item PALE_MOSS_BALL = register("pale_moss_ball", MossBallItem::new, new Item.Settings().maxCount(16));
+    public static final Item CRIMSON_MOSS_BALL = register("crimson_moss_ball", MossBallItem::new, new Item.Settings().maxCount(16));
+    public static final Item WARPED_MOSS_BALL = register("warped_moss_ball", MossBallItem::new, new Item.Settings().maxCount(16));
     public static final Item MOSSY_OAK_LOG = register(Blocks.MOSSY_OAK_LOG);
     public static final Item MOSSY_OAK_WOOD = register(Blocks.MOSSY_OAK_WOOD);
     public static final Item MOSSY_OAK_PLANKS = register(Blocks.MOSSY_OAK_PLANKS);
@@ -433,6 +435,8 @@ public class Items {
     public static final Item PALE_MOSSY_TUFF_BRICK_WALL = register(Blocks.PALE_MOSSY_TUFF_BRICK_WALL);
     public static final Item CRIMSON_MOSS_BLOCK = register(Blocks.CRIMSON_MOSS_BLOCK);
     public static final Item CRIMSON_MOSS_CARPET = register(Blocks.CRIMSON_MOSS_CARPET);
+    public static final Item WARPED_MOSS_BLOCK = register(Blocks.WARPED_MOSS_BLOCK);
+    public static final Item WARPED_MOSS_CARPET = register(Blocks.WARPED_MOSS_CARPET);
 
     public static void registerItems() {
         log.debug("Registering items");

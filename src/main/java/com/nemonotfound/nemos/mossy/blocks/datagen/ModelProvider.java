@@ -434,12 +434,15 @@ public class ModelProvider extends FabricModelProvider {
         paleMossyTuffBricksTexturePool.wall(PALE_MOSSY_TUFF_BRICK_WALL);
 
         blockStateModelGenerator.registerWoolAndCarpet(CRIMSON_MOSS_BLOCK, CRIMSON_MOSS_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(WARPED_MOSS_BLOCK, WARPED_MOSS_CARPET);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(Items.MOSS_BALL, Models.GENERATED);
         itemModelGenerator.register(Items.PALE_MOSS_BALL, Models.GENERATED);
+        itemModelGenerator.register(Items.CRIMSON_MOSS_BALL, Models.GENERATED);
+        itemModelGenerator.register(Items.WARPED_MOSS_BALL, Models.GENERATED);
     }
     
     private void registerDeepslate(BlockStateModelGenerator blockStateModelGenerator, Block block) {

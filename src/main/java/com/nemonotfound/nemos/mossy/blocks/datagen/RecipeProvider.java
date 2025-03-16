@@ -17,8 +17,7 @@ import net.minecraft.registry.tag.TagKey;
 
 import java.util.concurrent.CompletableFuture;
 
-import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.CRIMSON_MOSS_BLOCK;
-import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.CRIMSON_MOSS_CARPET;
+import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.*;
 import static net.minecraft.block.Blocks.*;
 
 public class RecipeProvider extends FabricRecipeProvider {
@@ -580,6 +579,18 @@ public class RecipeProvider extends FabricRecipeProvider {
                 this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.PALE_MOSSY_TUFF_BRICK_WALL, Blocks.PALE_MOSSY_TUFF_BRICKS);
 
                 this.offerCarpetRecipe(CRIMSON_MOSS_CARPET, CRIMSON_MOSS_BLOCK);
+                this.offer2x2CompactingRecipe(RecipeCategory.BUILDING_BLOCKS, CRIMSON_MOSS_BLOCK, Items.CRIMSON_MOSS_BALL);
+                this.createShapeless(RecipeCategory.MISC, Items.CRIMSON_MOSS_BALL, 4)
+                        .input(CRIMSON_MOSS_BLOCK)
+                        .criterion(hasItem(CRIMSON_MOSS_BLOCK), conditionsFromItem(CRIMSON_MOSS_BLOCK))
+                        .offerTo(exporter);
+
+                this.offerCarpetRecipe(WARPED_MOSS_CARPET, WARPED_MOSS_BLOCK);
+                this.offer2x2CompactingRecipe(RecipeCategory.BUILDING_BLOCKS, WARPED_MOSS_BLOCK, Items.WARPED_MOSS_BALL);
+                this.createShapeless(RecipeCategory.MISC, Items.WARPED_MOSS_BALL, 4)
+                        .input(WARPED_MOSS_BLOCK)
+                        .criterion(hasItem(WARPED_MOSS_BLOCK), conditionsFromItem(WARPED_MOSS_BLOCK))
+                        .offerTo(exporter);
             }
 
             private void createMossyDoorRecipe(RecipeExporter exporter, Block output, Block input) {

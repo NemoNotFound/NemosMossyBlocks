@@ -444,9 +444,13 @@ public class ItemGroups {
                     entries.add(Items.PALE_MOSSY_PINK_STAINED_GLASS_PANE);
                     entries.add(Items.CRIMSON_MOSS_BLOCK);
                     entries.add(Items.CRIMSON_MOSS_CARPET);
+                    entries.add(Items.WARPED_MOSS_BLOCK);
+                    entries.add(Items.WARPED_MOSS_CARPET);
                     entries.add(Items.INFESTED_MOSSY_CHISELED_STONE_BRICKS);
                     entries.add(Items.MOSS_BALL);
                     entries.add(Items.PALE_MOSS_BALL);
+                    entries.add(Items.CRIMSON_MOSS_BALL);
+                    entries.add(Items.WARPED_MOSS_BALL);
                 })
                 .build();
 

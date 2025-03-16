@@ -2,6 +2,7 @@
   "values": [
     "#minecraft:nylium",
     "minecraft:soul_soil",
-    "nemos-mossy-blocks:crimson_moss_block"
+    "nemos-mossy-blocks:crimson_moss_block",
+    "nemos-mossy-blocks:warped_moss_block"
   ]
 }

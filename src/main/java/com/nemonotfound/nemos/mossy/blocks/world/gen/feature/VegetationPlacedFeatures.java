@@ -17,15 +17,26 @@ import static com.nemonotfound.nemos.mossy.blocks.NemosMossyBlocks.MOD_ID;
 public class VegetationPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> CRIMSON_MOSS_PATCH = of("crimson_moss_patch");
+    public static final RegistryKey<PlacedFeature> WARPED_MOSS_PATCH = of("warped_moss_patch");
 
     public static void bootstrap(Registerable<PlacedFeature> featureRegisterable) {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = featureRegisterable.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+
         RegistryEntry<ConfiguredFeature<?, ?>> crimsonMossPatchRegistryEntry = registryEntryLookup.getOrThrow(VegetationConfiguredFeatures.CRIMSON_MOSS_PATCH);
+        RegistryEntry<ConfiguredFeature<?, ?>> warpedMossPatchRegistryEntry = registryEntryLookup.getOrThrow(VegetationConfiguredFeatures.WARPED_MOSS_PATCH);
 
         PlacedFeatures.register(
                 featureRegisterable,
                 CRIMSON_MOSS_PATCH,
                 crimsonMossPatchRegistryEntry,
+                CountMultilayerPlacementModifier.of(2),
+                BiomePlacementModifier.of()
+        );
+
+        PlacedFeatures.register(
+                featureRegisterable,
+                WARPED_MOSS_PATCH,
+                warpedMossPatchRegistryEntry,
                 CountMultilayerPlacementModifier.of(2),
                 BiomePlacementModifier.of()
         );
