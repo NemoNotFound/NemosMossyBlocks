@@ -346,14 +346,14 @@ public class ItemGroups {
                     entries.add(Items.MOSSY_TUFF_STAIRS);
                     entries.add(Items.MOSSY_TUFF_SLAB);
                     entries.add(Items.MOSSY_TUFF_WALL);
-                    entries.add(Items.MOSSY_TUFF_BRICKS);
-                    entries.add(Items.MOSSY_TUFF_BRICK_STAIRS);
-                    entries.add(Items.MOSSY_TUFF_BRICK_SLAB);
-                    entries.add(Items.MOSSY_TUFF_BRICK_WALL);
                     entries.add(Items.PALE_MOSSY_TUFF);
                     entries.add(Items.PALE_MOSSY_TUFF_STAIRS);
                     entries.add(Items.PALE_MOSSY_TUFF_SLAB);
                     entries.add(Items.PALE_MOSSY_TUFF_WALL);
+                    entries.add(Items.MOSSY_TUFF_BRICKS);
+                    entries.add(Items.MOSSY_TUFF_BRICK_STAIRS);
+                    entries.add(Items.MOSSY_TUFF_BRICK_SLAB);
+                    entries.add(Items.MOSSY_TUFF_BRICK_WALL);
                     entries.add(Items.PALE_MOSSY_TUFF_BRICKS);
                     entries.add(Items.PALE_MOSSY_TUFF_BRICK_STAIRS);
                     entries.add(Items.PALE_MOSSY_TUFF_BRICK_SLAB);
