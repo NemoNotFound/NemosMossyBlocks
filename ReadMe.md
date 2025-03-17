@@ -2,25 +2,26 @@
 <br><br>
 
 # Description
-As the name suggests, this mod brings moss to more blocks! <br>
-You can also shear mossy blocks now!
-
-[![Join my Discord](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/svg/join_discord_button.svg?raw=true)](https://discord.com/invite/yxs9dga)
-<br>
-<br>
-
-I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do. <br>
-Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/NemosMossyBlocks/discussions/) :)
-<br><br>
-For more information check the [wiki](https://www.nemonotfound.com/minecraft-mods/nemos-mossy-blocks/wiki).
-
-[![ko-fi donation](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nemonotfound)
-<br>
-<br>
+**Nemo's Mossy Blocks** adds more mossy blocks, introduces new moss types, and lets you shear mossy blocks! <br>
+For more information check the [wiki](https://github.com/NemoNotFound/NemosMossyBlocks/wiki).
 
 # Downloads
 - [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks)
 - [Modrinth](https://modrinth.com/mod/nemos-mossy-blocks)
+<br>
+<br>
+
+# Join my Discord!
+[![Join my Discord](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/svg/join_discord_button.svg?raw=true)](https://discord.com/invite/yxs9dga)
+<br>
+<br>
+
+# Support Me
+I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do. <br>
+Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/NemosMossyBlocks/discussions/) :)
+<br><br>
+
+[![ko-fi donation](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nemonotfound)
 <br>
 <br>
 
