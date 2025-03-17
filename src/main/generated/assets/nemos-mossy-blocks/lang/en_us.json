@@ -1,4 +1,6 @@
 {
+  "block.nemos-mossy-blocks.crimson_moss_block": "Crimson Moss Block",
+  "block.nemos-mossy-blocks.crimson_moss_carpet": "Crimson Moss Carpet",
   "block.nemos-mossy-blocks.infested_mossy_chiseled_stone_bricks": "Infested Mossy Chiseled Stone Bricks",
   "block.nemos-mossy-blocks.mossy_acacia_button": "Mossy Acacia Button",
   "block.nemos-mossy-blocks.mossy_acacia_door": "Mossy Acacia Door",
@@ -414,6 +416,10 @@
   "block.nemos-mossy-blocks.pale_mossy_white_stained_glass_pane": "Pale-Mossy White Stained Glass Pane",
   "block.nemos-mossy-blocks.pale_mossy_yellow_stained_glass": "Pale-Mossy Yellow Stained Glass",
   "block.nemos-mossy-blocks.pale_mossy_yellow_stained_glass_pane": "Pale-Mossy Yellow Stained Glass Pane",
+  "block.nemos-mossy-blocks.warped_moss_block": "Warped Moss Block",
+  "block.nemos-mossy-blocks.warped_moss_carpet": "Warped Moss Carpet",
+  "item.nemos-mossy-blocks.crimson_moss_ball": "Crimson Moss Ball",
   "item.nemos-mossy-blocks.moss_ball": "Moss Ball",
-  "item.nemos-mossy-blocks.pale_moss_ball": "Pale Moss Ball"
+  "item.nemos-mossy-blocks.pale_moss_ball": "Pale Moss Ball",
+  "item.nemos-mossy-blocks.warped_moss_ball": "Warped Moss Ball"
 }

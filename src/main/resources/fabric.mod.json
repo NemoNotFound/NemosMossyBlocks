@@ -17,13 +17,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.nemonotfound.nemosmossyblocks.NemosMossyBlocks"
+			"com.nemonotfound.nemos.mossy.blocks.NemosMossyBlocks"
 		],
 		"client": [
-			"com.nemonotfound.nemosmossyblocks.NemosMossyBlocksClient"
+			"com.nemonotfound.nemos.mossy.blocks.NemosMossyBlocksClient"
 		],
 		"fabric-datagen": [
-			"com.nemonotfound.nemosmossyblocks.NemosMossyBlocksDataGenerator"
+			"com.nemonotfound.nemos.mossy.blocks.NemosMossyBlocksDataGenerator"
 		]
 	},
 	"mixins": [

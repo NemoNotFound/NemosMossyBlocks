@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "nemos-mossy-blocks:block/crimson_moss_block"
+  }
+}
