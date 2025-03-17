@@ -2,7 +2,8 @@
 <br><br>
 
 # Description
-**Nemo's Mossy Blocks** adds more mossy blocks, introduces new moss types, and lets you shear mossy blocks!
+**Nemo's Mossy Blocks** adds more mossy blocks, introduces new moss types, and lets you shear mossy blocks! <br>
+For more information check the [wiki](https://github.com/NemoNotFound/NemosMossyBlocks/wiki).
 
 # Downloads
 - [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks)
