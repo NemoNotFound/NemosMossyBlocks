@@ -12,7 +12,9 @@
   - Added "Crimson Moss Ball"   
   - Added "Warped Moss"
   - Added "Warped Moss Carpet"
-  - Added "Warped Moss Ball"
-- Added new biomes
-  - "Crimson Moss Forest"
-  - "Warped Moss Forest"
+  - Added "Warped Moss Ball" 
+
+## Changes
+- Added new moss blocks to:
+  - "Crimson Forest"
+  - "Warped Forest"
