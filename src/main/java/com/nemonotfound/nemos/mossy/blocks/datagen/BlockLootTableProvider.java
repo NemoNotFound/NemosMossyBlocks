@@ -10,6 +10,7 @@ import net.minecraft.registry.RegistryWrapper;
 import java.util.concurrent.CompletableFuture;
 
 import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.*;
+import static net.minecraft.item.Items.MOSSY_COBBLESTONE;
 
 public class BlockLootTableProvider extends FabricBlockLootTableProvider {
 
@@ -20,7 +21,7 @@ public class BlockLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         this.addDrop(MOSSY_STONE, (Block block) -> this.dropsWithSilkTouch(block,
-                this.addSurvivesExplosionCondition(block, ItemEntry.builder(net.minecraft.item.Items.MOSSY_COBBLESTONE))));
+                this.addSurvivesExplosionCondition(block, ItemEntry.builder(MOSSY_COBBLESTONE))));
         this.addDrop(MOSSY_STONE_STAIRS);
         this.addDrop(MOSSY_STONE_SLAB);
         this.addDrop(MOSSY_STONE_PRESSURE_PLATE);

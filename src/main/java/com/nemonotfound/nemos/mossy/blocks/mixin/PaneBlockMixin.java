@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import static net.minecraft.block.Blocks.IRON_BARS;
 import static net.minecraft.block.ConnectingBlock.FACING_PROPERTIES;
 
 @Mixin(PaneBlock.class)
@@ -36,7 +37,7 @@ public class PaneBlockMixin {
 
     @Unique
     private boolean shouldBeInvisible(BlockState state, BlockState stateFrom) {
-     return (state.isOf(Blocks.MOSSY_IRON_BARS) && stateFrom.isOf(net.minecraft.block.Blocks.IRON_BARS)) ||
-             (state.isOf(net.minecraft.block.Blocks.IRON_BARS) && stateFrom.isOf(Blocks.MOSSY_IRON_BARS));
+     return (state.isOf(Blocks.MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
+             (state.isOf(IRON_BARS) && stateFrom.isOf(Blocks.MOSSY_IRON_BARS));
     }
 }
