@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "nemos-mossy-blocks:block/crimson_mossy_cobblestone"
+  }
+}

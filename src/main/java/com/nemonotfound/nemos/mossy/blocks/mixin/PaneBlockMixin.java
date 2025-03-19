@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.*;
 import static net.minecraft.block.Blocks.IRON_BARS;
 import static net.minecraft.block.ConnectingBlock.FACING_PROPERTIES;
 
@@ -37,7 +38,17 @@ public class PaneBlockMixin {
 
     @Unique
     private boolean shouldBeInvisible(BlockState state, BlockState stateFrom) {
-     return (state.isOf(Blocks.MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
-             (state.isOf(IRON_BARS) && stateFrom.isOf(Blocks.MOSSY_IRON_BARS));
+     return (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
+             (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS)) ||
+             (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS)) ||
+             (state.isOf(IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
+             (state.isOf(IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS)) ||
+             (state.isOf(IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS)) ||
+             (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
+             (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
+             (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS)) ||
+             (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
+             (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
+             (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS));
     }
 }

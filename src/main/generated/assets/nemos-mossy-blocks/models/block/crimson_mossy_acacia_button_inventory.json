@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "nemos-mossy-blocks:block/crimson_mossy_acacia_planks"
+  }
+}

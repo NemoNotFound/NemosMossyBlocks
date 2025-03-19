@@ -434,6 +434,218 @@ public class ModelProvider extends FabricModelProvider {
         paleMossyTuffBricksTexturePool.wall(PALE_MOSSY_TUFF_BRICK_WALL);
 
         blockStateModelGenerator.registerWoolAndCarpet(CRIMSON_MOSS_BLOCK, CRIMSON_MOSS_CARPET);
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyStoneTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_STONE);
+        crimsonMossyStoneTexturePool.stairs(CRIMSON_MOSSY_STONE_STAIRS);
+        crimsonMossyStoneTexturePool.slab(CRIMSON_MOSSY_STONE_SLAB);
+        crimsonMossyStoneTexturePool.pressurePlate(CRIMSON_MOSSY_STONE_PRESSURE_PLATE);
+        crimsonMossyStoneTexturePool.button(CRIMSON_MOSSY_STONE_BUTTON);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyCobblestoneTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_COBBLESTONE);
+        crimsonMossyCobblestoneTexturePool.stairs(CRIMSON_MOSSY_COBBLESTONE_STAIRS);
+        crimsonMossyCobblestoneTexturePool.slab(CRIMSON_MOSSY_COBBLESTONE_SLAB);
+        crimsonMossyCobblestoneTexturePool.wall(CRIMSON_MOSSY_COBBLESTONE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyStoneBricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_STONE_BRICKS);
+        crimsonMossyStoneBricksTexturePool.stairs(CRIMSON_MOSSY_STONE_BRICK_STAIRS);
+        crimsonMossyStoneBricksTexturePool.slab(CRIMSON_MOSSY_STONE_BRICK_SLAB);
+        crimsonMossyStoneBricksTexturePool.wall(CRIMSON_MOSSY_STONE_BRICK_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyAcaciaPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_ACACIA_PLANKS);
+        crimsonMossyAcaciaPlanksTexturePool.stairs(CRIMSON_MOSSY_ACACIA_STAIRS);
+        crimsonMossyAcaciaPlanksTexturePool.slab(CRIMSON_MOSSY_ACACIA_SLAB);
+        crimsonMossyAcaciaPlanksTexturePool.pressurePlate(CRIMSON_MOSSY_ACACIA_PRESSURE_PLATE);
+        crimsonMossyAcaciaPlanksTexturePool.button(CRIMSON_MOSSY_ACACIA_BUTTON);
+        crimsonMossyAcaciaPlanksTexturePool.fence(CRIMSON_MOSSY_ACACIA_FENCE);
+        crimsonMossyAcaciaPlanksTexturePool.fenceGate(CRIMSON_MOSSY_ACACIA_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyBambooPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_BAMBOO_PLANKS);
+        crimsonMossyBambooPlanksTexturePool.stairs(CRIMSON_MOSSY_BAMBOO_STAIRS);
+        crimsonMossyBambooPlanksTexturePool.slab(CRIMSON_MOSSY_BAMBOO_SLAB);
+        crimsonMossyBambooPlanksTexturePool.pressurePlate(CRIMSON_MOSSY_BAMBOO_PRESSURE_PLATE);
+        crimsonMossyBambooPlanksTexturePool.button(CRIMSON_MOSSY_BAMBOO_BUTTON);
+        crimsonMossyBambooPlanksTexturePool.fence(CRIMSON_MOSSY_BAMBOO_FENCE);
+        crimsonMossyBambooPlanksTexturePool.fenceGate(CRIMSON_MOSSY_BAMBOO_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyBirchPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_BIRCH_PLANKS);
+        crimsonMossyBirchPlanksTexturePool.stairs(CRIMSON_MOSSY_BIRCH_STAIRS);
+        crimsonMossyBirchPlanksTexturePool.slab(CRIMSON_MOSSY_BIRCH_SLAB);
+        crimsonMossyBirchPlanksTexturePool.pressurePlate(CRIMSON_MOSSY_BIRCH_PRESSURE_PLATE);
+        crimsonMossyBirchPlanksTexturePool.button(CRIMSON_MOSSY_BIRCH_BUTTON);
+        crimsonMossyBirchPlanksTexturePool.fence(CRIMSON_MOSSY_BIRCH_FENCE);
+        crimsonMossyBirchPlanksTexturePool.fenceGate(CRIMSON_MOSSY_BIRCH_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyCherryPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_CHERRY_PLANKS);
+        crimsonMossyCherryPlanksTexturePool.stairs(CRIMSON_MOSSY_CHERRY_STAIRS);
+        crimsonMossyCherryPlanksTexturePool.slab(CRIMSON_MOSSY_CHERRY_SLAB);
+        crimsonMossyCherryPlanksTexturePool.pressurePlate(CRIMSON_MOSSY_CHERRY_PRESSURE_PLATE);
+        crimsonMossyCherryPlanksTexturePool.button(CRIMSON_MOSSY_CHERRY_BUTTON);
+        crimsonMossyCherryPlanksTexturePool.fence(CRIMSON_MOSSY_CHERRY_FENCE);
+        crimsonMossyCherryPlanksTexturePool.fenceGate(CRIMSON_MOSSY_CHERRY_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyCrimsonPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_CRIMSON_PLANKS);
+        crimsonMossyCrimsonPlanksTexturePool.stairs(CRIMSON_MOSSY_CRIMSON_STAIRS);
+        crimsonMossyCrimsonPlanksTexturePool.slab(CRIMSON_MOSSY_CRIMSON_SLAB);
+        crimsonMossyCrimsonPlanksTexturePool.pressurePlate(CRIMSON_MOSSY_CRIMSON_PRESSURE_PLATE);
+        crimsonMossyCrimsonPlanksTexturePool.button(CRIMSON_MOSSY_CRIMSON_BUTTON);
+        crimsonMossyCrimsonPlanksTexturePool.fence(CRIMSON_MOSSY_CRIMSON_FENCE);
+        crimsonMossyCrimsonPlanksTexturePool.fenceGate(CRIMSON_MOSSY_CRIMSON_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyDarkOakPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_DARK_OAK_PLANKS);
+        crimsonMossyDarkOakPlanksTexturePool.stairs(CRIMSON_MOSSY_DARK_OAK_STAIRS);
+        crimsonMossyDarkOakPlanksTexturePool.slab(CRIMSON_MOSSY_DARK_OAK_SLAB);
+        crimsonMossyDarkOakPlanksTexturePool.pressurePlate(CRIMSON_MOSSY_DARK_OAK_PRESSURE_PLATE);
+        crimsonMossyDarkOakPlanksTexturePool.button(CRIMSON_MOSSY_DARK_OAK_BUTTON);
+        crimsonMossyDarkOakPlanksTexturePool.fence(CRIMSON_MOSSY_DARK_OAK_FENCE);
+        crimsonMossyDarkOakPlanksTexturePool.fenceGate(CRIMSON_MOSSY_DARK_OAK_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyPaleOakPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_PALE_OAK_PLANKS);
+        crimsonMossyPaleOakPlanksTexturePool.stairs(CRIMSON_MOSSY_PALE_OAK_STAIRS);
+        crimsonMossyPaleOakPlanksTexturePool.slab(CRIMSON_MOSSY_PALE_OAK_SLAB);
+        crimsonMossyPaleOakPlanksTexturePool.pressurePlate(CRIMSON_MOSSY_PALE_OAK_PRESSURE_PLATE);
+        crimsonMossyPaleOakPlanksTexturePool.button(CRIMSON_MOSSY_PALE_OAK_BUTTON);
+        crimsonMossyPaleOakPlanksTexturePool.fence(CRIMSON_MOSSY_PALE_OAK_FENCE);
+        crimsonMossyPaleOakPlanksTexturePool.fenceGate(CRIMSON_MOSSY_PALE_OAK_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyJunglePlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_JUNGLE_PLANKS);
+        crimsonMossyJunglePlanksTexturePool.stairs(CRIMSON_MOSSY_JUNGLE_STAIRS);
+        crimsonMossyJunglePlanksTexturePool.slab(CRIMSON_MOSSY_JUNGLE_SLAB);
+        crimsonMossyJunglePlanksTexturePool.pressurePlate(CRIMSON_MOSSY_JUNGLE_PRESSURE_PLATE);
+        crimsonMossyJunglePlanksTexturePool.button(CRIMSON_MOSSY_JUNGLE_BUTTON);
+        crimsonMossyJunglePlanksTexturePool.fence(CRIMSON_MOSSY_JUNGLE_FENCE);
+        crimsonMossyJunglePlanksTexturePool.fenceGate(CRIMSON_MOSSY_JUNGLE_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyMangrovePlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_MANGROVE_PLANKS);
+        crimsonMossyMangrovePlanksTexturePool.stairs(CRIMSON_MOSSY_MANGROVE_STAIRS);
+        crimsonMossyMangrovePlanksTexturePool.slab(CRIMSON_MOSSY_MANGROVE_SLAB);
+        crimsonMossyMangrovePlanksTexturePool.pressurePlate(CRIMSON_MOSSY_MANGROVE_PRESSURE_PLATE);
+        crimsonMossyMangrovePlanksTexturePool.button(CRIMSON_MOSSY_MANGROVE_BUTTON);
+        crimsonMossyMangrovePlanksTexturePool.fence(CRIMSON_MOSSY_MANGROVE_FENCE);
+        crimsonMossyMangrovePlanksTexturePool.fenceGate(CRIMSON_MOSSY_MANGROVE_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyOakPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_OAK_PLANKS);
+        crimsonMossyOakPlanksTexturePool.stairs(CRIMSON_MOSSY_OAK_STAIRS);
+        crimsonMossyOakPlanksTexturePool.slab(CRIMSON_MOSSY_OAK_SLAB);
+        crimsonMossyOakPlanksTexturePool.pressurePlate(CRIMSON_MOSSY_OAK_PRESSURE_PLATE);
+        crimsonMossyOakPlanksTexturePool.button(CRIMSON_MOSSY_OAK_BUTTON);
+        crimsonMossyOakPlanksTexturePool.fence(CRIMSON_MOSSY_OAK_FENCE);
+        crimsonMossyOakPlanksTexturePool.fenceGate(CRIMSON_MOSSY_OAK_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossySprucePlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_SPRUCE_PLANKS);
+        crimsonMossySprucePlanksTexturePool.stairs(CRIMSON_MOSSY_SPRUCE_STAIRS);
+        crimsonMossySprucePlanksTexturePool.slab(CRIMSON_MOSSY_SPRUCE_SLAB);
+        crimsonMossySprucePlanksTexturePool.pressurePlate(CRIMSON_MOSSY_SPRUCE_PRESSURE_PLATE);
+        crimsonMossySprucePlanksTexturePool.button(CRIMSON_MOSSY_SPRUCE_BUTTON);
+        crimsonMossySprucePlanksTexturePool.fence(CRIMSON_MOSSY_SPRUCE_FENCE);
+        crimsonMossySprucePlanksTexturePool.fenceGate(CRIMSON_MOSSY_SPRUCE_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyWarpedPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_WARPED_PLANKS);
+        crimsonMossyWarpedPlanksTexturePool.stairs(CRIMSON_MOSSY_WARPED_STAIRS);
+        crimsonMossyWarpedPlanksTexturePool.slab(CRIMSON_MOSSY_WARPED_SLAB);
+        crimsonMossyWarpedPlanksTexturePool.pressurePlate(CRIMSON_MOSSY_WARPED_PRESSURE_PLATE);
+        crimsonMossyWarpedPlanksTexturePool.button(CRIMSON_MOSSY_WARPED_BUTTON);
+        crimsonMossyWarpedPlanksTexturePool.fence(CRIMSON_MOSSY_WARPED_FENCE);
+        crimsonMossyWarpedPlanksTexturePool.fenceGate(CRIMSON_MOSSY_WARPED_FENCE_GATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyBambooMosaicTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_BAMBOO_MOSAIC);
+        crimsonMossyBambooMosaicTexturePool.stairs(CRIMSON_MOSSY_BAMBOO_MOSAIC_STAIRS);
+        crimsonMossyBambooMosaicTexturePool.slab(CRIMSON_MOSSY_BAMBOO_MOSAIC_SLAB);
+
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_GLASS, CRIMSON_MOSSY_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_BLACK_STAINED_GLASS, CRIMSON_MOSSY_BLACK_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_BLUE_STAINED_GLASS, CRIMSON_MOSSY_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_BROWN_STAINED_GLASS, CRIMSON_MOSSY_BROWN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_CYAN_STAINED_GLASS, CRIMSON_MOSSY_CYAN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_GRAY_STAINED_GLASS, CRIMSON_MOSSY_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_GREEN_STAINED_GLASS, CRIMSON_MOSSY_GREEN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_LIGHT_BLUE_STAINED_GLASS, CRIMSON_MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_LIGHT_GRAY_STAINED_GLASS, CRIMSON_MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_LIME_STAINED_GLASS, CRIMSON_MOSSY_LIME_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_MAGENTA_STAINED_GLASS, CRIMSON_MOSSY_MAGENTA_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_ORANGE_STAINED_GLASS, CRIMSON_MOSSY_ORANGE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_PINK_STAINED_GLASS, CRIMSON_MOSSY_PINK_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_PURPLE_STAINED_GLASS, CRIMSON_MOSSY_PURPLE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_RED_STAINED_GLASS, CRIMSON_MOSSY_RED_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_TINTED_GLASS);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_WHITE_STAINED_GLASS, CRIMSON_MOSSY_WHITE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_YELLOW_STAINED_GLASS, CRIMSON_MOSSY_YELLOW_STAINED_GLASS_PANE);
+
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_ACACIA_LOG).log(CRIMSON_MOSSY_ACACIA_LOG).wood(CRIMSON_MOSSY_ACACIA_WOOD);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_BAMBOO_BLOCK).log(CRIMSON_MOSSY_BAMBOO_BLOCK);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_BIRCH_LOG).log(CRIMSON_MOSSY_BIRCH_LOG).wood(CRIMSON_MOSSY_BIRCH_WOOD);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_CHERRY_LOG).log(CRIMSON_MOSSY_CHERRY_LOG).wood(CRIMSON_MOSSY_CHERRY_WOOD);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_CRIMSON_STEM).log(CRIMSON_MOSSY_CRIMSON_STEM).wood(CRIMSON_MOSSY_CRIMSON_HYPHAE);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_DARK_OAK_LOG).log(CRIMSON_MOSSY_DARK_OAK_LOG).wood(CRIMSON_MOSSY_DARK_OAK_WOOD);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_PALE_OAK_LOG).log(CRIMSON_MOSSY_PALE_OAK_LOG).wood(CRIMSON_MOSSY_PALE_OAK_WOOD);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_JUNGLE_LOG).log(CRIMSON_MOSSY_JUNGLE_LOG).wood(CRIMSON_MOSSY_JUNGLE_WOOD);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_MANGROVE_LOG).log(CRIMSON_MOSSY_MANGROVE_LOG).wood(CRIMSON_MOSSY_MANGROVE_WOOD);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_OAK_LOG).log(CRIMSON_MOSSY_OAK_LOG).wood(CRIMSON_MOSSY_OAK_WOOD);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_SPRUCE_LOG).log(CRIMSON_MOSSY_SPRUCE_LOG).wood(CRIMSON_MOSSY_SPRUCE_WOOD);
+        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_WARPED_STEM).stem(CRIMSON_MOSSY_WARPED_STEM).wood(CRIMSON_MOSSY_WARPED_HYPHAE);
+
+        registerIronBars(blockStateModelGenerator, CRIMSON_MOSSY_IRON_BARS);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_CHISELED_STONE_BRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyBricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_BRICKS);
+        crimsonMossyBricksTexturePool.stairs(CRIMSON_MOSSY_BRICK_STAIRS);
+        crimsonMossyBricksTexturePool.slab(CRIMSON_MOSSY_BRICK_SLAB);
+        crimsonMossyBricksTexturePool.wall(CRIMSON_MOSSY_BRICK_WALL);
+
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_OAK_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_SPRUCE_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_BIRCH_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_JUNGLE_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_ACACIA_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_DARK_OAK_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_PALE_OAK_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_MANGROVE_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_CHERRY_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_BAMBOO_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_CRIMSON_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_WARPED_DOOR);
+        blockStateModelGenerator.registerDoor(CRIMSON_MOSSY_IRON_DOOR);
+
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_OAK_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_SPRUCE_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_BIRCH_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_JUNGLE_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_ACACIA_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_DARK_OAK_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_PALE_OAK_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_MANGROVE_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_CHERRY_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_BAMBOO_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_CRIMSON_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_WARPED_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(CRIMSON_MOSSY_IRON_TRAPDOOR);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyCobbledDeepslateTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_COBBLED_DEEPSLATE);
+        crimsonMossyCobbledDeepslateTexturePool.stairs(CRIMSON_MOSSY_COBBLED_DEEPSLATE_STAIRS);
+        crimsonMossyCobbledDeepslateTexturePool.slab(CRIMSON_MOSSY_COBBLED_DEEPSLATE_SLAB);
+        crimsonMossyCobbledDeepslateTexturePool.wall(CRIMSON_MOSSY_COBBLED_DEEPSLATE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyDeepslateBricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_DEEPSLATE_BRICKS);
+        crimsonMossyDeepslateBricksTexturePool.stairs(CRIMSON_MOSSY_DEEPSLATE_BRICK_STAIRS);
+        crimsonMossyDeepslateBricksTexturePool.slab(CRIMSON_MOSSY_DEEPSLATE_BRICK_SLAB);
+        crimsonMossyDeepslateBricksTexturePool.wall(CRIMSON_MOSSY_DEEPSLATE_BRICK_WALL);
+
+        registerDeepslate(blockStateModelGenerator, CRIMSON_MOSSY_DEEPSLATE);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyDeepslateTilesTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_DEEPSLATE_TILES);
+        crimsonMossyDeepslateTilesTexturePool.stairs(CRIMSON_MOSSY_DEEPSLATE_TILE_STAIRS);
+        crimsonMossyDeepslateTilesTexturePool.slab(CRIMSON_MOSSY_DEEPSLATE_TILE_SLAB);
+        crimsonMossyDeepslateTilesTexturePool.wall(CRIMSON_MOSSY_DEEPSLATE_TILE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyTuffTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_TUFF);
+        crimsonMossyTuffTexturePool.stairs(CRIMSON_MOSSY_TUFF_STAIRS);
+        crimsonMossyTuffTexturePool.slab(CRIMSON_MOSSY_TUFF_SLAB);
+        crimsonMossyTuffTexturePool.wall(CRIMSON_MOSSY_TUFF_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool crimsonMossyTuffBricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(CRIMSON_MOSSY_TUFF_BRICKS);
+        crimsonMossyTuffBricksTexturePool.stairs(CRIMSON_MOSSY_TUFF_BRICK_STAIRS);
+        crimsonMossyTuffBricksTexturePool.slab(CRIMSON_MOSSY_TUFF_BRICK_SLAB);
+        crimsonMossyTuffBricksTexturePool.wall(CRIMSON_MOSSY_TUFF_BRICK_WALL);
+        
         blockStateModelGenerator.registerWoolAndCarpet(WARPED_MOSS_BLOCK, WARPED_MOSS_CARPET);
     }
 

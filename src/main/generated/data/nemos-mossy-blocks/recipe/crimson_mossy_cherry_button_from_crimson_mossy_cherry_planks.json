@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "crimson_mossy_wooden_button",
+  "ingredients": [
+    "nemos-mossy-blocks:crimson_mossy_cherry_planks"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-mossy-blocks:crimson_mossy_cherry_button"
+  }
+}

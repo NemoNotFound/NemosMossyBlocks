@@ -37,5 +37,19 @@ public class ItemTags {
     public static final TagKey<Item> PALE_MOSSY_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_oak_wood"));
     public static final TagKey<Item> PALE_MOSSY_SPRUCE_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_spruce_wood"));
     public static final TagKey<Item> PALE_MOSSY_WARPED_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "pale_mossy_warped_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_PLANKS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_planks"));
+    public static final TagKey<Item> CRIMSON_MOSSY_STAINED_GLASS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_stained_glass"));
+    public static final TagKey<Item> CRIMSON_MOSSY_ACACIA_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_acacia_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_BAMBOO_BLOCKS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_bamboo_blocks"));
+    public static final TagKey<Item> CRIMSON_MOSSY_BIRCH_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_birch_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_CHERRY_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_cherry_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_CRIMSON_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_crimson_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_DARK_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_dark_oak_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_PALE_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_pale_oak_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_JUNGLE_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_jungle_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_MANGROVE_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_mangrove_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_OAK_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_oak_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_SPRUCE_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_spruce_wood"));
+    public static final TagKey<Item> CRIMSON_MOSSY_WARPED_WOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "crimson_mossy_warped_wood"));
 
 }

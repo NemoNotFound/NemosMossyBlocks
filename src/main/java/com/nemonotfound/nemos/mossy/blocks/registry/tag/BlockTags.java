@@ -11,6 +11,7 @@ public class BlockTags {
 
     public static final TagKey<Block> MOSSY_BLOCKS = of("mossy_blocks");
     public static final TagKey<Block> PALE_MOSSY_BLOCKS = of("pale_mossy_blocks");
+    public static final TagKey<Block> CRIMSON_MOSSY_BLOCKS = of("crimson_mossy_blocks");
     public static final TagKey<Block> CRIMSON_MOSS_REPLACEABLE = of("crimson_moss_replaceable");
     public static final TagKey<Block> WARPED_MOSS_REPLACEABLE = of("warped_moss_replaceable");
     public static final TagKey<Block> FUNGUS_PLANTABLE_ON = of("fungus_plantable_on");

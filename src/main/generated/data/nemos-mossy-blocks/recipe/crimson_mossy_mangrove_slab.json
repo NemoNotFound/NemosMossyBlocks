@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "crimson_mossy_wooden_slab",
+  "key": {
+    "#": "nemos-mossy-blocks:crimson_mossy_mangrove_planks"
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "nemos-mossy-blocks:crimson_mossy_mangrove_slab"
+  }
+}
