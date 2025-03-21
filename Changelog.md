@@ -3,6 +3,7 @@
 ## Additions
 - Added blocks
   - Added crimson-mossy block variants
+  - Added WARPED-mossy block variants
 
 ## Changes
 - Slightly reordered Nemo's Mossy Blocks creative mode tab
