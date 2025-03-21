@@ -30,8 +30,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.Collection;
 import java.util.Optional;
 
-import static com.nemonotfound.nemos.mossy.blocks.registry.tag.BlockTags.CRIMSON_MOSSY_BLOCKS;
-import static com.nemonotfound.nemos.mossy.blocks.registry.tag.BlockTags.PALE_MOSSY_BLOCKS;
+import static com.nemonotfound.nemos.mossy.blocks.registry.tag.BlockTags.*;
 
 @Mixin(ShearsItem.class)
 public class ShearsItemMixin {
@@ -74,6 +73,10 @@ public class ShearsItemMixin {
 
         if (blockState.isIn(CRIMSON_MOSSY_BLOCKS)) {
             return new ItemStack(Items.CRIMSON_MOSS_BALL);
+        }
+
+        if (blockState.isIn(WARPED_MOSSY_BLOCKS)) {
+            return new ItemStack(Items.WARPED_MOSS_BALL);
         }
 
         return new ItemStack(Items.MOSS_BALL);

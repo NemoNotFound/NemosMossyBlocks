@@ -18,22 +18,6 @@ import static net.minecraft.block.Blocks.*;
 
 public class Blocks {
 
-    public static final Block WARPED_MOSS_BLOCK = register(
-            "warped_moss_block",
-            (settings) -> new MossBlock(WARPED_MOSS_PATCH_BONEMEAL, settings),
-            AbstractBlock.Settings.create()
-                    .mapColor(MapColor.BLUE)
-                    .strength(0.1F)
-                    .sounds(BlockSoundGroup.MOSS_BLOCK)
-                    .pistonBehavior(PistonBehavior.DESTROY));
-    public static final Block WARPED_MOSS_CARPET = register(
-            "warped_moss_carpet",
-            CarpetBlock::new,
-            AbstractBlock.Settings.create()
-                    .mapColor(MapColor.BLUE)
-                    .strength(0.1F)
-                    .sounds(BlockSoundGroup.MOSS_CARPET)
-                    .pistonBehavior(PistonBehavior.DESTROY));
     public static final Block MOSSY_ACACIA_LOG = register("mossy_acacia_log", PillarBlock::new, createLogSettings(MapColor.ORANGE, MapColor.STONE_GRAY, BlockSoundGroup.WOOD));
     public static final Block MOSSY_ACACIA_WOOD = register("mossy_acacia_wood", PillarBlock::new, AbstractBlock.Settings.copy(ACACIA_WOOD));
     public static final Block MOSSY_ACACIA_PLANKS = register("mossy_acacia_planks", Block::new, AbstractBlock.Settings.copy(ACACIA_PLANKS));
@@ -676,6 +660,233 @@ public class Blocks {
     public static final Block CRIMSON_MOSSY_TUFF_BRICK_STAIRS = registerStairsBlock("crimson_mossy_tuff_brick_stairs", CRIMSON_MOSSY_TUFF_BRICKS);
     public static final Block CRIMSON_MOSSY_TUFF_BRICK_SLAB = register("crimson_mossy_tuff_brick_slab", SlabBlock::new, AbstractBlock.Settings.copy(CRIMSON_MOSSY_TUFF_BRICKS));
     public static final Block CRIMSON_MOSSY_TUFF_BRICK_WALL = register("crimson_mossy_tuff_brick_wall", WallBlock::new, AbstractBlock.Settings.copy(CRIMSON_MOSSY_TUFF_BRICKS));
+    public static final Block WARPED_MOSS_BLOCK = register(
+            "warped_moss_block",
+            (settings) -> new MossBlock(WARPED_MOSS_PATCH_BONEMEAL, settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.BLUE)
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_BLOCK)
+                    .pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block WARPED_MOSS_CARPET = register(
+            "warped_moss_carpet",
+            CarpetBlock::new,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.BLUE)
+                    .strength(0.1F)
+                    .sounds(BlockSoundGroup.MOSS_CARPET)
+                    .pistonBehavior(PistonBehavior.DESTROY));
+    public static final Block WARPED_MOSSY_ACACIA_LOG = register("warped_mossy_acacia_log", PillarBlock::new, createLogSettings(MapColor.ORANGE, MapColor.STONE_GRAY, BlockSoundGroup.WOOD));
+    public static final Block WARPED_MOSSY_ACACIA_WOOD = register("warped_mossy_acacia_wood", PillarBlock::new, AbstractBlock.Settings.copy(ACACIA_WOOD));
+    public static final Block WARPED_MOSSY_ACACIA_PLANKS = register("warped_mossy_acacia_planks", Block::new, AbstractBlock.Settings.copy(ACACIA_PLANKS));
+    public static final Block WARPED_MOSSY_ACACIA_STAIRS = registerStairsBlock("warped_mossy_acacia_stairs", WARPED_MOSSY_ACACIA_PLANKS);
+    public static final Block WARPED_MOSSY_ACACIA_SLAB = register("warped_mossy_acacia_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_ACACIA_PLANKS));
+    public static final Block WARPED_MOSSY_ACACIA_FENCE = register("warped_mossy_acacia_fence", FenceBlock::new, AbstractBlock.Settings.copy(ACACIA_FENCE));
+    public static final Block WARPED_MOSSY_ACACIA_FENCE_GATE = register("warped_mossy_acacia_fence_gate", settings -> new FenceGateBlock(WoodType.ACACIA, settings), AbstractBlock.Settings.copy(ACACIA_FENCE_GATE));
+    public static final Block WARPED_MOSSY_ACACIA_DOOR = register("warped_mossy_acacia_door", settings -> new DoorBlock(BlockSetType.ACACIA, settings), AbstractBlock.Settings.copy(ACACIA_DOOR));
+    public static final Block WARPED_MOSSY_ACACIA_TRAPDOOR = register("warped_mossy_acacia_trapdoor", settings -> new TrapdoorBlock(BlockSetType.ACACIA, settings), AbstractBlock.Settings.copy(ACACIA_TRAPDOOR));
+    public static final Block WARPED_MOSSY_ACACIA_PRESSURE_PLATE = register("warped_mossy_acacia_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.ACACIA, settings), AbstractBlock.Settings.copy(ACACIA_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_ACACIA_BUTTON = register("warped_mossy_acacia_button", settings -> new ButtonBlock(BlockSetType.ACACIA, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_BAMBOO_BLOCK = register("warped_mossy_bamboo_block", PillarBlock::new, createLogSettings(MapColor.YELLOW, MapColor.DARK_GREEN, BlockSoundGroup.BAMBOO_WOOD));
+    public static final Block WARPED_MOSSY_BAMBOO_PLANKS = register("warped_mossy_bamboo_planks", Block::new, AbstractBlock.Settings.copy(BAMBOO_PLANKS));
+    public static final Block WARPED_MOSSY_BAMBOO_MOSAIC = register("warped_mossy_bamboo_mosaic", Block::new, AbstractBlock.Settings.copy(BAMBOO_MOSAIC));
+    public static final Block WARPED_MOSSY_BAMBOO_STAIRS = registerStairsBlock("warped_mossy_bamboo_stairs", WARPED_MOSSY_BAMBOO_PLANKS);
+    public static final Block WARPED_MOSSY_BAMBOO_MOSAIC_STAIRS = registerStairsBlock("warped_mossy_bamboo_mosaic_stairs", WARPED_MOSSY_BAMBOO_MOSAIC);
+    public static final Block WARPED_MOSSY_BAMBOO_SLAB = register("warped_mossy_bamboo_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_BAMBOO_PLANKS));
+    public static final Block WARPED_MOSSY_BAMBOO_MOSAIC_SLAB = register("warped_mossy_bamboo_mosaic_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_BAMBOO_MOSAIC));
+    public static final Block WARPED_MOSSY_BAMBOO_FENCE = register("warped_mossy_bamboo_fence", FenceBlock::new, AbstractBlock.Settings.copy(BAMBOO_FENCE));
+    public static final Block WARPED_MOSSY_BAMBOO_FENCE_GATE = register("warped_mossy_bamboo_fence_gate", settings -> new FenceGateBlock(WoodType.BAMBOO, settings), AbstractBlock.Settings.copy(BAMBOO_FENCE_GATE));
+    public static final Block WARPED_MOSSY_BAMBOO_DOOR = register("warped_mossy_bamboo_door", settings -> new DoorBlock(BlockSetType.BAMBOO, settings), AbstractBlock.Settings.copy(BAMBOO_DOOR));
+    public static final Block WARPED_MOSSY_BAMBOO_TRAPDOOR = register("warped_mossy_bamboo_trapdoor", settings -> new TrapdoorBlock(BlockSetType.BAMBOO, settings), AbstractBlock.Settings.copy(BAMBOO_TRAPDOOR));
+    public static final Block WARPED_MOSSY_BAMBOO_PRESSURE_PLATE = register("warped_mossy_bamboo_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.BAMBOO, settings), AbstractBlock.Settings.copy(BAMBOO_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_BAMBOO_BUTTON = register("warped_mossy_bamboo_button", settings -> new ButtonBlock(BlockSetType.BAMBOO, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_BIRCH_LOG = register("warped_mossy_birch_log", PillarBlock::new, createLogSettings(MapColor.PALE_YELLOW, MapColor.OFF_WHITE, BlockSoundGroup.WOOD));
+    public static final Block WARPED_MOSSY_BIRCH_WOOD = register("warped_mossy_birch_wood", PillarBlock::new, AbstractBlock.Settings.copy(BIRCH_WOOD));
+    public static final Block WARPED_MOSSY_BIRCH_PLANKS = register("warped_mossy_birch_planks", Block::new, AbstractBlock.Settings.copy(BIRCH_PLANKS));
+    public static final Block WARPED_MOSSY_BIRCH_STAIRS = registerStairsBlock("warped_mossy_birch_stairs", WARPED_MOSSY_BIRCH_PLANKS);
+    public static final Block WARPED_MOSSY_BIRCH_SLAB = register("warped_mossy_birch_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_BIRCH_PLANKS));
+    public static final Block WARPED_MOSSY_BIRCH_FENCE = register("warped_mossy_birch_fence", FenceBlock::new, AbstractBlock.Settings.copy(BIRCH_FENCE));
+    public static final Block WARPED_MOSSY_BIRCH_FENCE_GATE = register("warped_mossy_birch_fence_gate", settings -> new FenceGateBlock(WoodType.BIRCH, settings), AbstractBlock.Settings.copy(BIRCH_FENCE_GATE));
+    public static final Block WARPED_MOSSY_BIRCH_DOOR = register("warped_mossy_birch_door", settings -> new DoorBlock(BlockSetType.BIRCH, settings), AbstractBlock.Settings.copy(BIRCH_DOOR));
+    public static final Block WARPED_MOSSY_BIRCH_TRAPDOOR = register("warped_mossy_birch_trapdoor", settings -> new TrapdoorBlock(BlockSetType.BIRCH, settings), AbstractBlock.Settings.copy(BIRCH_TRAPDOOR));
+    public static final Block WARPED_MOSSY_BIRCH_PRESSURE_PLATE = register("warped_mossy_birch_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.BIRCH, settings), AbstractBlock.Settings.copy(BIRCH_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_BIRCH_BUTTON = register("warped_mossy_birch_button", settings -> new ButtonBlock(BlockSetType.BIRCH, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_PALE_OAK_LOG = register("warped_mossy_pale_oak_log", PillarBlock::new, createLogSettings(MapColor.STONE_GRAY, MapColor.STONE_GRAY, BlockSoundGroup.WOOD));
+    public static final Block WARPED_MOSSY_PALE_OAK_WOOD = register("warped_mossy_pale_oak_wood", PillarBlock::new, AbstractBlock.Settings.copy(PALE_OAK_WOOD));
+    public static final Block WARPED_MOSSY_PALE_OAK_PLANKS = register("warped_mossy_pale_oak_planks", Block::new, AbstractBlock.Settings.copy(PALE_OAK_PLANKS));
+    public static final Block WARPED_MOSSY_PALE_OAK_STAIRS = registerStairsBlock("warped_mossy_pale_oak_stairs", WARPED_MOSSY_PALE_OAK_PLANKS);
+    public static final Block WARPED_MOSSY_PALE_OAK_SLAB = register("warped_mossy_pale_oak_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_PALE_OAK_PLANKS));
+    public static final Block WARPED_MOSSY_PALE_OAK_FENCE = register("warped_mossy_pale_oak_fence", FenceBlock::new, AbstractBlock.Settings.copy(PALE_OAK_FENCE));
+    public static final Block WARPED_MOSSY_PALE_OAK_FENCE_GATE = register("warped_mossy_pale_oak_fence_gate", settings -> new FenceGateBlock(WoodType.PALE_OAK, settings), AbstractBlock.Settings.copy(PALE_OAK_FENCE_GATE));
+    public static final Block WARPED_MOSSY_PALE_OAK_DOOR = register("warped_mossy_pale_oak_door", settings -> new DoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.copy(PALE_OAK_DOOR));
+    public static final Block WARPED_MOSSY_PALE_OAK_TRAPDOOR = register("warped_mossy_pale_oak_trapdoor", settings -> new TrapdoorBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.copy(PALE_OAK_TRAPDOOR));
+    public static final Block WARPED_MOSSY_PALE_OAK_PRESSURE_PLATE = register("warped_mossy_pale_oak_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.PALE_OAK, settings), AbstractBlock.Settings.copy(PALE_OAK_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_PALE_OAK_BUTTON = register("warped_mossy_pale_oak_button", settings -> new ButtonBlock(BlockSetType.PALE_OAK, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_CHERRY_LOG = register("warped_mossy_cherry_log", PillarBlock::new, createLogSettings(MapColor.TERRACOTTA_WHITE, MapColor.TERRACOTTA_GRAY, BlockSoundGroup.CHERRY_WOOD));
+    public static final Block WARPED_MOSSY_CHERRY_WOOD = register("warped_mossy_cherry_wood", PillarBlock::new, AbstractBlock.Settings.copy(CHERRY_WOOD));
+    public static final Block WARPED_MOSSY_CHERRY_PLANKS = register("warped_mossy_cherry_planks", Block::new, AbstractBlock.Settings.copy(CHERRY_PLANKS));
+    public static final Block WARPED_MOSSY_CHERRY_STAIRS = registerStairsBlock("warped_mossy_cherry_stairs", WARPED_MOSSY_CHERRY_PLANKS);
+    public static final Block WARPED_MOSSY_CHERRY_SLAB = register("warped_mossy_cherry_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_CHERRY_PLANKS));
+    public static final Block WARPED_MOSSY_CHERRY_FENCE = register("warped_mossy_cherry_fence", FenceBlock::new, AbstractBlock.Settings.copy(CHERRY_FENCE));
+    public static final Block WARPED_MOSSY_CHERRY_FENCE_GATE = register("warped_mossy_cherry_fence_gate", settings -> new FenceGateBlock(WoodType.CHERRY, settings), AbstractBlock.Settings.copy(CHERRY_FENCE_GATE));
+    public static final Block WARPED_MOSSY_CHERRY_DOOR = register("warped_mossy_cherry_door", settings -> new DoorBlock(BlockSetType.CHERRY, settings), AbstractBlock.Settings.copy(CHERRY_DOOR));
+    public static final Block WARPED_MOSSY_CHERRY_TRAPDOOR = register("warped_mossy_cherry_trapdoor", settings -> new TrapdoorBlock(BlockSetType.CHERRY, settings), AbstractBlock.Settings.copy(CHERRY_TRAPDOOR));
+    public static final Block WARPED_MOSSY_CHERRY_PRESSURE_PLATE = register("warped_mossy_cherry_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.CHERRY, settings), AbstractBlock.Settings.copy(CHERRY_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_CHERRY_BUTTON = register("warped_mossy_cherry_button", settings -> new ButtonBlock(BlockSetType.CHERRY, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_CRIMSON_STEM = register("warped_mossy_crimson_stem", PillarBlock::new, createNetherStemSettings(MapColor.DULL_PINK));
+    public static final Block WARPED_MOSSY_CRIMSON_HYPHAE = register("warped_mossy_crimson_hyphae", PillarBlock::new, AbstractBlock.Settings.copy(CRIMSON_HYPHAE));
+    public static final Block WARPED_MOSSY_CRIMSON_PLANKS = register("warped_mossy_crimson_planks", Block::new, AbstractBlock.Settings.copy(CRIMSON_PLANKS));
+    public static final Block WARPED_MOSSY_CRIMSON_STAIRS = registerStairsBlock("warped_mossy_crimson_stairs", WARPED_MOSSY_CRIMSON_PLANKS);
+    public static final Block WARPED_MOSSY_CRIMSON_SLAB = register("warped_mossy_crimson_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_CRIMSON_PLANKS));
+    public static final Block WARPED_MOSSY_CRIMSON_FENCE = register("warped_mossy_crimson_fence", FenceBlock::new, AbstractBlock.Settings.copy(CRIMSON_FENCE));
+    public static final Block WARPED_MOSSY_CRIMSON_FENCE_GATE = register("warped_mossy_crimson_fence_gate", settings -> new FenceGateBlock(WoodType.CRIMSON, settings), AbstractBlock.Settings.copy(CRIMSON_FENCE_GATE));
+    public static final Block WARPED_MOSSY_CRIMSON_DOOR = register("warped_mossy_crimson_door", settings -> new DoorBlock(BlockSetType.CRIMSON, settings), AbstractBlock.Settings.copy(CRIMSON_DOOR));
+    public static final Block WARPED_MOSSY_CRIMSON_TRAPDOOR = register("warped_mossy_crimson_trapdoor", settings -> new TrapdoorBlock(BlockSetType.CRIMSON, settings), AbstractBlock.Settings.copy(CRIMSON_TRAPDOOR));
+    public static final Block WARPED_MOSSY_CRIMSON_PRESSURE_PLATE = register("warped_mossy_crimson_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.CRIMSON, settings), AbstractBlock.Settings.copy(CRIMSON_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_CRIMSON_BUTTON = register("warped_mossy_crimson_button", settings -> new ButtonBlock(BlockSetType.CRIMSON, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_DARK_OAK_LOG = register("warped_mossy_dark_oak_log", PillarBlock::new, createLogSettings(MapColor.BROWN, MapColor.BROWN, BlockSoundGroup.WOOD));
+    public static final Block WARPED_MOSSY_DARK_OAK_WOOD = register("warped_mossy_dark_oak_wood", PillarBlock::new, AbstractBlock.Settings.copy(DARK_OAK_WOOD));
+    public static final Block WARPED_MOSSY_DARK_OAK_PLANKS = register("warped_mossy_dark_oak_planks", Block::new, AbstractBlock.Settings.copy(DARK_OAK_PLANKS));
+    public static final Block WARPED_MOSSY_DARK_OAK_STAIRS = registerStairsBlock("warped_mossy_dark_oak_stairs", WARPED_MOSSY_DARK_OAK_PLANKS);
+    public static final Block WARPED_MOSSY_DARK_OAK_SLAB = register("warped_mossy_dark_oak_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_DARK_OAK_PLANKS));
+    public static final Block WARPED_MOSSY_DARK_OAK_FENCE = register("warped_mossy_dark_oak_fence", FenceBlock::new, AbstractBlock.Settings.copy(DARK_OAK_FENCE));
+    public static final Block WARPED_MOSSY_DARK_OAK_FENCE_GATE = register("warped_mossy_dark_oak_fence_gate", settings -> new FenceGateBlock(WoodType.DARK_OAK, settings), AbstractBlock.Settings.copy(DARK_OAK_FENCE_GATE));
+    public static final Block WARPED_MOSSY_DARK_OAK_DOOR = register("warped_mossy_dark_oak_door", settings -> new DoorBlock(BlockSetType.DARK_OAK, settings), AbstractBlock.Settings.copy(DARK_OAK_DOOR));
+    public static final Block WARPED_MOSSY_DARK_OAK_TRAPDOOR = register("warped_mossy_dark_oak_trapdoor", settings -> new TrapdoorBlock(BlockSetType.DARK_OAK, settings), AbstractBlock.Settings.copy(DARK_OAK_TRAPDOOR));
+    public static final Block WARPED_MOSSY_DARK_OAK_PRESSURE_PLATE = register("warped_mossy_dark_oak_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.DARK_OAK, settings), AbstractBlock.Settings.copy(DARK_OAK_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_DARK_OAK_BUTTON = register("warped_mossy_dark_oak_button", settings -> new ButtonBlock(BlockSetType.DARK_OAK, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_JUNGLE_LOG = register("warped_mossy_jungle_log", PillarBlock::new, createLogSettings(MapColor.DIRT_BROWN, MapColor.SPRUCE_BROWN, BlockSoundGroup.WOOD));
+    public static final Block WARPED_MOSSY_JUNGLE_WOOD = register("warped_mossy_jungle_wood", PillarBlock::new, AbstractBlock.Settings.copy(JUNGLE_WOOD));
+    public static final Block WARPED_MOSSY_JUNGLE_PLANKS = register("warped_mossy_jungle_planks", Block::new, AbstractBlock.Settings.copy(JUNGLE_PLANKS));
+    public static final Block WARPED_MOSSY_JUNGLE_STAIRS = registerStairsBlock("warped_mossy_jungle_stairs", WARPED_MOSSY_JUNGLE_PLANKS);
+    public static final Block WARPED_MOSSY_JUNGLE_SLAB = register("warped_mossy_jungle_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_JUNGLE_PLANKS));
+    public static final Block WARPED_MOSSY_JUNGLE_FENCE = register("warped_mossy_jungle_fence", FenceBlock::new, AbstractBlock.Settings.copy(JUNGLE_FENCE));
+    public static final Block WARPED_MOSSY_JUNGLE_FENCE_GATE = register("warped_mossy_jungle_fence_gate", settings -> new FenceGateBlock(WoodType.JUNGLE, settings), AbstractBlock.Settings.copy(JUNGLE_FENCE_GATE));
+    public static final Block WARPED_MOSSY_JUNGLE_DOOR = register("warped_mossy_jungle_door", settings -> new DoorBlock(BlockSetType.JUNGLE, settings), AbstractBlock.Settings.copy(JUNGLE_DOOR));
+    public static final Block WARPED_MOSSY_JUNGLE_TRAPDOOR = register("warped_mossy_jungle_trapdoor", settings -> new TrapdoorBlock(BlockSetType.JUNGLE, settings), AbstractBlock.Settings.copy(JUNGLE_TRAPDOOR));
+    public static final Block WARPED_MOSSY_JUNGLE_PRESSURE_PLATE = register("warped_mossy_jungle_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.JUNGLE, settings), AbstractBlock.Settings.copy(JUNGLE_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_JUNGLE_BUTTON = register("warped_mossy_jungle_button", settings -> new ButtonBlock(BlockSetType.JUNGLE, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_MANGROVE_LOG = register("warped_mossy_mangrove_log", PillarBlock::new, createLogSettings(MapColor.RED, MapColor.SPRUCE_BROWN, BlockSoundGroup.WOOD));
+    public static final Block WARPED_MOSSY_MANGROVE_WOOD = register("warped_mossy_mangrove_wood", PillarBlock::new, AbstractBlock.Settings.copy(MANGROVE_WOOD));
+    public static final Block WARPED_MOSSY_MANGROVE_PLANKS = register("warped_mossy_mangrove_planks", Block::new, AbstractBlock.Settings.copy(MANGROVE_PLANKS));
+    public static final Block WARPED_MOSSY_MANGROVE_STAIRS = registerStairsBlock("warped_mossy_mangrove_stairs", WARPED_MOSSY_MANGROVE_PLANKS);
+    public static final Block WARPED_MOSSY_MANGROVE_SLAB = register("warped_mossy_mangrove_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_MANGROVE_PLANKS));
+    public static final Block WARPED_MOSSY_MANGROVE_FENCE = register("warped_mossy_mangrove_fence", FenceBlock::new, AbstractBlock.Settings.copy(MANGROVE_FENCE));
+    public static final Block WARPED_MOSSY_MANGROVE_FENCE_GATE = register("warped_mossy_mangrove_fence_gate", settings -> new FenceGateBlock(WoodType.MANGROVE, settings), AbstractBlock.Settings.copy(MANGROVE_FENCE_GATE));
+    public static final Block WARPED_MOSSY_MANGROVE_DOOR = register("warped_mossy_mangrove_door", settings -> new DoorBlock(BlockSetType.MANGROVE, settings), AbstractBlock.Settings.copy(MANGROVE_DOOR));
+    public static final Block WARPED_MOSSY_MANGROVE_TRAPDOOR = register("warped_mossy_mangrove_trapdoor", settings -> new TrapdoorBlock(BlockSetType.MANGROVE, settings), AbstractBlock.Settings.copy(MANGROVE_TRAPDOOR));
+    public static final Block WARPED_MOSSY_MANGROVE_PRESSURE_PLATE = register("warped_mossy_mangrove_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.MANGROVE, settings), AbstractBlock.Settings.copy(MANGROVE_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_MANGROVE_BUTTON = register("warped_mossy_mangrove_button", settings -> new ButtonBlock(BlockSetType.MANGROVE, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_OAK_LOG = register("warped_mossy_oak_log", PillarBlock::new, createLogSettings(MapColor.OAK_TAN, MapColor.SPRUCE_BROWN, BlockSoundGroup.WOOD));
+    public static final Block WARPED_MOSSY_OAK_WOOD = register("warped_mossy_oak_wood", PillarBlock::new, AbstractBlock.Settings.copy(OAK_WOOD));
+    public static final Block WARPED_MOSSY_OAK_PLANKS = register("warped_mossy_oak_planks", Block::new, AbstractBlock.Settings.copy(OAK_PLANKS));
+    public static final Block WARPED_MOSSY_OAK_STAIRS = registerStairsBlock("warped_mossy_oak_stairs", WARPED_MOSSY_OAK_PLANKS);
+    public static final Block WARPED_MOSSY_OAK_SLAB = register("warped_mossy_oak_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_OAK_PLANKS));
+    public static final Block WARPED_MOSSY_OAK_FENCE = register("warped_mossy_oak_fence", FenceBlock::new, AbstractBlock.Settings.copy(OAK_FENCE));
+    public static final Block WARPED_MOSSY_OAK_FENCE_GATE = register("warped_mossy_oak_fence_gate", settings -> new FenceGateBlock(WoodType.OAK, settings), AbstractBlock.Settings.copy(OAK_FENCE_GATE));
+    public static final Block WARPED_MOSSY_OAK_PRESSURE_PLATE = register("warped_mossy_oak_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.OAK, settings), AbstractBlock.Settings.copy(OAK_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_OAK_BUTTON = register("warped_mossy_oak_button", settings -> new ButtonBlock(BlockSetType.OAK, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_OAK_DOOR = register("warped_mossy_oak_door", settings -> new DoorBlock(BlockSetType.OAK, settings), AbstractBlock.Settings.copy(OAK_DOOR));
+    public static final Block WARPED_MOSSY_OAK_TRAPDOOR = register("warped_mossy_oak_trapdoor", settings -> new TrapdoorBlock(BlockSetType.OAK, settings), AbstractBlock.Settings.copy(OAK_TRAPDOOR));
+    public static final Block WARPED_MOSSY_SPRUCE_LOG = register("warped_mossy_spruce_log", PillarBlock::new, createLogSettings(MapColor.SPRUCE_BROWN, MapColor.BROWN, BlockSoundGroup.WOOD));
+    public static final Block WARPED_MOSSY_SPRUCE_WOOD = register("warped_mossy_spruce_wood", PillarBlock::new, AbstractBlock.Settings.copy(SPRUCE_WOOD));
+    public static final Block WARPED_MOSSY_SPRUCE_PLANKS = register("warped_mossy_spruce_planks", Block::new, AbstractBlock.Settings.copy(SPRUCE_PLANKS));
+    public static final Block WARPED_MOSSY_SPRUCE_STAIRS = registerStairsBlock("warped_mossy_spruce_stairs", WARPED_MOSSY_SPRUCE_PLANKS);
+    public static final Block WARPED_MOSSY_SPRUCE_SLAB = register("warped_mossy_spruce_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_SPRUCE_PLANKS));
+    public static final Block WARPED_MOSSY_SPRUCE_FENCE = register("warped_mossy_spruce_fence", FenceBlock::new, AbstractBlock.Settings.copy(SPRUCE_FENCE));
+    public static final Block WARPED_MOSSY_SPRUCE_FENCE_GATE = register("warped_mossy_spruce_fence_gate", settings -> new FenceGateBlock(WoodType.SPRUCE, settings), AbstractBlock.Settings.copy(SPRUCE_FENCE_GATE));
+    public static final Block WARPED_MOSSY_SPRUCE_DOOR = register("warped_mossy_spruce_door", settings -> new DoorBlock(BlockSetType.SPRUCE, settings), AbstractBlock.Settings.copy(SPRUCE_DOOR));
+    public static final Block WARPED_MOSSY_SPRUCE_TRAPDOOR = register("warped_mossy_spruce_trapdoor", settings -> new TrapdoorBlock(BlockSetType.SPRUCE, settings), AbstractBlock.Settings.copy(SPRUCE_TRAPDOOR));
+    public static final Block WARPED_MOSSY_SPRUCE_PRESSURE_PLATE = register("warped_mossy_spruce_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.SPRUCE, settings), AbstractBlock.Settings.copy(SPRUCE_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_SPRUCE_BUTTON = register("warped_mossy_spruce_button", settings -> new ButtonBlock(BlockSetType.SPRUCE, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_WARPED_STEM = register("warped_mossy_warped_stem", PillarBlock::new, createNetherStemSettings(MapColor.DARK_AQUA));
+    public static final Block WARPED_MOSSY_WARPED_HYPHAE = register("warped_mossy_warped_hyphae", PillarBlock::new, AbstractBlock.Settings.copy(WARPED_HYPHAE));
+    public static final Block WARPED_MOSSY_WARPED_PLANKS = register("warped_mossy_warped_planks", Block::new, AbstractBlock.Settings.copy(WARPED_PLANKS));
+    public static final Block WARPED_MOSSY_WARPED_STAIRS = registerStairsBlock("warped_mossy_warped_stairs", WARPED_MOSSY_WARPED_PLANKS);
+    public static final Block WARPED_MOSSY_WARPED_SLAB = register("warped_mossy_warped_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_WARPED_PLANKS));
+    public static final Block WARPED_MOSSY_WARPED_FENCE = register("warped_mossy_warped_fence", FenceBlock::new, AbstractBlock.Settings.copy(WARPED_FENCE));
+    public static final Block WARPED_MOSSY_WARPED_FENCE_GATE = register("warped_mossy_warped_fence_gate", settings -> new FenceGateBlock(WoodType.WARPED, settings), AbstractBlock.Settings.copy(WARPED_FENCE_GATE));
+    public static final Block WARPED_MOSSY_WARPED_DOOR = register("warped_mossy_warped_door", settings -> new DoorBlock(BlockSetType.WARPED, settings), AbstractBlock.Settings.copy(WARPED_DOOR));
+    public static final Block WARPED_MOSSY_WARPED_TRAPDOOR = register("warped_mossy_warped_trapdoor", settings -> new TrapdoorBlock(BlockSetType.WARPED, settings), AbstractBlock.Settings.copy(WARPED_TRAPDOOR));
+    public static final Block WARPED_MOSSY_WARPED_PRESSURE_PLATE = register("warped_mossy_warped_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.WARPED, settings), AbstractBlock.Settings.copy(WARPED_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_WARPED_BUTTON = register("warped_mossy_warped_button", settings -> new ButtonBlock(BlockSetType.WARPED, 30, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_STONE = register("warped_mossy_stone", Block::new, AbstractBlock.Settings.copy(STONE));
+    public static final Block WARPED_MOSSY_STONE_STAIRS = registerStairsBlock("warped_mossy_stone_stairs", WARPED_MOSSY_STONE);
+    public static final Block WARPED_MOSSY_STONE_SLAB = register("warped_mossy_stone_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_STONE));
+    public static final Block WARPED_MOSSY_STONE_PRESSURE_PLATE = register("warped_mossy_stone_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.STONE, settings), AbstractBlock.Settings.copy(STONE_PRESSURE_PLATE));
+    public static final Block WARPED_MOSSY_STONE_BUTTON = register("warped_mossy_stone_button", settings -> new ButtonBlock(BlockSetType.STONE, 20, settings), createButtonSettings());
+    public static final Block WARPED_MOSSY_COBBLESTONE = register("warped_mossy_cobblestone", Block::new, AbstractBlock.Settings.copy(COBBLESTONE));
+    public static final Block WARPED_MOSSY_COBBLESTONE_STAIRS = registerStairsBlock("warped_mossy_cobblestone_stairs", WARPED_MOSSY_COBBLESTONE);
+    public static final Block WARPED_MOSSY_COBBLESTONE_SLAB = register("warped_mossy_cobblestone_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_COBBLESTONE));
+    public static final Block WARPED_MOSSY_COBBLESTONE_WALL = register("warped_mossy_cobblestone_wall", WallBlock::new, AbstractBlock.Settings.copyShallow(WARPED_MOSSY_COBBLESTONE).solid());
+    public static final Block WARPED_MOSSY_STONE_BRICKS = register("warped_mossy_stone_bricks", Block::new, AbstractBlock.Settings.copy(STONE_BRICKS));
+    public static final Block WARPED_MOSSY_STONE_BRICK_STAIRS = registerStairsBlock("warped_mossy_stone_brick_stairs", WARPED_MOSSY_STONE_BRICKS);
+    public static final Block WARPED_MOSSY_STONE_BRICK_SLAB = register("warped_mossy_stone_brick_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_STONE_BRICKS));
+    public static final Block WARPED_MOSSY_STONE_BRICK_WALL = register("warped_mossy_stone_brick_wall", WallBlock::new, AbstractBlock.Settings.copyShallow(WARPED_MOSSY_STONE_BRICKS).solid());
+    public static final Block WARPED_MOSSY_GLASS = register("warped_mossy_glass", TransparentBlock::new, AbstractBlock.Settings.copy(GLASS));
+    public static final Block WARPED_MOSSY_BLACK_STAINED_GLASS = register("warped_mossy_black_stained_glass", settings -> new StainedGlassBlock(DyeColor.BLACK, settings), AbstractBlock.Settings.copy(BLACK_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_BLUE_STAINED_GLASS = register("warped_mossy_blue_stained_glass", settings -> new StainedGlassBlock(DyeColor.BLUE, settings), AbstractBlock.Settings.copy(BLUE_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_BROWN_STAINED_GLASS = register("warped_mossy_brown_stained_glass", settings -> new StainedGlassBlock(DyeColor.BROWN, settings), AbstractBlock.Settings.copy(BROWN_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_CYAN_STAINED_GLASS = register("warped_mossy_cyan_stained_glass", settings -> new StainedGlassBlock(DyeColor.CYAN, settings), AbstractBlock.Settings.copy(CYAN_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_GRAY_STAINED_GLASS = register("warped_mossy_gray_stained_glass", settings -> new StainedGlassBlock(DyeColor.GRAY, settings), AbstractBlock.Settings.copy(GRAY_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_GREEN_STAINED_GLASS = register("warped_mossy_green_stained_glass", settings -> new StainedGlassBlock(DyeColor.GREEN, settings), AbstractBlock.Settings.copy(GREEN_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_LIGHT_BLUE_STAINED_GLASS = register("warped_mossy_light_blue_stained_glass", settings -> new StainedGlassBlock(DyeColor.LIGHT_BLUE, settings), AbstractBlock.Settings.copy(LIGHT_BLUE_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_LIGHT_GRAY_STAINED_GLASS = register("warped_mossy_light_gray_stained_glass", settings -> new StainedGlassBlock(DyeColor.LIGHT_GRAY, settings), AbstractBlock.Settings.copy(LIGHT_GRAY_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_LIME_STAINED_GLASS = register("warped_mossy_lime_stained_glass", settings -> new StainedGlassBlock(DyeColor.LIME, settings), AbstractBlock.Settings.copy(LIME_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_MAGENTA_STAINED_GLASS = register("warped_mossy_magenta_stained_glass", settings -> new StainedGlassBlock(DyeColor.MAGENTA, settings), AbstractBlock.Settings.copy(MAGENTA_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_ORANGE_STAINED_GLASS = register("warped_mossy_orange_stained_glass", settings -> new StainedGlassBlock(DyeColor.ORANGE, settings), AbstractBlock.Settings.copy(ORANGE_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_PINK_STAINED_GLASS = register("warped_mossy_pink_stained_glass", settings -> new StainedGlassBlock(DyeColor.PINK, settings), AbstractBlock.Settings.copy(PINK_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_PURPLE_STAINED_GLASS = register("warped_mossy_purple_stained_glass", settings -> new StainedGlassBlock(DyeColor.PURPLE, settings), AbstractBlock.Settings.copy(PURPLE_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_RED_STAINED_GLASS = register("warped_mossy_red_stained_glass", settings -> new StainedGlassBlock(DyeColor.RED, settings), AbstractBlock.Settings.copy(RED_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_TINTED_GLASS = register("warped_mossy_tinted_glass", TintedGlassBlock::new, AbstractBlock.Settings.copy(TINTED_GLASS));
+    public static final Block WARPED_MOSSY_WHITE_STAINED_GLASS = register("warped_mossy_white_stained_glass", settings -> new StainedGlassBlock(DyeColor.WHITE, settings), AbstractBlock.Settings.copy(WHITE_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_YELLOW_STAINED_GLASS = register("warped_mossy_yellow_stained_glass", settings -> new StainedGlassBlock(DyeColor.YELLOW, settings), AbstractBlock.Settings.copy(YELLOW_STAINED_GLASS));
+    public static final Block WARPED_MOSSY_GLASS_PANE = register("warped_mossy_glass_pane", PaneBlock::new, AbstractBlock.Settings.copy(GLASS_PANE));
+    public static final Block WARPED_MOSSY_BLACK_STAINED_GLASS_PANE = register("warped_mossy_black_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.BLACK, settings), AbstractBlock.Settings.copy(BLACK_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_BLUE_STAINED_GLASS_PANE = register("warped_mossy_blue_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.BLUE, settings), AbstractBlock.Settings.copy(BLUE_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_BROWN_STAINED_GLASS_PANE = register("warped_mossy_brown_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.BROWN, settings), AbstractBlock.Settings.copy(BROWN_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_CYAN_STAINED_GLASS_PANE = register("warped_mossy_cyan_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.CYAN, settings), AbstractBlock.Settings.copy(CYAN_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_GRAY_STAINED_GLASS_PANE = register("warped_mossy_gray_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.GRAY, settings), AbstractBlock.Settings.copy(GRAY_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_GREEN_STAINED_GLASS_PANE = register("warped_mossy_green_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.GREEN, settings), AbstractBlock.Settings.copy(GREEN_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE = register("warped_mossy_light_blue_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.LIGHT_BLUE, settings), AbstractBlock.Settings.copy(LIGHT_BLUE_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE = register("warped_mossy_light_gray_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.LIGHT_GRAY, settings), AbstractBlock.Settings.copy(LIGHT_GRAY_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_LIME_STAINED_GLASS_PANE = register("warped_mossy_lime_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.LIME, settings), AbstractBlock.Settings.copy(LIME_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_MAGENTA_STAINED_GLASS_PANE = register("warped_mossy_magenta_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.MAGENTA, settings), AbstractBlock.Settings.copy(MAGENTA_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_ORANGE_STAINED_GLASS_PANE = register("warped_mossy_orange_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.ORANGE, settings), AbstractBlock.Settings.copy(ORANGE_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_PINK_STAINED_GLASS_PANE = register("warped_mossy_pink_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.PINK, settings), AbstractBlock.Settings.copy(PINK_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_PURPLE_STAINED_GLASS_PANE = register("warped_mossy_purple_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.PURPLE, settings), AbstractBlock.Settings.copy(PURPLE_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_RED_STAINED_GLASS_PANE = register("warped_mossy_red_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.RED, settings), AbstractBlock.Settings.copy(RED_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_WHITE_STAINED_GLASS_PANE = register("warped_mossy_white_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.WHITE, settings), AbstractBlock.Settings.copy(WHITE_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_YELLOW_STAINED_GLASS_PANE = register("warped_mossy_yellow_stained_glass_pane", settings -> new StainedGlassPaneBlock(DyeColor.YELLOW, settings), AbstractBlock.Settings.copy(YELLOW_STAINED_GLASS_PANE));
+    public static final Block WARPED_MOSSY_IRON_BARS = register("warped_mossy_iron_bars", PaneBlock::new, AbstractBlock.Settings.copy(IRON_BARS));
+    public static final Block WARPED_MOSSY_IRON_DOOR = register("warped_mossy_iron_door", settings -> new DoorBlock(BlockSetType.IRON, settings), AbstractBlock.Settings.copy(IRON_DOOR));
+    public static final Block WARPED_MOSSY_IRON_TRAPDOOR = register("warped_mossy_iron_trapdoor", settings -> new TrapdoorBlock(BlockSetType.IRON, settings), AbstractBlock.Settings.copy(IRON_TRAPDOOR));
+    public static final Block WARPED_MOSSY_CHISELED_STONE_BRICKS = register("warped_mossy_chiseled_stone_bricks", Block::new, AbstractBlock.Settings.copy(CHISELED_STONE_BRICKS));
+    public static final Block WARPED_MOSSY_BRICKS = register("warped_mossy_bricks", Block::new, AbstractBlock.Settings.copy(BRICKS));
+    public static final Block WARPED_MOSSY_BRICK_SLAB = register("warped_mossy_brick_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_BRICKS));
+    public static final Block WARPED_MOSSY_BRICK_STAIRS = registerStairsBlock("warped_mossy_brick_stairs", WARPED_MOSSY_BRICKS);
+    public static final Block WARPED_MOSSY_BRICK_WALL = register("warped_mossy_brick_wall", WallBlock::new, AbstractBlock.Settings.copyShallow(WARPED_MOSSY_BRICKS).solid());
+    public static final Block WARPED_MOSSY_DEEPSLATE = register("warped_mossy_deepslate", PillarBlock::new, AbstractBlock.Settings.copy(DEEPSLATE));
+    public static final Block WARPED_MOSSY_COBBLED_DEEPSLATE = register("warped_mossy_cobbled_deepslate", Block::new, AbstractBlock.Settings.copy(COBBLED_DEEPSLATE));
+    public static final Block WARPED_MOSSY_COBBLED_DEEPSLATE_STAIRS = registerStairsBlock("warped_mossy_cobbled_deepslate_stairs", WARPED_MOSSY_COBBLED_DEEPSLATE);
+    public static final Block WARPED_MOSSY_COBBLED_DEEPSLATE_SLAB = register("warped_mossy_cobbled_deepslate_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_COBBLED_DEEPSLATE));
+    public static final Block WARPED_MOSSY_COBBLED_DEEPSLATE_WALL = register("warped_mossy_cobbled_deepslate_wall", WallBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_COBBLED_DEEPSLATE));
+    public static final Block WARPED_MOSSY_DEEPSLATE_BRICKS = register("warped_mossy_deepslate_bricks", Block::new, AbstractBlock.Settings.copy(DEEPSLATE_BRICKS));
+    public static final Block WARPED_MOSSY_DEEPSLATE_BRICK_STAIRS = registerStairsBlock("warped_mossy_deepslate_brick_stairs", WARPED_MOSSY_DEEPSLATE_BRICKS);
+    public static final Block WARPED_MOSSY_DEEPSLATE_BRICK_SLAB = register("warped_mossy_deepslate_brick_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_DEEPSLATE_BRICKS));
+    public static final Block WARPED_MOSSY_DEEPSLATE_BRICK_WALL = register("warped_mossy_deepslate_brick_wall", WallBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_DEEPSLATE_BRICKS));
+    public static final Block WARPED_MOSSY_DEEPSLATE_TILES = register("warped_mossy_deepslate_tiles", Block::new, AbstractBlock.Settings.copy(DEEPSLATE_TILES));
+    public static final Block WARPED_MOSSY_DEEPSLATE_TILE_STAIRS = registerStairsBlock("warped_mossy_deepslate_tile_stairs", WARPED_MOSSY_DEEPSLATE_TILES);
+    public static final Block WARPED_MOSSY_DEEPSLATE_TILE_SLAB = register("warped_mossy_deepslate_tile_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_DEEPSLATE_TILES));
+    public static final Block WARPED_MOSSY_DEEPSLATE_TILE_WALL = register("warped_mossy_deepslate_tile_wall", WallBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_DEEPSLATE_TILES));
+    public static final Block WARPED_MOSSY_TUFF = register("warped_mossy_tuff", Block::new, AbstractBlock.Settings.copy(TUFF));
+    public static final Block WARPED_MOSSY_TUFF_STAIRS = registerStairsBlock("warped_mossy_tuff_stairs", WARPED_MOSSY_TUFF);
+    public static final Block WARPED_MOSSY_TUFF_SLAB = register("warped_mossy_tuff_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_TUFF));
+    public static final Block WARPED_MOSSY_TUFF_WALL = register("warped_mossy_tuff_wall", WallBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_TUFF));
+    public static final Block WARPED_MOSSY_TUFF_BRICKS = register("warped_mossy_tuff_bricks", Block::new, AbstractBlock.Settings.copy(TUFF_BRICKS));
+    public static final Block WARPED_MOSSY_TUFF_BRICK_STAIRS = registerStairsBlock("warped_mossy_tuff_brick_stairs", WARPED_MOSSY_TUFF_BRICKS);
+    public static final Block WARPED_MOSSY_TUFF_BRICK_SLAB = register("warped_mossy_tuff_brick_slab", SlabBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_TUFF_BRICKS));
+    public static final Block WARPED_MOSSY_TUFF_BRICK_WALL = register("warped_mossy_tuff_brick_wall", WallBlock::new, AbstractBlock.Settings.copy(WARPED_MOSSY_TUFF_BRICKS));
 
 
     public static void registerBlocks() {

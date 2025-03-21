@@ -23,8 +23,7 @@ public class PaneBlockMixin {
         if (shouldBeInvisible(state, stateFrom)) {
             if (!direction.getAxis().isHorizontal()) {
                 callbackInfoReturnable.setReturnValue(true);
-            }
-            else if (statesFaceEachOther(state, stateFrom, direction)) {
+            } else if (statesFaceEachOther(state, stateFrom, direction)) {
                 callbackInfoReturnable.setReturnValue(true);
             }
         }
@@ -38,17 +37,25 @@ public class PaneBlockMixin {
 
     @Unique
     private boolean shouldBeInvisible(BlockState state, BlockState stateFrom) {
-     return (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
-             (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS)) ||
-             (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS)) ||
-             (state.isOf(IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
-             (state.isOf(IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS)) ||
-             (state.isOf(IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS)) ||
-             (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
-             (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
-             (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS)) ||
-             (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
-             (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
-             (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS));
+        return (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
+                (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS)) ||
+                (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS)) ||
+                (state.isOf(MOSSY_IRON_BARS) && stateFrom.isOf(WARPED_MOSSY_IRON_BARS)) ||
+                (state.isOf(IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
+                (state.isOf(IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS)) ||
+                (state.isOf(IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS)) ||
+                (state.isOf(IRON_BARS) && stateFrom.isOf(WARPED_MOSSY_IRON_BARS)) ||
+                (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
+                (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
+                (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS)) ||
+                (state.isOf(PALE_MOSSY_IRON_BARS) && stateFrom.isOf(WARPED_MOSSY_IRON_BARS)) ||
+                (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
+                (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
+                (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS)) ||
+                (state.isOf(CRIMSON_MOSSY_IRON_BARS) && stateFrom.isOf(WARPED_MOSSY_IRON_BARS)) ||
+                (state.isOf(WARPED_MOSSY_IRON_BARS) && stateFrom.isOf(IRON_BARS)) ||
+                (state.isOf(WARPED_MOSSY_IRON_BARS) && stateFrom.isOf(MOSSY_IRON_BARS)) ||
+                (state.isOf(WARPED_MOSSY_IRON_BARS) && stateFrom.isOf(PALE_MOSSY_IRON_BARS)) ||
+                (state.isOf(WARPED_MOSSY_IRON_BARS) && stateFrom.isOf(CRIMSON_MOSSY_IRON_BARS));
     }
 }
