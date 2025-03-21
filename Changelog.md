@@ -1,20 +1,13 @@
-# Changelog v1.8
+# Changelog v1.9
 
 ## Additions
 - Added blocks
-  - Added "Crimson Moss"
-  - Added "Crimson Moss Carpet"
-  - Added "Warped Moss"
-  - Added "Warped Moss Carpet"
-- Added items
-  - Added "Crimson Moss"
-  - Added "Crimson Moss Carpet"
-  - Added "Crimson Moss Ball"   
-  - Added "Warped Moss"
-  - Added "Warped Moss Carpet"
-  - Added "Warped Moss Ball" 
+  - Added crimson-mossy block variants
+  - Added WARPED-mossy block variants
 
 ## Changes
-- Added new moss blocks to:
-  - "Crimson Forest"
-  - "Warped Forest"
+- Slightly reordered Nemo's Mossy Blocks creative mode tab
+
+## Fixes
+- Mossy Glass Block is not translucent
+- Mossy Iron Bars connected to another mossy iron bar variant don't have the connected texture

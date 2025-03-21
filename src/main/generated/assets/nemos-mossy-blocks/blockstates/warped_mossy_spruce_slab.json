@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nemos-mossy-blocks:block/warped_mossy_spruce_slab"
+    },
+    "type=double": {
+      "model": "nemos-mossy-blocks:block/warped_mossy_spruce_planks"
+    },
+    "type=top": {
+      "model": "nemos-mossy-blocks:block/warped_mossy_spruce_slab_top"
+    }
+  }
+}

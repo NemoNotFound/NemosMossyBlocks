@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "nemos-mossy-blocks:crimson_mossy_cobblestone"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "nemos-mossy-blocks:crimson_mossy_cobblestone_wall"
+  }
+}

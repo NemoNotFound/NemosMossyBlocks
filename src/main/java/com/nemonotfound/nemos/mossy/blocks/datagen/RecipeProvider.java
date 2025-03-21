@@ -585,12 +585,561 @@ public class RecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(CRIMSON_MOSS_BLOCK), conditionsFromItem(CRIMSON_MOSS_BLOCK))
                         .offerTo(exporter);
 
+                createCrimsonMossyBlockRecipe(exporter, STONE, Blocks.CRIMSON_MOSSY_STONE, "crimson_mossy_stone");
+                createCrimsonMossyBlockRecipe(exporter, COBBLESTONE, Blocks.CRIMSON_MOSSY_COBBLESTONE, "crimson_mossy_cobblestone");
+                createCrimsonMossyBlockRecipe(exporter, STONE_BRICKS, Blocks.CRIMSON_MOSSY_STONE_BRICKS, "crimson_mossy_stone_bricks");
+                createCrimsonMossyBlockRecipe(exporter, ACACIA_PLANKS, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, BAMBOO_PLANKS, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, BAMBOO_MOSAIC, Blocks.CRIMSON_MOSSY_BAMBOO_MOSAIC, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, BIRCH_PLANKS, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, CHERRY_PLANKS, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, CRIMSON_PLANKS, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, DARK_OAK_PLANKS, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, PALE_OAK_PLANKS, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, JUNGLE_PLANKS, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, MANGROVE_PLANKS, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, OAK_PLANKS, Blocks.CRIMSON_MOSSY_OAK_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, SPRUCE_PLANKS, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, WARPED_PLANKS, Blocks.CRIMSON_MOSSY_WARPED_PLANKS, "crimson_mossy_planks");
+                createCrimsonMossyBlockRecipe(exporter, ACACIA_LOG, Blocks.CRIMSON_MOSSY_ACACIA_LOG, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, BAMBOO_BLOCK, Blocks.CRIMSON_MOSSY_BAMBOO_BLOCK, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, BIRCH_LOG, Blocks.CRIMSON_MOSSY_BIRCH_LOG, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, CHERRY_LOG, Blocks.CRIMSON_MOSSY_CHERRY_LOG, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, CRIMSON_STEM, Blocks.CRIMSON_MOSSY_CRIMSON_STEM, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, DARK_OAK_LOG, Blocks.CRIMSON_MOSSY_DARK_OAK_LOG, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, PALE_OAK_LOG, Blocks.CRIMSON_MOSSY_PALE_OAK_LOG, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, JUNGLE_LOG, Blocks.CRIMSON_MOSSY_JUNGLE_LOG, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, MANGROVE_LOG, Blocks.CRIMSON_MOSSY_MANGROVE_LOG, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, OAK_LOG, Blocks.CRIMSON_MOSSY_OAK_LOG, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, SPRUCE_LOG, Blocks.CRIMSON_MOSSY_SPRUCE_LOG, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, WARPED_STEM, Blocks.CRIMSON_MOSSY_WARPED_STEM, "crimson_mossy_log");
+                createCrimsonMossyBlockRecipe(exporter, GLASS, Blocks.CRIMSON_MOSSY_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, BLACK_STAINED_GLASS, Blocks.CRIMSON_MOSSY_BLACK_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, BLUE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_BLUE_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, BROWN_STAINED_GLASS, Blocks.CRIMSON_MOSSY_BROWN_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, CYAN_STAINED_GLASS, Blocks.CRIMSON_MOSSY_CYAN_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, GRAY_STAINED_GLASS, Blocks.CRIMSON_MOSSY_GRAY_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, GREEN_STAINED_GLASS, Blocks.CRIMSON_MOSSY_GREEN_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, LIGHT_BLUE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_LIGHT_BLUE_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, LIGHT_GRAY_STAINED_GLASS, Blocks.CRIMSON_MOSSY_LIGHT_GRAY_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, LIME_STAINED_GLASS, Blocks.CRIMSON_MOSSY_LIME_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, MAGENTA_STAINED_GLASS, Blocks.CRIMSON_MOSSY_MAGENTA_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, ORANGE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_ORANGE_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, PINK_STAINED_GLASS, Blocks.CRIMSON_MOSSY_PINK_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, PURPLE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_PURPLE_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, RED_STAINED_GLASS, Blocks.CRIMSON_MOSSY_RED_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, TINTED_GLASS, Blocks.CRIMSON_MOSSY_TINTED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, WHITE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_WHITE_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, YELLOW_STAINED_GLASS, Blocks.CRIMSON_MOSSY_YELLOW_STAINED_GLASS, "crimson_mossy_glass");
+                createCrimsonMossyBlockRecipe(exporter, IRON_BARS, Blocks.CRIMSON_MOSSY_IRON_BARS, "crimson_mossy_iron_bars");
+                createCrimsonMossyBlockRecipe(exporter, IRON_DOOR, Blocks.CRIMSON_MOSSY_IRON_DOOR, "crimson_mossy_iron_door");
+                createCrimsonMossyBlockRecipe(exporter, IRON_TRAPDOOR, Blocks.CRIMSON_MOSSY_IRON_TRAPDOOR, "crimson_mossy_iron_trapdoor");
+                createCrimsonMossyBlockRecipe(exporter, CHISELED_STONE_BRICKS, Blocks.CRIMSON_MOSSY_CHISELED_STONE_BRICKS, "crimson_mossy_chiseled_stone_bricks");
+                createCrimsonMossyBlockRecipe(exporter, BRICKS, Blocks.CRIMSON_MOSSY_BRICKS, "crimson_mossy_bricks");
+                createCrimsonMossyBlockRecipe(exporter, DEEPSLATE, Blocks.CRIMSON_MOSSY_DEEPSLATE, "crimson_mossy_deepslate");
+                createCrimsonMossyBlockRecipe(exporter, COBBLED_DEEPSLATE, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE, "crimson_mossy_cobbled_deepslate");
+                createCrimsonMossyBlockRecipe(exporter, DEEPSLATE_BRICKS, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICKS, "crimson_mossy_deepslate_bricks");
+                createCrimsonMossyBlockRecipe(exporter, DEEPSLATE_TILES, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILES, "crimson_mossy_deepslate_tiles");
+                createCrimsonMossyBlockRecipe(exporter, TUFF, Blocks.CRIMSON_MOSSY_TUFF, "crimson_mossy_tuff");
+                createCrimsonMossyBlockRecipe(exporter, TUFF_BRICKS, Blocks.CRIMSON_MOSSY_TUFF_BRICKS, "crimson_mossy_tuff_bricks");
+
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_ACACIA_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_BAMBOO_BLOCKS);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_BIRCH_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_CHERRY_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_CRIMSON_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_DARK_OAK_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_PALE_OAK_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_JUNGLE_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_MANGROVE_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_OAK_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_OAK_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_SPRUCE_WOOD);
+                createPlanksRecipe(exporter, Blocks.CRIMSON_MOSSY_WARPED_PLANKS, "has_crimson_mossy_wood", "crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_WARPED_WOOD);
+
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_STONE, Blocks.CRIMSON_MOSSY_STONE_STAIRS);
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_COBBLESTONE, Blocks.CRIMSON_MOSSY_COBBLESTONE_STAIRS);
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_STONE_BRICKS, Blocks.CRIMSON_MOSSY_STONE_BRICK_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS, Blocks.CRIMSON_MOSSY_ACACIA_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS, Blocks.CRIMSON_MOSSY_BAMBOO_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS, Blocks.CRIMSON_MOSSY_BIRCH_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS, Blocks.CRIMSON_MOSSY_CHERRY_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS, Blocks.CRIMSON_MOSSY_CRIMSON_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS, Blocks.CRIMSON_MOSSY_DARK_OAK_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS, Blocks.CRIMSON_MOSSY_PALE_OAK_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS, Blocks.CRIMSON_MOSSY_JUNGLE_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS, Blocks.CRIMSON_MOSSY_MANGROVE_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_OAK_PLANKS, Blocks.CRIMSON_MOSSY_OAK_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS, Blocks.CRIMSON_MOSSY_SPRUCE_STAIRS);
+                createCrimsonMossyWoodenStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_WARPED_PLANKS, Blocks.CRIMSON_MOSSY_WARPED_STAIRS);
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_MOSAIC, Blocks.CRIMSON_MOSSY_BAMBOO_MOSAIC_STAIRS);
+
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_STONE, Blocks.CRIMSON_MOSSY_STONE_SLAB);
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_COBBLESTONE, Blocks.CRIMSON_MOSSY_COBBLESTONE_SLAB);
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_STONE_BRICKS, Blocks.CRIMSON_MOSSY_STONE_BRICK_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS, Blocks.CRIMSON_MOSSY_ACACIA_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS, Blocks.CRIMSON_MOSSY_BAMBOO_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS, Blocks.CRIMSON_MOSSY_BIRCH_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS, Blocks.CRIMSON_MOSSY_CHERRY_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS, Blocks.CRIMSON_MOSSY_CRIMSON_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS, Blocks.CRIMSON_MOSSY_DARK_OAK_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS, Blocks.CRIMSON_MOSSY_PALE_OAK_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS, Blocks.CRIMSON_MOSSY_JUNGLE_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS, Blocks.CRIMSON_MOSSY_MANGROVE_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_OAK_PLANKS, Blocks.CRIMSON_MOSSY_OAK_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS, Blocks.CRIMSON_MOSSY_SPRUCE_SLAB);
+                createCrimsonMossyWoodenSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_WARPED_PLANKS, Blocks.CRIMSON_MOSSY_WARPED_SLAB);
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_MOSAIC, Blocks.CRIMSON_MOSSY_BAMBOO_MOSAIC_SLAB);
+
+                createPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_STONE, Blocks.CRIMSON_MOSSY_STONE_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS, Blocks.CRIMSON_MOSSY_ACACIA_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS, Blocks.CRIMSON_MOSSY_BAMBOO_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS, Blocks.CRIMSON_MOSSY_BIRCH_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS, Blocks.CRIMSON_MOSSY_CHERRY_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS, Blocks.CRIMSON_MOSSY_CRIMSON_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS, Blocks.CRIMSON_MOSSY_DARK_OAK_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS, Blocks.CRIMSON_MOSSY_PALE_OAK_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS, Blocks.CRIMSON_MOSSY_JUNGLE_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS, Blocks.CRIMSON_MOSSY_MANGROVE_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_OAK_PLANKS, Blocks.CRIMSON_MOSSY_OAK_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS, Blocks.CRIMSON_MOSSY_SPRUCE_PRESSURE_PLATE);
+                createCrimsonMossyWoodenPressurePlateRecipe(exporter, Blocks.CRIMSON_MOSSY_WARPED_PLANKS, Blocks.CRIMSON_MOSSY_WARPED_PRESSURE_PLATE);
+
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS, Blocks.CRIMSON_MOSSY_ACACIA_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS, Blocks.CRIMSON_MOSSY_BAMBOO_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS, Blocks.CRIMSON_MOSSY_BIRCH_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS, Blocks.CRIMSON_MOSSY_CHERRY_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS, Blocks.CRIMSON_MOSSY_CRIMSON_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS, Blocks.CRIMSON_MOSSY_DARK_OAK_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS, Blocks.CRIMSON_MOSSY_PALE_OAK_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS, Blocks.CRIMSON_MOSSY_JUNGLE_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS, Blocks.CRIMSON_MOSSY_MANGROVE_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_OAK_PLANKS, Blocks.CRIMSON_MOSSY_OAK_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS, Blocks.CRIMSON_MOSSY_SPRUCE_FENCE);
+                createCrimsonMossyFenceRecipe(exporter, Blocks.CRIMSON_MOSSY_WARPED_PLANKS, Blocks.CRIMSON_MOSSY_WARPED_FENCE);
+
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS, Blocks.CRIMSON_MOSSY_ACACIA_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS, Blocks.CRIMSON_MOSSY_BAMBOO_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS, Blocks.CRIMSON_MOSSY_BIRCH_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS, Blocks.CRIMSON_MOSSY_CHERRY_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS, Blocks.CRIMSON_MOSSY_CRIMSON_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS, Blocks.CRIMSON_MOSSY_DARK_OAK_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS, Blocks.CRIMSON_MOSSY_PALE_OAK_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS, Blocks.CRIMSON_MOSSY_JUNGLE_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS, Blocks.CRIMSON_MOSSY_MANGROVE_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_OAK_PLANKS, Blocks.CRIMSON_MOSSY_OAK_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS, Blocks.CRIMSON_MOSSY_SPRUCE_FENCE_GATE);
+                createCrimsonMossyFenceGateRecipe(exporter, Blocks.CRIMSON_MOSSY_WARPED_PLANKS, Blocks.CRIMSON_MOSSY_WARPED_FENCE_GATE);
+
+                createButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_STONE, Blocks.CRIMSON_MOSSY_STONE_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS, Blocks.CRIMSON_MOSSY_ACACIA_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS, Blocks.CRIMSON_MOSSY_BAMBOO_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS, Blocks.CRIMSON_MOSSY_BIRCH_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS, Blocks.CRIMSON_MOSSY_CHERRY_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS, Blocks.CRIMSON_MOSSY_CRIMSON_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS, Blocks.CRIMSON_MOSSY_DARK_OAK_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS, Blocks.CRIMSON_MOSSY_PALE_OAK_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS, Blocks.CRIMSON_MOSSY_JUNGLE_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS, Blocks.CRIMSON_MOSSY_MANGROVE_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_OAK_PLANKS, Blocks.CRIMSON_MOSSY_OAK_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS, Blocks.CRIMSON_MOSSY_SPRUCE_BUTTON);
+                createCrimsonMossyWoodenButtonRecipe(exporter, Blocks.CRIMSON_MOSSY_WARPED_PLANKS, Blocks.CRIMSON_MOSSY_WARPED_BUTTON);
+
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_STONE_SLAB, Blocks.CRIMSON_MOSSY_STONE, 2);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_STONE_STAIRS, Blocks.CRIMSON_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_STONE_BRICK_SLAB, Blocks.CRIMSON_MOSSY_STONE, 2);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_STONE_BRICKS, Blocks.CRIMSON_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_STONE_BRICK_STAIRS, Blocks.CRIMSON_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_STONE_BRICK_WALL, Blocks.CRIMSON_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_CHISELED_STONE_BRICKS, Blocks.CRIMSON_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_COBBLESTONE_SLAB, Blocks.CRIMSON_MOSSY_COBBLESTONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_COBBLESTONE_STAIRS, Blocks.CRIMSON_MOSSY_COBBLESTONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_COBBLESTONE_WALL, Blocks.CRIMSON_MOSSY_COBBLESTONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_STONE_BRICK_SLAB, Blocks.CRIMSON_MOSSY_STONE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_STONE_BRICK_STAIRS, Blocks.CRIMSON_MOSSY_STONE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_STONE_BRICK_WALL, Blocks.CRIMSON_MOSSY_STONE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_BRICK_SLAB, Blocks.CRIMSON_MOSSY_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_BRICK_STAIRS, Blocks.CRIMSON_MOSSY_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_BRICK_WALL, Blocks.CRIMSON_MOSSY_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE_SLAB, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE_STAIRS, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE_WALL, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICK_SLAB, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICK_STAIRS, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICK_WALL, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILE_SLAB, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILES);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILE_STAIRS, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILES);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILE_WALL, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILES);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_TUFF_SLAB, Blocks.CRIMSON_MOSSY_TUFF);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_TUFF_STAIRS, Blocks.CRIMSON_MOSSY_TUFF);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_TUFF_WALL, Blocks.CRIMSON_MOSSY_TUFF);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_TUFF_BRICK_SLAB, Blocks.CRIMSON_MOSSY_TUFF_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_TUFF_BRICK_STAIRS, Blocks.CRIMSON_MOSSY_TUFF_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.CRIMSON_MOSSY_TUFF_BRICK_WALL, Blocks.CRIMSON_MOSSY_TUFF_BRICKS);
+
+                createGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_GLASS, Blocks.CRIMSON_MOSSY_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_BLACK_STAINED_GLASS, Blocks.CRIMSON_MOSSY_BLACK_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_BLUE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_BLUE_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_BROWN_STAINED_GLASS, Blocks.CRIMSON_MOSSY_BROWN_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_CYAN_STAINED_GLASS, Blocks.CRIMSON_MOSSY_CYAN_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_GRAY_STAINED_GLASS, Blocks.CRIMSON_MOSSY_GRAY_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_GREEN_STAINED_GLASS, Blocks.CRIMSON_MOSSY_GREEN_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_LIGHT_BLUE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_LIGHT_GRAY_STAINED_GLASS, Blocks.CRIMSON_MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_LIME_STAINED_GLASS, Blocks.CRIMSON_MOSSY_LIME_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_MAGENTA_STAINED_GLASS, Blocks.CRIMSON_MOSSY_MAGENTA_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_ORANGE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_ORANGE_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_PINK_STAINED_GLASS, Blocks.CRIMSON_MOSSY_PINK_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_PURPLE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_PURPLE_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_RED_STAINED_GLASS, Blocks.CRIMSON_MOSSY_RED_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_WHITE_STAINED_GLASS, Blocks.CRIMSON_MOSSY_WHITE_STAINED_GLASS_PANE);
+                createCrimsonMossyStainedGlassPaneRecipe(exporter, Blocks.CRIMSON_MOSSY_YELLOW_STAINED_GLASS, Blocks.CRIMSON_MOSSY_YELLOW_STAINED_GLASS_PANE);
+
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_ACACIA_WOOD, Blocks.CRIMSON_MOSSY_ACACIA_LOG);
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_BIRCH_WOOD, Blocks.CRIMSON_MOSSY_BIRCH_LOG);
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_DARK_OAK_WOOD, Blocks.CRIMSON_MOSSY_DARK_OAK_LOG);
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_PALE_OAK_WOOD, Blocks.CRIMSON_MOSSY_PALE_OAK_LOG);
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_JUNGLE_WOOD, Blocks.CRIMSON_MOSSY_JUNGLE_LOG);
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_OAK_WOOD, Blocks.CRIMSON_MOSSY_OAK_LOG);
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_SPRUCE_WOOD, Blocks.CRIMSON_MOSSY_SPRUCE_LOG);
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_CRIMSON_HYPHAE, Blocks.CRIMSON_MOSSY_CRIMSON_STEM);
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_WARPED_HYPHAE, Blocks.CRIMSON_MOSSY_WARPED_STEM);
+                this.offerBarkBlockRecipe(Blocks.CRIMSON_MOSSY_MANGROVE_WOOD, Blocks.CRIMSON_MOSSY_MANGROVE_LOG);
+
+                this.offerMosaicRecipe(RecipeCategory.DECORATIONS, Blocks.CRIMSON_MOSSY_BAMBOO_MOSAIC, Blocks.CRIMSON_MOSSY_BAMBOO_MOSAIC_SLAB);
+
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_BRICKS, Blocks.CRIMSON_MOSSY_BRICK_STAIRS);
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_BRICKS, Blocks.CRIMSON_MOSSY_BRICK_SLAB);
+
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.CRIMSON_MOSSY_BRICK_WALL, Blocks.CRIMSON_MOSSY_BRICKS);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.CRIMSON_MOSSY_COBBLESTONE_WALL, Blocks.CRIMSON_MOSSY_COBBLESTONE);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.CRIMSON_MOSSY_STONE_BRICK_WALL, Blocks.CRIMSON_MOSSY_STONE_BRICKS);
+
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_OAK_DOOR, Blocks.CRIMSON_MOSSY_OAK_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_SPRUCE_DOOR, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_BIRCH_DOOR, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_CHERRY_DOOR, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_JUNGLE_DOOR, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_DOOR, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_MANGROVE_DOOR, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_DARK_OAK_DOOR, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_PALE_OAK_DOOR, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_ACACIA_DOOR, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_CRIMSON_DOOR, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS);
+                createCrimsonMossyDoorRecipe(exporter, Blocks.CRIMSON_MOSSY_WARPED_DOOR, Blocks.CRIMSON_MOSSY_WARPED_PLANKS);
+
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_ACACIA_PLANKS, Blocks.CRIMSON_MOSSY_ACACIA_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_BAMBOO_PLANKS, Blocks.CRIMSON_MOSSY_BAMBOO_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_BIRCH_PLANKS, Blocks.CRIMSON_MOSSY_BIRCH_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_CHERRY_PLANKS, Blocks.CRIMSON_MOSSY_CHERRY_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_CRIMSON_PLANKS, Blocks.CRIMSON_MOSSY_CRIMSON_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_DARK_OAK_PLANKS, Blocks.CRIMSON_MOSSY_DARK_OAK_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_PALE_OAK_PLANKS, Blocks.CRIMSON_MOSSY_PALE_OAK_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_JUNGLE_PLANKS, Blocks.CRIMSON_MOSSY_JUNGLE_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_MANGROVE_PLANKS, Blocks.CRIMSON_MOSSY_MANGROVE_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_OAK_PLANKS, Blocks.CRIMSON_MOSSY_OAK_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_SPRUCE_PLANKS, Blocks.CRIMSON_MOSSY_SPRUCE_TRAPDOOR);
+                createCrimsonMossyWoodenTrapdoorRecipe(exporter, Blocks.CRIMSON_MOSSY_WARPED_PLANKS, Blocks.CRIMSON_MOSSY_WARPED_TRAPDOOR);
+
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE_STAIRS);
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE_WALL, Blocks.CRIMSON_MOSSY_COBBLED_DEEPSLATE);
+
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICKS, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICK_STAIRS);
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICKS, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICK_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICK_WALL, Blocks.CRIMSON_MOSSY_DEEPSLATE_BRICKS);
+
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILES, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILE_STAIRS);
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILES, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILE_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILE_WALL, Blocks.CRIMSON_MOSSY_DEEPSLATE_TILES);
+
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_TUFF, Blocks.CRIMSON_MOSSY_TUFF_STAIRS);
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_TUFF, Blocks.CRIMSON_MOSSY_TUFF_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.CRIMSON_MOSSY_TUFF_WALL, Blocks.CRIMSON_MOSSY_TUFF);
+
+                createStairsRecipe(exporter, Blocks.CRIMSON_MOSSY_TUFF_BRICKS, Blocks.CRIMSON_MOSSY_TUFF_BRICK_STAIRS);
+                createSlabRecipe(exporter, Blocks.CRIMSON_MOSSY_TUFF_BRICKS, Blocks.CRIMSON_MOSSY_TUFF_BRICK_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.CRIMSON_MOSSY_TUFF_BRICK_WALL, Blocks.CRIMSON_MOSSY_TUFF_BRICKS);
+
                 this.offerCarpetRecipe(WARPED_MOSS_CARPET, WARPED_MOSS_BLOCK);
                 this.offer2x2CompactingRecipe(RecipeCategory.BUILDING_BLOCKS, WARPED_MOSS_BLOCK, Items.WARPED_MOSS_BALL);
                 this.createShapeless(RecipeCategory.MISC, Items.WARPED_MOSS_BALL, 4)
                         .input(WARPED_MOSS_BLOCK)
                         .criterion(hasItem(WARPED_MOSS_BLOCK), conditionsFromItem(WARPED_MOSS_BLOCK))
                         .offerTo(exporter);
+                createWarpedMossyBlockRecipe(exporter, STONE, Blocks.WARPED_MOSSY_STONE, "warped_mossy_stone");
+                createWarpedMossyBlockRecipe(exporter, COBBLESTONE, Blocks.WARPED_MOSSY_COBBLESTONE, "warped_mossy_cobblestone");
+                createWarpedMossyBlockRecipe(exporter, STONE_BRICKS, Blocks.WARPED_MOSSY_STONE_BRICKS, "warped_mossy_stone_bricks");
+                createWarpedMossyBlockRecipe(exporter, ACACIA_PLANKS, Blocks.WARPED_MOSSY_ACACIA_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, BAMBOO_PLANKS, Blocks.WARPED_MOSSY_BAMBOO_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, BAMBOO_MOSAIC, Blocks.WARPED_MOSSY_BAMBOO_MOSAIC, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, BIRCH_PLANKS, Blocks.WARPED_MOSSY_BIRCH_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, CHERRY_PLANKS, Blocks.WARPED_MOSSY_CHERRY_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, CRIMSON_PLANKS, Blocks.WARPED_MOSSY_CRIMSON_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, DARK_OAK_PLANKS, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, PALE_OAK_PLANKS, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, JUNGLE_PLANKS, Blocks.WARPED_MOSSY_JUNGLE_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, MANGROVE_PLANKS, Blocks.WARPED_MOSSY_MANGROVE_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, OAK_PLANKS, Blocks.WARPED_MOSSY_OAK_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, SPRUCE_PLANKS, Blocks.WARPED_MOSSY_SPRUCE_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, WARPED_PLANKS, Blocks.WARPED_MOSSY_WARPED_PLANKS, "warped_mossy_planks");
+                createWarpedMossyBlockRecipe(exporter, ACACIA_LOG, Blocks.WARPED_MOSSY_ACACIA_LOG, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, BAMBOO_BLOCK, Blocks.WARPED_MOSSY_BAMBOO_BLOCK, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, BIRCH_LOG, Blocks.WARPED_MOSSY_BIRCH_LOG, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, CHERRY_LOG, Blocks.WARPED_MOSSY_CHERRY_LOG, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, CRIMSON_STEM, Blocks.WARPED_MOSSY_CRIMSON_STEM, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, DARK_OAK_LOG, Blocks.WARPED_MOSSY_DARK_OAK_LOG, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, PALE_OAK_LOG, Blocks.WARPED_MOSSY_PALE_OAK_LOG, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, JUNGLE_LOG, Blocks.WARPED_MOSSY_JUNGLE_LOG, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, MANGROVE_LOG, Blocks.WARPED_MOSSY_MANGROVE_LOG, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, OAK_LOG, Blocks.WARPED_MOSSY_OAK_LOG, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, SPRUCE_LOG, Blocks.WARPED_MOSSY_SPRUCE_LOG, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, WARPED_STEM, Blocks.WARPED_MOSSY_WARPED_STEM, "warped_mossy_log");
+                createWarpedMossyBlockRecipe(exporter, GLASS, Blocks.WARPED_MOSSY_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, BLACK_STAINED_GLASS, Blocks.WARPED_MOSSY_BLACK_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, BLUE_STAINED_GLASS, Blocks.WARPED_MOSSY_BLUE_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, BROWN_STAINED_GLASS, Blocks.WARPED_MOSSY_BROWN_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, CYAN_STAINED_GLASS, Blocks.WARPED_MOSSY_CYAN_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, GRAY_STAINED_GLASS, Blocks.WARPED_MOSSY_GRAY_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, GREEN_STAINED_GLASS, Blocks.WARPED_MOSSY_GREEN_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, LIGHT_BLUE_STAINED_GLASS, Blocks.WARPED_MOSSY_LIGHT_BLUE_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, LIGHT_GRAY_STAINED_GLASS, Blocks.WARPED_MOSSY_LIGHT_GRAY_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, LIME_STAINED_GLASS, Blocks.WARPED_MOSSY_LIME_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, MAGENTA_STAINED_GLASS, Blocks.WARPED_MOSSY_MAGENTA_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, ORANGE_STAINED_GLASS, Blocks.WARPED_MOSSY_ORANGE_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, PINK_STAINED_GLASS, Blocks.WARPED_MOSSY_PINK_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, PURPLE_STAINED_GLASS, Blocks.WARPED_MOSSY_PURPLE_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, RED_STAINED_GLASS, Blocks.WARPED_MOSSY_RED_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, TINTED_GLASS, Blocks.WARPED_MOSSY_TINTED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, WHITE_STAINED_GLASS, Blocks.WARPED_MOSSY_WHITE_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, YELLOW_STAINED_GLASS, Blocks.WARPED_MOSSY_YELLOW_STAINED_GLASS, "warped_mossy_glass");
+                createWarpedMossyBlockRecipe(exporter, IRON_BARS, Blocks.WARPED_MOSSY_IRON_BARS, "warped_mossy_iron_bars");
+                createWarpedMossyBlockRecipe(exporter, IRON_DOOR, Blocks.WARPED_MOSSY_IRON_DOOR, "warped_mossy_iron_door");
+                createWarpedMossyBlockRecipe(exporter, IRON_TRAPDOOR, Blocks.WARPED_MOSSY_IRON_TRAPDOOR, "warped_mossy_iron_trapdoor");
+                createWarpedMossyBlockRecipe(exporter, CHISELED_STONE_BRICKS, Blocks.WARPED_MOSSY_CHISELED_STONE_BRICKS, "warped_mossy_chiseled_stone_bricks");
+                createWarpedMossyBlockRecipe(exporter, BRICKS, Blocks.WARPED_MOSSY_BRICKS, "warped_mossy_bricks");
+                createWarpedMossyBlockRecipe(exporter, DEEPSLATE, Blocks.WARPED_MOSSY_DEEPSLATE, "warped_mossy_deepslate");
+                createWarpedMossyBlockRecipe(exporter, COBBLED_DEEPSLATE, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE, "warped_mossy_cobbled_deepslate");
+                createWarpedMossyBlockRecipe(exporter, DEEPSLATE_BRICKS, Blocks.WARPED_MOSSY_DEEPSLATE_BRICKS, "warped_mossy_deepslate_bricks");
+                createWarpedMossyBlockRecipe(exporter, DEEPSLATE_TILES, Blocks.WARPED_MOSSY_DEEPSLATE_TILES, "warped_mossy_deepslate_tiles");
+                createWarpedMossyBlockRecipe(exporter, TUFF, Blocks.WARPED_MOSSY_TUFF, "warped_mossy_tuff");
+                createWarpedMossyBlockRecipe(exporter, TUFF_BRICKS, Blocks.WARPED_MOSSY_TUFF_BRICKS, "warped_mossy_tuff_bricks");
+
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_ACACIA_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_ACACIA_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_BAMBOO_BLOCKS);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_BIRCH_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_BIRCH_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_CHERRY_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_CHERRY_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_CRIMSON_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_CRIMSON_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_DARK_OAK_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_PALE_OAK_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_JUNGLE_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_JUNGLE_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_MANGROVE_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_MANGROVE_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_OAK_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_OAK_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_SPRUCE_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_SPRUCE_WOOD);
+                createPlanksRecipe(exporter, Blocks.WARPED_MOSSY_WARPED_PLANKS, "has_warped_mossy_wood", "warped_mossy_planks", ItemTags.WARPED_MOSSY_WARPED_WOOD);
+
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_STONE, Blocks.WARPED_MOSSY_STONE_STAIRS);
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_COBBLESTONE, Blocks.WARPED_MOSSY_COBBLESTONE_STAIRS);
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_STONE_BRICKS, Blocks.WARPED_MOSSY_STONE_BRICK_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_ACACIA_PLANKS, Blocks.WARPED_MOSSY_ACACIA_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_PLANKS, Blocks.WARPED_MOSSY_BAMBOO_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_BIRCH_PLANKS, Blocks.WARPED_MOSSY_BIRCH_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_CHERRY_PLANKS, Blocks.WARPED_MOSSY_CHERRY_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_CRIMSON_PLANKS, Blocks.WARPED_MOSSY_CRIMSON_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS, Blocks.WARPED_MOSSY_DARK_OAK_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS, Blocks.WARPED_MOSSY_PALE_OAK_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_JUNGLE_PLANKS, Blocks.WARPED_MOSSY_JUNGLE_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_MANGROVE_PLANKS, Blocks.WARPED_MOSSY_MANGROVE_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_OAK_PLANKS, Blocks.WARPED_MOSSY_OAK_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_SPRUCE_PLANKS, Blocks.WARPED_MOSSY_SPRUCE_STAIRS);
+                createWarpedMossyWoodenStairsRecipe(exporter, Blocks.WARPED_MOSSY_WARPED_PLANKS, Blocks.WARPED_MOSSY_WARPED_STAIRS);
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_MOSAIC, Blocks.WARPED_MOSSY_BAMBOO_MOSAIC_STAIRS);
+
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_STONE, Blocks.WARPED_MOSSY_STONE_SLAB);
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_COBBLESTONE, Blocks.WARPED_MOSSY_COBBLESTONE_SLAB);
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_STONE_BRICKS, Blocks.WARPED_MOSSY_STONE_BRICK_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_ACACIA_PLANKS, Blocks.WARPED_MOSSY_ACACIA_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_PLANKS, Blocks.WARPED_MOSSY_BAMBOO_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_BIRCH_PLANKS, Blocks.WARPED_MOSSY_BIRCH_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_CHERRY_PLANKS, Blocks.WARPED_MOSSY_CHERRY_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_CRIMSON_PLANKS, Blocks.WARPED_MOSSY_CRIMSON_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS, Blocks.WARPED_MOSSY_DARK_OAK_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS, Blocks.WARPED_MOSSY_PALE_OAK_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_JUNGLE_PLANKS, Blocks.WARPED_MOSSY_JUNGLE_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_MANGROVE_PLANKS, Blocks.WARPED_MOSSY_MANGROVE_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_OAK_PLANKS, Blocks.WARPED_MOSSY_OAK_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_SPRUCE_PLANKS, Blocks.WARPED_MOSSY_SPRUCE_SLAB);
+                createWarpedMossyWoodenSlabRecipe(exporter, Blocks.WARPED_MOSSY_WARPED_PLANKS, Blocks.WARPED_MOSSY_WARPED_SLAB);
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_MOSAIC, Blocks.WARPED_MOSSY_BAMBOO_MOSAIC_SLAB);
+
+                createPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_STONE, Blocks.WARPED_MOSSY_STONE_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_ACACIA_PLANKS, Blocks.WARPED_MOSSY_ACACIA_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_PLANKS, Blocks.WARPED_MOSSY_BAMBOO_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_BIRCH_PLANKS, Blocks.WARPED_MOSSY_BIRCH_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_CHERRY_PLANKS, Blocks.WARPED_MOSSY_CHERRY_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_CRIMSON_PLANKS, Blocks.WARPED_MOSSY_CRIMSON_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS, Blocks.WARPED_MOSSY_DARK_OAK_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS, Blocks.WARPED_MOSSY_PALE_OAK_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_JUNGLE_PLANKS, Blocks.WARPED_MOSSY_JUNGLE_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_MANGROVE_PLANKS, Blocks.WARPED_MOSSY_MANGROVE_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_OAK_PLANKS, Blocks.WARPED_MOSSY_OAK_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_SPRUCE_PLANKS, Blocks.WARPED_MOSSY_SPRUCE_PRESSURE_PLATE);
+                createWarpedMossyWoodenPressurePlateRecipe(exporter, Blocks.WARPED_MOSSY_WARPED_PLANKS, Blocks.WARPED_MOSSY_WARPED_PRESSURE_PLATE);
+
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_ACACIA_PLANKS, Blocks.WARPED_MOSSY_ACACIA_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_PLANKS, Blocks.WARPED_MOSSY_BAMBOO_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_BIRCH_PLANKS, Blocks.WARPED_MOSSY_BIRCH_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_CHERRY_PLANKS, Blocks.WARPED_MOSSY_CHERRY_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_CRIMSON_PLANKS, Blocks.WARPED_MOSSY_CRIMSON_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS, Blocks.WARPED_MOSSY_DARK_OAK_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS, Blocks.WARPED_MOSSY_PALE_OAK_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_JUNGLE_PLANKS, Blocks.WARPED_MOSSY_JUNGLE_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_MANGROVE_PLANKS, Blocks.WARPED_MOSSY_MANGROVE_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_OAK_PLANKS, Blocks.WARPED_MOSSY_OAK_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_SPRUCE_PLANKS, Blocks.WARPED_MOSSY_SPRUCE_FENCE);
+                createWarpedMossyFenceRecipe(exporter, Blocks.WARPED_MOSSY_WARPED_PLANKS, Blocks.WARPED_MOSSY_WARPED_FENCE);
+
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_ACACIA_PLANKS, Blocks.WARPED_MOSSY_ACACIA_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_PLANKS, Blocks.WARPED_MOSSY_BAMBOO_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_BIRCH_PLANKS, Blocks.WARPED_MOSSY_BIRCH_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_CHERRY_PLANKS, Blocks.WARPED_MOSSY_CHERRY_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_CRIMSON_PLANKS, Blocks.WARPED_MOSSY_CRIMSON_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS, Blocks.WARPED_MOSSY_DARK_OAK_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS, Blocks.WARPED_MOSSY_PALE_OAK_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_JUNGLE_PLANKS, Blocks.WARPED_MOSSY_JUNGLE_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_MANGROVE_PLANKS, Blocks.WARPED_MOSSY_MANGROVE_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_OAK_PLANKS, Blocks.WARPED_MOSSY_OAK_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_SPRUCE_PLANKS, Blocks.WARPED_MOSSY_SPRUCE_FENCE_GATE);
+                createWarpedMossyFenceGateRecipe(exporter, Blocks.WARPED_MOSSY_WARPED_PLANKS, Blocks.WARPED_MOSSY_WARPED_FENCE_GATE);
+
+                createButtonRecipe(exporter, Blocks.WARPED_MOSSY_STONE, Blocks.WARPED_MOSSY_STONE_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_ACACIA_PLANKS, Blocks.WARPED_MOSSY_ACACIA_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_PLANKS, Blocks.WARPED_MOSSY_BAMBOO_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_BIRCH_PLANKS, Blocks.WARPED_MOSSY_BIRCH_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_CHERRY_PLANKS, Blocks.WARPED_MOSSY_CHERRY_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_CRIMSON_PLANKS, Blocks.WARPED_MOSSY_CRIMSON_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS, Blocks.WARPED_MOSSY_DARK_OAK_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS, Blocks.WARPED_MOSSY_PALE_OAK_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_JUNGLE_PLANKS, Blocks.WARPED_MOSSY_JUNGLE_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_MANGROVE_PLANKS, Blocks.WARPED_MOSSY_MANGROVE_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_OAK_PLANKS, Blocks.WARPED_MOSSY_OAK_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_SPRUCE_PLANKS, Blocks.WARPED_MOSSY_SPRUCE_BUTTON);
+                createWarpedMossyWoodenButtonRecipe(exporter, Blocks.WARPED_MOSSY_WARPED_PLANKS, Blocks.WARPED_MOSSY_WARPED_BUTTON);
+
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_STONE_SLAB, Blocks.WARPED_MOSSY_STONE, 2);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_STONE_STAIRS, Blocks.WARPED_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_STONE_BRICK_SLAB, Blocks.WARPED_MOSSY_STONE, 2);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_STONE_BRICKS, Blocks.WARPED_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_STONE_BRICK_STAIRS, Blocks.WARPED_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_STONE_BRICK_WALL, Blocks.WARPED_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_CHISELED_STONE_BRICKS, Blocks.WARPED_MOSSY_STONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_COBBLESTONE_SLAB, Blocks.WARPED_MOSSY_COBBLESTONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_COBBLESTONE_STAIRS, Blocks.WARPED_MOSSY_COBBLESTONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_COBBLESTONE_WALL, Blocks.WARPED_MOSSY_COBBLESTONE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_STONE_BRICK_SLAB, Blocks.WARPED_MOSSY_STONE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_STONE_BRICK_STAIRS, Blocks.WARPED_MOSSY_STONE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_STONE_BRICK_WALL, Blocks.WARPED_MOSSY_STONE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_BRICK_SLAB, Blocks.WARPED_MOSSY_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_BRICK_STAIRS, Blocks.WARPED_MOSSY_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_BRICK_WALL, Blocks.WARPED_MOSSY_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE_SLAB, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE_STAIRS, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE_WALL, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_DEEPSLATE_BRICK_SLAB, Blocks.WARPED_MOSSY_DEEPSLATE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_DEEPSLATE_BRICK_STAIRS, Blocks.WARPED_MOSSY_DEEPSLATE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_DEEPSLATE_BRICK_WALL, Blocks.WARPED_MOSSY_DEEPSLATE_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_DEEPSLATE_TILE_SLAB, Blocks.WARPED_MOSSY_DEEPSLATE_TILES);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_DEEPSLATE_TILE_STAIRS, Blocks.WARPED_MOSSY_DEEPSLATE_TILES);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_DEEPSLATE_TILE_WALL, Blocks.WARPED_MOSSY_DEEPSLATE_TILES);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_TUFF_SLAB, Blocks.WARPED_MOSSY_TUFF);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_TUFF_STAIRS, Blocks.WARPED_MOSSY_TUFF);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_TUFF_WALL, Blocks.WARPED_MOSSY_TUFF);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_TUFF_BRICK_SLAB, Blocks.WARPED_MOSSY_TUFF_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_TUFF_BRICK_STAIRS, Blocks.WARPED_MOSSY_TUFF_BRICKS);
+                this.offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.WARPED_MOSSY_TUFF_BRICK_WALL, Blocks.WARPED_MOSSY_TUFF_BRICKS);
+
+                createGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_GLASS, Blocks.WARPED_MOSSY_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_BLACK_STAINED_GLASS, Blocks.WARPED_MOSSY_BLACK_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_BLUE_STAINED_GLASS, Blocks.WARPED_MOSSY_BLUE_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_BROWN_STAINED_GLASS, Blocks.WARPED_MOSSY_BROWN_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_CYAN_STAINED_GLASS, Blocks.WARPED_MOSSY_CYAN_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_GRAY_STAINED_GLASS, Blocks.WARPED_MOSSY_GRAY_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_GREEN_STAINED_GLASS, Blocks.WARPED_MOSSY_GREEN_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_LIGHT_BLUE_STAINED_GLASS, Blocks.WARPED_MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_LIGHT_GRAY_STAINED_GLASS, Blocks.WARPED_MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_LIME_STAINED_GLASS, Blocks.WARPED_MOSSY_LIME_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_MAGENTA_STAINED_GLASS, Blocks.WARPED_MOSSY_MAGENTA_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_ORANGE_STAINED_GLASS, Blocks.WARPED_MOSSY_ORANGE_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_PINK_STAINED_GLASS, Blocks.WARPED_MOSSY_PINK_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_PURPLE_STAINED_GLASS, Blocks.WARPED_MOSSY_PURPLE_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_RED_STAINED_GLASS, Blocks.WARPED_MOSSY_RED_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_WHITE_STAINED_GLASS, Blocks.WARPED_MOSSY_WHITE_STAINED_GLASS_PANE);
+                createWarpedMossyStainedGlassPaneRecipe(exporter, Blocks.WARPED_MOSSY_YELLOW_STAINED_GLASS, Blocks.WARPED_MOSSY_YELLOW_STAINED_GLASS_PANE);
+
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_ACACIA_WOOD, Blocks.WARPED_MOSSY_ACACIA_LOG);
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_BIRCH_WOOD, Blocks.WARPED_MOSSY_BIRCH_LOG);
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_DARK_OAK_WOOD, Blocks.WARPED_MOSSY_DARK_OAK_LOG);
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_PALE_OAK_WOOD, Blocks.WARPED_MOSSY_PALE_OAK_LOG);
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_JUNGLE_WOOD, Blocks.WARPED_MOSSY_JUNGLE_LOG);
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_OAK_WOOD, Blocks.WARPED_MOSSY_OAK_LOG);
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_SPRUCE_WOOD, Blocks.WARPED_MOSSY_SPRUCE_LOG);
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_CRIMSON_HYPHAE, Blocks.WARPED_MOSSY_CRIMSON_STEM);
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_WARPED_HYPHAE, Blocks.WARPED_MOSSY_WARPED_STEM);
+                this.offerBarkBlockRecipe(Blocks.WARPED_MOSSY_MANGROVE_WOOD, Blocks.WARPED_MOSSY_MANGROVE_LOG);
+
+                this.offerMosaicRecipe(RecipeCategory.DECORATIONS, Blocks.WARPED_MOSSY_BAMBOO_MOSAIC, Blocks.WARPED_MOSSY_BAMBOO_MOSAIC_SLAB);
+
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_BRICKS, Blocks.WARPED_MOSSY_BRICK_STAIRS);
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_BRICKS, Blocks.WARPED_MOSSY_BRICK_SLAB);
+
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.WARPED_MOSSY_BRICK_WALL, Blocks.WARPED_MOSSY_BRICKS);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.WARPED_MOSSY_COBBLESTONE_WALL, Blocks.WARPED_MOSSY_COBBLESTONE);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.WARPED_MOSSY_STONE_BRICK_WALL, Blocks.WARPED_MOSSY_STONE_BRICKS);
+
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_OAK_DOOR, Blocks.WARPED_MOSSY_OAK_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_SPRUCE_DOOR, Blocks.WARPED_MOSSY_SPRUCE_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_BIRCH_DOOR, Blocks.WARPED_MOSSY_BIRCH_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_CHERRY_DOOR, Blocks.WARPED_MOSSY_CHERRY_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_JUNGLE_DOOR, Blocks.WARPED_MOSSY_JUNGLE_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_DOOR, Blocks.WARPED_MOSSY_BAMBOO_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_MANGROVE_DOOR, Blocks.WARPED_MOSSY_MANGROVE_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_DARK_OAK_DOOR, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_PALE_OAK_DOOR, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_ACACIA_DOOR, Blocks.WARPED_MOSSY_ACACIA_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_CRIMSON_DOOR, Blocks.WARPED_MOSSY_CRIMSON_PLANKS);
+                createWarpedMossyDoorRecipe(exporter, Blocks.WARPED_MOSSY_WARPED_DOOR, Blocks.WARPED_MOSSY_WARPED_PLANKS);
+
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_ACACIA_PLANKS, Blocks.WARPED_MOSSY_ACACIA_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_BAMBOO_PLANKS, Blocks.WARPED_MOSSY_BAMBOO_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_BIRCH_PLANKS, Blocks.WARPED_MOSSY_BIRCH_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_CHERRY_PLANKS, Blocks.WARPED_MOSSY_CHERRY_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_CRIMSON_PLANKS, Blocks.WARPED_MOSSY_CRIMSON_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_DARK_OAK_PLANKS, Blocks.WARPED_MOSSY_DARK_OAK_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_PALE_OAK_PLANKS, Blocks.WARPED_MOSSY_PALE_OAK_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_JUNGLE_PLANKS, Blocks.WARPED_MOSSY_JUNGLE_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_MANGROVE_PLANKS, Blocks.WARPED_MOSSY_MANGROVE_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_OAK_PLANKS, Blocks.WARPED_MOSSY_OAK_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_SPRUCE_PLANKS, Blocks.WARPED_MOSSY_SPRUCE_TRAPDOOR);
+                createWarpedMossyWoodenTrapdoorRecipe(exporter, Blocks.WARPED_MOSSY_WARPED_PLANKS, Blocks.WARPED_MOSSY_WARPED_TRAPDOOR);
+
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE_STAIRS);
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE_WALL, Blocks.WARPED_MOSSY_COBBLED_DEEPSLATE);
+
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_DEEPSLATE_BRICKS, Blocks.WARPED_MOSSY_DEEPSLATE_BRICK_STAIRS);
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_DEEPSLATE_BRICKS, Blocks.WARPED_MOSSY_DEEPSLATE_BRICK_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.WARPED_MOSSY_DEEPSLATE_BRICK_WALL, Blocks.WARPED_MOSSY_DEEPSLATE_BRICKS);
+
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_DEEPSLATE_TILES, Blocks.WARPED_MOSSY_DEEPSLATE_TILE_STAIRS);
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_DEEPSLATE_TILES, Blocks.WARPED_MOSSY_DEEPSLATE_TILE_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.WARPED_MOSSY_DEEPSLATE_TILE_WALL, Blocks.WARPED_MOSSY_DEEPSLATE_TILES);
+
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_TUFF, Blocks.WARPED_MOSSY_TUFF_STAIRS);
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_TUFF, Blocks.WARPED_MOSSY_TUFF_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.WARPED_MOSSY_TUFF_WALL, Blocks.WARPED_MOSSY_TUFF);
+
+                createStairsRecipe(exporter, Blocks.WARPED_MOSSY_TUFF_BRICKS, Blocks.WARPED_MOSSY_TUFF_BRICK_STAIRS);
+                createSlabRecipe(exporter, Blocks.WARPED_MOSSY_TUFF_BRICKS, Blocks.WARPED_MOSSY_TUFF_BRICK_SLAB);
+                this.offerWallRecipe(RecipeCategory.DECORATIONS, Blocks.WARPED_MOSSY_TUFF_BRICK_WALL, Blocks.WARPED_MOSSY_TUFF_BRICKS);
             }
 
             private void createMossyDoorRecipe(RecipeExporter exporter, Block output, Block input) {
@@ -599,6 +1148,14 @@ public class RecipeProvider extends FabricRecipeProvider {
 
             private void createPaleMossyDoorRecipe(RecipeExporter exporter, Block output, Block input) {
                 createDoorRecipe(exporter, "pale_mossy_wooden_doors", "has_pale_mossy_planks", ItemTags.PALE_MOSSY_PLANKS, output, input);
+            }
+
+            private void createCrimsonMossyDoorRecipe(RecipeExporter exporter, Block output, Block input) {
+                createDoorRecipe(exporter, "crimson_mossy_wooden_doors", "has_crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_PLANKS, output, input);
+            }
+
+            private void createWarpedMossyDoorRecipe(RecipeExporter exporter, Block output, Block input) {
+                createDoorRecipe(exporter, "warped_mossy_wooden_doors", "has_warped_mossy_planks", ItemTags.WARPED_MOSSY_PLANKS, output, input);
             }
 
             private void createDoorRecipe(RecipeExporter exporter, String group, String criteria, TagKey<Item> tag, Block output, Block input) {
@@ -610,11 +1167,15 @@ public class RecipeProvider extends FabricRecipeProvider {
 
             private void createMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {
                 this.createShapeless(RecipeCategory.BUILDING_BLOCKS, result)
-                        .input(input).input(VINE).group(group)
+                        .input(input)
+                        .input(VINE)
+                        .group(group)
                         .criterion(hasItem(VINE), this.conditionsFromItem(VINE))
                         .offerTo(exporter, convertBetween(result, VINE));
                 this.createShapeless(RecipeCategory.BUILDING_BLOCKS, result)
-                        .input(input).input(MOSS_BLOCK).group(group)
+                        .input(input)
+                        .input(MOSS_BLOCK)
+                        .group(group)
                         .criterion(hasItem(MOSS_BLOCK), this.conditionsFromItem(MOSS_BLOCK))
                         .offerTo(exporter, convertBetween(result, MOSS_BLOCK));
             }
@@ -626,6 +1187,36 @@ public class RecipeProvider extends FabricRecipeProvider {
                         .group(group)
                         .criterion(hasItem(PALE_MOSS_BLOCK), this.conditionsFromItem(PALE_MOSS_BLOCK))
                         .offerTo(exporter, convertBetween(result, PALE_MOSS_BLOCK));
+            }
+
+            private void createCrimsonMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {
+                this.createShapeless(RecipeCategory.BUILDING_BLOCKS, result)
+                        .input(input)
+                        .input(WEEPING_VINES)
+                        .group(group)
+                        .criterion(hasItem(WEEPING_VINES), this.conditionsFromItem(WEEPING_VINES))
+                        .offerTo(exporter, convertBetween(result, WEEPING_VINES));
+                this.createShapeless(RecipeCategory.BUILDING_BLOCKS, result)
+                        .input(input)
+                        .input(CRIMSON_MOSS_BLOCK)
+                        .group(group)
+                        .criterion(hasItem(CRIMSON_MOSS_BLOCK), this.conditionsFromItem(CRIMSON_MOSS_BLOCK))
+                        .offerTo(exporter, convertBetween(result, CRIMSON_MOSS_BLOCK));
+            }
+
+            private void createWarpedMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {
+                this.createShapeless(RecipeCategory.BUILDING_BLOCKS, result)
+                        .input(input)
+                        .input(WEEPING_VINES)
+                        .group(group)
+                        .criterion(hasItem(WEEPING_VINES), this.conditionsFromItem(WEEPING_VINES))
+                        .offerTo(exporter, convertBetween(result, WEEPING_VINES));
+                this.createShapeless(RecipeCategory.BUILDING_BLOCKS, result)
+                        .input(input)
+                        .input(WARPED_MOSS_BLOCK)
+                        .group(group)
+                        .criterion(hasItem(WARPED_MOSS_BLOCK), this.conditionsFromItem(WARPED_MOSS_BLOCK))
+                        .offerTo(exporter, convertBetween(result, WARPED_MOSS_BLOCK));
             }
 
             public void createPlanksRecipe(RecipeExporter exporter, ItemConvertible output, String criterion, String group, TagKey<Item> input) {
@@ -644,6 +1235,14 @@ public class RecipeProvider extends FabricRecipeProvider {
                 createWoodenStairsRecipe(exporter, "pale_mossy_wooden_stairs", "has_pale_mossy_planks", ItemTags.PALE_MOSSY_PLANKS, input, result);
             }
 
+            private void createCrimsonMossyWoodenStairsRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenStairsRecipe(exporter, "crimson_mossy_wooden_stairs", "has_crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_PLANKS, input, result);
+            }
+            
+            private void createWarpedMossyWoodenStairsRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenStairsRecipe(exporter, "warped_mossy_wooden_stairs", "has_warped_mossy_planks", ItemTags.WARPED_MOSSY_PLANKS, input, result);
+            }
+
             private void createWoodenStairsRecipe(RecipeExporter exporter, String group, String criteria, TagKey<Item> tag, Block input, Block result) {
                 this.createStairsRecipe(result, Ingredient.ofItems(input))
                         .group(group)
@@ -657,6 +1256,14 @@ public class RecipeProvider extends FabricRecipeProvider {
 
             private void createPaleMossyWoodenTrapdoorRecipe(RecipeExporter exporter, Block input, Block result) {
                 createWoodenTrapdoorRecipe(exporter, "pale_mossy_wooden_stairs", "has_pale_mossy_planks", ItemTags.PALE_MOSSY_PLANKS, input, result);
+            }
+
+            private void createCrimsonMossyWoodenTrapdoorRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenTrapdoorRecipe(exporter, "crimson_mossy_wooden_stairs", "has_crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_PLANKS, input, result);
+            }
+
+            private void createWarpedMossyWoodenTrapdoorRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenTrapdoorRecipe(exporter, "warped_mossy_wooden_stairs", "has_warped_mossy_planks", ItemTags.WARPED_MOSSY_PLANKS, input, result);
             }
 
             private void createWoodenTrapdoorRecipe(RecipeExporter exporter, String group, String criteria, TagKey<Item> tag, Block input, Block result) {
@@ -680,6 +1287,14 @@ public class RecipeProvider extends FabricRecipeProvider {
                 createWoodenSlabRecipe(exporter, "pale_mossy_wooden_slab", "has_pale_mossy_planks", ItemTags.PALE_MOSSY_PLANKS, input, result);
             }
 
+            private void createCrimsonMossyWoodenSlabRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenSlabRecipe(exporter, "crimson_mossy_wooden_slab", "has_crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_PLANKS, input, result);
+            }
+
+            private void createWarpedMossyWoodenSlabRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenSlabRecipe(exporter, "warped_mossy_wooden_slab", "has_warped_mossy_planks", ItemTags.WARPED_MOSSY_PLANKS, input, result);
+            }
+
             private void createWoodenSlabRecipe(RecipeExporter exporter, String group, String criteria, TagKey<Item> tag, Block input, Block result) {
                 this.createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, result, Ingredient.ofItems(input.asItem()))
                         .group(group)
@@ -699,6 +1314,14 @@ public class RecipeProvider extends FabricRecipeProvider {
 
             private void createPaleMossyWoodenPressurePlateRecipe(RecipeExporter exporter, Block input, Block result) {
                 createWoodenPressurePlateRecipe(exporter, "pale_mossy_wooden_pressure_plate", "has_pale_mossy_planks", ItemTags.PALE_MOSSY_PLANKS, input, result);
+            }
+
+            private void createCrimsonMossyWoodenPressurePlateRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenPressurePlateRecipe(exporter, "crimson_mossy_wooden_pressure_plate", "has_crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_PLANKS, input, result);
+            }
+
+            private void createWarpedMossyWoodenPressurePlateRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenPressurePlateRecipe(exporter, "warped_mossy_wooden_pressure_plate", "has_warped_mossy_planks", ItemTags.WARPED_MOSSY_PLANKS, input, result);
             }
 
             private void createWoodenPressurePlateRecipe(RecipeExporter exporter, String group, String criteria, TagKey<Item> tag, Block input, Block result) {
@@ -722,6 +1345,14 @@ public class RecipeProvider extends FabricRecipeProvider {
                 createFenceRecipe(exporter, "pale_mossy_wooden_fence", "has_pale_mossy_planks", ItemTags.PALE_MOSSY_PLANKS, input, result);
             }
 
+            private void createCrimsonMossyFenceRecipe(RecipeExporter exporter, Block input, Block result) {
+                createFenceRecipe(exporter, "crimson_mossy_wooden_fence", "has_crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_PLANKS, input, result);
+            }
+
+            private void createWarpedMossyFenceRecipe(RecipeExporter exporter, Block input, Block result) {
+                createFenceRecipe(exporter, "warped_mossy_wooden_fence", "has_warped_mossy_planks", ItemTags.WARPED_MOSSY_PLANKS, input, result);
+            }
+
             private void createFenceRecipe(RecipeExporter exporter, String group, String criteria, TagKey<Item> tag, Block input, Block result) {
                 this.createFenceRecipe(result, Ingredient.ofItems(input))
                         .group(group)
@@ -737,6 +1368,14 @@ public class RecipeProvider extends FabricRecipeProvider {
                 createFenceGateRecipe(exporter, "pale_mossy_wooden_fence_gate", "has_pale_mossy_planks", ItemTags.PALE_MOSSY_PLANKS, input, result);
             }
 
+            private void createCrimsonMossyFenceGateRecipe(RecipeExporter exporter, Block input, Block result) {
+                createFenceGateRecipe(exporter, "crimson_mossy_wooden_fence_gate", "has_crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_PLANKS, input, result);
+            }
+
+            private void createWarpedMossyFenceGateRecipe(RecipeExporter exporter, Block input, Block result) {
+                createFenceGateRecipe(exporter, "warped_mossy_wooden_fence_gate", "has_warped_mossy_planks", ItemTags.WARPED_MOSSY_PLANKS, input, result);
+            }
+
             private void createFenceGateRecipe(RecipeExporter exporter, String group, String criteria, TagKey<Item> tag, Block input, Block result) {
                 this.createFenceGateRecipe(result, Ingredient.ofItems(input))
                         .group(group)
@@ -750,6 +1389,14 @@ public class RecipeProvider extends FabricRecipeProvider {
 
             private void createPaleMossyWoodenButtonRecipe(RecipeExporter exporter, Block input, Block result) {
                 createWoodenButtonRecipe(exporter, "pale_mossy_wooden_button", "has_pale_mossy_planks", ItemTags.PALE_MOSSY_PLANKS, input, result);
+            }
+
+            private void createCrimsonMossyWoodenButtonRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenButtonRecipe(exporter, "crimson_mossy_wooden_button", "has_crimson_mossy_planks", ItemTags.CRIMSON_MOSSY_PLANKS, input, result);
+            }
+
+            private void createWarpedMossyWoodenButtonRecipe(RecipeExporter exporter, Block input, Block result) {
+                createWoodenButtonRecipe(exporter, "warped_mossy_wooden_button", "has_warped_mossy_planks", ItemTags.WARPED_MOSSY_PLANKS, input, result);
             }
 
             private void createWoodenButtonRecipe(RecipeExporter exporter, String group, String criteria, TagKey<Item> tag, Block input, Block result) {
@@ -782,6 +1429,14 @@ public class RecipeProvider extends FabricRecipeProvider {
 
             private void createPaleMossyStainedGlassPaneRecipe(RecipeExporter exporter, Block input, Block result) {
                 createStainedGlassPaneRecipe(exporter, "pale_mossy_stained_glass", "has_pale_mossy_stained_glass", ItemTags.PALE_MOSSY_STAINED_GLASS, input, result);
+            }
+
+            private void createCrimsonMossyStainedGlassPaneRecipe(RecipeExporter exporter, Block input, Block result) {
+                createStainedGlassPaneRecipe(exporter, "pale_crimson_stained_glass", "has_crimson_mossy_stained_glass", ItemTags.CRIMSON_MOSSY_STAINED_GLASS, input, result);
+            }
+
+            private void createWarpedMossyStainedGlassPaneRecipe(RecipeExporter exporter, Block input, Block result) {
+                createStainedGlassPaneRecipe(exporter, "pale_warped_stained_glass", "has_warped_mossy_stained_glass", ItemTags.WARPED_MOSSY_STAINED_GLASS, input, result);
             }
 
             private void createStainedGlassPaneRecipe(RecipeExporter exporter, String group, String criteria, TagKey<Item> tag, Block input, Block result) {
