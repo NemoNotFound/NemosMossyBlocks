@@ -6,7 +6,7 @@ import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.collection.DataPool;
+import net.minecraft.util.collection.Pool;
 import net.minecraft.util.math.VerticalSurfaceType;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -38,7 +38,7 @@ public class VegetationConfiguredFeatures {
                 Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(
                         new WeightedBlockStateProvider(
-                                DataPool.<BlockState>builder()
+                                Pool.<BlockState>builder()
                                         .add(CRIMSON_MOSS_CARPET.getDefaultState(), 25)
                                         .add(CRIMSON_ROOTS.getDefaultState(), 25)
                                         .add(CRIMSON_FUNGUS.getDefaultState(), 10)
@@ -88,7 +88,7 @@ public class VegetationConfiguredFeatures {
                 Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(
                         new WeightedBlockStateProvider(
-                                DataPool.<BlockState>builder()
+                                Pool.<BlockState>builder()
                                         .add(WARPED_MOSS_CARPET.getDefaultState(), 25)
                                         .add(WARPED_ROOTS.getDefaultState(), 25)
                                         .add(WARPED_FUNGUS.getDefaultState(), 10)

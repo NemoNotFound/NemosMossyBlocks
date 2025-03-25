@@ -5,10 +5,12 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Block;
 import net.minecraft.client.data.*;
+import net.minecraft.client.render.model.json.WeightedVariant;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 
 import static com.nemonotfound.nemos.mossy.blocks.block.Blocks.*;
+import static net.minecraft.client.data.BlockStateModelGenerator.createModelVariant;
 
 public class ModelProvider extends FabricModelProvider {
 
@@ -143,18 +145,18 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerGlassAndPane(MOSSY_WHITE_STAINED_GLASS, MOSSY_WHITE_STAINED_GLASS_PANE);
         blockStateModelGenerator.registerGlassAndPane(MOSSY_YELLOW_STAINED_GLASS, MOSSY_YELLOW_STAINED_GLASS_PANE);
 
-        blockStateModelGenerator.registerLog(MOSSY_ACACIA_LOG).log(MOSSY_ACACIA_LOG).wood(MOSSY_ACACIA_WOOD);
-        blockStateModelGenerator.registerLog(MOSSY_BAMBOO_BLOCK).log(MOSSY_BAMBOO_BLOCK);
-        blockStateModelGenerator.registerLog(MOSSY_BIRCH_LOG).log(MOSSY_BIRCH_LOG).wood(MOSSY_BIRCH_WOOD);
-        blockStateModelGenerator.registerLog(MOSSY_CHERRY_LOG).log(MOSSY_CHERRY_LOG).wood(MOSSY_CHERRY_WOOD);
-        blockStateModelGenerator.registerLog(MOSSY_CRIMSON_STEM).log(MOSSY_CRIMSON_STEM).wood(MOSSY_CRIMSON_HYPHAE);
-        blockStateModelGenerator.registerLog(MOSSY_DARK_OAK_LOG).log(MOSSY_DARK_OAK_LOG).wood(MOSSY_DARK_OAK_WOOD);
-        blockStateModelGenerator.registerLog(MOSSY_PALE_OAK_LOG).log(MOSSY_PALE_OAK_LOG).wood(MOSSY_PALE_OAK_WOOD);
-        blockStateModelGenerator.registerLog(MOSSY_JUNGLE_LOG).log(MOSSY_JUNGLE_LOG).wood(MOSSY_JUNGLE_WOOD);
-        blockStateModelGenerator.registerLog(MOSSY_MANGROVE_LOG).log(MOSSY_MANGROVE_LOG).wood(MOSSY_MANGROVE_WOOD);
-        blockStateModelGenerator.registerLog(MOSSY_OAK_LOG).log(MOSSY_OAK_LOG).wood(MOSSY_OAK_WOOD);
-        blockStateModelGenerator.registerLog(MOSSY_SPRUCE_LOG).log(MOSSY_SPRUCE_LOG).wood(MOSSY_SPRUCE_WOOD);
-        blockStateModelGenerator.registerLog(MOSSY_WARPED_STEM).stem(MOSSY_WARPED_STEM).wood(MOSSY_WARPED_HYPHAE);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_ACACIA_LOG).log(MOSSY_ACACIA_LOG).wood(MOSSY_ACACIA_WOOD);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_BAMBOO_BLOCK).log(MOSSY_BAMBOO_BLOCK);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_BIRCH_LOG).log(MOSSY_BIRCH_LOG).wood(MOSSY_BIRCH_WOOD);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_CHERRY_LOG).log(MOSSY_CHERRY_LOG).wood(MOSSY_CHERRY_WOOD);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_CRIMSON_STEM).log(MOSSY_CRIMSON_STEM).wood(MOSSY_CRIMSON_HYPHAE);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_DARK_OAK_LOG).log(MOSSY_DARK_OAK_LOG).wood(MOSSY_DARK_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_PALE_OAK_LOG).log(MOSSY_PALE_OAK_LOG).wood(MOSSY_PALE_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_JUNGLE_LOG).log(MOSSY_JUNGLE_LOG).wood(MOSSY_JUNGLE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_MANGROVE_LOG).log(MOSSY_MANGROVE_LOG).wood(MOSSY_MANGROVE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_OAK_LOG).log(MOSSY_OAK_LOG).wood(MOSSY_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_SPRUCE_LOG).log(MOSSY_SPRUCE_LOG).wood(MOSSY_SPRUCE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(MOSSY_WARPED_STEM).stem(MOSSY_WARPED_STEM).wood(MOSSY_WARPED_HYPHAE);
 
         registerIronBars(blockStateModelGenerator, MOSSY_IRON_BARS);
 
@@ -356,18 +358,18 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerGlassAndPane(PALE_MOSSY_WHITE_STAINED_GLASS, PALE_MOSSY_WHITE_STAINED_GLASS_PANE);
         blockStateModelGenerator.registerGlassAndPane(PALE_MOSSY_YELLOW_STAINED_GLASS, PALE_MOSSY_YELLOW_STAINED_GLASS_PANE);
 
-        blockStateModelGenerator.registerLog(PALE_MOSSY_ACACIA_LOG).log(PALE_MOSSY_ACACIA_LOG).wood(PALE_MOSSY_ACACIA_WOOD);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_BAMBOO_BLOCK).log(PALE_MOSSY_BAMBOO_BLOCK);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_BIRCH_LOG).log(PALE_MOSSY_BIRCH_LOG).wood(PALE_MOSSY_BIRCH_WOOD);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_CHERRY_LOG).log(PALE_MOSSY_CHERRY_LOG).wood(PALE_MOSSY_CHERRY_WOOD);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_CRIMSON_STEM).log(PALE_MOSSY_CRIMSON_STEM).wood(PALE_MOSSY_CRIMSON_HYPHAE);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_DARK_OAK_LOG).log(PALE_MOSSY_DARK_OAK_LOG).wood(PALE_MOSSY_DARK_OAK_WOOD);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_PALE_OAK_LOG).log(PALE_MOSSY_PALE_OAK_LOG).wood(PALE_MOSSY_PALE_OAK_WOOD);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_JUNGLE_LOG).log(PALE_MOSSY_JUNGLE_LOG).wood(PALE_MOSSY_JUNGLE_WOOD);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_MANGROVE_LOG).log(PALE_MOSSY_MANGROVE_LOG).wood(PALE_MOSSY_MANGROVE_WOOD);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_OAK_LOG).log(PALE_MOSSY_OAK_LOG).wood(PALE_MOSSY_OAK_WOOD);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_SPRUCE_LOG).log(PALE_MOSSY_SPRUCE_LOG).wood(PALE_MOSSY_SPRUCE_WOOD);
-        blockStateModelGenerator.registerLog(PALE_MOSSY_WARPED_STEM).stem(PALE_MOSSY_WARPED_STEM).wood(PALE_MOSSY_WARPED_HYPHAE);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_ACACIA_LOG).log(PALE_MOSSY_ACACIA_LOG).wood(PALE_MOSSY_ACACIA_WOOD);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_BAMBOO_BLOCK).log(PALE_MOSSY_BAMBOO_BLOCK);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_BIRCH_LOG).log(PALE_MOSSY_BIRCH_LOG).wood(PALE_MOSSY_BIRCH_WOOD);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_CHERRY_LOG).log(PALE_MOSSY_CHERRY_LOG).wood(PALE_MOSSY_CHERRY_WOOD);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_CRIMSON_STEM).log(PALE_MOSSY_CRIMSON_STEM).wood(PALE_MOSSY_CRIMSON_HYPHAE);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_DARK_OAK_LOG).log(PALE_MOSSY_DARK_OAK_LOG).wood(PALE_MOSSY_DARK_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_PALE_OAK_LOG).log(PALE_MOSSY_PALE_OAK_LOG).wood(PALE_MOSSY_PALE_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_JUNGLE_LOG).log(PALE_MOSSY_JUNGLE_LOG).wood(PALE_MOSSY_JUNGLE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_MANGROVE_LOG).log(PALE_MOSSY_MANGROVE_LOG).wood(PALE_MOSSY_MANGROVE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_OAK_LOG).log(PALE_MOSSY_OAK_LOG).wood(PALE_MOSSY_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_SPRUCE_LOG).log(PALE_MOSSY_SPRUCE_LOG).wood(PALE_MOSSY_SPRUCE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(PALE_MOSSY_WARPED_STEM).stem(PALE_MOSSY_WARPED_STEM).wood(PALE_MOSSY_WARPED_HYPHAE);
 
         registerIronBars(blockStateModelGenerator, PALE_MOSSY_IRON_BARS);
 
@@ -569,18 +571,18 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_WHITE_STAINED_GLASS, CRIMSON_MOSSY_WHITE_STAINED_GLASS_PANE);
         blockStateModelGenerator.registerGlassAndPane(CRIMSON_MOSSY_YELLOW_STAINED_GLASS, CRIMSON_MOSSY_YELLOW_STAINED_GLASS_PANE);
 
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_ACACIA_LOG).log(CRIMSON_MOSSY_ACACIA_LOG).wood(CRIMSON_MOSSY_ACACIA_WOOD);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_BAMBOO_BLOCK).log(CRIMSON_MOSSY_BAMBOO_BLOCK);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_BIRCH_LOG).log(CRIMSON_MOSSY_BIRCH_LOG).wood(CRIMSON_MOSSY_BIRCH_WOOD);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_CHERRY_LOG).log(CRIMSON_MOSSY_CHERRY_LOG).wood(CRIMSON_MOSSY_CHERRY_WOOD);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_CRIMSON_STEM).log(CRIMSON_MOSSY_CRIMSON_STEM).wood(CRIMSON_MOSSY_CRIMSON_HYPHAE);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_DARK_OAK_LOG).log(CRIMSON_MOSSY_DARK_OAK_LOG).wood(CRIMSON_MOSSY_DARK_OAK_WOOD);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_PALE_OAK_LOG).log(CRIMSON_MOSSY_PALE_OAK_LOG).wood(CRIMSON_MOSSY_PALE_OAK_WOOD);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_JUNGLE_LOG).log(CRIMSON_MOSSY_JUNGLE_LOG).wood(CRIMSON_MOSSY_JUNGLE_WOOD);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_MANGROVE_LOG).log(CRIMSON_MOSSY_MANGROVE_LOG).wood(CRIMSON_MOSSY_MANGROVE_WOOD);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_OAK_LOG).log(CRIMSON_MOSSY_OAK_LOG).wood(CRIMSON_MOSSY_OAK_WOOD);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_SPRUCE_LOG).log(CRIMSON_MOSSY_SPRUCE_LOG).wood(CRIMSON_MOSSY_SPRUCE_WOOD);
-        blockStateModelGenerator.registerLog(CRIMSON_MOSSY_WARPED_STEM).stem(CRIMSON_MOSSY_WARPED_STEM).wood(CRIMSON_MOSSY_WARPED_HYPHAE);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_ACACIA_LOG).log(CRIMSON_MOSSY_ACACIA_LOG).wood(CRIMSON_MOSSY_ACACIA_WOOD);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_BAMBOO_BLOCK).log(CRIMSON_MOSSY_BAMBOO_BLOCK);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_BIRCH_LOG).log(CRIMSON_MOSSY_BIRCH_LOG).wood(CRIMSON_MOSSY_BIRCH_WOOD);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_CHERRY_LOG).log(CRIMSON_MOSSY_CHERRY_LOG).wood(CRIMSON_MOSSY_CHERRY_WOOD);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_CRIMSON_STEM).log(CRIMSON_MOSSY_CRIMSON_STEM).wood(CRIMSON_MOSSY_CRIMSON_HYPHAE);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_DARK_OAK_LOG).log(CRIMSON_MOSSY_DARK_OAK_LOG).wood(CRIMSON_MOSSY_DARK_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_PALE_OAK_LOG).log(CRIMSON_MOSSY_PALE_OAK_LOG).wood(CRIMSON_MOSSY_PALE_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_JUNGLE_LOG).log(CRIMSON_MOSSY_JUNGLE_LOG).wood(CRIMSON_MOSSY_JUNGLE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_MANGROVE_LOG).log(CRIMSON_MOSSY_MANGROVE_LOG).wood(CRIMSON_MOSSY_MANGROVE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_OAK_LOG).log(CRIMSON_MOSSY_OAK_LOG).wood(CRIMSON_MOSSY_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_SPRUCE_LOG).log(CRIMSON_MOSSY_SPRUCE_LOG).wood(CRIMSON_MOSSY_SPRUCE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(CRIMSON_MOSSY_WARPED_STEM).stem(CRIMSON_MOSSY_WARPED_STEM).wood(CRIMSON_MOSSY_WARPED_HYPHAE);
 
         registerIronBars(blockStateModelGenerator, CRIMSON_MOSSY_IRON_BARS);
 
@@ -782,18 +784,18 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerGlassAndPane(WARPED_MOSSY_WHITE_STAINED_GLASS, WARPED_MOSSY_WHITE_STAINED_GLASS_PANE);
         blockStateModelGenerator.registerGlassAndPane(WARPED_MOSSY_YELLOW_STAINED_GLASS, WARPED_MOSSY_YELLOW_STAINED_GLASS_PANE);
 
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_ACACIA_LOG).log(WARPED_MOSSY_ACACIA_LOG).wood(WARPED_MOSSY_ACACIA_WOOD);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_BAMBOO_BLOCK).log(WARPED_MOSSY_BAMBOO_BLOCK);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_BIRCH_LOG).log(WARPED_MOSSY_BIRCH_LOG).wood(WARPED_MOSSY_BIRCH_WOOD);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_CHERRY_LOG).log(WARPED_MOSSY_CHERRY_LOG).wood(WARPED_MOSSY_CHERRY_WOOD);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_CRIMSON_STEM).log(WARPED_MOSSY_CRIMSON_STEM).wood(WARPED_MOSSY_CRIMSON_HYPHAE);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_DARK_OAK_LOG).log(WARPED_MOSSY_DARK_OAK_LOG).wood(WARPED_MOSSY_DARK_OAK_WOOD);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_PALE_OAK_LOG).log(WARPED_MOSSY_PALE_OAK_LOG).wood(WARPED_MOSSY_PALE_OAK_WOOD);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_JUNGLE_LOG).log(WARPED_MOSSY_JUNGLE_LOG).wood(WARPED_MOSSY_JUNGLE_WOOD);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_MANGROVE_LOG).log(WARPED_MOSSY_MANGROVE_LOG).wood(WARPED_MOSSY_MANGROVE_WOOD);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_OAK_LOG).log(WARPED_MOSSY_OAK_LOG).wood(WARPED_MOSSY_OAK_WOOD);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_SPRUCE_LOG).log(WARPED_MOSSY_SPRUCE_LOG).wood(WARPED_MOSSY_SPRUCE_WOOD);
-        blockStateModelGenerator.registerLog(WARPED_MOSSY_WARPED_STEM).stem(WARPED_MOSSY_WARPED_STEM).wood(WARPED_MOSSY_WARPED_HYPHAE);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_ACACIA_LOG).log(WARPED_MOSSY_ACACIA_LOG).wood(WARPED_MOSSY_ACACIA_WOOD);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_BAMBOO_BLOCK).log(WARPED_MOSSY_BAMBOO_BLOCK);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_BIRCH_LOG).log(WARPED_MOSSY_BIRCH_LOG).wood(WARPED_MOSSY_BIRCH_WOOD);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_CHERRY_LOG).log(WARPED_MOSSY_CHERRY_LOG).wood(WARPED_MOSSY_CHERRY_WOOD);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_CRIMSON_STEM).log(WARPED_MOSSY_CRIMSON_STEM).wood(WARPED_MOSSY_CRIMSON_HYPHAE);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_DARK_OAK_LOG).log(WARPED_MOSSY_DARK_OAK_LOG).wood(WARPED_MOSSY_DARK_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_PALE_OAK_LOG).log(WARPED_MOSSY_PALE_OAK_LOG).wood(WARPED_MOSSY_PALE_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_JUNGLE_LOG).log(WARPED_MOSSY_JUNGLE_LOG).wood(WARPED_MOSSY_JUNGLE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_MANGROVE_LOG).log(WARPED_MOSSY_MANGROVE_LOG).wood(WARPED_MOSSY_MANGROVE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_OAK_LOG).log(WARPED_MOSSY_OAK_LOG).wood(WARPED_MOSSY_OAK_WOOD);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_SPRUCE_LOG).log(WARPED_MOSSY_SPRUCE_LOG).wood(WARPED_MOSSY_SPRUCE_WOOD);
+        blockStateModelGenerator.createLogTexturePool(WARPED_MOSSY_WARPED_STEM).stem(WARPED_MOSSY_WARPED_STEM).wood(WARPED_MOSSY_WARPED_HYPHAE);
 
         registerIronBars(blockStateModelGenerator, WARPED_MOSSY_IRON_BARS);
 
@@ -872,56 +874,52 @@ public class ModelProvider extends FabricModelProvider {
         TexturedModel texturedModel = TexturedModel.SIDE_END_WALL.get(block);
         TextureMap textures = texturedModel.getTextures();
         Identifier baseModelId = texturedModel.getModel().upload(block, textures, blockStateModelGenerator.modelCollector);
-        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createDeepslateState(block, baseModelId, textures, blockStateModelGenerator.modelCollector));
+        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createDeepslateState(block, createModelVariant(baseModelId), textures, blockStateModelGenerator.modelCollector));
     }
 
     private void registerIronBars(BlockStateModelGenerator blockStateModelGenerator, Block block) {
-        Identifier identifier = ModelIds.getBlockSubModelId(block, "_post_ends");
-        Identifier identifier2 = ModelIds.getBlockSubModelId(block, "_post");
-        Identifier identifier3 = ModelIds.getBlockSubModelId(block, "_cap");
-        Identifier identifier4 = ModelIds.getBlockSubModelId(block, "_cap_alt");
-        Identifier identifier5 = ModelIds.getBlockSubModelId(block, "_side");
-        Identifier identifier6 = ModelIds.getBlockSubModelId(block, "_side_alt");
-
-        blockStateModelGenerator.blockStateCollector.accept(MultipartBlockStateSupplier.create(block)
-                .with(BlockStateVariant.create().put(VariantSettings.MODEL, identifier))
-                .with(When.create()
-                        .set(Properties.NORTH, false).set(Properties.EAST, false)
-                        .set(Properties.SOUTH, false).set(Properties.WEST, false), BlockStateVariant.create()
-                        .put(VariantSettings.MODEL, identifier2))
-                .with(When.create().set(Properties.NORTH, true)
-                                .set(Properties.EAST, false)
-                                .set(Properties.SOUTH, false)
-                                .set(Properties.WEST, false),
-                        BlockStateVariant.create().put(VariantSettings.MODEL, identifier3))
-                .with(When.create()
-                        .set(Properties.NORTH, false)
-                        .set(Properties.EAST, true)
-                        .set(Properties.SOUTH, false)
-                        .set(Properties.WEST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier3)
-                        .put(VariantSettings.Y, VariantSettings.Rotation.R90))
-                .with(When.create().set(Properties.NORTH, false)
-                        .set(Properties.EAST, false)
-                        .set(Properties.SOUTH, true)
-                        .set(Properties.WEST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4))
-                .with(When.create()
-                        .set(Properties.NORTH, false).set(Properties.EAST, false)
-                        .set(Properties.SOUTH, false)
-                        .set(Properties.WEST, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4)
-                        .put(VariantSettings.Y, VariantSettings.Rotation.R90))
-                .with(When.create()
-                        .set(Properties.NORTH, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier5))
-                .with(When.create()
-                        .set(Properties.EAST, true), BlockStateVariant.create()
-                        .put(VariantSettings.MODEL, identifier5).put(VariantSettings.Y, VariantSettings.Rotation.R90))
-                .with(When.create()
-                        .set(Properties.SOUTH, true), BlockStateVariant.create()
-                        .put(VariantSettings.MODEL, identifier6))
-                .with(When.create()
-                                .set(Properties.WEST, true),
-                        BlockStateVariant.create().put(VariantSettings.MODEL, identifier6).put(VariantSettings.Y,
-                                VariantSettings.Rotation.R90)));
-
+        WeightedVariant weightedVariant = BlockStateModelGenerator.createWeightedVariant(ModelIds.getBlockSubModelId(block, "_post_ends"));
+        WeightedVariant weightedVariant2 = BlockStateModelGenerator.createWeightedVariant(ModelIds.getBlockSubModelId(block, "_post"));
+        WeightedVariant weightedVariant3 = BlockStateModelGenerator.createWeightedVariant(ModelIds.getBlockSubModelId(block, "_cap"));
+        WeightedVariant weightedVariant4 = BlockStateModelGenerator.createWeightedVariant(ModelIds.getBlockSubModelId(block, "_cap_alt"));
+        WeightedVariant weightedVariant5 = BlockStateModelGenerator.createWeightedVariant(ModelIds.getBlockSubModelId(block, "_side"));
+        WeightedVariant weightedVariant6 = BlockStateModelGenerator.createWeightedVariant(ModelIds.getBlockSubModelId(block, "_side_alt"));
+        blockStateModelGenerator.blockStateCollector.accept(
+                MultipartBlockModelDefinitionCreator.create(block)
+                        .with(weightedVariant)
+                        .with(BlockStateModelGenerator.createMultipartConditionBuilder()
+                                .put(Properties.NORTH, false)
+                                .put(Properties.EAST, false)
+                                .put(Properties.SOUTH, false)
+                                .put(Properties.WEST, false), weightedVariant2)
+                        .with(BlockStateModelGenerator.createMultipartConditionBuilder()
+                                .put(Properties.NORTH, true)
+                                .put(Properties.EAST, false)
+                                .put(Properties.SOUTH, false)
+                                .put(Properties.WEST, false), weightedVariant3)
+                        .with(BlockStateModelGenerator.createMultipartConditionBuilder()
+                                .put(Properties.NORTH, false)
+                                .put(Properties.EAST, true)
+                                .put(Properties.SOUTH, false)
+                                .put(Properties.WEST, false), weightedVariant3.apply(BlockStateModelGenerator.ROTATE_Y_90))
+                        .with(BlockStateModelGenerator.createMultipartConditionBuilder()
+                                .put(Properties.NORTH, false)
+                                .put(Properties.EAST, false)
+                                .put(Properties.SOUTH, true)
+                                .put(Properties.WEST, false), weightedVariant4)
+                        .with(BlockStateModelGenerator.createMultipartConditionBuilder()
+                                .put(Properties.NORTH, false)
+                                .put(Properties.EAST, false)
+                                .put(Properties.SOUTH, false)
+                                .put(Properties.WEST, true), weightedVariant4.apply(BlockStateModelGenerator.ROTATE_Y_90))
+                        .with(BlockStateModelGenerator.createMultipartConditionBuilder()
+                                .put(Properties.NORTH, true), weightedVariant5)
+                        .with(BlockStateModelGenerator.createMultipartConditionBuilder()
+                                .put(Properties.EAST, true), weightedVariant5.apply(BlockStateModelGenerator.ROTATE_Y_90))
+                        .with(BlockStateModelGenerator.createMultipartConditionBuilder()
+                                .put(Properties.SOUTH, true), weightedVariant6)
+                        .with(BlockStateModelGenerator.createMultipartConditionBuilder()
+                                .put(Properties.WEST, true), weightedVariant6.apply(BlockStateModelGenerator.ROTATE_Y_90)));
         blockStateModelGenerator.registerItemModel(block);
     }
 }
