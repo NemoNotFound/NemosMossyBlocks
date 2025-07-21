@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_wooden_stairs",
+  "key": {
+    "#": "nemos_mossy_blocks:mossy_jungle_planks"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "nemos_mossy_blocks:mossy_jungle_stairs"
+  }
+}

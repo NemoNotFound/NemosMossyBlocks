@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "nemos_mossy_blocks:crimson_moss_ball"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos_mossy_blocks:crimson_moss_block"
+  }
+}

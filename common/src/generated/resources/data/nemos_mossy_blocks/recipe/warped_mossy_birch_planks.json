@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "warped_mossy_planks",
+  "ingredients": [
+    "#nemos_mossy_blocks:warped_mossy_birch_wood"
+  ],
+  "result": {
+    "count": 4,
+    "id": "nemos_mossy_blocks:warped_mossy_birch_planks"
+  }
+}

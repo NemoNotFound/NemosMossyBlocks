@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "pale_warped_stained_glass",
+  "key": {
+    "#": "nemos_mossy_blocks:warped_mossy_purple_stained_glass"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 16,
+    "id": "nemos_mossy_blocks:warped_mossy_purple_stained_glass_pane"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "nemos_mossy_blocks:block/warped_mossy_stone_pressure_plate"
+    },
+    "powered=true": {
+      "model": "nemos_mossy_blocks:block/warped_mossy_stone_pressure_plate_down"
+    }
+  }
+}

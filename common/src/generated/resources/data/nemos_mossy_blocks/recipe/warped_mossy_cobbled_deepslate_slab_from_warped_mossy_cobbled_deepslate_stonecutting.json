@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "nemos_mossy_blocks:warped_mossy_cobbled_deepslate",
+  "result": {
+    "count": 1,
+    "id": "nemos_mossy_blocks:warped_mossy_cobbled_deepslate_slab"
+  }
+}

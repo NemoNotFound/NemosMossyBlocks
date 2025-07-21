@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bark",
+  "key": {
+    "#": "nemos_mossy_blocks:pale_mossy_dark_oak_log"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "nemos_mossy_blocks:pale_mossy_dark_oak_wood"
+  }
+}

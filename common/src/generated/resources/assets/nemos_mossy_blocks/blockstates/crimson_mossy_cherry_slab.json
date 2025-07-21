@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nemos_mossy_blocks:block/crimson_mossy_cherry_slab"
+    },
+    "type=double": {
+      "model": "nemos_mossy_blocks:block/crimson_mossy_cherry_planks"
+    },
+    "type=top": {
+      "model": "nemos_mossy_blocks:block/crimson_mossy_cherry_slab_top"
+    }
+  }
+}

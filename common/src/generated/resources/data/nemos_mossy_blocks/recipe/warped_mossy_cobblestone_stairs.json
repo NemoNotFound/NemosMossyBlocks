@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "nemos_mossy_blocks:warped_mossy_cobblestone"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "nemos_mossy_blocks:warped_mossy_cobblestone_stairs"
+  }
+}

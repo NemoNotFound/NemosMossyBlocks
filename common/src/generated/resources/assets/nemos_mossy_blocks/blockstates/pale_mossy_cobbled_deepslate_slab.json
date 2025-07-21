@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nemos_mossy_blocks:block/pale_mossy_cobbled_deepslate_slab"
+    },
+    "type=double": {
+      "model": "nemos_mossy_blocks:block/pale_mossy_cobbled_deepslate"
+    },
+    "type=top": {
+      "model": "nemos_mossy_blocks:block/pale_mossy_cobbled_deepslate_slab_top"
+    }
+  }
+}

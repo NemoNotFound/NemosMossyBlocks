@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "pale_mossy_planks",
+  "ingredients": [
+    "#nemos_mossy_blocks:pale_mossy_dark_oak_wood"
+  ],
+  "result": {
+    "count": 4,
+    "id": "nemos_mossy_blocks:pale_mossy_dark_oak_planks"
+  }
+}

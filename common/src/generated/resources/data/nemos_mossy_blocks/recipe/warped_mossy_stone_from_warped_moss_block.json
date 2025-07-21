@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "warped_mossy_stone",
+  "ingredients": [
+    "minecraft:stone",
+    "nemos_mossy_blocks:warped_moss_block"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos_mossy_blocks:warped_mossy_stone"
+  }
+}

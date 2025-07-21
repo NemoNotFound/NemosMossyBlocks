@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "nemos_mossy_blocks:block/pale_mossy_oak_log_top",
+    "side": "nemos_mossy_blocks:block/pale_mossy_oak_log"
+  }
+}

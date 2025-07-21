@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "crimson_mossy_wooden_fence",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "nemos_mossy_blocks:crimson_mossy_bamboo_planks"
+  },
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "result": {
+    "count": 3,
+    "id": "nemos_mossy_blocks:crimson_mossy_bamboo_fence"
+  }
+}

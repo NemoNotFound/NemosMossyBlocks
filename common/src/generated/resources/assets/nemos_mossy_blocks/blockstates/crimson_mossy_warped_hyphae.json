@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nemos_mossy_blocks:block/crimson_mossy_warped_hyphae",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nemos_mossy_blocks:block/crimson_mossy_warped_hyphae"
+    },
+    "axis=z": {
+      "model": "nemos_mossy_blocks:block/crimson_mossy_warped_hyphae",
+      "x": 90
+    }
+  }
+}

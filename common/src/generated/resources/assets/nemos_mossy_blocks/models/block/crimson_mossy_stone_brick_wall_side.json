@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "nemos_mossy_blocks:block/crimson_mossy_stone_bricks"
+  }
+}

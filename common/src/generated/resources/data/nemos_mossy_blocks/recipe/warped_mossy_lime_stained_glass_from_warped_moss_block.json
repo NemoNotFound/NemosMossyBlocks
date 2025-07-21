@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "warped_mossy_glass",
+  "ingredients": [
+    "minecraft:lime_stained_glass",
+    "nemos_mossy_blocks:warped_moss_block"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos_mossy_blocks:warped_mossy_lime_stained_glass"
+  }
+}

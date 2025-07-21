@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "pale_mossy_planks",
+  "ingredients": [
+    "minecraft:cherry_planks",
+    "minecraft:pale_moss_block"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos_mossy_blocks:pale_mossy_cherry_planks"
+  }
+}

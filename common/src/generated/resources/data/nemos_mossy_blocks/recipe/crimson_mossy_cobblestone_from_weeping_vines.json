@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "crimson_mossy_cobblestone",
+  "ingredients": [
+    "minecraft:cobblestone",
+    "minecraft:weeping_vines"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos_mossy_blocks:crimson_mossy_cobblestone"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "nemos_mossy_blocks:block/warped_mossy_oak_planks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "nemos_mossy_blocks:block/crimson_mossy_purple_stained_glass"
+  }
+}

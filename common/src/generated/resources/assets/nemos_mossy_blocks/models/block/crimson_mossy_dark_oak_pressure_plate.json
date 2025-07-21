@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "nemos_mossy_blocks:block/crimson_mossy_dark_oak_planks"
+  }
+}

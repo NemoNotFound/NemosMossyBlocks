@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_glass_pane_noside_alt",
+  "textures": {
+    "pane": "nemos_mossy_blocks:block/pale_mossy_black_stained_glass"
+  }
+}

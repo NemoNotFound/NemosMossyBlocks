@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "nemos_mossy_blocks:warped_moss_carpet"
+          },
+          "weight": 25
+        },
+        {
+          "data": {
+            "Name": "minecraft:warped_roots"
+          },
+          "weight": 25
+        },
+        {
+          "data": {
+            "Name": "minecraft:warped_fungus"
+          },
+          "weight": 10
+        }
+      ]
+    }
+  }
+}

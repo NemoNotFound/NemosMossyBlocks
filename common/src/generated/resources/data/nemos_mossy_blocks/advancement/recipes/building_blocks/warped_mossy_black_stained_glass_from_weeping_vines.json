@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "nemos_mossy_blocks:warped_mossy_black_stained_glass_from_weeping_vines"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_weeping_vines": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:weeping_vines"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_weeping_vines"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "nemos_mossy_blocks:warped_mossy_black_stained_glass_from_weeping_vines"
+    ]
+  }
+}

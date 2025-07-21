@@ -1,0 +1,14 @@
+// 1.21.8	-999999999-01-01T00:00:00	Nemo's Mossy Blocks/Tags for minecraft:block
+803e3d59177e3055b396662a6982d76182190503 data/minecraft/tags/block/mineable/axe.json
+812b7fb5b5b68adffbe92fc3e32a84cfdef81e1c data/minecraft/tags/block/mineable/hoe.json
+5f09f6fb54003c575c84dd1201149eda3b6a83ee data/minecraft/tags/block/mineable/pickaxe.json
+862ffda299d9eedb985324c5115eb54796f3f337 data/minecraft/tags/block/walls.json
+f79034d4c4c6dd707740dc2170d49d833b6bd757 data/minecraft/tags/block/wooden_fences.json
+b289a25219889f56e95ebc5f458f7abbbda8f3a0 data/nemos_mossy_blocks/tags/block/crimson_moss_replaceable.json
+4667da4e80d48736a2daf55825f5ccb79802900e data/nemos_mossy_blocks/tags/block/crimson_mossy_blocks.json
+eefa1656608ae9df1cca8eddbcb737eaed44540d data/nemos_mossy_blocks/tags/block/fungus_plantable_on.json
+2e6d558e62d19f3d9731f96f5b1fe19405d6e407 data/nemos_mossy_blocks/tags/block/mossy_blocks.json
+872db61e5bc6412b1dfa312aefb817d1a7f194f4 data/nemos_mossy_blocks/tags/block/pale_mossy_blocks.json
+75a6c7ec3bac49fdbcd9353a3d65a5635a7037fa data/nemos_mossy_blocks/tags/block/roots_plantable_on.json
+526f646227228f8655abaf46a21d6775494dd080 data/nemos_mossy_blocks/tags/block/warped_moss_replaceable.json
+9db97e68658f1aa007e34c58cc233a25c10218e5 data/nemos_mossy_blocks/tags/block/warped_mossy_blocks.json

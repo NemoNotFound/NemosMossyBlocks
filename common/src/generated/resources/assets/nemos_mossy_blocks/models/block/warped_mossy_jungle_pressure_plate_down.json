@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_down",
+  "textures": {
+    "texture": "nemos_mossy_blocks:block/warped_mossy_jungle_planks"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate_mirrored",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate_mirrored",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate"
+      },
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate_mirrored"
+      },
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate",
+        "y": 180
+      },
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate_mirrored",
+        "y": 180
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate",
+        "x": 90
+      },
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate_mirrored",
+        "x": 90
+      },
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "nemos_mossy_blocks:block/mossy_deepslate_mirrored",
+        "x": 90,
+        "y": 180
+      }
+    ]
+  }
+}

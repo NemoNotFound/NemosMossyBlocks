@@ -1,14 +1,14 @@
-![Mod](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/minecraft_projects/titles/png/mod.png?raw=true)
+![Nemo's Mossy Blocks](https://github.com/NemoNotFound/NemoNotFound/blob/master/resources/minecraft_projects/titles/png/nemos_mossy_blocks.png?raw=true)
 <br><br>
 
 # Description
-...
+**Nemo's Mossy Blocks** adds more mossy blocks, introduces new moss types, and lets you shear mossy blocks!
 
-For more information and to see how to configure the components check the [wiki](https://github.com/NemoNotFound/MOD/wiki).
+For more information and to see how to configure the components check the [wiki](https://wiki.devnemo.com/projects/minecraft-mods/nemos-mossy-blocks/general).
 
 # Downloads
-- [CurseForge](https://curseforge.com/minecraft/mc-mods/MOD)
-- [Modrinth](https://modrinth.com/mod/MOD)
+- [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks)
+- [Modrinth](https://modrinth.com/mod/nemos-mossy-blocks)
 <br><br>
 
 # Join my Discord!
@@ -17,7 +17,7 @@ For more information and to see how to configure the components check the [wiki]
 
 # Support Me
 I love to create mods for Minecraft and wish to live off it one day, so I hope you like what I do. <br>
-Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/MOD/discussions/) :)
+Either way feel free to give me your feedback and suggestions, either on my Discord or the [discussions](https://github.com/NemoNotFound/NemosMossyBlocks/discussions/) :)
 <br><br>
 
 [![ko-fi donation](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nemonotfound)

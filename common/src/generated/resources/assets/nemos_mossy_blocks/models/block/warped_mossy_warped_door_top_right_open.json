@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "nemos_mossy_blocks:block/warped_mossy_warped_door_bottom",
+    "top": "nemos_mossy_blocks:block/warped_mossy_warped_door_top"
+  }
+}

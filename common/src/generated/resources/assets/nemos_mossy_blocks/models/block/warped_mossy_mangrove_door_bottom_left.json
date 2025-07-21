@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "nemos_mossy_blocks:block/warped_mossy_mangrove_door_bottom",
+    "top": "nemos_mossy_blocks:block/warped_mossy_mangrove_door_top"
+  }
+}

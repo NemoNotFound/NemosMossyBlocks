@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_open",
+  "textures": {
+    "texture": "nemos_mossy_blocks:block/crimson_mossy_dark_oak_trapdoor"
+  }
+}

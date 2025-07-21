@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "warped_mossy_log",
+  "ingredients": [
+    "minecraft:crimson_stem",
+    "nemos_mossy_blocks:warped_moss_block"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos_mossy_blocks:warped_mossy_crimson_stem"
+  }
+}

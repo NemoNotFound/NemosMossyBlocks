@@ -16,10 +16,13 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.devnemo.nemos.examplemod.FabricExampleMod"
+          "com.devnemo.nemos.mossy.blocks.FabricNemosMossyBlocks"
+        ],
+        "client": [
+            "com.devnemo.nemos.mossy.blocks.FabricNemosMossyBlocksClient"
         ],
         "fabric-datagen": [
-            "com.devnemo.nemos.examplemod.DataGenerator"
+          "com.devnemo.nemos.mossy.blocks.DataGenerator"
         ]
     },
     "mixins": [
