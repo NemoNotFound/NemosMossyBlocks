@@ -1,9 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.devnemo.nemos.examplemod.mixin",
+  "package": "com.devnemo.nemos.mossy.blocks.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "AxeItemMixin"
+  ],
   "client": [],
   "server": [],
   "injectors": {

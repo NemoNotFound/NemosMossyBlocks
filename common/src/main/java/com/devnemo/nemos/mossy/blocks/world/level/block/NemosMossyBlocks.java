@@ -36,8 +36,8 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_BAMBOO_MOSAIC = register("mossy_bamboo_mosaic", Block::new, BlockBehaviour.Properties.ofFullCopy(BAMBOO_MOSAIC));
     public static final Supplier<Block> MOSSY_BAMBOO_STAIRS = registerStair("mossy_bamboo_stairs", MOSSY_BAMBOO_PLANKS);
     public static final Supplier<Block> MOSSY_BAMBOO_MOSAIC_STAIRS = registerStair("mossy_bamboo_mosaic_stairs", MOSSY_BAMBOO_MOSAIC);
-    public static final Supplier<Block> MOSSY_BAMBOO_SLAB = register("mossy_bamboo_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_BAMBOO_PLANKS.get()));
-    public static final Supplier<Block> MOSSY_BAMBOO_MOSAIC_SLAB = register("mossy_bamboo_mosaic_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_BAMBOO_MOSAIC.get()));
+    public static final Supplier<Block> MOSSY_BAMBOO_SLAB = register("mossy_bamboo_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_BAMBOO_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_BAMBOO_MOSAIC_SLAB = register("mossy_bamboo_mosaic_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_BAMBOO_MOSAIC.get()));
     public static final Supplier<Block> MOSSY_BAMBOO_FENCE = register("mossy_bamboo_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(BAMBOO_FENCE));
     public static final Supplier<Block> MOSSY_BAMBOO_FENCE_GATE = register("mossy_bamboo_fence_gate", settings -> new FenceGateBlock(WoodType.BAMBOO, settings), BlockBehaviour.Properties.ofFullCopy(BAMBOO_FENCE_GATE));
     public static final Supplier<Block> MOSSY_BAMBOO_DOOR = register("mossy_bamboo_door", settings -> new DoorBlock(BlockSetType.BAMBOO, settings), BlockBehaviour.Properties.ofFullCopy(BAMBOO_DOOR));
@@ -48,7 +48,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_BIRCH_WOOD = register("mossy_birch_wood", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(BIRCH_WOOD));
     public static final Supplier<Block> MOSSY_BIRCH_PLANKS = register("mossy_birch_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(BIRCH_PLANKS));
     public static final Supplier<Block> MOSSY_BIRCH_STAIRS = registerStair("mossy_birch_stairs", MOSSY_BIRCH_PLANKS);
-    public static final Supplier<Block> MOSSY_BIRCH_SLAB = register("mossy_birch_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_BIRCH_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_BIRCH_SLAB = register("mossy_birch_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_BIRCH_PLANKS.get()));
     public static final Supplier<Block> MOSSY_BIRCH_FENCE = register("mossy_birch_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(BIRCH_FENCE));
     public static final Supplier<Block> MOSSY_BIRCH_FENCE_GATE = register("mossy_birch_fence_gate", settings -> new FenceGateBlock(WoodType.BIRCH, settings), BlockBehaviour.Properties.ofFullCopy(BIRCH_FENCE_GATE));
     public static final Supplier<Block> MOSSY_BIRCH_DOOR = register("mossy_birch_door", settings -> new DoorBlock(BlockSetType.BIRCH, settings), BlockBehaviour.Properties.ofFullCopy(BIRCH_DOOR));
@@ -59,7 +59,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_CHERRY_WOOD = register("mossy_cherry_wood", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(CHERRY_WOOD));
     public static final Supplier<Block> MOSSY_CHERRY_PLANKS = register("mossy_cherry_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(CHERRY_PLANKS));
     public static final Supplier<Block> MOSSY_CHERRY_STAIRS = registerStair("mossy_cherry_stairs", MOSSY_CHERRY_PLANKS);
-    public static final Supplier<Block> MOSSY_CHERRY_SLAB = register("mossy_cherry_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_CHERRY_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_CHERRY_SLAB = register("mossy_cherry_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_CHERRY_PLANKS.get()));
     public static final Supplier<Block> MOSSY_CHERRY_FENCE = register("mossy_cherry_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(CHERRY_FENCE));
     public static final Supplier<Block> MOSSY_CHERRY_FENCE_GATE = register("mossy_cherry_fence_gate", settings -> new FenceGateBlock(WoodType.CHERRY, settings), BlockBehaviour.Properties.ofFullCopy(CHERRY_FENCE_GATE));
     public static final Supplier<Block> MOSSY_CHERRY_DOOR = register("mossy_cherry_door", settings -> new DoorBlock(BlockSetType.CHERRY, settings), BlockBehaviour.Properties.ofFullCopy(CHERRY_DOOR));
@@ -70,7 +70,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_PALE_OAK_WOOD = register("mossy_pale_oak_wood", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(PALE_OAK_WOOD));
     public static final Supplier<Block> MOSSY_PALE_OAK_PLANKS = register("mossy_pale_oak_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(PALE_OAK_PLANKS));
     public static final Supplier<Block> MOSSY_PALE_OAK_STAIRS = registerStair("mossy_pale_oak_stairs", MOSSY_PALE_OAK_PLANKS);
-    public static final Supplier<Block> MOSSY_PALE_OAK_SLAB = register("mossy_pale_oak_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_PALE_OAK_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_PALE_OAK_SLAB = register("mossy_pale_oak_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_PALE_OAK_PLANKS.get()));
     public static final Supplier<Block> MOSSY_PALE_OAK_FENCE = register("mossy_pale_oak_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(PALE_OAK_FENCE));
     public static final Supplier<Block> MOSSY_PALE_OAK_FENCE_GATE = register("mossy_pale_oak_fence_gate", settings -> new FenceGateBlock(WoodType.PALE_OAK, settings), BlockBehaviour.Properties.ofFullCopy(PALE_OAK_FENCE_GATE));
     public static final Supplier<Block> MOSSY_PALE_OAK_DOOR = register("mossy_pale_oak_door", settings -> new DoorBlock(BlockSetType.PALE_OAK, settings), BlockBehaviour.Properties.ofFullCopy(PALE_OAK_DOOR));
@@ -81,7 +81,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_CRIMSON_HYPHAE = register("mossy_crimson_hyphae", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(CRIMSON_HYPHAE));
     public static final Supplier<Block> MOSSY_CRIMSON_PLANKS = register("mossy_crimson_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(CRIMSON_PLANKS));
     public static final Supplier<Block> MOSSY_CRIMSON_STAIRS = registerStair("mossy_crimson_stairs", MOSSY_CRIMSON_PLANKS);
-    public static final Supplier<Block> MOSSY_CRIMSON_SLAB = register("mossy_crimson_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_CRIMSON_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_CRIMSON_SLAB = register("mossy_crimson_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_CRIMSON_PLANKS.get()));
     public static final Supplier<Block> MOSSY_CRIMSON_FENCE = register("mossy_crimson_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(CRIMSON_FENCE));
     public static final Supplier<Block> MOSSY_CRIMSON_FENCE_GATE = register("mossy_crimson_fence_gate", settings -> new FenceGateBlock(WoodType.CRIMSON, settings), BlockBehaviour.Properties.ofFullCopy(CRIMSON_FENCE_GATE));
     public static final Supplier<Block> MOSSY_CRIMSON_DOOR = register("mossy_crimson_door", settings -> new DoorBlock(BlockSetType.CRIMSON, settings), BlockBehaviour.Properties.ofFullCopy(CRIMSON_DOOR));
@@ -92,7 +92,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_DARK_OAK_WOOD = register("mossy_dark_oak_wood", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(DARK_OAK_WOOD));
     public static final Supplier<Block> MOSSY_DARK_OAK_PLANKS = register("mossy_dark_oak_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(DARK_OAK_PLANKS));
     public static final Supplier<Block> MOSSY_DARK_OAK_STAIRS = registerStair("mossy_dark_oak_stairs", MOSSY_DARK_OAK_PLANKS);
-    public static final Supplier<Block> MOSSY_DARK_OAK_SLAB = register("mossy_dark_oak_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_DARK_OAK_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_DARK_OAK_SLAB = register("mossy_dark_oak_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_DARK_OAK_PLANKS.get()));
     public static final Supplier<Block> MOSSY_DARK_OAK_FENCE = register("mossy_dark_oak_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(DARK_OAK_FENCE));
     public static final Supplier<Block> MOSSY_DARK_OAK_FENCE_GATE = register("mossy_dark_oak_fence_gate", settings -> new FenceGateBlock(WoodType.DARK_OAK, settings), BlockBehaviour.Properties.ofFullCopy(DARK_OAK_FENCE_GATE));
     public static final Supplier<Block> MOSSY_DARK_OAK_DOOR = register("mossy_dark_oak_door", settings -> new DoorBlock(BlockSetType.DARK_OAK, settings), BlockBehaviour.Properties.ofFullCopy(DARK_OAK_DOOR));
@@ -103,7 +103,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_JUNGLE_WOOD = register("mossy_jungle_wood", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(JUNGLE_WOOD));
     public static final Supplier<Block> MOSSY_JUNGLE_PLANKS = register("mossy_jungle_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(JUNGLE_PLANKS));
     public static final Supplier<Block> MOSSY_JUNGLE_STAIRS = registerStair("mossy_jungle_stairs", MOSSY_JUNGLE_PLANKS);
-    public static final Supplier<Block> MOSSY_JUNGLE_SLAB = register("mossy_jungle_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_JUNGLE_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_JUNGLE_SLAB = register("mossy_jungle_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_JUNGLE_PLANKS.get()));
     public static final Supplier<Block> MOSSY_JUNGLE_FENCE = register("mossy_jungle_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(JUNGLE_FENCE));
     public static final Supplier<Block> MOSSY_JUNGLE_FENCE_GATE = register("mossy_jungle_fence_gate", settings -> new FenceGateBlock(WoodType.JUNGLE, settings), BlockBehaviour.Properties.ofFullCopy(JUNGLE_FENCE_GATE));
     public static final Supplier<Block> MOSSY_JUNGLE_DOOR = register("mossy_jungle_door", settings -> new DoorBlock(BlockSetType.JUNGLE, settings), BlockBehaviour.Properties.ofFullCopy(JUNGLE_DOOR));
@@ -114,7 +114,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_MANGROVE_WOOD = register("mossy_mangrove_wood", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(MANGROVE_WOOD));
     public static final Supplier<Block> MOSSY_MANGROVE_PLANKS = register("mossy_mangrove_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(MANGROVE_PLANKS));
     public static final Supplier<Block> MOSSY_MANGROVE_STAIRS = registerStair("mossy_mangrove_stairs", MOSSY_MANGROVE_PLANKS);
-    public static final Supplier<Block> MOSSY_MANGROVE_SLAB = register("mossy_mangrove_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_MANGROVE_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_MANGROVE_SLAB = register("mossy_mangrove_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_MANGROVE_PLANKS.get()));
     public static final Supplier<Block> MOSSY_MANGROVE_FENCE = register("mossy_mangrove_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(MANGROVE_FENCE));
     public static final Supplier<Block> MOSSY_MANGROVE_FENCE_GATE = register("mossy_mangrove_fence_gate", settings -> new FenceGateBlock(WoodType.MANGROVE, settings), BlockBehaviour.Properties.ofFullCopy(MANGROVE_FENCE_GATE));
     public static final Supplier<Block> MOSSY_MANGROVE_DOOR = register("mossy_mangrove_door", settings -> new DoorBlock(BlockSetType.MANGROVE, settings), BlockBehaviour.Properties.ofFullCopy(MANGROVE_DOOR));
@@ -125,7 +125,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_OAK_WOOD = register("mossy_oak_wood", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(OAK_WOOD));
     public static final Supplier<Block> MOSSY_OAK_PLANKS = register("mossy_oak_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(OAK_PLANKS));
     public static final Supplier<Block> MOSSY_OAK_STAIRS = registerStair("mossy_oak_stairs", MOSSY_OAK_PLANKS);
-    public static final Supplier<Block> MOSSY_OAK_SLAB = register("mossy_oak_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_OAK_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_OAK_SLAB = register("mossy_oak_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_OAK_PLANKS.get()));
     public static final Supplier<Block> MOSSY_OAK_FENCE = register("mossy_oak_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(OAK_FENCE));
     public static final Supplier<Block> MOSSY_OAK_FENCE_GATE = register("mossy_oak_fence_gate", settings -> new FenceGateBlock(WoodType.OAK, settings), BlockBehaviour.Properties.ofFullCopy(OAK_FENCE_GATE));
     public static final Supplier<Block> MOSSY_OAK_PRESSURE_PLATE = register("mossy_oak_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.OAK, settings), BlockBehaviour.Properties.ofFullCopy(OAK_PRESSURE_PLATE));
@@ -136,7 +136,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_SPRUCE_WOOD = register("mossy_spruce_wood", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(SPRUCE_WOOD));
     public static final Supplier<Block> MOSSY_SPRUCE_PLANKS = register("mossy_spruce_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(SPRUCE_PLANKS));
     public static final Supplier<Block> MOSSY_SPRUCE_STAIRS = registerStair("mossy_spruce_stairs", MOSSY_SPRUCE_PLANKS);
-    public static final Supplier<Block> MOSSY_SPRUCE_SLAB = register("mossy_spruce_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_SPRUCE_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_SPRUCE_SLAB = register("mossy_spruce_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_SPRUCE_PLANKS.get()));
     public static final Supplier<Block> MOSSY_SPRUCE_FENCE = register("mossy_spruce_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(SPRUCE_FENCE));
     public static final Supplier<Block> MOSSY_SPRUCE_FENCE_GATE = register("mossy_spruce_fence_gate", settings -> new FenceGateBlock(WoodType.SPRUCE, settings), BlockBehaviour.Properties.ofFullCopy(SPRUCE_FENCE_GATE));
     public static final Supplier<Block> MOSSY_SPRUCE_DOOR = register("mossy_spruce_door", settings -> new DoorBlock(BlockSetType.SPRUCE, settings), BlockBehaviour.Properties.ofFullCopy(SPRUCE_DOOR));
@@ -147,7 +147,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_WARPED_HYPHAE = register("mossy_warped_hyphae", RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(WARPED_HYPHAE));
     public static final Supplier<Block> MOSSY_WARPED_PLANKS = register("mossy_warped_planks", Block::new, BlockBehaviour.Properties.ofFullCopy(WARPED_PLANKS));
     public static final Supplier<Block> MOSSY_WARPED_STAIRS = registerStair("mossy_warped_stairs", MOSSY_WARPED_PLANKS);
-    public static final Supplier<Block> MOSSY_WARPED_SLAB = register("mossy_warped_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_WARPED_PLANKS.get()));
+    public static final Supplier<Block> MOSSY_WARPED_SLAB = register("mossy_warped_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_WARPED_PLANKS.get()));
     public static final Supplier<Block> MOSSY_WARPED_FENCE = register("mossy_warped_fence", FenceBlock::new, BlockBehaviour.Properties.ofFullCopy(WARPED_FENCE));
     public static final Supplier<Block> MOSSY_WARPED_FENCE_GATE = register("mossy_warped_fence_gate", settings -> new FenceGateBlock(WoodType.WARPED, settings), BlockBehaviour.Properties.ofFullCopy(WARPED_FENCE_GATE));
     public static final Supplier<Block> MOSSY_WARPED_DOOR = register("mossy_warped_door", settings -> new DoorBlock(BlockSetType.WARPED, settings), BlockBehaviour.Properties.ofFullCopy(WARPED_DOOR));
@@ -156,7 +156,7 @@ public class NemosMossyBlocks {
     public static final Supplier<Block> MOSSY_WARPED_BUTTON = register("mossy_warped_button", settings -> new ButtonBlock(BlockSetType.WARPED, 30, settings), buttonProperties());
     public static final Supplier<Block> MOSSY_STONE = register("mossy_stone", Block::new, BlockBehaviour.Properties.ofFullCopy(STONE));
     public static final Supplier<Block> MOSSY_STONE_STAIRS = registerStair("mossy_stone_stairs", MOSSY_STONE);
-    public static final Supplier<Block> MOSSY_STONE_SLAB = register("mossy_stone_slab", SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(MOSSY_STONE.get()));
+    public static final Supplier<Block> MOSSY_STONE_SLAB = register("mossy_stone_slab", SlabBlock::new, () -> BlockBehaviour.Properties.ofFullCopy(MOSSY_STONE.get()));
     public static final Supplier<Block> MOSSY_STONE_PRESSURE_PLATE = register("mossy_stone_pressure_plate", settings -> new PressurePlateBlock(BlockSetType.STONE, settings), BlockBehaviour.Properties.ofFullCopy(STONE_PRESSURE_PLATE));
     public static final Supplier<Block> MOSSY_STONE_BUTTON = register("mossy_stone_button", settings -> new ButtonBlock(BlockSetType.STONE, 20, settings), buttonProperties());
     public static final Supplier<Block> MOSSY_GLASS = register("mossy_glass", TransparentBlock::new, BlockBehaviour.Properties.ofFullCopy(GLASS));

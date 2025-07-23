@@ -1,38 +1,38 @@
 package com.devnemo.nemos.mossy.blocks;
 
-
 import net.minecraft.core.particles.ParticleType;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import static com.devnemo.nemos.mossy.blocks.Constants.MOD_ID;
 
 @Mod(MOD_ID)
-public class NeoForgeExampleMod {
+public class ForgeNemosMossyBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(Registries.BLOCK, MOD_ID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, MOD_ID);
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(Registries.ENTITY_TYPE, MOD_ID);
     public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
-    public static final DeferredRegister<Attribute> ATTRIBUTE = DeferredRegister.create(BuiltInRegistries.ATTRIBUTE, MOD_ID);
-    public static final DeferredRegister<ParticleType<?>> PARTICLES = DeferredRegister.create(BuiltInRegistries.PARTICLE_TYPE, MOD_ID);
+    public static final DeferredRegister<Attribute> ATTRIBUTE = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, MOD_ID);
+    public static final DeferredRegister<ParticleType<?>> PARTICLES = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, MOD_ID);
 
-    public NeoForgeExampleMod(IEventBus eventBus) {
+    public ForgeNemosMossyBlocks(FMLJavaModLoadingContext context) {
+        final var modBusGroup = context.getModBusGroup();
         Common.init();
 
-        BLOCKS.register(eventBus);
-        ITEMS.register(eventBus);
-        ENTITIES.register(eventBus);
-        CREATIVE_TABS.register(eventBus);
-        ATTRIBUTE.register(eventBus);
-        PARTICLES.register(eventBus);
+        BLOCKS.register(modBusGroup);
+        ENTITIES.register(modBusGroup);
+        ITEMS.register(modBusGroup);
+        CREATIVE_TABS.register(modBusGroup);
+        ATTRIBUTE.register(modBusGroup);
+        PARTICLES.register(modBusGroup);
     }
 }

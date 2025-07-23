@@ -1,5 +1,6 @@
 package com.devnemo.nemos.mossy.blocks.datagen;
 
+import com.devnemo.nemos.tags.tags.NemosBlockTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
@@ -565,7 +566,6 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(MOSSY_STONE_SLAB.get())
                 .add(MOSSY_STONE_PRESSURE_PLATE.get())
                 .add(MOSSY_STONE_BUTTON.get())
-                .add(MOSSY_IRON_BARS.get())
                 .add(MOSSY_CHISELED_STONE_BRICKS.get())
                 .add(INFESTED_MOSSY_CHISELED_STONE_BRICKS.get())
                 .add(MOSSY_BRICKS.get())
@@ -607,7 +607,6 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(PALE_MOSSY_STONE_BRICK_STAIRS.get())
                 .add(PALE_MOSSY_STONE_BRICK_SLAB.get())
                 .add(PALE_MOSSY_STONE_BRICK_WALL.get())
-                .add(PALE_MOSSY_IRON_BARS.get())
                 .add(PALE_MOSSY_CHISELED_STONE_BRICKS.get())
                 .add(PALE_MOSSY_BRICKS.get())
                 .add(PALE_MOSSY_BRICK_SLAB.get())
@@ -648,7 +647,6 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(CRIMSON_MOSSY_STONE_BRICK_STAIRS.get())
                 .add(CRIMSON_MOSSY_STONE_BRICK_SLAB.get())
                 .add(CRIMSON_MOSSY_STONE_BRICK_WALL.get())
-                .add(CRIMSON_MOSSY_IRON_BARS.get())
                 .add(CRIMSON_MOSSY_CHISELED_STONE_BRICKS.get())
                 .add(CRIMSON_MOSSY_BRICKS.get())
                 .add(CRIMSON_MOSSY_BRICK_SLAB.get())
@@ -689,7 +687,6 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(WARPED_MOSSY_STONE_BRICK_STAIRS.get())
                 .add(WARPED_MOSSY_STONE_BRICK_SLAB.get())
                 .add(WARPED_MOSSY_STONE_BRICK_WALL.get())
-                .add(WARPED_MOSSY_IRON_BARS.get())
                 .add(WARPED_MOSSY_CHISELED_STONE_BRICKS.get())
                 .add(WARPED_MOSSY_BRICKS.get())
                 .add(WARPED_MOSSY_BRICK_SLAB.get())
@@ -1704,5 +1701,113 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(SOUL_SOIL)
                 .add(CRIMSON_MOSS_BLOCK.get())
                 .add(WARPED_MOSS_BLOCK.get());
+
+        valueLookupBuilder(NemosBlockTags.BARS)
+                .add(MOSSY_IRON_BARS.get())
+                .add(PALE_MOSSY_IRON_BARS.get())
+                .add(CRIMSON_MOSSY_IRON_BARS.get())
+                .add(WARPED_MOSSY_IRON_BARS.get());
+
+        valueLookupBuilder(NemosBlockTags.GLASS_PANES)
+                .add(MOSSY_GLASS_PANE.get())
+                .add(PALE_MOSSY_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_GLASS_PANE.get())
+                .add(WARPED_MOSSY_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.BROWN_STAINED_GLASS_PANES)
+                .add(MOSSY_BROWN_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_BROWN_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_BROWN_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_BROWN_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.LIGHT_BLUE_STAINED_GLASS_PANES)
+                .add(MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.BLUE_STAINED_GLASS_PANES)
+                .add(MOSSY_BLUE_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_BLUE_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_BLUE_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_BLUE_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.CYAN_STAINED_GLASS_PANES)
+                .add(MOSSY_CYAN_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_CYAN_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_CYAN_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_CYAN_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.RED_STAINED_GLASS_PANES)
+                .add(MOSSY_RED_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_RED_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_RED_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_RED_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.BLACK_STAINED_GLASS_PANES)
+                .add(MOSSY_BLACK_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_BLACK_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_BLACK_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_BLACK_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.YELLOW_STAINED_GLASS_PANES)
+                .add(MOSSY_YELLOW_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_YELLOW_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_YELLOW_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_YELLOW_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.ORANGE_STAINED_GLASS_PANES)
+                .add(MOSSY_ORANGE_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_ORANGE_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_ORANGE_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_ORANGE_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.GREEN_STAINED_GLASS_PANES)
+                .add(MOSSY_GREEN_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_GREEN_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_GREEN_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_GREEN_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.LIME_STAINED_GLASS_PANES)
+                .add(MOSSY_LIME_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_LIME_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_LIME_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_LIME_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.PURPLE_STAINED_GLASS_PANES)
+                .add(MOSSY_PURPLE_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_PURPLE_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_PURPLE_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_PURPLE_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.PINK_STAINED_GLASS_PANES)
+                .add(MOSSY_PINK_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_PINK_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_PINK_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_PINK_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.MAGENTA_STAINED_GLASS_PANES)
+                .add(MOSSY_MAGENTA_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_MAGENTA_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_MAGENTA_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_MAGENTA_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.LIGHT_GRAY_STAINED_GLASS_PANES)
+                .add(MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.GRAY_STAINED_GLASS_PANES)
+                .add(MOSSY_GRAY_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_GRAY_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_GRAY_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_GRAY_STAINED_GLASS_PANE.get());
+
+        valueLookupBuilder(NemosBlockTags.WHITE_STAINED_GLASS_PANES)
+                .add(MOSSY_WHITE_STAINED_GLASS_PANE.get())
+                .add(PALE_MOSSY_WHITE_STAINED_GLASS_PANE.get())
+                .add(CRIMSON_MOSSY_WHITE_STAINED_GLASS_PANE.get())
+                .add(WARPED_MOSSY_WHITE_STAINED_GLASS_PANE.get());
     }
 }

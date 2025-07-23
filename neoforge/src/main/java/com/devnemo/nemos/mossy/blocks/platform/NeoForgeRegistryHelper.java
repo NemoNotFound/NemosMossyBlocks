@@ -1,7 +1,7 @@
 package com.devnemo.nemos.mossy.blocks.platform;
 
 import com.devnemo.nemos.mossy.blocks.Constants;
-import com.devnemo.nemos.mossy.blocks.NeoForgeExampleMod;
+import com.devnemo.nemos.mossy.blocks.NeoForgeNemosMossyBlocks;
 import com.devnemo.nemos.mossy.blocks.platform.services.IRegistryHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.core.Holder;
@@ -25,22 +25,22 @@ public class NeoForgeRegistryHelper implements IRegistryHelper {
 
     @Override
     public Supplier<Block> registerBlock(String id, Function<BlockBehaviour.Properties, Block> function, BlockBehaviour.Properties properties) {
-        return NeoForgeExampleMod.BLOCKS.register(id, () -> function.apply(properties.setId(createResourceKey(Registries.BLOCK, id))));
+        return NeoForgeNemosMossyBlocks.BLOCKS.register(id, () -> function.apply(properties.setId(createResourceKey(Registries.BLOCK, id))));
     }
 
     @Override
     public Supplier<Block> registerBlock(String id, Function<BlockBehaviour.Properties, Block> function, Supplier<BlockBehaviour.Properties> properties) {
-        return NeoForgeExampleMod.BLOCKS.register(id, () -> function.apply(properties.get().setId(createResourceKey(Registries.BLOCK, id))));
+        return NeoForgeNemosMossyBlocks.BLOCKS.register(id, () -> function.apply(properties.get().setId(createResourceKey(Registries.BLOCK, id))));
     }
 
     @Override
     public Supplier<Item> registerItem(String id, Function<Item.Properties, Item> function, Item.Properties properties) {
-        return NeoForgeExampleMod.ITEMS.register(id, () -> function.apply(properties.setId(createResourceKey(Registries.ITEM, id))));
+        return NeoForgeNemosMossyBlocks.ITEMS.register(id, () -> function.apply(properties.setId(createResourceKey(Registries.ITEM, id))));
     }
 
     @Override
     public Supplier<Item> registerItem(String id, Function<Item.Properties, Item> function, Supplier<Item.Properties> properties) {
-        return NeoForgeExampleMod.ITEMS.register(id, () -> function.apply(properties.get().setId(createResourceKey(Registries.ITEM, id))));
+        return NeoForgeNemosMossyBlocks.ITEMS.register(id, () -> function.apply(properties.get().setId(createResourceKey(Registries.ITEM, id))));
     }
 
     @Override
@@ -48,17 +48,17 @@ public class NeoForgeRegistryHelper implements IRegistryHelper {
         var resourceLocation = ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, id);
         var resourceKey = ResourceKey.create(Registries.ENTITY_TYPE, resourceLocation);
 
-        return NeoForgeExampleMod.ENTITIES.register(id, () -> entityTypeBuilder.build(resourceKey));
+        return NeoForgeNemosMossyBlocks.ENTITIES.register(id, () -> entityTypeBuilder.build(resourceKey));
     }
 
     @Override
     public Supplier<SimpleParticleType> registerSimpleParticle(String id, boolean overrideLimiter) {
-        return NeoForgeExampleMod.PARTICLES.register(id, () -> new SimpleParticleType(overrideLimiter));
+        return NeoForgeNemosMossyBlocks.PARTICLES.register(id, () -> new SimpleParticleType(overrideLimiter));
     }
 
     @Override
     public <T extends CreativeModeTab> Supplier<T> registerCreativeModeTab(String id, Supplier<T> creativeModeTab) {
-        return NeoForgeExampleMod.CREATIVE_TABS.register(id, creativeModeTab);
+        return NeoForgeNemosMossyBlocks.CREATIVE_TABS.register(id, creativeModeTab);
     }
 
     @Override
@@ -73,7 +73,7 @@ public class NeoForgeRegistryHelper implements IRegistryHelper {
 
     @Override
     public Supplier<Holder<Attribute>> registerAttribute(String id, Attribute attribute) {
-        var deferredHolder = NeoForgeExampleMod.ATTRIBUTE.register(id, () -> attribute);
+        var deferredHolder = NeoForgeNemosMossyBlocks.ATTRIBUTE.register(id, () -> attribute);
 
         return () -> deferredHolder;
     }
