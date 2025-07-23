@@ -7,6 +7,8 @@ import net.minecraft.core.HolderLookup;
 
 import java.util.concurrent.CompletableFuture;
 
+import static com.devnemo.nemos.mossy.blocks.Constants.MOD_ID;
+
 public class EnglishLanguageProvider extends FabricLanguageProvider {
 
     public EnglishLanguageProvider(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> provider) {
@@ -863,5 +865,6 @@ public class EnglishLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(NemosMossyItems.WARPED_MOSSY_TUFF_BRICK_SLAB.get(), "Warped-Mossy Tuff Brick Slab");
         translationBuilder.add(NemosMossyItems.WARPED_MOSSY_TUFF_BRICK_STAIRS.get(), "Warped-Mossy Tuff Brick Stairs");
         translationBuilder.add(NemosMossyItems.WARPED_MOSSY_TUFF_BRICK_WALL.get(), "Warped-Mossy Tuff Brick Wall");
+        translationBuilder.add("itemGroup." + MOD_ID, "Nemo's Mossy Blocks");
     }
 }

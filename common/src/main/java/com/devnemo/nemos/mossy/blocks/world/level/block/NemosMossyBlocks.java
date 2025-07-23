@@ -901,6 +901,14 @@ public class NemosMossyBlocks {
                 .ignitedByLava();
     }
 
+    private static BlockBehaviour.Properties buttonProperties() {
+        return BlockBehaviour.Properties.of().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY);
+    }
+
+    private static BlockBehaviour.Properties netherStemProperties(MapColor color) {
+        return BlockBehaviour.Properties.of().mapColor(p_152620_ -> color).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.STEM);
+    }
+
     private static Supplier<Block> register(String id, Function<BlockBehaviour.Properties, Block> block, BlockBehaviour.Properties properties) {
         return Services.REGISTRY_HELPER.registerBlock(id, block, properties);
     }

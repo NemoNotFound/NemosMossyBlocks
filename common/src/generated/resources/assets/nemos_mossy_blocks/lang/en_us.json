@@ -843,5 +843,6 @@
   "item.nemos_mossy_blocks.crimson_moss_ball": "Crimson Moss Ball",
   "item.nemos_mossy_blocks.moss_ball": "Moss Ball",
   "item.nemos_mossy_blocks.pale_moss_ball": "Pale Moss Ball",
-  "item.nemos_mossy_blocks.warped_moss_ball": "Warped Moss Ball"
+  "item.nemos_mossy_blocks.warped_moss_ball": "Warped Moss Ball",
+  "itemGroup.nemos_mossy_blocks": "Nemo's Mossy Blocks"
 }
