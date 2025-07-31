@@ -57,7 +57,7 @@ repositories {
 }
 
 dependencies {
-    implementation("maven.modrinth:nemos-tags:${nemos_tags_version}-neoforge")
+    compileOnly("maven.modrinth:nemos-tags:${nemos_tags_version}-neoforge")
 }
 
 sourceSets.main.resources { srcDir project.project(':common').file('src/generated/resources/').getAbsolutePath() }
