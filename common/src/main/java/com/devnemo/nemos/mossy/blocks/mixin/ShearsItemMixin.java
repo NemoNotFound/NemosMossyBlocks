@@ -10,7 +10,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShearsItem;
@@ -57,7 +56,7 @@ public class ShearsItemMixin {
                     NonNullList.withSize(1, getItemStackToDrop(blockState)));
 
             if (player != null) {
-                itemStack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(context.getHand()));
+                itemStack.hurtAndBreak(1, player, context.getHand().asEquipmentSlot());
             }
 
             callbackInfoReturnable.setReturnValue(InteractionResult.SUCCESS);

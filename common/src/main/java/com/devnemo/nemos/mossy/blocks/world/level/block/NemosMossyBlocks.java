@@ -902,7 +902,7 @@ public class NemosMossyBlocks {
     }
 
     private static BlockBehaviour.Properties buttonProperties() {
-        return BlockBehaviour.Properties.of().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY);
+        return BlockBehaviour.Properties.of().noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY);
     }
 
     private static BlockBehaviour.Properties netherStemProperties(MapColor color) {

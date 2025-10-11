@@ -65,7 +65,7 @@ public class MossBall extends ThrowableItemProjectile {
     @Override
     protected void onHit(@NotNull HitResult hitResult) {
         super.onHit(hitResult);
-        if (!this.level().isClientSide) {
+        if (!this.level().isClientSide()) {
             this.level().broadcastEntityEvent(this, EntityEvent.DEATH);
             this.discard();
         }

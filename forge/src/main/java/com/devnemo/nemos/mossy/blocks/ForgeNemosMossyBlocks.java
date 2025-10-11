@@ -49,14 +49,17 @@ public class ForgeNemosMossyBlocks {
         PARTICLES.register(modBusGroup);
     }
 
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientEventHandler {
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
+    public static class ClientForgeEventHandler {
 
         @SubscribeEvent
         public static void registerParticleProviders(RegisterParticleProvidersEvent event) {
             event.registerSpecial(NemosMossyParticleTypes.ITEM_MOSS_BALL.get(), new NemosMossyCrackParticle.MossBallFactory());
         }
+    }
 
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEventHandler {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(NemosMossyEntityTypes.MOSS_BALL.get(), ThrownItemRenderer::new);
