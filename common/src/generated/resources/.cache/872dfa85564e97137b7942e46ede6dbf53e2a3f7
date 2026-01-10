@@ -1,4 +1,5 @@
-// 1.21.8	-999999999-01-01T00:00:00	Nemo's Mossy Blocks/Tags for minecraft:block
+// 1.21.11	-999999999-01-01T00:00:00	Nemo's Mossy Blocks/Tags for minecraft:block
+55ba3ee5406c45967e8fe6134cce7f8d1afc9377 data/minecraft/tags/block/bars.json
 803e3d59177e3055b396662a6982d76182190503 data/minecraft/tags/block/mineable/axe.json
 812b7fb5b5b68adffbe92fc3e32a84cfdef81e1c data/minecraft/tags/block/mineable/hoe.json
 80249b44219b6ab430c38025d2e3a99556265a58 data/minecraft/tags/block/mineable/pickaxe.json
