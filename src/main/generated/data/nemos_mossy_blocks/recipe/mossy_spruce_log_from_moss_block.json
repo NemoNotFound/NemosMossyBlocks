@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_log",
+  "ingredients": [
+    "minecraft:spruce_log",
+    "minecraft:moss_block"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:mossy_spruce_log"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_chiseled_stone_bricks",
+  "ingredients": [
+    "minecraft:chiseled_stone_bricks",
+    "minecraft:vine"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:mossy_chiseled_stone_bricks"
+  }
+}

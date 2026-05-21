@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "crimson_mossy_stone_bricks",
+  "ingredients": [
+    "minecraft:stone_bricks",
+    "nemos_mossy_blocks:crimson_moss_block"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:crimson_mossy_stone_bricks"
+  }
+}

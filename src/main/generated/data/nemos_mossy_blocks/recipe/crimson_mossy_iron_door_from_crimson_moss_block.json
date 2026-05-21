@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "crimson_mossy_iron_door",
+  "ingredients": [
+    "minecraft:iron_door",
+    "nemos_mossy_blocks:crimson_moss_block"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:crimson_mossy_iron_door"
+  }
+}

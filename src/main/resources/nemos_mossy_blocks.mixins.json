@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"package": "com.nemonotfound.nemos.mossy.blocks.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"AxeItemMixin",
+		"FungusBlockMixin",
+		"IronBarsBlockMixin",
+		"RootsBlockMixin",
+		"ShearsItemMixin",
+		"WallBlockMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

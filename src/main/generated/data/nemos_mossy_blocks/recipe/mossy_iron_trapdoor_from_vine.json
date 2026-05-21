@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_iron_trapdoor",
+  "ingredients": [
+    "minecraft:iron_trapdoor",
+    "minecraft:vine"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:mossy_iron_trapdoor"
+  }
+}

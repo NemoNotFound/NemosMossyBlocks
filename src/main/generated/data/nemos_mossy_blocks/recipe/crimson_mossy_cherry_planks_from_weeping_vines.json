@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "crimson_mossy_planks",
+  "ingredients": [
+    "minecraft:cherry_planks",
+    "minecraft:weeping_vines"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:crimson_mossy_cherry_planks"
+  }
+}

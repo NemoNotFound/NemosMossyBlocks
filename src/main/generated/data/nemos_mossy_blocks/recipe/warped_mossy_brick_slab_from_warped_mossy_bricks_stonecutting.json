@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "nemos_mossy_blocks:warped_mossy_bricks",
+  "result": {
+    "id": "nemos_mossy_blocks:warped_mossy_brick_slab"
+  }
+}

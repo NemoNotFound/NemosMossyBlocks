@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_glass",
+  "ingredients": [
+    "minecraft:tinted_glass",
+    "minecraft:moss_block"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:mossy_tinted_glass"
+  }
+}

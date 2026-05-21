@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_tuff",
+  "ingredients": [
+    "minecraft:tuff",
+    "minecraft:vine"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:mossy_tuff"
+  }
+}

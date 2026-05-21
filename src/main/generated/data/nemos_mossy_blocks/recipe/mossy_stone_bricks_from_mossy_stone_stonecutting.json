@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "nemos_mossy_blocks:mossy_stone",
+  "result": {
+    "id": "minecraft:mossy_stone_bricks"
+  }
+}

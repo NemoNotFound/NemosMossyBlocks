@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "nemos_mossy_blocks:pale_mossy_deepslate_bricks",
+  "result": {
+    "id": "nemos_mossy_blocks:pale_mossy_deepslate_brick_stairs"
+  }
+}

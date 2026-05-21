@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_iron_door",
+  "ingredients": [
+    "minecraft:iron_door",
+    "minecraft:vine"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:mossy_iron_door"
+  }
+}

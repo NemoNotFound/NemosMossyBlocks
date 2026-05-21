@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "nemos_mossy_blocks",
+	"version": "${version}",
+	"name": "Nemo's Mossy Blocks",
+	"description": "Grow moss on more blocks!",
+	"authors": [
+		"Nemo"
+	],
+	"contact": {
+		"homepage": "https://nemonotfound.com",
+		"sources": "https://github.com/NemoNotFound/NemosMossyBlocks"
+	},
+	"license": "ARR",
+	"icon": "assets/nemos_mossy_blocks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nemonotfound.nemos.mossy.blocks.NemosMossyBlocks"
+		],
+		"client": [
+			"com.nemonotfound.nemos.mossy.blocks.NemosMossyBlocksClient"
+		],
+		"fabric-datagen": [
+			"com.nemonotfound.nemos.mossy.blocks.DataGenerator"
+		]
+	},
+	"mixins": [
+		"nemos_mossy_blocks.mixins.json",
+		{
+			"config": "nemos_mossy_blocks.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": ">=${minecraft_version}",
+		"java": ">=${java_version}",
+		"fabric-api": "*"
+	}
+}

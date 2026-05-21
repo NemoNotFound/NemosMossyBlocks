@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "crimson_mossy_tuff_bricks",
+  "ingredients": [
+    "minecraft:tuff_bricks",
+    "minecraft:weeping_vines"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:crimson_mossy_tuff_bricks"
+  }
+}

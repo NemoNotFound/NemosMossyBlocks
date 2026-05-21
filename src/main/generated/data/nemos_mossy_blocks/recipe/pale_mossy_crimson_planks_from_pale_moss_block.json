@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "pale_mossy_planks",
+  "ingredients": [
+    "minecraft:crimson_planks",
+    "minecraft:pale_moss_block"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:pale_mossy_crimson_planks"
+  }
+}

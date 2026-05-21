@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "nemos_mossy_blocks:mossy_stone"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:mossy_stone_pressure_plate"
+  }
+}

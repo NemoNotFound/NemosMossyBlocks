@@ -1,0 +1,21 @@
+{
+  "values": [
+    "#nemos_mossy_blocks:glass_panes",
+    "#nemos_mossy_blocks:stained_glass_panes/brown",
+    "#nemos_mossy_blocks:stained_glass_panes/blue",
+    "#nemos_mossy_blocks:stained_glass_panes/light_blue",
+    "#nemos_mossy_blocks:stained_glass_panes/cyan",
+    "#nemos_mossy_blocks:stained_glass_panes/red",
+    "#nemos_mossy_blocks:stained_glass_panes/black",
+    "#nemos_mossy_blocks:stained_glass_panes/yellow",
+    "#nemos_mossy_blocks:stained_glass_panes/orange",
+    "#nemos_mossy_blocks:stained_glass_panes/green",
+    "#nemos_mossy_blocks:stained_glass_panes/lime",
+    "#nemos_mossy_blocks:stained_glass_panes/purple",
+    "#nemos_mossy_blocks:stained_glass_panes/pink",
+    "#nemos_mossy_blocks:stained_glass_panes/magenta",
+    "#nemos_mossy_blocks:stained_glass_panes/light_gray",
+    "#nemos_mossy_blocks:stained_glass_panes/gray",
+    "#nemos_mossy_blocks:stained_glass_panes/white"
+  ]
+}

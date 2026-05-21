@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy_glass",
+  "ingredients": [
+    "minecraft:light_blue_stained_glass",
+    "minecraft:vine"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:mossy_light_blue_stained_glass"
+  }
+}

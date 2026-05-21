@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "pale_mossy_wooden_fence_gate",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "nemos_mossy_blocks:pale_mossy_spruce_planks"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "nemos_mossy_blocks:pale_mossy_spruce_fence_gate"
+  }
+}
