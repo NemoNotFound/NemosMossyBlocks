@@ -10,7 +10,5 @@ public class NemosMossyBlocksClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         EntityRenderers.register(NemosMossyEntityTypes.MOSS_BALL, ThrownItemRenderer::new);
-
-        //ParticleFactoryRegistry.getInstance().register(NemosMossyParticleTypes.ITEM_MOSS_BALL.get(), new NemosMossyCrackParticle.MossBallFactory());
     }
 }

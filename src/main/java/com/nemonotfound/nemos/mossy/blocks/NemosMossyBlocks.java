@@ -16,7 +16,7 @@ public class NemosMossyBlocks implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Thank you for using Nemo's Mossy Blocks"); //TODO:
+        LOGGER.info("WE WANT MORE MOSS!");
 
         MossyBlocks.init();
         NemosMossyEntityTypes.init();

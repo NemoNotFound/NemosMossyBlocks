@@ -37,7 +37,6 @@ public class NemosMossyBlockTags {
     public static final TagKey<Block> WHITE_STAINED_GLASS_PANES = create("stained_glass_panes/white");
     public static final TagKey<Block> CONNECTS_TO_WALL = create("connects_to_wall");
     public static final TagKey<Block> ATTACHES_TO_PANES_AND_BARS = create("attaches_to_panes_and_bars");
-    public static final TagKey<Block> POWERED_RAILS = create("powered_rails");
 
     private static TagKey<Block> create(String id) {
         return TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, id));

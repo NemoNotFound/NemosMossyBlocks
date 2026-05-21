@@ -38,9 +38,9 @@ public class MossBall extends ThrowableItemProjectile {
         return MossyItems.MOSS_BALL;
     }
 
-    private ParticleOptions getParticleParameters() {
+    private ParticleOptions getParticle() {
         ItemStack itemStack = this.getItem();
-        return !itemStack.isEmpty() && !itemStack.is(this.getDefaultItem())
+        return !itemStack.isEmpty()
                 ? new ItemParticleOption(ParticleTypes.ITEM, ItemStackTemplate.fromNonEmptyStack(itemStack))
                 : NemosMossyParticleTypes.ITEM_MOSS_BALL;
     }
@@ -48,7 +48,7 @@ public class MossBall extends ThrowableItemProjectile {
     @Override
     public void handleEntityEvent(byte status) {
         if (status == EntityEvent.DEATH) {
-            ParticleOptions particleOptions = this.getParticleParameters();
+            ParticleOptions particleOptions = this.getParticle();
             for (int i = 0; i < 8; ++i) {
                 this.level().addParticle(particleOptions, this.getX(), this.getY(), this.getZ(),
                         0.0, 0.0, 0.0);

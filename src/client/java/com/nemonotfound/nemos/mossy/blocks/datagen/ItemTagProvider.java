@@ -4,6 +4,7 @@ import com.nemonotfound.nemos.mossy.blocks.world.item.MossyItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,7 +18,7 @@ public class ItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider) {
+    protected void addTags(HolderLookup.@NonNull Provider provider) {
         valueLookupBuilder(MOSSY_PLANKS)
                 .add(MossyItems.MOSSY_ACACIA_PLANKS)
                 .add(MossyItems.MOSSY_BAMBOO_PLANKS)
