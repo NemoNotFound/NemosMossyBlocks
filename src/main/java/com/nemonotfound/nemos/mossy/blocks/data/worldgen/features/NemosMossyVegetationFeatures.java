@@ -34,6 +34,7 @@ public class NemosMossyVegetationFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_MOSS_PATCH_BONEMEAL = of("warped_moss_patch_bonemeal");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
+        var blockHolderGetter = context.lookup(Registries.BLOCK);
         var configuredFeatureHolderGetter = context.lookup(Registries.CONFIGURED_FEATURE);
 
         FeatureUtils.register(
@@ -55,7 +56,7 @@ public class NemosMossyVegetationFeatures {
                 CRIMSON_MOSS_PATCH,
                 Feature.VEGETATION_PATCH,
                 new VegetationPatchConfiguration(
-                        CRIMSON_MOSS_REPLACEABLE,
+                        blockHolderGetter.getOrThrow(CRIMSON_MOSS_REPLACEABLE),
                         BlockStateProvider.simple(CRIMSON_MOSS_BLOCK),
                         PlacementUtils.inlinePlaced(configuredFeatureHolderGetter.getOrThrow(CRIMSON_MOSS_VEGETATION)),
                         CaveSurface.FLOOR,
@@ -73,7 +74,7 @@ public class NemosMossyVegetationFeatures {
                 CRIMSON_MOSS_PATCH_BONEMEAL,
                 Feature.VEGETATION_PATCH,
                 new VegetationPatchConfiguration(
-                        CRIMSON_MOSS_REPLACEABLE,
+                        blockHolderGetter.getOrThrow(CRIMSON_MOSS_REPLACEABLE),
                         BlockStateProvider.simple(CRIMSON_MOSS_BLOCK),
                         PlacementUtils.inlinePlaced(configuredFeatureHolderGetter.getOrThrow(CRIMSON_MOSS_VEGETATION)),
                         CaveSurface.FLOOR,
@@ -105,7 +106,7 @@ public class NemosMossyVegetationFeatures {
                 WARPED_MOSS_PATCH,
                 Feature.VEGETATION_PATCH,
                 new VegetationPatchConfiguration(
-                        WARPED_MOSS_REPLACEABLE,
+                        blockHolderGetter.getOrThrow(WARPED_MOSS_REPLACEABLE),
                         BlockStateProvider.simple(WARPED_MOSS_BLOCK),
                         PlacementUtils.inlinePlaced(configuredFeatureHolderGetter.getOrThrow(WARPED_MOSS_VEGETATION)),
                         CaveSurface.FLOOR,
@@ -123,7 +124,7 @@ public class NemosMossyVegetationFeatures {
                 WARPED_MOSS_PATCH_BONEMEAL,
                 Feature.VEGETATION_PATCH,
                 new VegetationPatchConfiguration(
-                        WARPED_MOSS_REPLACEABLE,
+                        blockHolderGetter.getOrThrow(WARPED_MOSS_REPLACEABLE),
                         BlockStateProvider.simple(WARPED_MOSS_BLOCK),
                         PlacementUtils.inlinePlaced(configuredFeatureHolderGetter.getOrThrow(WARPED_MOSS_VEGETATION)),
                         CaveSurface.FLOOR,

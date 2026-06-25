@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "pale_warped_stained_glass",
   "key": {
     "#": "nemos_mossy_blocks:warped_mossy_pink_stained_glass"

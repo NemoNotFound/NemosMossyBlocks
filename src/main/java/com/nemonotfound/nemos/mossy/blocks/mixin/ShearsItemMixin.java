@@ -2,7 +2,7 @@ package com.nemonotfound.nemos.mossy.blocks.mixin;
 
 import com.nemonotfound.nemos.mossy.blocks.helper.BlockReplacementHelper;
 import com.nemonotfound.nemos.mossy.blocks.world.item.MossyItems;
-import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.advancements.triggers.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.server.level.ServerPlayer;

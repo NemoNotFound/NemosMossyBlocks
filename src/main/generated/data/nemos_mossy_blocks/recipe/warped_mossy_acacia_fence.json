@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "warped_mossy_wooden_fence",
   "key": {
     "#": "minecraft:stick",
