@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:warped_mossy_mangrove_door"
+        "recipes": "nemos_mossy_blocks:warped_mossy_mangrove_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

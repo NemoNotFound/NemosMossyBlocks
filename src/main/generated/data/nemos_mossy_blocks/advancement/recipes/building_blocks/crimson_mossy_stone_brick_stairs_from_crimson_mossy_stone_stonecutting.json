@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:crimson_mossy_stone_brick_stairs_from_crimson_mossy_stone_stonecutting"
+        "recipes": "nemos_mossy_blocks:crimson_mossy_stone_brick_stairs_from_crimson_mossy_stone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

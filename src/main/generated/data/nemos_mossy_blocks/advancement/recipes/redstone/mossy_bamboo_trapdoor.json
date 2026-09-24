@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:mossy_bamboo_trapdoor"
+        "recipes": "nemos_mossy_blocks:mossy_bamboo_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

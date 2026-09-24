@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:mossy_mangrove_button_from_mossy_mangrove_planks"
+        "recipes": "nemos_mossy_blocks:mossy_mangrove_button_from_mossy_mangrove_planks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

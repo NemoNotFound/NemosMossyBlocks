@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:mossy_crimson_stem_from_vine"
+        "recipes": "nemos_mossy_blocks:mossy_crimson_stem_from_vine"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

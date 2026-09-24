@@ -17,10 +17,10 @@ public class NemosMossyVegetationPlacements {
     public static final ResourceKey<PlacedFeature> WARPED_MOSS_PATCH = of("warped_moss_patch");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
-        var configuredFeatureHolderGetter = context.lookup(Registries.CONFIGURED_FEATURE);
+        var featureHolderGetter = context.lookup(Registries.FEATURE);
 
-        var crimsonMossPatchRegistryEntry = configuredFeatureHolderGetter.getOrThrow(NemosMossyVegetationFeatures.CRIMSON_MOSS_PATCH);
-       var warpedMossPatchRegistryEntry = configuredFeatureHolderGetter.getOrThrow(NemosMossyVegetationFeatures.WARPED_MOSS_PATCH);
+        var crimsonMossPatchRegistryEntry = featureHolderGetter.getOrThrow(NemosMossyVegetationFeatures.CRIMSON_MOSS_PATCH);
+        var warpedMossPatchRegistryEntry = featureHolderGetter.getOrThrow(NemosMossyVegetationFeatures.WARPED_MOSS_PATCH);
 
         PlacementUtils.register(
                 context,

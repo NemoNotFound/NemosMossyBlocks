@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:mossy_jungle_log_from_vine"
+        "recipes": "nemos_mossy_blocks:mossy_jungle_log_from_vine"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

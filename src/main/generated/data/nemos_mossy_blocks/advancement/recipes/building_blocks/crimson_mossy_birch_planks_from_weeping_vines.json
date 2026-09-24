@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:crimson_mossy_birch_planks_from_weeping_vines"
+        "recipes": "nemos_mossy_blocks:crimson_mossy_birch_planks_from_weeping_vines"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

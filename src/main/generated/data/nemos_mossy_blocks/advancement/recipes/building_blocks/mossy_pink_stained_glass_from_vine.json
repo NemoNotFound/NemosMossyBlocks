@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:mossy_pink_stained_glass_from_vine"
+        "recipes": "nemos_mossy_blocks:mossy_pink_stained_glass_from_vine"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

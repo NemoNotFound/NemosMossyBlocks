@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:crimson_mossy_stone_button_from_crimson_mossy_stone"
+        "recipes": "nemos_mossy_blocks:crimson_mossy_stone_button_from_crimson_mossy_stone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

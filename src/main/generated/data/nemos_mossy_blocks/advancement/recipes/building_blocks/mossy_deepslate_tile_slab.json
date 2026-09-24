@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:mossy_deepslate_tile_slab"
+        "recipes": "nemos_mossy_blocks:mossy_deepslate_tile_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

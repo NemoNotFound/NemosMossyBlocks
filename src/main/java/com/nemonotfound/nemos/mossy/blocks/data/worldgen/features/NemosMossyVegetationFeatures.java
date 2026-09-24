@@ -2,7 +2,6 @@ package com.nemonotfound.nemos.mossy.blocks.data.worldgen.features;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
@@ -10,10 +9,9 @@ import net.minecraft.util.random.WeightedList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.VegetationPatchConfiguration;
+import net.minecraft.world.level.levelgen.feature.SimpleBlockFeature;
+import net.minecraft.world.level.levelgen.feature.VegetationPatchFeature;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
@@ -26,22 +24,20 @@ import static net.minecraft.world.level.block.Blocks.*;
 
 public class NemosMossyVegetationFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_MOSS_VEGETATION = of("crimson_moss_vegetation");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_MOSS_PATCH = of("crimson_moss_patch");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_MOSS_PATCH_BONEMEAL = of("crimson_moss_patch_bonemeal");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_MOSS_VEGETATION = of("warped_moss_vegetation");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_MOSS_PATCH = of("warped_moss_patch");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_MOSS_PATCH_BONEMEAL = of("warped_moss_patch_bonemeal");
+    public static final ResourceKey<Feature> CRIMSON_MOSS_VEGETATION = of("crimson_moss_vegetation");
+    public static final ResourceKey<Feature> CRIMSON_MOSS_PATCH = of("crimson_moss_patch");
+    public static final ResourceKey<Feature> CRIMSON_MOSS_PATCH_BONEMEAL = of("crimson_moss_patch_bonemeal");
+    public static final ResourceKey<Feature> WARPED_MOSS_VEGETATION = of("warped_moss_vegetation");
+    public static final ResourceKey<Feature> WARPED_MOSS_PATCH = of("warped_moss_patch");
+    public static final ResourceKey<Feature> WARPED_MOSS_PATCH_BONEMEAL = of("warped_moss_patch_bonemeal");
 
-    public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
+    public static void bootstrap(BootstrapContext<Feature> context) {
         var blockHolderGetter = context.lookup(Registries.BLOCK);
-        var configuredFeatureHolderGetter = context.lookup(Registries.CONFIGURED_FEATURE);
+        var featureHolderGetter = context.lookup(Registries.FEATURE);
 
-        FeatureUtils.register(
-                context,
+        context.register(
                 CRIMSON_MOSS_VEGETATION,
-                Feature.SIMPLE_BLOCK,
-                new SimpleBlockConfiguration(
+                new SimpleBlockFeature(
                         new WeightedStateProvider(
                                 WeightedList.<BlockState>builder()
                                         .add(CRIMSON_MOSS_CARPET.defaultBlockState(), 25)
@@ -51,14 +47,12 @@ public class NemosMossyVegetationFeatures {
                 )
         );
 
-        FeatureUtils.register(
-                context,
+        context.register(
                 CRIMSON_MOSS_PATCH,
-                Feature.VEGETATION_PATCH,
-                new VegetationPatchConfiguration(
+                new VegetationPatchFeature(
                         blockHolderGetter.getOrThrow(CRIMSON_MOSS_REPLACEABLE),
-                        BlockStateProvider.simple(CRIMSON_MOSS_BLOCK),
-                        PlacementUtils.inlinePlaced(configuredFeatureHolderGetter.getOrThrow(CRIMSON_MOSS_VEGETATION)),
+                        BlockStateProvider.holderOf(CRIMSON_MOSS_BLOCK),
+                        PlacementUtils.inlinePlaced(featureHolderGetter.getOrThrow(CRIMSON_MOSS_VEGETATION)),
                         CaveSurface.FLOOR,
                         ConstantInt.of(1),
                         0.0F,
@@ -69,14 +63,12 @@ public class NemosMossyVegetationFeatures {
                 )
         );
 
-        FeatureUtils.register(
-                context,
+        context.register(
                 CRIMSON_MOSS_PATCH_BONEMEAL,
-                Feature.VEGETATION_PATCH,
-                new VegetationPatchConfiguration(
+                new VegetationPatchFeature(
                         blockHolderGetter.getOrThrow(CRIMSON_MOSS_REPLACEABLE),
-                        BlockStateProvider.simple(CRIMSON_MOSS_BLOCK),
-                        PlacementUtils.inlinePlaced(configuredFeatureHolderGetter.getOrThrow(CRIMSON_MOSS_VEGETATION)),
+                        BlockStateProvider.holderOf(CRIMSON_MOSS_BLOCK),
+                        PlacementUtils.inlinePlaced(featureHolderGetter.getOrThrow(CRIMSON_MOSS_VEGETATION)),
                         CaveSurface.FLOOR,
                         ConstantInt.of(1),
                         0.0F,
@@ -87,11 +79,9 @@ public class NemosMossyVegetationFeatures {
                 )
         );
 
-        FeatureUtils.register(
-                context,
+        context.register(
                 WARPED_MOSS_VEGETATION,
-                Feature.SIMPLE_BLOCK,
-                new SimpleBlockConfiguration(
+                new SimpleBlockFeature(
                         new WeightedStateProvider(
                                 WeightedList.<BlockState>builder()
                                         .add(WARPED_MOSS_CARPET.defaultBlockState(), 25)
@@ -101,14 +91,12 @@ public class NemosMossyVegetationFeatures {
                 )
         );
 
-        FeatureUtils.register(
-                context,
+        context.register(
                 WARPED_MOSS_PATCH,
-                Feature.VEGETATION_PATCH,
-                new VegetationPatchConfiguration(
+                new VegetationPatchFeature(
                         blockHolderGetter.getOrThrow(WARPED_MOSS_REPLACEABLE),
-                        BlockStateProvider.simple(WARPED_MOSS_BLOCK),
-                        PlacementUtils.inlinePlaced(configuredFeatureHolderGetter.getOrThrow(WARPED_MOSS_VEGETATION)),
+                        BlockStateProvider.holderOf(WARPED_MOSS_BLOCK),
+                        PlacementUtils.inlinePlaced(featureHolderGetter.getOrThrow(WARPED_MOSS_VEGETATION)),
                         CaveSurface.FLOOR,
                         ConstantInt.of(1),
                         0.0F,
@@ -119,14 +107,12 @@ public class NemosMossyVegetationFeatures {
                 )
         );
 
-        FeatureUtils.register(
-                context,
+        context.register(
                 WARPED_MOSS_PATCH_BONEMEAL,
-                Feature.VEGETATION_PATCH,
-                new VegetationPatchConfiguration(
+                new VegetationPatchFeature(
                         blockHolderGetter.getOrThrow(WARPED_MOSS_REPLACEABLE),
-                        BlockStateProvider.simple(WARPED_MOSS_BLOCK),
-                        PlacementUtils.inlinePlaced(configuredFeatureHolderGetter.getOrThrow(WARPED_MOSS_VEGETATION)),
+                        BlockStateProvider.holderOf(WARPED_MOSS_BLOCK),
+                        PlacementUtils.inlinePlaced(featureHolderGetter.getOrThrow(WARPED_MOSS_VEGETATION)),
                         CaveSurface.FLOOR,
                         ConstantInt.of(1),
                         0.0F,
@@ -138,7 +124,7 @@ public class NemosMossyVegetationFeatures {
         );
     }
 
-    public static ResourceKey<ConfiguredFeature<?, ?>> of(String id) {
-        return ResourceKey.create(Registries.CONFIGURED_FEATURE, Identifier.fromNamespaceAndPath(MOD_ID, id));
+    public static ResourceKey<Feature> of(String id) {
+        return ResourceKey.create(Registries.FEATURE, Identifier.fromNamespaceAndPath(MOD_ID, id));
     }
 }

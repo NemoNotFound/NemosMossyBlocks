@@ -449,7 +449,7 @@ public class MossyBlocks {
                     .mapColor(MapColor.COLOR_RED)
                     .strength(0.1F)
                     .sound(SoundType.MOSS)
-                    .pushReaction(PushReaction.DESTROY));
+                    .pushReaction(PushReaction.POPPED));
     public static final Block CRIMSON_MOSS_CARPET = register(
             NemosMossyBlockItemIds.CRIMSON_MOSS_CARPET.block(),
             CarpetBlock::new,
@@ -457,7 +457,7 @@ public class MossyBlocks {
                     .mapColor(MapColor.COLOR_RED)
                     .strength(0.1F)
                     .sound(SoundType.MOSS_CARPET)
-                    .pushReaction(PushReaction.DESTROY));
+                    .pushReaction(PushReaction.POPPED));
     public static final Block CRIMSON_MOSSY_ACACIA_LOG = register(NemosMossyBlockItemIds.CRIMSON_MOSSY_ACACIA_LOG.block(), RotatedPillarBlock::new, logProperties(MapColor.COLOR_ORANGE, MapColor.STONE, SoundType.WOOD));
     public static final Block CRIMSON_MOSSY_ACACIA_WOOD = register(NemosMossyBlockItemIds.CRIMSON_MOSSY_ACACIA_WOOD.block(), RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(ACACIA_WOOD));
     public static final Block CRIMSON_MOSSY_ACACIA_PLANKS = register(NemosMossyBlockItemIds.CRIMSON_MOSSY_ACACIA_PLANKS.block(), Block::new, BlockBehaviour.Properties.ofFullCopy(ACACIA_PLANKS));
@@ -679,7 +679,7 @@ public class MossyBlocks {
                     .mapColor(MapColor.COLOR_BLUE)
                     .strength(0.1F)
                     .sound(SoundType.MOSS)
-                    .pushReaction(PushReaction.DESTROY));
+                    .pushReaction(PushReaction.POPPED));
     public static final Block WARPED_MOSS_CARPET = register(
             NemosMossyBlockItemIds.WARPED_MOSS_CARPET.block(),
             CarpetBlock::new,
@@ -687,7 +687,7 @@ public class MossyBlocks {
                     .mapColor(MapColor.COLOR_BLUE)
                     .strength(0.1F)
                     .sound(SoundType.MOSS_CARPET)
-                    .pushReaction(PushReaction.DESTROY));
+                    .pushReaction(PushReaction.POPPED));
     public static final Block WARPED_MOSSY_ACACIA_LOG = register(NemosMossyBlockItemIds.WARPED_MOSSY_ACACIA_LOG.block(), RotatedPillarBlock::new, logProperties(MapColor.COLOR_ORANGE, MapColor.STONE, SoundType.WOOD));
     public static final Block WARPED_MOSSY_ACACIA_WOOD = register(NemosMossyBlockItemIds.WARPED_MOSSY_ACACIA_WOOD.block(), RotatedPillarBlock::new, BlockBehaviour.Properties.ofFullCopy(ACACIA_WOOD));
     public static final Block WARPED_MOSSY_ACACIA_PLANKS = register(NemosMossyBlockItemIds.WARPED_MOSSY_ACACIA_PLANKS.block(), Block::new, BlockBehaviour.Properties.ofFullCopy(ACACIA_PLANKS));
@@ -914,11 +914,11 @@ public class MossyBlocks {
     }
 
     private static BlockBehaviour.Properties buttonProperties() {
-        return BlockBehaviour.Properties.of().noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY);
+        return BlockBehaviour.Properties.of().noCollision().strength(0.5F).pushReaction(PushReaction.POPPED);
     }
 
     private static BlockBehaviour.Properties netherStemProperties(MapColor color) {
-        return BlockBehaviour.Properties.of().mapColor(p_152620_ -> color).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.STEM);
+        return BlockBehaviour.Properties.of().mapColor(_ -> color).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.STEM);
     }
 
     private static Block registerStairs(ResourceKey<Block> id, Block baseBlock) {

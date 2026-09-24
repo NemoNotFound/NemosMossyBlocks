@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "data": "nemos_mossy_blocks:warped_moss_carpet",
+        "weight": 25
+      },
+      {
+        "data": "minecraft:warped_roots",
+        "weight": 25
+      },
+      {
+        "data": "minecraft:warped_fungus",
+        "weight": 10
+      }
+    ]
+  }
+}

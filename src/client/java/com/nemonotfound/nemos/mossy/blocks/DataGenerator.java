@@ -26,7 +26,7 @@ public class DataGenerator implements DataGeneratorEntrypoint {
 
     @Override
     public void buildRegistry(RegistrySetBuilder registrySetBuilder) {
-        registrySetBuilder.add(Registries.CONFIGURED_FEATURE, NemosMossyVegetationFeatures::bootstrap);
+        registrySetBuilder.add(Registries.FEATURE, NemosMossyVegetationFeatures::bootstrap);
         registrySetBuilder.add(Registries.PLACED_FEATURE, NemosMossyVegetationPlacements::bootstrap);
     }
 }

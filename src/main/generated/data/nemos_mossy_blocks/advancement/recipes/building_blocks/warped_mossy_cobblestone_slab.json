@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:warped_mossy_cobblestone_slab"
+        "recipes": "nemos_mossy_blocks:warped_mossy_cobblestone_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

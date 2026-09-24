@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:pale_mossy_birch_slab"
+        "recipes": "nemos_mossy_blocks:pale_mossy_birch_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

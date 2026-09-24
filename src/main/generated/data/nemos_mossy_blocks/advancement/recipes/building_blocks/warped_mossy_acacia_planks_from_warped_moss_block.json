@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:warped_mossy_acacia_planks_from_warped_moss_block"
+        "recipes": "nemos_mossy_blocks:warped_mossy_acacia_planks_from_warped_moss_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

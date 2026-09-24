@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_mossy_blocks:warped_mossy_crimson_button_from_warped_mossy_crimson_planks"
+        "recipes": "nemos_mossy_blocks:warped_mossy_crimson_button_from_warped_mossy_crimson_planks"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
