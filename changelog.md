@@ -1,8 +1,4 @@
-# Changelog v2.0
+# Changelog v2.4.1
 
-## Additions
-- Added Nemo's Tags for improved mod compatibility
-
-## Breaking Changes
-- Refactored internal code structure
-    - **For Developers:** Package naming changed from `nemonotfound` to `devnemo`
+## Fixes
+- Mobs don't spawn in Crimson/Warped Forest
